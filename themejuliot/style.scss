@@ -1,0 +1,346 @@
+/*
+ *  Theme name: Thème Site Juliot
+    URI: http://themejuliot
+    Description: Thème pour le support du site: Juliot Électricité.
+    Version: 1.0
+    Author: Jimmy GILBERT 
+*/
+
+/* Importation du CSS 'Header' */
+
+@import 'scss/header';
+
+/* Importation du CSS 'Footer' */
+
+@import 'scss/footer';
+
+/* Importation du CSS '404' */
+
+@import 'scss/404';
+
+/* Importation du CSS 'Single' */
+
+@import 'scss/single';
+
+/* Importation du CSS des diffférentes pages du site */
+
+@import 'scss/electricite';
+@import 'scss/automatisme';
+@import 'scss/infoindustrielle';
+@import 'scss/contact';
+
+/* CSS du fichier 'Index' */
+
+.accueil{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+    box-sizing: border-box;
+    h1{
+        width: 90%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3em;
+        font-weight: 400;
+        text-align: center;
+        margin: auto;
+    }
+    .section_01{
+        width: 75%;
+        margin: auto;
+        padding-top: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: space-around;
+        gap: 2.5%;
+        .nav-card{
+            margin: 2%;
+            display: flex;
+            flex-direction: column;
+            flex: 0 1 270px;
+            height: 300px;
+            position: relative;
+            @media (max-width: 1365.98px){
+                margin: 2% 0;
+            }
+            img{
+                width: 100%;
+                height: 300px;
+                border-radius: 30%;
+            }
+            .hover{
+                transition: .8s ease;
+                background-color: rgba(0,0,0,0.5);
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 300px;
+                opacity: 0;
+                border-radius: 30%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                @media (max-width: 1365.98px){
+                    transition: none;
+                    background-color: transparent;
+                    opacity: 1;
+                }
+                a{
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.5em;
+                    width: 56%;
+                    margin: auto;
+                    padding: 10%;
+                    border-radius: 15px;
+                    text-decoration: none;
+                    color: white;
+                    background-color: #e95b23;
+                    p{
+                        margin: 0;
+                        position: relative;
+                        top: -20px;
+                        transition: .8s ease;
+                        @media (max-width: 1365.98px){
+                            top: 0;
+                            transition: none;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                .hover{
+                    transition: .8s ease;
+                    opacity: 1;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                    }
+                    a{
+                        p{
+                            transition: .8s ease;
+                            transform: translateY(20px);
+                            @media (max-width: 1365.98px){
+                                transition: none;
+                                transform: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section_02{
+        width: 90%;
+        margin: auto;
+        padding-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media (max-width: 1199.98px){
+            flex-direction: column;
+            align-items: center;
+            padding: 2% 0;
+        }
+        .carousel-slider{
+            width: 45%;
+            @media (max-width: 1199.98px){
+                width: 100%;
+            }
+            .control-slider{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                button{
+                    background: transparent;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    border: 0;
+                    color: white;
+                    background-color: black;
+                    font-size: 1.5em;
+                    cursor: pointer;
+                    &:hover{
+                        box-shadow: 0px 5px 4px 3px black;
+                        @media (max-width: 1365.98px){
+                            box-shadow: none;
+                        }
+                    }
+                }
+                #slider {
+                    .slider-elements{
+                        img{
+                            display: flex;
+                            width: 90%;
+                            margin: auto;
+                            border: 1px solid black;
+                            border-radius: 30px;
+                        }
+                    }
+                }
+                .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+                }
+                @keyframes fade {
+                    from {opacity: .4} 
+                    to {opacity: 1}
+                }
+            }
+            .indicators{
+                text-align: center;
+                padding: 2.5% 0;
+                .dot{
+                    width: 70px;
+                    height: 10px;
+                    background-color: #202f86;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+                .active, .dot:hover{
+                    background-color: #2c2c2c;
+                }
+            }
+        }
+        .texte{
+            padding: 0;
+            width: 45%;
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            align-items: center;
+            @media (max-width: 1199.98px){
+                width: 80%;
+            }
+            h2{
+                font-weight: 500;
+                font-size: 2em;
+            }
+            p{
+                font-weight: 400;
+                font-size: 1em;
+                text-align: justify;
+                display: flex;
+                align-items: start;
+                color: black;
+                img{
+                    display: none;
+                }
+                &:hover{
+                    color: #202f86;
+                    font-weight: bold;
+                    img{
+                        display: block;
+                    }
+                }
+            }
+            .links{
+                padding: 2% 0;
+                width: 40%;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                justify-content: center;
+                align-items: center;
+                a{ 
+                    flex: 1 1 33%;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }  
+            }
+        }
+    }
+    .section_03{
+        width: 55%;
+        margin: auto;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        .contactAccueil{
+            width: 75%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
+            .accroche_contact{
+                flex: 1 1 472px;
+                margin: auto;
+                font-family: 'Open Sans', sans-serif;
+                h2{
+                    font-weight: 300;
+                    font-size: 1.5em;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 1em;
+                }
+            }
+            .contactBtn{
+                flex: 1 1 272px;
+                padding: 0;
+                a{
+                    text-decoration: none;
+                    button{
+                        width: 100%;
+                        padding-top: 10%;
+                        padding-bottom: 10%;
+                        border-radius: 30px;
+                        background-color: #202f86;
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 400;
+                        font-size: 2em;
+                        color: white;
+                        border-color: #202f86;
+                        &:hover{
+                            box-shadow: 0px 5px 3px 1px rgba($color: #000000, $alpha: 1.0);
+                            @media (max-width: 1365.98px){
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .company-banner{
+            padding-top: 2%;
+            #text-banner{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                font-size: 1.5em;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            .banner{
+                width: 100%;
+                margin: auto;
+                padding: 1% 0%;
+                display: flex;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                gap: 1%;
+                justify-content: space-around;
+                align-items: center;
+                border: 1px solid black;
+                li{
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    flex: 1 1 140px;
+                    a{
+                        img{
+                            width: 100%;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
