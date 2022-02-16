@@ -6,6 +6,7 @@
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Juliot Électricité</title>
         <?php wp_head(); ?>
     </head>
 
@@ -28,29 +29,23 @@
                             )
                         );
                     ?>
-                    <!-- <div class="search-in">
-                        <button id="searchBtn" onclick="toggle()"><i class="fas fa-search"></i></button>
-                        <div id="search-bar" class="bar">
-                            <form action="traitement.php" method="post">
-                                <input type="text" placeholder="Search">
-                            </form>
-                        </div>
-                    </div> -->
-                    <div class="admin-in">
-                        <button id="adminBtn"><i class="fas fa-user"></i><p>Administrateur</p></button>
-                        <?php if (is_user_logged_in()) : ?>
-                            <a href="<?php echo wp_logout_url('index.php'); ?>">
-                                <button>
-                                    Déconnexion
-                                </button>
-                            </a>
-                        <?php endif; ?>
+                </nav>
+                <div class="admin-in">
+                    <button id="adminBtn"><i class="fas fa-user"></i><p>Administrateur</p></button>
+                    <?php if (is_user_logged_in()) : ?>
+                        <a href="<?php echo wp_logout_url('index.php'); ?>">
+                            <button>
+                                Déconnexion
+                            </button>
+                        </a>
+                    <?php endif; ?>
+                    <?php if (!is_user_logged_in()) : ?>
                         <div id="admin-log" class="admin">
                             <form action="wp-login.php" method="post">
                                 <?php wp_login_form(); ?>
                             </form>
                         </div>
-                    </div>
-                </nav>
+                    <?php endif; ?>
+                </div>
             </div>
         </header>

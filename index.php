@@ -44,7 +44,7 @@
     <div class="section_02">
         <div class="carousel-slider">
             <div class="control-slider">
-                <button class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></button>
+                <button class="prev" name="precedent" onclick="plusSlides(-1)"><i class="fas"><</i></button>
                 <div id="slider">
                     <div class="slider-elements fade">
                         <img src="<?php echo get_template_directory_uri() . '/img/img_accueil.jpg'; ?>" alt="Image Slider">
@@ -56,7 +56,7 @@
                         <img src="<?php echo get_template_directory_uri() . '/img/img_accueil_02.png'; ?>" alt="Image Slider">
                     </div>
                 </div>
-                <button class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></button>
+                <button class="next" name="suivant" onclick="plusSlides(1)"><i class="fas">></i></button>
             </div>
             <div class="indicators">
                 <span class="dot" onclick="currentSlide(1)"></span>
@@ -64,7 +64,7 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
-        <ul class="texte">
+        <div class="texte">
             <h2><b>JULIOT ÉLECTRICITÉ, C'EST:</b></h2>
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">L'expérience et la souplesse s'une équipe de 12 personnes pour répondre à vos besoins.</p>
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">Des techniciens aguerris dans le domaine de l'automatisme industriel.</p>
@@ -76,7 +76,7 @@
                 <a href="https://pros.qualifelec.fr/qualification/chauffage-electrique" target="_blank" title="Qualifelec mention chauffage"><img src="<?php echo get_template_directory_uri() . '/img/qualifelec_mention_chauffage.png'; ?>" alt="Qualification mention chauffage"></a>
                 <a href="https://pros.qualifelec.fr/page/irve" target="_blank" title="Qualifelec mention électricité"><img src="<?php echo get_template_directory_uri() . '/img/qualifelec_mention_electricite.png'; ?>" alt="Qualification mention électricité"></a>
             </div>
-        </ul>
+        </div>
     </div>
 
     <!-- Section de contact de la page d'accueil -->
@@ -84,9 +84,7 @@
     <div class="section_03">
         <div class="contactAccueil">
             <?php echo "<div class='accroche_contact'><h2>Vous souhaitez en savoir plus ?</h2><p><b>N'hésitez pas à nous contacter via notre formulaire !</b></p></div>"; ?>
-            <ul class="contactBtn">
-                <a href="contact"><button type="button">Contactez-nous</button></a>
-            </ul>
+            <a href="contact" class="contactBtn">Contactez-nous</a>
         </div>
         <div class="company-banner">
             <p id="text-banner">Ils nous font confiance :</p>

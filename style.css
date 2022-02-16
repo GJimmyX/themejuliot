@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+body #wpadminbar .ab-top-menu #wp-admin-bar-customize, body #wpadminbar .ab-top-menu #wp-admin-bar-updates, body #wpadminbar .ab-top-menu #wp-admin-bar-comments, body #wpadminbar .ab-top-menu #wp-admin-bar-new-content, body #wpadminbar .ab-top-menu #wp-admin-bar-edit, body #wpadminbar .ab-top-menu #wp-admin-bar-litespeed-menu, body #wpadminbar .ab-top-menu #wp-admin-bar-wpseo-menu {
+  display: none;
+}
+
 body header {
   width: 100%;
   padding: 1% 0;
@@ -44,14 +48,14 @@ body header .nav-container {
 
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 body header .nav-container h1 {
-  width: 30%;
+  width: 20%;
 }
 
 @media (max-width: 767.98px) {
@@ -64,7 +68,7 @@ body header .nav-container h1 {
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container h1 {
     margin: 0;
-    width: 70%;
+    width: 65%;
   }
 }
 
@@ -112,7 +116,7 @@ body header .nav-container .navbar {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 30%;
+    width: 25%;
   }
 }
 
@@ -124,6 +128,11 @@ body header .nav-container .navbar .menu-toggle {
   body header .nav-container .navbar .menu-toggle {
     display: inline-block;
   }
+}
+
+body header .nav-container .navbar .menu-toggle img {
+  width: 100%;
+  height: 100%;
 }
 
 body header .nav-container .navbar .nav-menu {
@@ -222,7 +231,7 @@ body header .nav-container .navbar .nav-menu .current_page_item a {
   }
 }
 
-body header .nav-container .navbar .search-in {
+body header .nav-container .admin-in {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,65 +244,28 @@ body header .nav-container .navbar .search-in {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 10%;
 }
 
-@media (max-width: 1365.98px) {
-  body header .nav-container .navbar .search-in {
-    padding: 2% 0;
+@media (max-width: 767.98px) {
+  body header .nav-container .admin-in {
+    width: 80%;
   }
 }
 
-body header .nav-container .navbar .search-in #searchBtn {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  font-size: 1.5em;
-}
-
-body header .nav-container .navbar .search-in .bar {
-  display: none;
-}
-
-body header .nav-container .navbar .search-in .toggle-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2% 0;
-}
-
-body header .nav-container .navbar .search-in .toggle-search form {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body header .nav-container .navbar .search-in .toggle-search form input {
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #A4A4A1;
-}
-
-body header .nav-container .navbar .admin-in {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  body header .nav-container .admin-in {
+    width: 20%;
+  }
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .navbar .admin-in {
+  body header .nav-container .admin-in {
     padding: 5% 0;
   }
 }
 
-body header .nav-container .navbar .admin-in #adminBtn {
+body header .nav-container .admin-in #adminBtn {
   background: transparent;
   color: black;
   display: -webkit-box;
@@ -311,7 +283,7 @@ body header .nav-container .navbar .admin-in #adminBtn {
   font-size: 1em;
 }
 
-body header .nav-container .navbar .admin-in a {
+body header .nav-container .admin-in a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,7 +293,7 @@ body header .nav-container .navbar .admin-in a {
   text-decoration: none;
 }
 
-body header .nav-container .navbar .admin-in a button {
+body header .nav-container .admin-in a button {
   padding: 5% 20%;
   background-color: #e9e8e9;
   border: 1px solid;
@@ -331,18 +303,28 @@ body header .nav-container .navbar .admin-in a button {
   transition: 0.5s ease;
 }
 
-body header .nav-container .navbar .admin-in a button:hover {
+body header .nav-container .admin-in a button:hover {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   -webkit-box-shadow: 1px 5px 7px #000;
           box-shadow: 1px 5px 7px #000;
 }
 
-body header .nav-container .navbar .admin-in .admin {
+body header .nav-container .admin-in .admin {
   display: none;
+  position: relative;
+  width: 100%;
 }
 
-body header .nav-container .navbar .admin-in .toggle-admin {
+body header .nav-container .admin-in .admin form {
+  position: absolute;
+  background-color: #e9e8e9;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 0 0 10px 10px;
+}
+
+body header .nav-container .admin-in .toggle-admin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,16 +335,15 @@ body header .nav-container .navbar .admin-in .toggle-admin {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 2%;
 }
 
-body header .nav-container .navbar .admin-in .toggle-admin form p {
+body header .nav-container .admin-in .toggle-admin form p {
   font-family: 'Open Sans', sans-serif;
   color: black;
   font-size: 0.8em;
 }
 
-body header .nav-container .navbar .admin-in .toggle-admin form .login-username, body header .nav-container .navbar .admin-in .toggle-admin form .login-password {
+body header .nav-container .admin-in .toggle-admin form .login-username, body header .nav-container .admin-in .toggle-admin form .login-password {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,35 +354,42 @@ body header .nav-container .navbar .admin-in .toggle-admin form .login-username,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
+  margin: auto;
 }
 
-body header .nav-container .navbar .admin-in .toggle-admin form .login-username label, body header .nav-container .navbar .admin-in .toggle-admin form .login-password label {
+body header .nav-container .admin-in .toggle-admin form .login-username label, body header .nav-container .admin-in .toggle-admin form .login-password label {
   padding: 2% 0;
-}
-
-body header .nav-container .navbar .admin-in .toggle-admin form .login-username {
-  margin-top: 0;
-}
-
-body header .nav-container .navbar .admin-in .toggle-admin form .login-remember {
   text-align: center;
 }
 
-body header .nav-container .navbar .admin-in .toggle-admin form .login-submit {
-  text-align: center;
+body header .nav-container .admin-in .toggle-admin form .login-username input, body header .nav-container .admin-in .toggle-admin form .login-password input {
+  width: 100%;
 }
 
-body header .nav-container .navbar .admin-in .toggle-admin form .login-submit input {
-  padding: 5% 20%;
+body header .nav-container .admin-in .toggle-admin form .login-remember {
+  text-align: center;
+  width: 100%;
+}
+
+body header .nav-container .admin-in .toggle-admin form .login-submit {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 5% 0;
+}
+
+body header .nav-container .admin-in .toggle-admin form .login-submit input {
   background-color: #e9e8e9;
   border: 1px solid;
   border-radius: 20px;
   cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  width: 100%;
 }
 
-body header .nav-container .navbar .admin-in .toggle-admin form .login-submit input:hover {
+body header .nav-container .admin-in .toggle-admin form .login-submit input:hover {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   -webkit-box-shadow: 1px 5px 7px #000;
@@ -445,6 +433,7 @@ footer ul li p {
   font-size: 1em;
   font-weight: 400;
   text-align: center;
+  cursor: context-menu;
 }
 
 footer ul li p a {
@@ -648,6 +637,7 @@ footer ul li p a:hover {
   font-weight: 400;
   text-align: center;
   margin: auto;
+  cursor: context-menu;
 }
 
 .accueil .section_01 {
@@ -678,7 +668,7 @@ footer ul li p a:hover {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 270px;
           flex: 0 1 270px;
-  height: 300px;
+  height: 360px;
   position: relative;
 }
 
@@ -690,7 +680,7 @@ footer ul li p a:hover {
 
 .accueil .section_01 .nav-card img {
   width: 100%;
-  height: 300px;
+  height: 360px;
   border-radius: 30%;
 }
 
@@ -701,7 +691,7 @@ footer ul li p a:hover {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 300px;
+  height: 360px;
   opacity: 0;
   border-radius: 30%;
   text-align: center;
@@ -858,6 +848,7 @@ footer ul li p a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 90%;
+  height: 100%;
   margin: auto;
   border: 1px solid black;
   border-radius: 30px;
@@ -920,6 +911,7 @@ footer ul li p a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: context-menu;
 }
 
 @media (max-width: 1199.98px) {
@@ -987,7 +979,7 @@ footer ul li p a:hover {
 
 .accueil .section_02 .texte .links a img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .accueil .section_03 {
@@ -1021,6 +1013,7 @@ footer ul li p a:hover {
           flex: 1 1 472px;
   margin: auto;
   font-family: 'Open Sans', sans-serif;
+  cursor: context-menu;
 }
 
 .accueil .section_03 .contactAccueil .accroche_contact h2 {
@@ -1038,16 +1031,9 @@ footer ul li p a:hover {
       -ms-flex: 1 1 272px;
           flex: 1 1 272px;
   padding: 0;
-}
-
-.accueil .section_03 .contactAccueil .contactBtn a {
-  text-decoration: none;
-}
-
-.accueil .section_03 .contactAccueil .contactBtn a button {
   width: 100%;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   border-radius: 30px;
   background-color: #202f86;
   font-family: 'Open Sans', sans-serif;
@@ -1055,15 +1041,18 @@ footer ul li p a:hover {
   font-size: 2em;
   color: white;
   border-color: #202f86;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
 }
 
-.accueil .section_03 .contactAccueil .contactBtn a button:hover {
+.accueil .section_03 .contactAccueil .contactBtn:hover {
   -webkit-box-shadow: 0px 5px 3px 1px black;
           box-shadow: 0px 5px 3px 1px black;
 }
 
 @media (max-width: 1365.98px) {
-  .accueil .section_03 .contactAccueil .contactBtn a button:hover {
+  .accueil .section_03 .contactAccueil .contactBtn:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -1079,6 +1068,7 @@ footer ul li p a:hover {
   font-size: 1.5em;
   text-align: center;
   margin-bottom: 0;
+  cursor: context-menu;
 }
 
 .accueil .section_03 .company-banner .banner {
@@ -1116,6 +1106,6 @@ footer ul li p a:hover {
 
 .accueil .section_03 .company-banner .banner li a img {
   width: 100%;
-  height: 40px;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
