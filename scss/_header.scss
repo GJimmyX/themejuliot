@@ -23,7 +23,7 @@ body{
                 flex-direction: column;
             }
             @media (min-width: 768px) AND (max-width: 1365.98px){
-                align-items: center;
+                align-items: start;
             }
             h1{
                 width: 20%;
@@ -58,6 +58,7 @@ body{
                     flex-direction: column;
                     align-items: center;
                     width: 25%;
+                    padding-top: 4%;
                 }
                 .menu-toggle{
                     display: none;
@@ -65,8 +66,8 @@ body{
                         display: inline-block;
                     }
                     img{
-                        width: 100%;
-                        height: 100%;
+                        width: 30px;
+                        height: 30px;
                     }
                 }
                 .nav-menu{
@@ -99,7 +100,7 @@ body{
                             &:hover{
                                 color: white;
                                 background-color: #e95b23;
-                                border-radius: 30%;
+                                border-radius: 30px;
                                 box-shadow: 0px 10px 7px rgba($color: #000000, $alpha: 0.5);
                                 @media (max-width: 1365.98px){
                                     background: transparent;
@@ -113,7 +114,7 @@ body{
                         a{
                             color: white !important;
                             background-color: #e95b23;
-                            border-radius: 30%;
+                            border-radius: 30px;
                             box-shadow: 0px 10px 7px rgba($color: #000000, $alpha: 0.5);
                             @media (max-width: 1365.98px){
                                 background: transparent;
@@ -142,9 +143,6 @@ body{
                 }
                 @media (min-width: 768px) AND (max-width: 1365.98px){
                     width: 20%;
-                }
-                @media (max-width: 1365.98px){
-                    padding: 5% 0;
                 }
                 #adminBtn{
                     background: transparent;
