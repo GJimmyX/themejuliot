@@ -3,7 +3,8 @@
 get_header();
 ?>
 
-<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+<main class="article-navigation">
+    <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
     <?php $image = get_field( 'image' ); ?>
     <?php if ( $image ) : ?>
@@ -13,7 +14,8 @@ get_header();
         <h1><a href="<?php the_permalink(); ?>"><?php echo esc_html( $link ); ?></a></h1>
     <?php endif; ?>
 
-<?php endwhile; endif; ?>
+    <?php endwhile; endif; ?>
+</main>
 
 <?php
 /* Appel du footer */

@@ -20,8 +20,9 @@
         <?php
             $recentPosts = new WP_Query();
             $recentPosts->query(array( 
+                'post_type' => 'Navigation',
                 'orderby' => array(
-                    'id' => 'ASC'
+                    'id' => 'ASC',
                 ))
             );            
         ?>
@@ -29,7 +30,12 @@
         ?>
 
             <div class="nav-card">
-                <?php the_post_thumbnail(); ?>
+                <?php 
+                    $image = get_field( 'image' );
+                    if ( $image ) ?>
+                        <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
+                    <?php
+                ?>
                 <div class="hover">
                     <a href="<?php the_permalink(); ?>"><p><?php the_title(); ?></p></a>
                 </div>
@@ -90,25 +96,25 @@
             <p id="text-banner">Ils nous font confiance :</p>
             <ul class="banner">
                 <li>
-                    <a href="https://www.piveteaubois.com/fr/" target="_blank" title="Piveteau Bois"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/piveteau_bois_logo.png' ?>" alt="Piveteau Bois"></a>
+                    <a href="https://www.piveteaubois.com/fr/" target="_blank" title="Piveteau Bois"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/piveteau_bois_logo.png' ?>" alt="Piveteau Bois" class="img_01"></a>
                 </li>
                 <li>
-                    <a href="https://www.stef.com/" target="_blank" title="Transports STEF"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/stef_logo.png' ?>" alt="Transports STEF"></a>
+                    <a href="https://www.stef.com/" target="_blank" title="Transports STEF"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/stef_logo.png' ?>" alt="Transports STEF" class="img_02"></a>
                 </li>
                 <li>
-                    <a href="https://www.edycem.fr/" target="_blank" title="Édycem Béton"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/edycem_logo.png' ?>" alt="Édycem Béton"></a>
+                    <a href="https://www.edycem.fr/" target="_blank" title="Édycem Béton"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/edycem_logo.png' ?>" alt="Édycem Béton" class="img_03"></a>
                 </li>
                 <li>
-                    <a href="https://www.materiaux.eiffageroute.com/carrieres-mousset" target="_blank" title="Carrières Mousset"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_mousset_carrieres.png' ?>" alt="Carrières Mousset"></a>
+                    <a href="https://www.materiaux.eiffageroute.com/carrieres-mousset" target="_blank" title="Carrières Mousset"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_mousset_carrieres.png' ?>" alt="Carrières Mousset" class="img_04"></a>
                 </li>
                 <li>
-                    <a href="https://www.kmoreau.fr/" target="_blank" title="Carrières Kleber Moreau"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/kleber_moreau_logo.png' ?>" alt="Carrières Kleber Moreau"></a>
+                    <a href="https://www.kmoreau.fr/" target="_blank" title="Carrières Kleber Moreau"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/kleber_moreau_logo.png' ?>" alt="Carrières Kleber Moreau" class="img_05"></a>
                 </li>
                 <li>
-                    <a href="https://www.essartsenbocage.fr/" target="_blank" title="Commune d'Essarts en Bocage"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/essarts_en_bocage_logo01.png' ?>" alt="Commune d'Essarts en Bocage"></a>
+                    <a href="https://www.essartsenbocage.fr/" target="_blank" title="Commune d'Essarts en Bocage"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/essarts_en_bocage_logo01.png' ?>" alt="Commune d'Essarts en Bocage" class="img_06"></a>
                 </li>
                 <li>
-                    <a href="http://agersystemes.fr/" target="_blank" title="AGER Systèmes"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_agersystemes.png' ?>" alt="AGER Systèmes"></a>
+                    <a href="http://agersystemes.fr/" target="_blank" title="AGER Systèmes"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_agersystemes.png' ?>" alt="AGER Systèmes" class="img_07"></a>
                 </li>
             </ul>
         </div>

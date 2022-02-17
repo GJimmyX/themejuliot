@@ -23,6 +23,8 @@ add_theme_support( 'post-thumbnails' );
 /* Ajouter différentes tailles d'image */
 
 function taille_media() {
+  add_image_size( '32x32', 32, 32, false );
+  add_image_size( '192x192', 192, 192, false );
   add_image_size( 'taille_00', 60, 60, false );
   add_image_size( 'taille_01', 250, 200, false );
   add_image_size( 'taille_02', 500, 400, false );
@@ -30,6 +32,22 @@ function taille_media() {
 };
 
 add_action('after_setup_theme', 'taille_media');
+
+/* Supprimer différentes tailles d'image */
+
+function remove_default_img_sizes( $sizes ) {
+  $targets = ['medium_large', 'large', '1536x1536', '2048x2048'];
+
+  foreach($sizes as $size_index=>$size) {
+    if(in_array($size, $targets)) {
+      unset($sizes[$size_index]);
+    }
+  }
+
+  return $sizes;
+}
+
+add_filter( 'intermediate_image_sizes', 'remove_default_img_sizes' );
 
 /* Ajouter le support du CSS, des polices d'écriture, de Font Awesome et du JS/JQuery */
 

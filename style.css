@@ -48,9 +48,9 @@ body header .nav-container {
 
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 
@@ -117,6 +117,7 @@ body header .nav-container .navbar {
         -ms-flex-align: center;
             align-items: center;
     width: 25%;
+    padding-top: 4%;
   }
 }
 
@@ -131,8 +132,8 @@ body header .nav-container .navbar .menu-toggle {
 }
 
 body header .nav-container .navbar .menu-toggle img {
-  width: 100%;
-  height: 100%;
+  width: 30px;
+  height: 30px;
 }
 
 body header .nav-container .navbar .nav-menu {
@@ -185,7 +186,7 @@ body header .nav-container .navbar .nav-menu li a {
 body header .nav-container .navbar .nav-menu li a:hover {
   color: white;
   background-color: #e95b23;
-  border-radius: 30%;
+  border-radius: 30px;
   -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
 }
@@ -202,7 +203,7 @@ body header .nav-container .navbar .nav-menu li a:hover {
 body header .nav-container .navbar .nav-menu .current_page_item a {
   color: white !important;
   background-color: #e95b23;
-  border-radius: 30%;
+  border-radius: 30px;
   -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
 }
@@ -256,12 +257,6 @@ body header .nav-container .admin-in {
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container .admin-in {
     width: 20%;
-  }
-}
-
-@media (max-width: 1365.98px) {
-  body header .nav-container .admin-in {
-    padding: 5% 0;
   }
 }
 
@@ -474,6 +469,13 @@ footer ul li p a:hover {
 }
 
 /* Importation du CSS 'Single' */
+.article-navigation img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
 .article img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -681,7 +683,7 @@ footer ul li p a:hover {
 .accueil .section_01 .nav-card img {
   width: 100%;
   height: 360px;
-  border-radius: 30%;
+  border-radius: 30px;
 }
 
 .accueil .section_01 .nav-card .hover {
@@ -693,7 +695,7 @@ footer ul li p a:hover {
   width: 100%;
   height: 360px;
   opacity: 0;
-  border-radius: 30%;
+  border-radius: 30px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,6 +725,8 @@ footer ul li p a:hover {
   text-decoration: none;
   color: white;
   background-color: #e95b23;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
 }
 
 .accueil .section_01 .nav-card .hover a p {
@@ -751,6 +755,22 @@ footer ul li p a:hover {
   .accueil .section_01 .nav-card:hover .hover {
     -webkit-transition: none;
     transition: none;
+  }
+}
+
+.accueil .section_01 .nav-card:hover .hover a {
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+  -webkit-box-shadow: 0px 0px 4px 7px #000;
+          box-shadow: 0px 0px 4px 7px #000;
+}
+
+@media (max-width: 1365.98px) {
+  .accueil .section_01 .nav-card:hover .hover a {
+    -webkit-transition: none;
+    transition: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -829,11 +849,15 @@ footer ul li p a:hover {
   background-color: black;
   font-size: 1.5em;
   cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .accueil .section_02 .carousel-slider .control-slider button:hover {
   -webkit-box-shadow: 0px 5px 4px 3px black;
           box-shadow: 0px 5px 4px 3px black;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 @media (max-width: 1365.98px) {
@@ -1032,8 +1056,8 @@ footer ul li p a:hover {
           flex: 1 1 272px;
   padding: 0;
   width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
   border-radius: 30px;
   background-color: #202f86;
   font-family: 'Open Sans', sans-serif;
@@ -1044,11 +1068,15 @@ footer ul li p a:hover {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .accueil .section_03 .contactAccueil .contactBtn:hover {
   -webkit-box-shadow: 0px 5px 3px 1px black;
           box-shadow: 0px 5px 3px 1px black;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 @media (max-width: 1365.98px) {
@@ -1104,8 +1132,38 @@ footer ul li p a:hover {
           flex: 1 1 140px;
 }
 
-.accueil .section_03 .company-banner .banner li a img {
-  width: 100%;
-  height: auto;
+.accueil .section_03 .company-banner .banner li a .img_01 {
+  width: 140px;
+  height: 39px;
+}
+
+.accueil .section_03 .company-banner .banner li a .img_02 {
+  width: 80px;
+  height: 40px;
+}
+
+.accueil .section_03 .company-banner .banner li a .img_03 {
+  width: 94px;
+  height: 40px;
+}
+
+.accueil .section_03 .company-banner .banner li a .img_04 {
+  width: 140px;
+  height: 31px;
+}
+
+.accueil .section_03 .company-banner .banner li a .img_05 {
+  width: 68px;
+  height: 40px;
+}
+
+.accueil .section_03 .company-banner .banner li a .img_06 {
+  width: 40px;
+  height: 40px;
+}
+
+.accueil .section_03 .company-banner .banner li a .img_07 {
+  width: 85px;
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */
