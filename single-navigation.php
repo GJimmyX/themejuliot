@@ -3,6 +3,8 @@
 get_header();
 ?>
 
+<!-- Contenu de la page 'Single Navigation' -->
+
 <main class="article-navigation">
     <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
@@ -13,7 +15,7 @@ get_header();
     <?php if ( $link ) : ?>
         <h1><a href="<?php the_permalink(); ?>"><?php echo esc_html( $link ); ?></a></h1>
     <?php endif; ?>
-
+    <?php the_field( 'description' ); ?>
     <?php endwhile; endif; ?>
 </main>
 

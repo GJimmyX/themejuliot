@@ -144,6 +144,12 @@ body header .nav-container .navbar .nav-menu {
   display: flex;
 }
 
+@media (min-width: 992px) and (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-menu {
+    padding-top: 35%;
+  }
+}
+
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu {
     display: none;
@@ -153,9 +159,14 @@ body header .nav-container .navbar .nav-menu {
 body header .nav-container .navbar .nav-menu li {
   width: 14%;
   text-align: center;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin: 0 3%;
   list-style: none;
+}
+
+@media (min-width: 992px) and (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-menu li {
+    padding: 0 7.5%;
+  }
 }
 
 @media (max-width: 1365.98px) {
@@ -217,7 +228,18 @@ body header .nav-container .navbar .nav-menu .current_page_item a {
   }
 }
 
-@media (max-width: 1365.98px) {
+@media (min-width: 992px) and (max-width: 1365.98px) {
+  body header .nav-container .navbar .toggled-on {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+
+@media (max-width: 991.98px) {
   body header .nav-container .navbar .toggled-on {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -257,6 +279,7 @@ body header .nav-container .admin-in {
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container .admin-in {
     width: 20%;
+    padding-top: 4%;
   }
 }
 
@@ -389,6 +412,98 @@ body header .nav-container .admin-in .toggle-admin form .login-submit input:hove
   transition: 0.5s ease;
   -webkit-box-shadow: 1px 5px 7px #000;
           box-shadow: 1px 5px 7px #000;
+}
+
+/* Importation du CSS 'Mentions légales' */
+.mentions-legales {
+  padding: 2% 5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mentions-legales .head-mentions-legales {
+  text-align: justify;
+}
+
+.mentions-legales .head-mentions-legales p a {
+  color: black;
+  font-weight: bold;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.mentions-legales .head-mentions-legales p a:hover {
+  color: #202F86;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.mentions-legales .article02 .article-content, .mentions-legales .article03 .article-content, .mentions-legales .article04 .article-content, .mentions-legales .article05 .article-content, .mentions-legales .article06 .article-content, .mentions-legales .article07 .article-content, .mentions-legales .article08 .article-content, .mentions-legales .article09 .article-content, .mentions-legales .article10 .article-content, .mentions-legales .article11 .article-content, .mentions-legales .article12 .article-content, .mentions-legales .article13 .article-content, .mentions-legales .article14 .article-content, .mentions-legales .article15 .article-content, .mentions-legales .article16 .article-content {
+  text-align: justify;
+}
+
+.mentions-legales .article04 ul, .mentions-legales .article05 ul, .mentions-legales .article07 ul, .mentions-legales .article08 ul, .mentions-legales .article09 ul, .mentions-legales .article11 ul, .mentions-legales .article13 ul {
+  padding: 0;
+}
+
+.mentions-legales .article04 ul li, .mentions-legales .article05 ul li, .mentions-legales .article07 ul li, .mentions-legales .article08 ul li, .mentions-legales .article09 ul li, .mentions-legales .article11 ul li, .mentions-legales .article13 ul li {
+  list-style: none;
+  padding: 0.5% 0;
+}
+
+.mentions-legales .article01 .article-content .content-site p, .mentions-legales .article01 .article-content .content-editeur p, .mentions-legales .article01 .article-content .content-hebergeur p, .mentions-legales .article01 .article-content .content-concepteur p {
+  text-align: justify;
+}
+
+.mentions-legales .article01 .article-content .content-editeur p a {
+  color: black;
+  font-weight: bold;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.mentions-legales .article01 .article-content .content-editeur p a:hover {
+  color: #202F86;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.mentions-legales .article08 .article-content ul li a, .mentions-legales .article13 .article-content ul li a {
+  color: black;
+  font-weight: bold;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.mentions-legales .article08 .article-content ul li a:hover, .mentions-legales .article13 .article-content ul li a:hover {
+  color: #202F86;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.mentions-legales .article08 .article-content p a, .mentions-legales .article13 .article-content p a {
+  color: black;
+  font-weight: bold;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.mentions-legales .article08 .article-content p a:hover, .mentions-legales .article13 .article-content p a:hover {
+  color: #202F86;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.mentions-legales .article12 .article-content p a, .mentions-legales .article16 .article-content p a {
+  color: black;
+  font-weight: bold;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.mentions-legales .article12 .article-content p a:hover, .mentions-legales .article16 .article-content p a:hover {
+  color: #202F86;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 /* Importation du CSS 'Footer' */
@@ -532,6 +647,96 @@ footer ul li p a:hover {
 }
 
 /* Importation du CSS des diffférentes pages du site */
+.electricite {
+  width: 90%;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.electricite .nav-elec {
+  padding: 10% 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.electricite .nav-elec .elec-card {
+  margin: 2% 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 300px;
+          flex: 0 1 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.electricite .nav-elec .elec-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.electricite .nav-elec .elec-card .elec-hover {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+}
+
+.electricite .nav-elec .elec-card .elec-hover a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.electricite .nav-elec .elec-card .elec-hover a p {
+  background-color: #202F86;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.electricite .nav-elec .elec-card .elec-hover:hover {
+  opacity: 1;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+}
+
+@media (max-width: 1365.98px) {
+  .electricite .nav-elec .elec-card .elec-hover {
+    opacity: 1;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
 .contact {
   width: 50%;
   margin: auto;
@@ -642,6 +847,12 @@ footer ul li p a:hover {
   cursor: context-menu;
 }
 
+@media (max-width: 575.98px) {
+  .accueil h1 {
+    font-size: 2em;
+  }
+}
+
 .accueil .section_01 {
   width: 75%;
   margin: auto;
@@ -725,8 +936,6 @@ footer ul li p a:hover {
   text-decoration: none;
   color: white;
   background-color: #e95b23;
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
 }
 
 .accueil .section_01 .nav-card .hover a p {
@@ -755,22 +964,6 @@ footer ul li p a:hover {
   .accueil .section_01 .nav-card:hover .hover {
     -webkit-transition: none;
     transition: none;
-  }
-}
-
-.accueil .section_01 .nav-card:hover .hover a {
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
-  -webkit-box-shadow: 0px 0px 4px 7px #000;
-          box-shadow: 0px 0px 4px 7px #000;
-}
-
-@media (max-width: 1365.98px) {
-  .accueil .section_01 .nav-card:hover .hover a {
-    -webkit-transition: none;
-    transition: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
 }
 
@@ -949,6 +1142,12 @@ footer ul li p a:hover {
   font-size: 2em;
 }
 
+@media (max-width: 575.98px) {
+  .accueil .section_02 .texte h2 {
+    font-size: 1.5em;
+  }
+}
+
 .accueil .section_02 .texte p {
   font-weight: 400;
   font-size: 1em;
@@ -992,6 +1191,12 @@ footer ul li p a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .accueil .section_02 .texte .links {
+    width: 80%;
+  }
 }
 
 .accueil .section_02 .texte .links a {
@@ -1040,6 +1245,12 @@ footer ul li p a:hover {
   cursor: context-menu;
 }
 
+@media (max-width: 991.98px) {
+  .accueil .section_03 .contactAccueil .accroche_contact {
+    text-align: center;
+  }
+}
+
 .accueil .section_03 .contactAccueil .accroche_contact h2 {
   font-weight: 300;
   font-size: 1.5em;
@@ -1056,8 +1267,7 @@ footer ul li p a:hover {
           flex: 1 1 272px;
   padding: 0;
   width: 100%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding: 2.5% 0;
   border-radius: 30px;
   background-color: #202f86;
   font-family: 'Open Sans', sans-serif;
@@ -1070,6 +1280,12 @@ footer ul li p a:hover {
   cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+}
+
+@media (max-width: 991.98px) {
+  .accueil .section_03 .contactAccueil .contactBtn {
+    padding: 2.5% 10%;
+  }
 }
 
 .accueil .section_03 .contactAccueil .contactBtn:hover {

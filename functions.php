@@ -103,7 +103,7 @@ function cpt_juliot() {
     'hierarchical' => true,
   );
 
-  register_taxonomy( 'nav-accueil', 'Navigation', $args );
+  register_taxonomy( 'nav-accueil', 'navigation', $args );
 
 }
 
