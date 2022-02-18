@@ -74,15 +74,20 @@ body{
                     padding: 0;
                     width: 100%;
                     display: flex;
+                    @media (min-width: 992px) AND (max-width: 1365.98px){
+                        padding-top: 35%;
+                    }
                     @media (max-width: 1365.98px){
                         display: none;
                     }
                     li{
                         width: 14%;
                         text-align: center;
-                        margin-left: 3%;
-                        margin-right: 3%;
+                        margin: 0 3%;
                         list-style: none;
+                        @media (min-width: 992px) AND (max-width: 1365.98px){
+                            padding: 0 7.5%;
+                        }
                         @media (max-width: 1365.98px){
                             width: 100%;
                         }
@@ -125,7 +130,11 @@ body{
                     }
                 }
                 .toggled-on{
-                    @media (max-width: 1365.98px){
+                    @media (min-width: 992px) AND (max-width: 1365.98px){
+                        display: flex;
+                        justify-content: end;
+                    }
+                    @media (max-width: 991.98px){
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -143,6 +152,7 @@ body{
                 }
                 @media (min-width: 768px) AND (max-width: 1365.98px){
                     width: 20%;
+                    padding-top: 4%;
                 }
                 #adminBtn{
                     background: transparent;
