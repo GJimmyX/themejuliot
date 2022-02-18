@@ -20,7 +20,7 @@ function showSlides(n) {
     slides[i].style.display = "none"; 
     dots[i].classList.remove("active");
   }
-  slides[slideIndex].style.display = "block";
+  slides[slideIndex].style.display = "flex";
   dots[slideIndex].classList.add("active");
 }
 
