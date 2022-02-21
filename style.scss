@@ -160,7 +160,13 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                @media (max-width: 575.98px){
+                    flex-direction: column;
+                }
                 button{
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
                     background: transparent;
                     border-radius: 50%;
                     width: 30px;
@@ -171,6 +177,9 @@
                     font-size: 1.5em;
                     cursor: pointer;
                     transition: 0.5s ease;
+                    @media (max-width: 575.98px){
+                        transform: rotateZ(90deg);
+                    }
                     &:hover{
                         box-shadow: 0px 5px 4px 3px black;
                         transition: 0.5s ease;
@@ -180,6 +189,9 @@
                     }
                 }
                 #slider {
+                    @media (max-width: 575.98px){
+                        padding: 2% 0;
+                    }
                     .slider-elements{
                         img{
                             display: flex;
@@ -203,6 +215,9 @@
             .indicators{
                 text-align: center;
                 padding: 2.5% 0;
+                @media (max-width: 575.98px){
+                    display: none;
+                }
                 .dot{
                     width: 70px;
                     height: 10px;

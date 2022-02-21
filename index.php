@@ -65,9 +65,9 @@
                 <button class="next" name="suivant" onclick="plusSlides(1)"><i class="fas">></i></button>
             </div>
             <div class="indicators">
+                <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
         <div class="texte">
