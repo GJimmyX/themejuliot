@@ -15,6 +15,13 @@
         $sectionelec = new WP_Query();
         $sectionelec->query(array(
                 'post_type' => 'Navigation',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'nav-accueil',
+                        'field'    => 'name',
+                        'terms'    => 'electricite',
+                    ),
+                ),
                 'order' => 'ASC'
             )
         );
@@ -24,7 +31,6 @@
 
         while ($sectionelec->have_posts()) : $sectionelec->the_post();
     ?>
-        <?php if ( get_field( 'elec_' ) == 1 ) : ?>
 
             <div class="elec-card">
                 <?php 
@@ -39,7 +45,7 @@
                 </div>
             </div>
 
-        <?php endif; endwhile; ?>
+        <?php endwhile; ?>
 
     </div>
 </main>

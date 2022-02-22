@@ -7,6 +7,7 @@
     Author: Jimmy GILBERT 
 */
 /* Importation du CSS 'Header' */
+/* CSS du header (Haut de la page) */
 body {
   background-color: rgba(233, 232, 233, 0.6);
   margin: 0;
@@ -255,18 +256,6 @@ body header .nav-container .navbar .nav-menu .current_page_item a {
 }
 
 body header .nav-container .admin-in {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 10%;
 }
 
@@ -281,24 +270,6 @@ body header .nav-container .admin-in {
     width: 20%;
     padding-top: 4%;
   }
-}
-
-body header .nav-container .admin-in #adminBtn {
-  background: transparent;
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 0;
-  cursor: pointer;
-  font-size: 1em;
 }
 
 body header .nav-container .admin-in a {
@@ -328,40 +299,19 @@ body header .nav-container .admin-in a button:hover {
           box-shadow: 1px 5px 7px #000;
 }
 
-body header .nav-container .admin-in .admin {
-  display: none;
-  position: relative;
-  width: 100%;
-}
-
-body header .nav-container .admin-in .admin form {
-  position: absolute;
-  background-color: #e9e8e9;
-  width: 100%;
-  border: 1px solid #000;
-  border-radius: 0 0 10px 10px;
-}
-
-body header .nav-container .admin-in .toggle-admin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body header .nav-container .admin-in .toggle-admin form p {
+/* Importation du CSS 'Inscription' */
+/* CSS de la page 'Inscription' */
+.inscription {
   font-family: 'Open Sans', sans-serif;
-  color: black;
-  font-size: 0.8em;
 }
 
-body header .nav-container .admin-in .toggle-admin form .login-username, body header .nav-container .admin-in .toggle-admin form .login-password {
+.inscription h2 {
+  font-size: 2em;
+  text-align: center;
+  padding: 1% 0;
+}
+
+.inscription form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,49 +322,56 @@ body header .nav-container .admin-in .toggle-admin form .login-username, body he
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
-  margin: auto;
+  padding: 5% 0 8%;
 }
 
-body header .nav-container .admin-in .toggle-admin form .login-username label, body header .nav-container .admin-in .toggle-admin form .login-password label {
-  padding: 2% 0;
-  text-align: center;
+.inscription form .name, .inscription form .email {
+  padding: 1% 0;
 }
 
-body header .nav-container .admin-in .toggle-admin form .login-username input, body header .nav-container .admin-in .toggle-admin form .login-password input {
+.inscription form .name label, .inscription form .email label {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2.5%;
+  font-size: 1.5em;
 }
 
-body header .nav-container .admin-in .toggle-admin form .login-remember {
-  text-align: center;
-  width: 100%;
-}
-
-body header .nav-container .admin-in .toggle-admin form .login-submit {
-  text-align: center;
-  width: 80%;
-  margin: auto;
-  padding: 5% 0;
-}
-
-body header .nav-container .admin-in .toggle-admin form .login-submit input {
-  background-color: #e9e8e9;
+.inscription form .name input, .inscription form .email input {
+  width: 97%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: 1px solid;
-  border-radius: 20px;
-  cursor: pointer;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+}
+
+.inscription form .submitting {
+  padding: 1% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
-body header .nav-container .admin-in .toggle-admin form .login-submit input:hover {
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  -webkit-box-shadow: 1px 5px 7px #000;
-          box-shadow: 1px 5px 7px #000;
+.inscription form .submitting input {
+  padding: 0.5% 2%;
+  border: 1px solid #202F86;
+  border-radius: 10px;
+  background-color: #202F86;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
 /* Importation du CSS 'Mentions légales' */
+/* CSS de la page 'Mentions légales' */
 .mentions-legales {
   padding: 2% 5%;
   font-family: 'Open Sans', sans-serif;
@@ -507,13 +464,30 @@ body header .nav-container .admin-in .toggle-admin form .login-submit input:hove
 }
 
 /* Importation du CSS 'Footer' */
+/* CSS du footer (pied de page) */
 footer {
   background-color: #202f86;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 1199.98px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 footer ul {
   padding: 0;
-  width: 70%;
+  width: 90%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,6 +529,154 @@ footer ul li p a:hover {
   font-weight: bold;
 }
 
+footer .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 10%;
+}
+
+@media (max-width: 767.98px) {
+  footer .login {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  footer .login {
+    width: 20%;
+  }
+}
+
+footer .login #adminBtn {
+  background: transparent;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+footer .login .admin {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+footer .login .admin form {
+  position: absolute;
+  bottom: 70px;
+  right: 5px;
+  background-color: #e9e8e9;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 1199.98px) {
+  footer .login .admin form {
+    bottom: 0;
+    right: 0;
+    position: relative;
+  }
+}
+
+footer .login .admin a {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+footer .login .toggle-admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .login .toggle-admin form p {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 0.8em;
+}
+
+footer .login .toggle-admin form .login-username, footer .login .toggle-admin form .login-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+footer .login .toggle-admin form .login-username label, footer .login .toggle-admin form .login-password label {
+  padding: 2% 0;
+  text-align: center;
+}
+
+footer .login .toggle-admin form .login-username input, footer .login .toggle-admin form .login-password input {
+  width: 100%;
+}
+
+footer .login .toggle-admin form .login-remember {
+  text-align: center;
+  width: 100%;
+}
+
+footer .login .toggle-admin form .login-submit {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 5% 0;
+}
+
+footer .login .toggle-admin form .login-submit input {
+  background-color: #e9e8e9;
+  border: 1px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 100%;
+}
+
+footer .login .toggle-admin form .login-submit input:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-box-shadow: 1px 5px 7px #000;
+          box-shadow: 1px 5px 7px #000;
+}
+
 /* Importation du CSS '404' */
 #primary {
   margin-top: 2%;
@@ -584,11 +706,18 @@ footer ul li p a:hover {
 }
 
 /* Importation du CSS 'Single' */
+/* CSS de la page 'single-navigation'*/
+.article-navigation {
+  padding: 2% 0;
+}
+
 .article-navigation img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
+  width: 20%;
+  height: auto;
 }
 
 .article img {
@@ -647,6 +776,7 @@ footer ul li p a:hover {
 }
 
 /* Importation du CSS des diffférentes pages du site */
+/* CSS de la page 'Électricité' */
 .electricite {
   width: 90%;
   margin: auto;
@@ -737,6 +867,35 @@ footer ul li p a:hover {
   }
 }
 
+/* CSS de la page 'Automatisme' */
+.automatisme .contenu-automatisme .automatisme-card {
+  padding: 2% 0;
+}
+
+.automatisme .contenu-automatisme .automatisme-card img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 20%;
+  height: auto;
+}
+
+/* CSS de la page 'Informatique Industrielle' */
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card {
+  padding: 2% 0;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 20%;
+  height: auto;
+}
+
+/* CSS de la page 'Contact' */
 .contact {
   width: 50%;
   margin: auto;
@@ -1032,7 +1191,24 @@ footer ul li p a:hover {
           align-items: center;
 }
 
+@media (max-width: 575.98px) {
+  .accueil .section_02 .carousel-slider .control-slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .accueil .section_02 .carousel-slider .control-slider button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: transparent;
   border-radius: 50%;
   width: 30px;
@@ -1044,6 +1220,13 @@ footer ul li p a:hover {
   cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+}
+
+@media (max-width: 575.98px) {
+  .accueil .section_02 .carousel-slider .control-slider button {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+  }
 }
 
 .accueil .section_02 .carousel-slider .control-slider button:hover {
@@ -1060,6 +1243,12 @@ footer ul li p a:hover {
   }
 }
 
+@media (max-width: 575.98px) {
+  .accueil .section_02 .carousel-slider .control-slider #slider {
+    padding: 2% 0;
+  }
+}
+
 .accueil .section_02 .carousel-slider .control-slider #slider .slider-elements img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1071,7 +1260,7 @@ footer ul li p a:hover {
   border-radius: 30px;
 }
 
-.accueil .section_02 .carousel-slider .control-slider .fade {
+.accueil .section_02 .carousel-slider .control-slider #slider .fade {
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -1099,6 +1288,12 @@ footer ul li p a:hover {
 .accueil .section_02 .carousel-slider .indicators {
   text-align: center;
   padding: 2.5% 0;
+}
+
+@media (max-width: 575.98px) {
+  .accueil .section_02 .carousel-slider .indicators {
+    display: none;
+  }
 }
 
 .accueil .section_02 .carousel-slider .indicators .dot {
@@ -1315,7 +1510,7 @@ footer ul li p a:hover {
   cursor: context-menu;
 }
 
-.accueil .section_03 .company-banner .banner {
+.accueil .section_03 .company-banner #banner-slider .banner-elements .banner {
   width: 100%;
   margin: auto;
   padding: 1% 0%;
@@ -1335,7 +1530,7 @@ footer ul li p a:hover {
   border: 1px solid black;
 }
 
-.accueil .section_03 .company-banner .banner li {
+.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1348,38 +1543,68 @@ footer ul li p a:hover {
           flex: 1 1 140px;
 }
 
-.accueil .section_03 .company-banner .banner li a .img_01 {
+.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_01 {
   width: 140px;
   height: 39px;
 }
 
-.accueil .section_03 .company-banner .banner li a .img_02 {
+.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_02 {
   width: 80px;
   height: 40px;
 }
 
-.accueil .section_03 .company-banner .banner li a .img_03 {
+.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_03 {
   width: 94px;
   height: 40px;
 }
 
-.accueil .section_03 .company-banner .banner li a .img_04 {
+.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_04 {
   width: 140px;
   height: 31px;
 }
 
-.accueil .section_03 .company-banner .banner li a .img_05 {
+.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_05 {
   width: 68px;
   height: 40px;
 }
 
-.accueil .section_03 .company-banner .banner li a .img_06 {
+.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_06 {
   width: 40px;
   height: 40px;
 }
 
-.accueil .section_03 .company-banner .banner li a .img_07 {
+.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_07 {
   width: 85px;
   height: 40px;
+}
+
+.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_08 {
+  width: 34px;
+  height: 40px;
+}
+
+.accueil .section_03 .company-banner #banner-slider .banner-fade {
+  -webkit-animation-name: banner-fade;
+          animation-name: banner-fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes banner-fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes banner-fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

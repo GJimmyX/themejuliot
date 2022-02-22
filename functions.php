@@ -58,9 +58,14 @@ function enqueue_style() {
   wp_deregister_script('jquery');
   wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', false, '', true);
   wp_enqueue_script('jquery');
-  wp_enqueue_script('sliderjs', get_template_directory_uri() . '/js/slider.js', false, '', true);
+  if (is_page('accueil') ) :
+    wp_enqueue_script('sliderjs', get_template_directory_uri() . '/js/slider.js', false, '', true);
+    wp_enqueue_script('bannersliderjs', get_template_directory_uri() . '/js/banner-slider.js', false, '', true);
+  endif;
   wp_enqueue_script('navjs', get_template_directory_uri() . '/js/navigation.js', false, '', true);
-  wp_enqueue_script('adminjs', get_template_directory_uri() . '/js/admin-log.js', false, '', true);
+  if (!is_user_logged_in() ) :
+    wp_enqueue_script('adminjs', get_template_directory_uri() . '/js/admin-log.js', false, '', true);
+  endif;
 };
 
 add_action('wp_enqueue_scripts', 'enqueue_style');
@@ -93,7 +98,7 @@ function cpt_juliot() {
   $labels = array(
     'name' => 'Bloc',
     'new_product_name' => 'Nouveau Bloc',
-    'parent_item' => 'Bloc Type',
+    'parent_item' => 'Type de bloc',
   );
 
   $args = array(
@@ -108,6 +113,54 @@ function cpt_juliot() {
 }
 
 add_action('init', 'cpt_juliot', false); // Init de la fonction cpt_juliot
+
+/* Ajouter la personnalisation du login form */
+
+function my_login() { ?>
+  <style>
+    body #login{
+      width: 375px;
+    }
+    #login h1 a{
+      background-image: url(<?php echo get_template_directory_uri(); ?>/img/siteLogo.png);
+      height: 80px;
+      width: 375px;
+      background-size: 375px 80px;
+      background-repeat: no-repeat;
+    }
+    #login form p #user_login:focus, #login form .user-pass-wrap .wp-pwd #user_pass:focus, #login form p #rememberme:focus, #login form .user-pass-wrap .wp-pwd button span:focus{
+      border: 1px solid #202F86;
+    }
+    #login form .user-pass-wrap .wp-pwd button span{
+      color: #202F86;
+    }
+    #login form .user-pass-wrap .wp-pwd button.wp-hide-pw:focus{
+      border-color: #202F86;
+      box-shadow: none;
+    }
+    #login form .submit #wp-submit{
+      background-color: #202F86;
+      border: 1px solid #202F86;
+    }
+    #login #nav{
+      text-align: center;
+    }
+    #login #backtoblog{
+      text-align: center;
+    }
+    #login #nav a:hover, #login #backtoblog a:hover{
+      color: #202F86;
+    }
+    #login #nav a:focus, #login #backtoblog a:focus{
+      transition-property: none;
+    }
+      .language-switcher{
+      display: none;
+    }
+  </style>
+<?php }
+
+add_action( 'login_enqueue_scripts', 'my_login' );
 
 /* Ajouter le support Widget pour le footer */
 

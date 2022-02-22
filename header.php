@@ -31,20 +31,12 @@
                     ?>
                 </nav>
                 <div class="admin-in">
-                    <button id="adminBtn"><i class="fas fa-user"></i><p>Administrateur</p></button>
                     <?php if (is_user_logged_in()) : ?>
-                        <a href="<?php echo wp_logout_url('index.php'); ?>">
+                        <a href="<?php echo wp_logout_url( get_permalink( get_the_ID()) ); ?>">
                             <button>
                                 Déconnexion
                             </button>
                         </a>
-                    <?php endif; ?>
-                    <?php if (!is_user_logged_in()) : ?>
-                        <div id="admin-log" class="admin">
-                            <form action="wp-login.php" method="post">
-                                <?php wp_login_form(); ?>
-                            </form>
-                        </div>
                     <?php endif; ?>
                 </div>
             </div>
