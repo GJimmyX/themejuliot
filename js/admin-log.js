@@ -1,4 +1,4 @@
-/* JS pour la barre de recherche */
+/* JS pour la section admin */
 
 ( function() {
     var button = document.getElementById( 'adminBtn' );
