@@ -3,12 +3,26 @@
 var slideIndex = 0;
 showSlides(slideIndex);
 
+var interval;
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  clearInterval(
+    interval
+  );
+  interval = setInterval(function() {
+    showSlides(slideIndex += 1);
+  }, 3000);
 }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+  clearInterval(
+    interval
+  );
+  interval = setInterval(function() {
+    showSlides(slideIndex += 1);
+  }, 3000);
 }
 
 function showSlides(n) {
@@ -24,6 +38,23 @@ function showSlides(n) {
   dots[slideIndex].classList.add("active");
 }
 
-setInterval(function() {
-  showSlides(slideIndex += 1);
-}, 3000);
+function startSlide() {
+  interval = setInterval(function() {
+    showSlides(slideIndex += 1);
+  }, 3000);
+}
+
+function stopSlide() {
+  clearInterval(
+    interval
+  );
+}
+
+$(function() {
+  startSlide();
+  $('.slider-elements IMG').hover(function() {
+    stopSlide();
+  }, function() {
+    startSlide();
+  })
+});
