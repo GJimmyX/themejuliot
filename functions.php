@@ -60,9 +60,12 @@ function enqueue_style() {
   wp_enqueue_script('jquery');
   if (is_page('accueil') ) :
     wp_enqueue_script('sliderjs', get_template_directory_uri() . '/js/slider.js', false, '', true);
+    wp_enqueue_script('bannersliderjs', get_template_directory_uri() . '/js/banner-slider.js', false, '', true);
   endif;
   wp_enqueue_script('navjs', get_template_directory_uri() . '/js/navigation.js', false, '', true);
-  wp_enqueue_script('adminjs', get_template_directory_uri() . '/js/admin-log.js', false, '', true);
+  if (!is_user_logged_in() ) :
+    wp_enqueue_script('adminjs', get_template_directory_uri() . '/js/admin-log.js', false, '', true);
+  endif;
 };
 
 add_action('wp_enqueue_scripts', 'enqueue_style');
@@ -95,7 +98,7 @@ function cpt_juliot() {
   $labels = array(
     'name' => 'Bloc',
     'new_product_name' => 'Nouveau Bloc',
-    'parent_item' => 'Bloc Type',
+    'parent_item' => 'Type de bloc',
   );
 
   $args = array(

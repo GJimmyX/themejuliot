@@ -94,29 +94,46 @@
         </div>
         <div class="company-banner">
             <p id="text-banner">Ils nous font confiance :</p>
-            <ul class="banner">
-                <li>
-                    <a href="https://www.piveteaubois.com/fr/" target="_blank" title="Piveteau Bois"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/piveteau_bois_logo.png' ?>" alt="Piveteau Bois" class="img_01"></a>
-                </li>
-                <li>
-                    <a href="https://www.stef.com/" target="_blank" title="Transports STEF"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/stef_logo.png' ?>" alt="Transports STEF" class="img_02"></a>
-                </li>
-                <li>
-                    <a href="https://www.edycem.fr/" target="_blank" title="Édycem Béton"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/edycem_logo.png' ?>" alt="Édycem Béton" class="img_03"></a>
-                </li>
-                <li>
-                    <a href="https://www.materiaux.eiffageroute.com/carrieres-mousset" target="_blank" title="Carrières Mousset"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_mousset_carrieres.png' ?>" alt="Carrières Mousset" class="img_04"></a>
-                </li>
-                <li>
-                    <a href="https://www.kmoreau.fr/" target="_blank" title="Carrières Kleber Moreau"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/kleber_moreau_logo.png' ?>" alt="Carrières Kleber Moreau" class="img_05"></a>
-                </li>
-                <li>
-                    <a href="https://www.essartsenbocage.fr/" target="_blank" title="Commune d'Essarts en Bocage"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/essarts_en_bocage_logo01.png' ?>" alt="Commune d'Essarts en Bocage" class="img_06"></a>
-                </li>
-                <li>
-                    <a href="http://agersystemes.fr/" target="_blank" title="AGER Systèmes"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_agersystemes.png' ?>" alt="AGER Systèmes" class="img_07"></a>
-                </li>
-            </ul>
+            <div id="banner-slider">
+                <div class="banner-elements banner-fade">
+                    <ul class="banner">
+                        <li>
+                            <a href="https://www.piveteaubois.com/fr/" target="_blank" title="Piveteau Bois"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/piveteau_bois_logo.png' ?>" alt="Piveteau Bois" class="img_01"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.stef.com/" target="_blank" title="Transports STEF"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/stef_logo.png' ?>" alt="Transports STEF" class="img_02"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.edycem.fr/" target="_blank" title="Édycem Béton"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/edycem_logo.png' ?>" alt="Édycem Béton" class="img_03"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.materiaux.eiffageroute.com/carrieres-mousset" target="_blank" title="Carrières Mousset"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_mousset_carrieres.png' ?>" alt="Carrières Mousset" class="img_04"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.kmoreau.fr/" target="_blank" title="Carrières Kleber Moreau"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/kleber_moreau_logo.png' ?>" alt="Carrières Kleber Moreau" class="img_05"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.essartsenbocage.fr/" target="_blank" title="Commune d'Essarts en Bocage"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/essarts_en_bocage_logo01.png' ?>" alt="Commune d'Essarts en Bocage" class="img_06"></a>
+                        </li>
+                        <li>
+                            <a href="http://agersystemes.fr/" target="_blank" title="AGER Systèmes"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_agersystemes.png' ?>" alt="AGER Systèmes" class="img_07"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner-elements banner-fade">
+                    <ul class="banner">
+                        <li>
+                            <a href="https://www.alphacan.com/fr/" target="_blank" title="Alphacan"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/alphacan_logo.png' ?>" alt="Alphacan" class="img_06"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.soulaines-sur-aubance.fr/" target="_blank" title="Soulaines Sur Aubance"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/Soulaines_sur_Aubance_logo.png' ?>" alt="Soulaines Sur Aubance" class="img_08"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.remouille.fr/" target="_blank" title="Remouillé"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/remouille_logo.png' ?>" alt="Remouillé" class="img_08"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </main>

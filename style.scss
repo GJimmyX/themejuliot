@@ -10,6 +10,10 @@
 
 @import 'scss/header';
 
+/* Importation du CSS 'Inscription' */
+
+@import 'scss/inscription';
+
 /* Importation du CSS 'Mentions légales' */
 
 @import 'scss/mentionslegales';
@@ -202,14 +206,14 @@
                             border-radius: 30px;
                         }
                     }
-                }
-                .fade {
-                animation-name: fade;
-                animation-duration: 1.5s;
-                }
-                @keyframes fade {
-                    from {opacity: .4} 
-                    to {opacity: 1}
+                    .fade {
+                        animation-name: fade;
+                        animation-duration: 1.5s;
+                    }
+                    @keyframes fade {
+                        from {opacity: .4} 
+                        to {opacity: 1}
+                    }
                 }
             }
             .indicators{
@@ -358,52 +362,68 @@
                 margin-bottom: 0;
                 cursor: context-menu;
             }
-            .banner{
-                width: 100%;
-                margin: auto;
-                padding: 1% 0%;
-                display: flex;
-                flex-wrap: wrap;
-                box-sizing: border-box;
-                gap: 1%;
-                justify-content: space-around;
-                align-items: center;
-                border: 1px solid black;
-                li{
-                    list-style: none;
-                    display: flex;
-                    justify-content: center;
-                    flex: 1 1 140px;
-                    a{
-                        .img_01{
-                            width: 140px;
-                            height: 39px;
-                        }
-                        .img_02{
-                            width: 80px;
-                            height: 40px;
-                        }
-                        .img_03{
-                            width: 94px;
-                            height: 40px;
-                        }
-                        .img_04{
-                            width: 140px;
-                            height: 31px;
-                        }
-                        .img_05{
-                            width: 68px;
-                            height: 40px;
-                        }
-                        .img_06{
-                            width: 40px;
-                            height: 40px;
-                        }
-                        .img_07{
-                            width: 85px;
-                            height: 40px;
+            #banner-slider{
+                .banner-elements{
+                    .banner{
+                        width: 100%;
+                        margin: auto;
+                        padding: 1% 0%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        box-sizing: border-box;
+                        gap: 1%;
+                        justify-content: space-around;
+                        align-items: center;
+                        border: 1px solid black;
+                        li{
+                            list-style: none;
+                            display: flex;
+                            justify-content: center;
+                            flex: 1 1 140px;
+                            a{
+                                .img_01{
+                                    width: 140px;
+                                    height: 39px;
+                                }
+                                .img_02{
+                                    width: 80px;
+                                    height: 40px;
+                                }
+                                .img_03{
+                                    width: 94px;
+                                    height: 40px;
+                                }
+                                .img_04{
+                                    width: 140px;
+                                    height: 31px;
+                                }
+                                .img_05{
+                                    width: 68px;
+                                    height: 40px;
+                                }
+                                .img_06{
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                                .img_07{
+                                    width: 85px;
+                                    height: 40px;
+                                }
+                                .img_08{
+                                    width: 34px;
+                                    height: 40px;
+                                }
+                            }
                         }
                     }
+                }
+                .banner-fade {
+                    animation-name: banner-fade;
+                    animation-duration: 1.5s;
+                }
+                @keyframes banner-fade {
+                    from {opacity: .4} 
+                    to {opacity: 1}
                 }
             }
         }
