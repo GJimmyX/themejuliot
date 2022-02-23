@@ -2,13 +2,46 @@
 
 .automatisme{
     .contenu-automatisme{
+        padding: 2% 10%;
+        font-family: 'Open Sans', sans-serif;
         .automatisme-card{
-            padding: 2% 0;
-            img{
-                display: flex;
-                margin: auto;
+
+            /* Image de la page 'Automatisme' */
+
+            #automatisme-image{
                 width: 20%;
-                height: auto;
+                margin: auto;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            /* Contenu texte de la page 'Automatisme' */
+            
+            #automatisme-contenu{
+                width: 80%;
+                margin: auto;
+                @media (max-width: 767.98px){
+                    width: 100%;
+                }
+                h2{
+                    text-align: center;
+                    font-size: 2em;
+                }
+                .automatisme-texte{
+                    font-size: 1.25em;
+                    text-align: justify;
+                }
+                h3{
+                    padding: 2% 0;
+                    font-size: 1.25em;
+                    text-align: center;
+                    font-weight: 500;
+                    @media (max-width: 575.98px){
+                        font-size: 1em;
+                    }
+                }
             }
         }
     }
