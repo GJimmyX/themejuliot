@@ -54,7 +54,7 @@ add_filter( 'intermediate_image_sizes', 'remove_default_img_sizes' );
 function enqueue_style() {
   wp_enqueue_style( 'style', get_stylesheet_uri());
   wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-  wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+  wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
   wp_deregister_script('jquery');
   wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', false, '', true);
   wp_enqueue_script('jquery');
@@ -88,7 +88,7 @@ function cpt_juliot() {
     'public' => true,
     'show_in_rest' => true,
     'has_archive' => true,
-    'supports' => array( 'title', 'thumbnail', 'custom-fields' ),
+    'supports' => array( 'title', 'thumbnail', 'custom-fields', 'meta' ),
     'menu_position' => 10,
     'menu_icon' => 'dashicons-menu',
   );

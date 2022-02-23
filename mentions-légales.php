@@ -32,7 +32,7 @@
             </div>
             <div class="content-editeur">
                 <h3>1.2 Éditeur (ci-après « l’éditeur ») :</h3>
-                <p>Juliot Électricité, au capital de 50 000€, dont le siège social est situé au Parc d'Activités La Mongie, 85140 ESSARTS EN BOCAGE immatriculée au RCS de la Roche-sur-Yon, 432 090 330.
+                <p>Juliot Électricité SARL, au capital de 50 000€, dont le siège social est situé au Parc d'Activités La Mongie, 85140 ESSARTS EN BOCAGE immatriculée au RCS de la Roche-sur-Yon sous le numéro 340 248 566. Le numéro de TVA Intracommunautaire est le : FR63340248566.
                     <br/>N° de téléphone : <a href="tel:+0251094000">02 51 09 40 00</a>.
                     <br/>Adresse email : 
                     <a href="mailto:contact@juliot.fr" target="_blank">contact@juliot.fr</a>. 
@@ -45,7 +45,7 @@
             </div>
             <div class="content-concepteur">
                 <h3>1.4 Concepteur (ci-après « le concepteur ») :</h3>
-                <p>-</p>
+                <p>Mr GILBERT Jimmy, Développeur Web au sein de la société Juliot Électricité SARL.</p>
             </div>
         </div>
     </div>

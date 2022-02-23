@@ -708,16 +708,110 @@ footer .login .toggle-admin form .login-submit input:hover {
 /* Importation du CSS 'Single' */
 /* CSS de la page 'single-navigation'*/
 .article-navigation {
-  padding: 2% 0;
+  padding: 2% 10%;
+  font-family: 'Open Sans', sans-serif;
+  /* Image de la page 'single-navigation' */
+  /* Contenu texte de la page 'single-navigation' */
 }
 
-.article-navigation img {
+.article-navigation #article-image {
+  width: 20%;
+  margin: auto;
+}
+
+@media (max-width: 991.98px) {
+  .article-navigation #article-image {
+    width: 60%;
+    padding: 5% 0;
+  }
+}
+
+.article-navigation #article-image img {
+  width: 100%;
+  height: auto;
+}
+
+.article-navigation #article-contenu {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 767.98px) {
+  .article-navigation #article-contenu {
+    width: 100%;
+  }
+}
+
+.article-navigation #article-contenu h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.article-navigation #article-contenu .article-texte {
+  font-size: 1.25em;
+  text-align: justify;
+  padding: 2% 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 575.98px) {
+  .article-navigation #article-contenu .article-texte {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+.article-navigation #article-contenu #courants-forts, .article-navigation #article-contenu #courants-faibles {
+  font-size: 1.25em;
+  text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  width: 20%;
-  height: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+@media (max-width: 575.98px) {
+  .article-navigation #article-contenu #courants-forts, .article-navigation #article-contenu #courants-faibles {
+    font-size: 1em;
+  }
+}
+
+.article-navigation #article-contenu #courants-forts i, .article-navigation #article-contenu #courants-faibles i {
+  font-size: 1.25em;
+  color: #202F86;
+}
+
+@media (max-width: 575.98px) {
+  .article-navigation #article-contenu #courants-forts i, .article-navigation #article-contenu #courants-faibles i {
+    font-size: 1em;
+  }
+}
+
+.article-navigation #article-contenu #courants-forts .courants-texte, .article-navigation #article-contenu #courants-faibles .courants-texte {
+  margin-top: 0;
+}
+
+.article-navigation #article-contenu #courants-forts i {
+  margin: 0 2%;
+}
+
+.article-navigation #article-contenu #courants-faibles i {
+  margin: 0 2% 0 0;
+}
+
+.article-navigation #article-contenu h3 {
+  padding: 2% 0;
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+  .article-navigation #article-contenu h3 {
+    font-size: 1em;
+  }
 }
 
 .article img {
@@ -868,31 +962,113 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 /* CSS de la page 'Automatisme' */
-.automatisme .contenu-automatisme .automatisme-card {
-  padding: 2% 0;
+.automatisme .contenu-automatisme {
+  padding: 2% 10%;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.automatisme .contenu-automatisme .automatisme-card img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
+.automatisme .contenu-automatisme .automatisme-card {
+  /* Image de la page 'Automatisme' */
+  /* Contenu texte de la page 'Automatisme' */
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-image {
   width: 20%;
+  margin: auto;
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-image img {
+  width: 100%;
   height: auto;
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 767.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu {
+    width: 100%;
+  }
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .automatisme-texte {
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu h3 {
+  padding: 2% 0;
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu h3 {
+    font-size: 1em;
+  }
 }
 
 /* CSS de la page 'Informatique Industrielle' */
-.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card {
-  padding: 2% 0;
+.informatique-industrielle .contenu-informatique-industrielle {
+  padding: 2% 10%;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card {
+  /* Image de la page 'Informatique Industrielle' */
+  /* Contenu texte de la page 'Informatique Industrielle' */
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
   width: 20%;
+  margin: auto;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image img {
+  width: 100%;
   height: auto;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 767.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu {
+    width: 100%;
+  }
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .informatique-industrielle-texte {
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h3 {
+  padding: 2% 0;
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h3 {
+    font-size: 1em;
+  }
 }
 
 /* CSS de la page 'Contact' */

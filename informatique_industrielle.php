@@ -33,12 +33,19 @@
     ?>
 
             <div class="informatique-industrielle-card">
-                <?php 
-                    $image = get_field( 'image' );
-                    if ( $image ) ?>
-                        <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
-                    <?php
-                ?>
+                <div id="informatique-industrielle-image">
+                    <?php 
+                        $image = get_field( 'image' );
+                        if ( $image ) ?>
+                            <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
+                        <?php
+                    ?>
+                </div>
+                <div id="informatique-industrielle-contenu">
+                    <h2><?php the_field( 'title' ); ?></h2>
+
+                    <?php the_field( 'description' ) ?>
+                </div>
             </div>
 
         <?php endwhile; endif; ?>
