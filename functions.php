@@ -4,17 +4,13 @@
 
 add_theme_support('customize-selective-refresh-widgets');
 
-/* Afficher la gestion de menus */
+/* Ajouter un logo */
 
-register_nav_menu( 'Primary', __( 'Menu de Navigation' ));
+add_theme_support( 'custom-logo' );
 
 /* Ajouter un background */
 
 add_theme_support( 'custom-background' );
-
-/* Ajouter un logo */
-
-add_theme_support( 'custom-logo' );
 
 /* Ajouter le support des thmbnails (miniatures) */
 
@@ -49,6 +45,12 @@ function remove_default_img_sizes( $sizes ) {
 
 add_filter( 'intermediate_image_sizes', 'remove_default_img_sizes' );
 
+/* Afficher la gestion de menus */
+
+register_nav_menu( 'Primary', __( 'Menu de Navigation' ));
+
+register_nav_menu( 'Secondary', __('Naviagtion Annexe' ));
+
 /* Ajouter le support du CSS, des polices d'écriture, de Font Awesome et du JS/JQuery */
 
 function enqueue_style() {
@@ -69,50 +71,6 @@ function enqueue_style() {
 };
 
 add_action('wp_enqueue_scripts', 'enqueue_style');
-
-/* Ajouter un Custom Post pour la catégorie de navigation */
-
-function cpt_juliot() {
-
-  $labels = array(
-    'name' => 'Navigation',
-    'all_items' => 'Blocs de navigation', // Sous-menu
-    'singular_name' => 'Bloc de navigation',
-    'add_item' => 'Ajouter un bloc de navigation',
-    'edit_item' => 'Éditer un bloc de navigation',
-    'menu_name' => 'Navigation',
-  );
-
-  $args = array(
-    'labels' => $labels,
-    'public' => true,
-    'show_in_rest' => true,
-    'has_archive' => true,
-    'supports' => array( 'title', 'thumbnail', 'custom-fields', 'meta' ),
-    'menu_position' => 10,
-    'menu_icon' => 'dashicons-menu',
-  );
-
-  register_post_type( 'Navigation', $args );
-
-  $labels = array(
-    'name' => 'Bloc',
-    'new_product_name' => 'Nouveau Bloc',
-    'parent_item' => 'Type de bloc',
-  );
-
-  $args = array(
-    'labels' =>$labels,
-    'public' => true,
-    'show_in_rest' => true,
-    'hierarchical' => true,
-  );
-
-  register_taxonomy( 'nav-accueil', 'navigation', $args );
-
-}
-
-add_action('init', 'cpt_juliot', false); // Init de la fonction cpt_juliot
 
 /* Ajouter la personnalisation du login form */
 
