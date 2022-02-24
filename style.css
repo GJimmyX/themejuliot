@@ -1078,11 +1078,16 @@ footer .login .toggle-admin form .login-submit input:hover {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-image: url(img/img_accueil.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 @media (max-width: 1365.98px) {
   .contact {
     width: 80%;
+    background-image: none;
   }
 }
 
@@ -1108,23 +1113,47 @@ footer .login .toggle-admin form .login-submit input:hover {
   text-align: center;
 }
 
-.contact .formulaire .wpcf7 form p {
-  font-weight: 400;
-  font-size: 1.5em;
-  text-align: center;
+.contact .formulaire .wpcf7 form .infos-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 1365.98px) {
+  .contact .formulaire .wpcf7 form .infos-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet {
+  padding: 2% 0;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet label {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  width: 75%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 1%;
+  background-color: #202F86;
 }
 
-.contact .formulaire .wpcf7 form p label span {
+.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1137,30 +1166,95 @@ footer .login .toggle-admin form .login-submit input:hover {
           align-items: center;
 }
 
-.contact .formulaire .wpcf7 form p label span input {
+.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span input {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid black;
+  font-size: 1.5em;
+  border-radius: 20px;
+  width: 90%;
 }
 
-.contact .formulaire .wpcf7 form p label span textarea {
+.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span .wpcf7-not-valid-tip {
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 1%;
+  background-color: #e9e8e9;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message label {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  width: 75%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1%;
+  background-color: #202F86;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message span textarea {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid black;
+  font-size: 1.5em;
+  width: 90%;
 }
 
-.contact .formulaire .wpcf7 form p label .wpcf7-spinner {
+.contact .formulaire .wpcf7 form .bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 0;
+}
+
+.contact .formulaire .wpcf7 form .bouton input {
+  padding: 2% 5%;
+  border: 1px solid;
+  border-radius: 20px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.contact .formulaire .wpcf7 form .bouton input:hover {
+  -webkit-box-shadow: 0px 2px 3px 2px #202F86;
+          box-shadow: 0px 2px 3px 2px #202F86;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.contact .formulaire .wpcf7 form .bouton .wpcf7-spinner {
   display: none;
 }
 
-.contact .formulaire .wpcf7 form p .bouton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.contact .formulaire .wpcf7 form .wpcf7-response-output {
+  border-color: #202F86;
+  font-size: 1em;
+  font-weight: 700;
 }
 
 /* CSS du fichier 'Index' */

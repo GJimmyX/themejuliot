@@ -17,7 +17,7 @@
                 'post_type' => 'Navigation',
                 'tax_query' => array(
                     array(
-                        'taxonomy' => 'nav-accueil',
+                        'taxonomy' => 'bloc',
                         'field'    => 'name',
                         'terms'    => 'informatique-industrielle',
                     ),
