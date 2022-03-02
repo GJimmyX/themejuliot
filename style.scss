@@ -29,7 +29,6 @@
 /* Importation du CSS 'Single' */
 
 @import 'scss/singlenavigation';
-@import 'scss/single';
 
 /* Importation du CSS des diffférentes pages du site */
 
@@ -66,7 +65,7 @@
         box-sizing: border-box;
         justify-content: space-around;
         gap: 2.5%;
-        .nav-card{
+        .menuPosts-card{
             margin: 2%;
             display: flex;
             flex-direction: column;
@@ -295,6 +294,39 @@
         }
     }
     .section_03{
+        width: 90%;
+        margin: auto;
+        font-family: 'Open Sans', sans-serif;
+        .latestPost-card{
+            a{
+                text-decoration: none;
+                h2{
+                    font-size: 2em;
+                    text-align: center;
+                    color: #202F86;
+                }
+            }
+        }
+        .renvoi-actu{
+            background: #202F86;
+            color: white;
+            display: flex;
+            justify-content: center;
+            width: 20%;
+            margin: auto;
+            padding: 1%;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.25em;
+            transition: .3s ease;
+            &:hover{
+                background: white;
+                color: #202F86;
+                transition: .3s ease;
+            }
+        }
+    }
+    .section_04{
         width: 55%;
         margin: auto;
         padding-top: 2%;
@@ -380,40 +412,6 @@
                             display: flex;
                             justify-content: center;
                             flex: 1 1 140px;
-                            a{
-                                .img_01{
-                                    width: 140px;
-                                    height: 39px;
-                                }
-                                .img_02{
-                                    width: 80px;
-                                    height: 40px;
-                                }
-                                .img_03{
-                                    width: 94px;
-                                    height: 40px;
-                                }
-                                .img_04{
-                                    width: 140px;
-                                    height: 31px;
-                                }
-                                .img_05{
-                                    width: 68px;
-                                    height: 40px;
-                                }
-                                .img_06{
-                                    width: 40px;
-                                    height: 40px;
-                                }
-                                .img_07{
-                                    width: 85px;
-                                    height: 40px;
-                                }
-                                .img_08{
-                                    width: 34px;
-                                    height: 40px;
-                                }
-                            }
                         }
                     }
                 }

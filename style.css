@@ -193,6 +193,8 @@ body header .nav-container .navbar .nav-menu li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 body header .nav-container .navbar .nav-menu li a:hover {
@@ -201,6 +203,8 @@ body header .nav-container .navbar .nav-menu li a:hover {
   border-radius: 30px;
   -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 @media (max-width: 1365.98px) {
@@ -707,47 +711,47 @@ footer .login .toggle-admin form .login-submit input:hover {
 
 /* Importation du CSS 'Single' */
 /* CSS de la page 'single-navigation'*/
-.article-navigation {
+.navigation-card {
   padding: 2% 10%;
   font-family: 'Open Sans', sans-serif;
   /* Image de la page 'single-navigation' */
   /* Contenu texte de la page 'single-navigation' */
 }
 
-.article-navigation #article-image {
+.navigation-card #navigation-image {
   width: 20%;
   margin: auto;
 }
 
 @media (max-width: 991.98px) {
-  .article-navigation #article-image {
+  .navigation-card #navigation-image {
     width: 60%;
     padding: 5% 0;
   }
 }
 
-.article-navigation #article-image img {
+.navigation-card #navigation-image img {
   width: 100%;
   height: auto;
 }
 
-.article-navigation #article-contenu {
+.navigation-card #navigation-contenu {
   width: 80%;
   margin: auto;
 }
 
 @media (max-width: 767.98px) {
-  .article-navigation #article-contenu {
+  .navigation-card #navigation-contenu {
     width: 100%;
   }
 }
 
-.article-navigation #article-contenu h2 {
+.navigation-card #navigation-contenu h2 {
   font-size: 2em;
   text-align: center;
 }
 
-.article-navigation #article-contenu .article-texte {
+.navigation-card #navigation-contenu .navigation-texte {
   font-size: 1.25em;
   text-align: justify;
   padding: 2% 0;
@@ -755,13 +759,13 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 @media (max-width: 575.98px) {
-  .article-navigation #article-contenu .article-texte {
+  .navigation-card #navigation-contenu .navigation-texte {
     font-size: 1em;
     text-align: center;
   }
 }
 
-.article-navigation #article-contenu #courants-forts, .article-navigation #article-contenu #courants-faibles {
+.navigation-card #navigation-contenu #courants-forts, .navigation-card #navigation-contenu #courants-faibles {
   font-size: 1.25em;
   text-align: justify;
   display: -webkit-box;
@@ -773,35 +777,35 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 @media (max-width: 575.98px) {
-  .article-navigation #article-contenu #courants-forts, .article-navigation #article-contenu #courants-faibles {
+  .navigation-card #navigation-contenu #courants-forts, .navigation-card #navigation-contenu #courants-faibles {
     font-size: 1em;
   }
 }
 
-.article-navigation #article-contenu #courants-forts i, .article-navigation #article-contenu #courants-faibles i {
+.navigation-card #navigation-contenu #courants-forts i, .navigation-card #navigation-contenu #courants-faibles i {
   font-size: 1.25em;
   color: #202F86;
 }
 
 @media (max-width: 575.98px) {
-  .article-navigation #article-contenu #courants-forts i, .article-navigation #article-contenu #courants-faibles i {
+  .navigation-card #navigation-contenu #courants-forts i, .navigation-card #navigation-contenu #courants-faibles i {
     font-size: 1em;
   }
 }
 
-.article-navigation #article-contenu #courants-forts .courants-texte, .article-navigation #article-contenu #courants-faibles .courants-texte {
+.navigation-card #navigation-contenu #courants-forts .courants-texte, .navigation-card #navigation-contenu #courants-faibles .courants-texte {
   margin-top: 0;
 }
 
-.article-navigation #article-contenu #courants-forts i {
+.navigation-card #navigation-contenu #courants-forts i {
   margin: 0 2%;
 }
 
-.article-navigation #article-contenu #courants-faibles i {
+.navigation-card #navigation-contenu #courants-faibles i {
   margin: 0 2% 0 0;
 }
 
-.article-navigation #article-contenu h3 {
+.navigation-card #navigation-contenu h3 {
   padding: 2% 0;
   font-size: 1.25em;
   text-align: center;
@@ -809,64 +813,9 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 @media (max-width: 575.98px) {
-  .article-navigation #article-contenu h3 {
+  .navigation-card #navigation-contenu h3 {
     font-size: 1em;
   }
-}
-
-.article img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 40%;
-  height: auto;
-  margin: auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-.article a {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5em;
-  font-weight: 400;
-  color: #202f86;
-  text-decoration: none;
-  width: 100%;
-  margin-left: 5%;
-}
-
-.article a:visited {
-  color: #202f86;
-}
-
-.article a:hover {
-  color: #202f86;
-}
-
-.article h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5em;
-  font-weight: 400;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-.article .text {
-  padding-bottom: 2%;
-}
-
-.article .text p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
-  width: 60%;
-  margin: auto;
 }
 
 /* Importation du CSS des diffférentes pages du site */
@@ -1298,7 +1247,7 @@ footer .login .toggle-admin form .login-submit input:hover {
   gap: 2.5%;
 }
 
-.accueil .section_01 .nav-card {
+.accueil .section_01 .menuPosts-card {
   margin: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1315,18 +1264,18 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 @media (max-width: 1365.98px) {
-  .accueil .section_01 .nav-card {
+  .accueil .section_01 .menuPosts-card {
     margin: 2% 0;
   }
 }
 
-.accueil .section_01 .nav-card img {
+.accueil .section_01 .menuPosts-card img {
   width: 100%;
   height: 360px;
   border-radius: 30px;
 }
 
-.accueil .section_01 .nav-card .hover {
+.accueil .section_01 .menuPosts-card .hover {
   -webkit-transition: .8s ease;
   transition: .8s ease;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1346,7 +1295,7 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 @media (max-width: 1365.98px) {
-  .accueil .section_01 .nav-card .hover {
+  .accueil .section_01 .menuPosts-card .hover {
     -webkit-transition: none;
     transition: none;
     background-color: transparent;
@@ -1354,7 +1303,7 @@ footer .login .toggle-admin form .login-submit input:hover {
   }
 }
 
-.accueil .section_01 .nav-card .hover a {
+.accueil .section_01 .menuPosts-card .hover a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.5em;
@@ -1367,7 +1316,7 @@ footer .login .toggle-admin form .login-submit input:hover {
   background-color: #e95b23;
 }
 
-.accueil .section_01 .nav-card .hover a p {
+.accueil .section_01 .menuPosts-card .hover a p {
   margin: 0;
   position: relative;
   top: -20px;
@@ -1376,27 +1325,27 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 @media (max-width: 1365.98px) {
-  .accueil .section_01 .nav-card .hover a p {
+  .accueil .section_01 .menuPosts-card .hover a p {
     top: 0;
     -webkit-transition: none;
     transition: none;
   }
 }
 
-.accueil .section_01 .nav-card:hover .hover {
+.accueil .section_01 .menuPosts-card:hover .hover {
   -webkit-transition: .8s ease;
   transition: .8s ease;
   opacity: 1;
 }
 
 @media (max-width: 1365.98px) {
-  .accueil .section_01 .nav-card:hover .hover {
+  .accueil .section_01 .menuPosts-card:hover .hover {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-.accueil .section_01 .nav-card:hover .hover a p {
+.accueil .section_01 .menuPosts-card:hover .hover a p {
   -webkit-transition: .8s ease;
   transition: .8s ease;
   -webkit-transform: translateY(20px);
@@ -1404,7 +1353,7 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 @media (max-width: 1365.98px) {
-  .accueil .section_01 .nav-card:hover .hover a p {
+  .accueil .section_01 .menuPosts-card:hover .hover a p {
     -webkit-transition: none;
     transition: none;
     -webkit-transform: none;
@@ -1677,13 +1626,55 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 .accueil .section_03 {
+  width: 90%;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.accueil .section_03 .latestPost-card a {
+  text-decoration: none;
+}
+
+.accueil .section_03 .latestPost-card a h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #202F86;
+}
+
+.accueil .section_03 .renvoi-actu {
+  background: #202F86;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  margin: auto;
+  padding: 1%;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25em;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.accueil .section_03 .renvoi-actu:hover {
+  background: white;
+  color: #202F86;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.accueil .section_04 {
   width: 55%;
   margin: auto;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
-.accueil .section_03 .contactAccueil {
+.accueil .section_04 .contactAccueil {
   width: 75%;
   margin: auto;
   display: -webkit-box;
@@ -1701,7 +1692,7 @@ footer .login .toggle-admin form .login-submit input:hover {
           justify-content: center;
 }
 
-.accueil .section_03 .contactAccueil .accroche_contact {
+.accueil .section_04 .contactAccueil .accroche_contact {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 472px;
           flex: 1 1 472px;
@@ -1711,22 +1702,22 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 @media (max-width: 991.98px) {
-  .accueil .section_03 .contactAccueil .accroche_contact {
+  .accueil .section_04 .contactAccueil .accroche_contact {
     text-align: center;
   }
 }
 
-.accueil .section_03 .contactAccueil .accroche_contact h2 {
+.accueil .section_04 .contactAccueil .accroche_contact h2 {
   font-weight: 300;
   font-size: 1.5em;
 }
 
-.accueil .section_03 .contactAccueil .accroche_contact p {
+.accueil .section_04 .contactAccueil .accroche_contact p {
   font-weight: 400;
   font-size: 1em;
 }
 
-.accueil .section_03 .contactAccueil .contactBtn {
+.accueil .section_04 .contactAccueil .contactBtn {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 272px;
           flex: 1 1 272px;
@@ -1748,12 +1739,12 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 @media (max-width: 991.98px) {
-  .accueil .section_03 .contactAccueil .contactBtn {
+  .accueil .section_04 .contactAccueil .contactBtn {
     padding: 2.5% 10%;
   }
 }
 
-.accueil .section_03 .contactAccueil .contactBtn:hover {
+.accueil .section_04 .contactAccueil .contactBtn:hover {
   -webkit-box-shadow: 0px 5px 3px 1px black;
           box-shadow: 0px 5px 3px 1px black;
   -webkit-transition: 0.5s ease;
@@ -1761,17 +1752,17 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 @media (max-width: 1365.98px) {
-  .accueil .section_03 .contactAccueil .contactBtn:hover {
+  .accueil .section_04 .contactAccueil .contactBtn:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
 }
 
-.accueil .section_03 .company-banner {
+.accueil .section_04 .company-banner {
   padding-top: 2%;
 }
 
-.accueil .section_03 .company-banner #text-banner {
+.accueil .section_04 .company-banner #text-banner {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.5em;
@@ -1780,7 +1771,7 @@ footer .login .toggle-admin form .login-submit input:hover {
   cursor: context-menu;
 }
 
-.accueil .section_03 .company-banner #banner-slider .banner-elements .banner {
+.accueil .section_04 .company-banner #banner-slider .banner-elements .banner {
   width: 100%;
   margin: auto;
   padding: 1% 0%;
@@ -1800,7 +1791,7 @@ footer .login .toggle-admin form .login-submit input:hover {
   border: 1px solid black;
 }
 
-.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li {
+.accueil .section_04 .company-banner #banner-slider .banner-elements .banner li {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1813,47 +1804,7 @@ footer .login .toggle-admin form .login-submit input:hover {
           flex: 1 1 140px;
 }
 
-.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_01 {
-  width: 140px;
-  height: 39px;
-}
-
-.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_02 {
-  width: 80px;
-  height: 40px;
-}
-
-.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_03 {
-  width: 94px;
-  height: 40px;
-}
-
-.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_04 {
-  width: 140px;
-  height: 31px;
-}
-
-.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_05 {
-  width: 68px;
-  height: 40px;
-}
-
-.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_06 {
-  width: 40px;
-  height: 40px;
-}
-
-.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_07 {
-  width: 85px;
-  height: 40px;
-}
-
-.accueil .section_03 .company-banner #banner-slider .banner-elements .banner li a .img_08 {
-  width: 34px;
-  height: 40px;
-}
-
-.accueil .section_03 .company-banner #banner-slider .banner-fade {
+.accueil .section_04 .company-banner #banner-slider .banner-fade {
   -webkit-animation-name: banner-fade;
           animation-name: banner-fade;
   -webkit-animation-duration: 1.5s;
