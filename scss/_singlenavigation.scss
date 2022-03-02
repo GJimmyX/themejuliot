@@ -1,12 +1,12 @@
 /* CSS de la page 'single-navigation'*/
 
-.article-navigation{
+.navigation-card{
     padding: 2% 10%;
     font-family: 'Open Sans', sans-serif;
 
     /* Image de la page 'single-navigation' */
 
-    #article-image{
+    #navigation-image{
         width: 20%;
         margin: auto;
         @media (max-width: 991.98px){
@@ -21,7 +21,7 @@
 
     /* Contenu texte de la page 'single-navigation' */
 
-    #article-contenu{
+    #navigation-contenu{
         width: 80%;
         margin: auto;
         @media (max-width: 767.98px){
@@ -31,7 +31,7 @@
             font-size: 2em;
             text-align: center;
         }
-        .article-texte{
+        .navigation-texte{
             font-size: 1.25em;
             text-align: justify;
             padding: 2% 0;
