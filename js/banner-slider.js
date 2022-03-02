@@ -18,7 +18,7 @@ function showBannerslide(n) {
 function startBannerslide() {
     bannerInterval = setInterval(function() {
     showBannerslide(bannerSlideIndex += 1);
-  }, 3000);
+  }, 10000);
 }
 
 function stopBannerslide() {
