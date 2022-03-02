@@ -708,16 +708,110 @@ footer .login .toggle-admin form .login-submit input:hover {
 /* Importation du CSS 'Single' */
 /* CSS de la page 'single-navigation'*/
 .article-navigation {
-  padding: 2% 0;
+  padding: 2% 10%;
+  font-family: 'Open Sans', sans-serif;
+  /* Image de la page 'single-navigation' */
+  /* Contenu texte de la page 'single-navigation' */
 }
 
-.article-navigation img {
+.article-navigation #article-image {
+  width: 20%;
+  margin: auto;
+}
+
+@media (max-width: 991.98px) {
+  .article-navigation #article-image {
+    width: 60%;
+    padding: 5% 0;
+  }
+}
+
+.article-navigation #article-image img {
+  width: 100%;
+  height: auto;
+}
+
+.article-navigation #article-contenu {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 767.98px) {
+  .article-navigation #article-contenu {
+    width: 100%;
+  }
+}
+
+.article-navigation #article-contenu h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.article-navigation #article-contenu .article-texte {
+  font-size: 1.25em;
+  text-align: justify;
+  padding: 2% 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 575.98px) {
+  .article-navigation #article-contenu .article-texte {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+.article-navigation #article-contenu #courants-forts, .article-navigation #article-contenu #courants-faibles {
+  font-size: 1.25em;
+  text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  width: 20%;
-  height: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+@media (max-width: 575.98px) {
+  .article-navigation #article-contenu #courants-forts, .article-navigation #article-contenu #courants-faibles {
+    font-size: 1em;
+  }
+}
+
+.article-navigation #article-contenu #courants-forts i, .article-navigation #article-contenu #courants-faibles i {
+  font-size: 1.25em;
+  color: #202F86;
+}
+
+@media (max-width: 575.98px) {
+  .article-navigation #article-contenu #courants-forts i, .article-navigation #article-contenu #courants-faibles i {
+    font-size: 1em;
+  }
+}
+
+.article-navigation #article-contenu #courants-forts .courants-texte, .article-navigation #article-contenu #courants-faibles .courants-texte {
+  margin-top: 0;
+}
+
+.article-navigation #article-contenu #courants-forts i {
+  margin: 0 2%;
+}
+
+.article-navigation #article-contenu #courants-faibles i {
+  margin: 0 2% 0 0;
+}
+
+.article-navigation #article-contenu h3 {
+  padding: 2% 0;
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+  .article-navigation #article-contenu h3 {
+    font-size: 1em;
+  }
 }
 
 .article img {
@@ -868,31 +962,113 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 /* CSS de la page 'Automatisme' */
-.automatisme .contenu-automatisme .automatisme-card {
-  padding: 2% 0;
+.automatisme .contenu-automatisme {
+  padding: 2% 10%;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.automatisme .contenu-automatisme .automatisme-card img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
+.automatisme .contenu-automatisme .automatisme-card {
+  /* Image de la page 'Automatisme' */
+  /* Contenu texte de la page 'Automatisme' */
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-image {
   width: 20%;
+  margin: auto;
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-image img {
+  width: 100%;
   height: auto;
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 767.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu {
+    width: 100%;
+  }
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .automatisme-texte {
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu h3 {
+  padding: 2% 0;
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu h3 {
+    font-size: 1em;
+  }
 }
 
 /* CSS de la page 'Informatique Industrielle' */
-.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card {
-  padding: 2% 0;
+.informatique-industrielle .contenu-informatique-industrielle {
+  padding: 2% 10%;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card {
+  /* Image de la page 'Informatique Industrielle' */
+  /* Contenu texte de la page 'Informatique Industrielle' */
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
   width: 20%;
+  margin: auto;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image img {
+  width: 100%;
   height: auto;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 767.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu {
+    width: 100%;
+  }
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .informatique-industrielle-texte {
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h3 {
+  padding: 2% 0;
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h3 {
+    font-size: 1em;
+  }
 }
 
 /* CSS de la page 'Contact' */
@@ -902,11 +1078,16 @@ footer .login .toggle-admin form .login-submit input:hover {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-image: url(img/img_accueil.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 @media (max-width: 1365.98px) {
   .contact {
     width: 80%;
+    background-image: none;
   }
 }
 
@@ -932,23 +1113,47 @@ footer .login .toggle-admin form .login-submit input:hover {
   text-align: center;
 }
 
-.contact .formulaire .wpcf7 form p {
-  font-weight: 400;
-  font-size: 1.5em;
-  text-align: center;
+.contact .formulaire .wpcf7 form .infos-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 1365.98px) {
+  .contact .formulaire .wpcf7 form .infos-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet {
+  padding: 2% 0;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet label {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  width: 75%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 1%;
+  background-color: #202F86;
 }
 
-.contact .formulaire .wpcf7 form p label span {
+.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,30 +1166,95 @@ footer .login .toggle-admin form .login-submit input:hover {
           align-items: center;
 }
 
-.contact .formulaire .wpcf7 form p label span input {
+.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span input {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid black;
+  font-size: 1.5em;
+  border-radius: 20px;
+  width: 90%;
 }
 
-.contact .formulaire .wpcf7 form p label span textarea {
+.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span .wpcf7-not-valid-tip {
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 1%;
+  background-color: #e9e8e9;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message label {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  width: 75%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1%;
+  background-color: #202F86;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message span textarea {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid black;
+  font-size: 1.5em;
+  width: 90%;
 }
 
-.contact .formulaire .wpcf7 form p label .wpcf7-spinner {
+.contact .formulaire .wpcf7 form .bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 0;
+}
+
+.contact .formulaire .wpcf7 form .bouton input {
+  padding: 2% 5%;
+  border: 1px solid;
+  border-radius: 20px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.contact .formulaire .wpcf7 form .bouton input:hover {
+  -webkit-box-shadow: 0px 2px 3px 2px #202F86;
+          box-shadow: 0px 2px 3px 2px #202F86;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.contact .formulaire .wpcf7 form .bouton .wpcf7-spinner {
   display: none;
 }
 
-.contact .formulaire .wpcf7 form p .bouton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.contact .formulaire .wpcf7 form .wpcf7-response-output {
+  border-color: #202F86;
+  font-size: 1em;
+  font-weight: 700;
 }
 
 /* CSS du fichier 'Index' */
