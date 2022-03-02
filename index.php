@@ -18,18 +18,18 @@
     <div class="section_01">
     
         <?php
-            $recentPosts = new WP_Query();
-            $recentPosts->query(array( 
-                'post_type' => 'Navigation',
+            $menuPosts = new WP_Query();
+            $menuPosts->query(array( 
+                'post_type' => 'navigation',
                 'orderby' => array(
                     'id' => 'ASC',
                 ))
             );            
         ?>
-            <?php while ($recentPosts->have_posts()) : $recentPosts->the_post();
+            <?php while ($menuPosts->have_posts()) : $menuPosts->the_post();
         ?>
 
-            <div class="nav-card">
+            <div class="menuPosts-card">
                 <?php 
                     $image = get_field( 'image' );
                     if ( $image ) ?>
@@ -85,9 +85,31 @@
         </div>
     </div>
 
-    <!-- Section de contact de la page d'accueil -->
+    <!-- Section Articles de la page d'accueil -->
 
     <div class="section_03">
+        <?php
+            $latestPost = new WP_Query();
+            $latestPost->query(array(
+                    'post_type' => 'articles',
+                    'posts_per_page' => 1,
+                )
+            );
+
+            while ($latestPost->have_posts() ) : $latestPost->the_post();
+        ?>
+
+            <div class="latestPost-card">
+                <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+            </div>
+
+        <?php endwhile; ?>
+        <a href="actualites" class="renvoi-actu">Plus d'articles...</a>
+    </div>
+
+    <!-- Section de contact de la page d'accueil -->
+
+    <div class="section_04">
         <div class="contactAccueil">
             <?php echo "<div class='accroche_contact'><h2>Vous souhaitez en savoir plus ?</h2><p><b>N'hésitez pas à nous contacter via notre formulaire !</b></p></div>"; ?>
             <a href="contact" class="contactBtn">Contactez-nous</a>
@@ -98,38 +120,38 @@
                 <div class="banner-elements banner-fade">
                     <ul class="banner">
                         <li>
-                            <a href="https://www.piveteaubois.com/fr/" target="_blank" title="Piveteau Bois"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/piveteau_bois_logo.png' ?>" alt="Piveteau Bois" class="img_01"></a>
+                            <a href="https://www.piveteaubois.com/fr/" target="_blank" title="Piveteau Bois"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/piveteau_bois_logo.png' ?>" alt="Piveteau Bois" style="width: 140px; height: 39px;"></a>
                         </li>
                         <li>
-                            <a href="https://www.stef.com/" target="_blank" title="Transports STEF"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/stef_logo.png' ?>" alt="Transports STEF" class="img_02"></a>
+                            <a href="https://www.stef.com/" target="_blank" title="Transports STEF"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/stef_logo.png' ?>" alt="Transports STEF" style="width: 80px; height: 40px;"></a>
                         </li>
                         <li>
-                            <a href="https://www.edycem.fr/" target="_blank" title="Édycem Béton"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/edycem_logo.png' ?>" alt="Édycem Béton" class="img_03"></a>
+                            <a href="https://www.edycem.fr/" target="_blank" title="Édycem Béton"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/edycem_logo.png' ?>" alt="Édycem Béton" style="width: 94px; height: 40px;"></a>
                         </li>
                         <li>
-                            <a href="https://www.materiaux.eiffageroute.com/carrieres-mousset" target="_blank" title="Carrières Mousset"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_mousset_carrieres.png' ?>" alt="Carrières Mousset" class="img_04"></a>
+                            <a href="https://www.materiaux.eiffageroute.com/carrieres-mousset" target="_blank" title="Carrières Mousset"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_mousset_carrieres.png' ?>" alt="Carrières Mousset" style="width: 140px; height: 31px;"></a>
                         </li>
                         <li>
-                            <a href="https://www.kmoreau.fr/" target="_blank" title="Carrières Kleber Moreau"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/kleber_moreau_logo.png' ?>" alt="Carrières Kleber Moreau" class="img_05"></a>
+                            <a href="https://www.kmoreau.fr/" target="_blank" title="Carrières Kleber Moreau"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/kleber_moreau_logo.png' ?>" alt="Carrières Kleber Moreau" style="width: 68px; height: 40px;"></a>
                         </li>
                         <li>
-                            <a href="https://www.essartsenbocage.fr/" target="_blank" title="Commune d'Essarts en Bocage"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/essarts_en_bocage_logo01.png' ?>" alt="Commune d'Essarts en Bocage" class="img_06"></a>
+                            <a href="https://www.essartsenbocage.fr/" target="_blank" title="Commune d'Essarts en Bocage"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/essarts_en_bocage_logo01.png' ?>" alt="Commune d'Essarts en Bocage" style="width: 40px; height: 40px;"></a>
                         </li>
                         <li>
-                            <a href="http://agersystemes.fr/" target="_blank" title="AGER Systèmes"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_agersystemes.png' ?>" alt="AGER Systèmes" class="img_07"></a>
+                            <a href="http://agersystemes.fr/" target="_blank" title="AGER Systèmes"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_agersystemes.png' ?>" alt="AGER Systèmes" style="width: 85px; height: 40px;"></a>
                         </li>
                     </ul>
                 </div>
                 <div class="banner-elements banner-fade">
                     <ul class="banner">
                         <li>
-                            <a href="https://www.alphacan.com/fr/" target="_blank" title="Alphacan"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/alphacan_logo.png' ?>" alt="Alphacan" class="img_06"></a>
+                            <a href="https://www.alphacan.com/fr/" target="_blank" title="Alphacan"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/alphacan_logo.png' ?>" alt="Alphacan" style="width: 40px; height: 40px;"></a>
                         </li>
                         <li>
-                            <a href="https://www.soulaines-sur-aubance.fr/" target="_blank" title="Soulaines Sur Aubance"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/Soulaines_sur_Aubance_logo.png' ?>" alt="Soulaines Sur Aubance" class="img_08"></a>
+                            <a href="https://www.soulaines-sur-aubance.fr/" target="_blank" title="Soulaines Sur Aubance"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/Soulaines_sur_Aubance_logo.png' ?>" alt="Soulaines Sur Aubance" style="width: 34px; height: 40px;"></a>
                         </li>
                         <li>
-                            <a href="https://www.remouille.fr/" target="_blank" title="Remouillé"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/remouille_logo.png' ?>" alt="Remouillé" class="img_08"></a>
+                            <a href="https://www.remouille.fr/" target="_blank" title="Remouillé"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/remouille_logo.png' ?>" alt="Remouillé" style="width: 36px; height: 40px;"></a>
                         </li>
                     </ul>
                 </div>

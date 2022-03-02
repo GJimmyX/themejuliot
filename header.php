@@ -1,7 +1,15 @@
+<?php
+
+    /* Système de cookie du site Juliot Électricité */
+
+    include_once "cookie.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
-    <!-- Appel de la balise <head>, du content et du responsive-->
+    <!-- Appel de la balise <head>, du content et du responsive -->
 
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
@@ -12,7 +20,13 @@
 
     <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>
-        
+
+        <!-- Trigger du cookie -->
+
+        <?php if(isset($_COOKIE['user_id'])){
+            echo 'Votre Nom de session est : ' .$_COOKIE['user_id'];
+        } ?>
+
         <!-- Structure du <header> -->
 
         <header>

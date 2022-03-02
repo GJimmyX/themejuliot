@@ -49,7 +49,7 @@ add_filter( 'intermediate_image_sizes', 'remove_default_img_sizes' );
 
 register_nav_menu( 'Primary', __( 'Menu de Navigation' ));
 
-register_nav_menu( 'Secondary', __('Naviagtion Annexe' ));
+register_nav_menu( 'Secondary', __('Menu Annexe' ));
 
 /* Ajouter le support du CSS, des polices d'écriture, de Font Awesome et du JS/JQuery */
 
@@ -71,6 +71,26 @@ function enqueue_style() {
 };
 
 add_action('wp_enqueue_scripts', 'enqueue_style');
+
+/* Supprimer le Post Type par défaut de WordPress */
+
+function remove_default_post_type() {
+  remove_menu_page( 'edit.php' );
+}
+
+add_action( 'admin_menu', 'remove_default_post_type' );
+
+function remove_default_post_type_menu_bar( $wp_admin_bar ) {
+  $wp_admin_bar->remove_node( 'new-post' );
+}
+
+add_action( 'admin_bar_menu', 'remove_default_post_type_menu_bar', 999 );
+
+/* Suppression du style in-wordpress */
+
+add_action('after_setup_theme', function () {
+  remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
+}, 10, 0);
 
 /* Ajouter la personnalisation du login form */
 
