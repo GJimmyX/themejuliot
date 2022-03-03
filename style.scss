@@ -10,6 +10,10 @@
 
 @import 'scss/header';
 
+/* Importation du CSS 'Articles' */
+
+@import 'scss/articles';
+
 /* Importation du CSS 'Inscription' */
 
 @import 'scss/inscription';
@@ -29,6 +33,7 @@
 /* Importation du CSS 'Single' */
 
 @import 'scss/singlenavigation';
+@import 'scss/singlearticles';
 
 /* Importation du CSS des diffférentes pages du site */
 
@@ -298,6 +303,12 @@
         margin: auto;
         font-family: 'Open Sans', sans-serif;
         .latestPost-card{
+            img{
+                display: flex;
+                margin: auto;
+                width: 300px;
+                height: auto;
+            }
             a{
                 text-decoration: none;
                 h2{
@@ -313,16 +324,28 @@
             display: flex;
             justify-content: center;
             width: 20%;
+            border-radius: 25px;
             margin: auto;
             padding: 1%;
             text-decoration: none;
             font-weight: 700;
             font-size: 1.25em;
             transition: .3s ease;
+            @media (max-width: 991.98px){
+                width: 80%;
+            }
+            @media (max-width: 1365.98px){
+                background: transparent;
+                color: #202F86;
+                transition: none;
+            }
             &:hover{
-                background: white;
+                background: transparent;
                 color: #202F86;
                 transition: .3s ease;
+                @media (max-width: 1365.98px){
+                    transition: none;
+                }
             }
         }
     }

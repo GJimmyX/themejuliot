@@ -303,6 +303,89 @@ body header .nav-container .admin-in a button:hover {
           box-shadow: 1px 5px 7px #000;
 }
 
+/* Importation du CSS 'Articles' */
+/* CSS de la page 'articles' */
+.actualites {
+  padding: 2% 5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.actualites .actualites-disposition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  margin: auto;
+}
+
+.actualites .actualites-disposition .actualites-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.actualites .actualites-disposition .actualites-card img {
+  width: 300px;
+  height: auto;
+}
+
+.actualites .actualites-disposition .actualites-card a {
+  text-decoration: none;
+}
+
+.actualites .actualites-disposition .actualites-card a .actualites-title {
+  font-size: 2em;
+  color: black;
+}
+
+.actualites .actualites-disposition .actualites-card a .actualites-title:hover {
+  color: #202F86;
+}
+
+.actualites .actualites-pagination {
+  padding: 2% 0;
+}
+
+.actualites .actualites-pagination nav .nav-links {
+  text-align: center;
+}
+
+.actualites .actualites-pagination nav .nav-links .page-numbers {
+  color: white;
+  background-color: #202F86;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 0 1%;
+  padding: 0.25% 0.5%;
+  border-radius: 5px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.actualites .actualites-pagination nav .nav-links .page-numbers:hover {
+  color: #202F86;
+  background-color: transparent;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
 /* Importation du CSS 'Inscription' */
 /* CSS de la page 'Inscription' */
 .inscription {
@@ -816,6 +899,92 @@ footer .login .toggle-admin form .login-submit input:hover {
   .navigation-card #navigation-contenu h3 {
     font-size: 1em;
   }
+}
+
+/* CSS de la page 'single-articles'*/
+.articles {
+  padding: 2% 10%;
+  font-family: 'Open Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.articles .articles-structure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.articles .articles-structure #articles-image {
+  width: 50%;
+}
+
+.articles .articles-structure #articles-image img {
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.articles .articles-structure #articles-contenu {
+  width: 50%;
+}
+
+.articles .articles-structure #articles-contenu .articles-descriptif {
+  padding: 5% 10% 0;
+}
+
+.articles .articles-structure #articles-contenu .articles-descriptif p {
+  text-align: justify;
+}
+
+.articles .articles-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.articles .articles-slider .articles-elements .articles-structure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  margin: auto;
+}
+
+.articles .articles-slider .articles-elements .articles-structure .article-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Importation du CSS des diffférentes pages du site */
@@ -1631,6 +1800,15 @@ footer .login .toggle-admin form .login-submit input:hover {
   font-family: 'Open Sans', sans-serif;
 }
 
+.accueil .section_03 .latestPost-card img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 300px;
+  height: auto;
+}
+
 .accueil .section_03 .latestPost-card a {
   text-decoration: none;
 }
@@ -1651,6 +1829,7 @@ footer .login .toggle-admin form .login-submit input:hover {
       -ms-flex-pack: center;
           justify-content: center;
   width: 20%;
+  border-radius: 25px;
   margin: auto;
   padding: 1%;
   text-decoration: none;
@@ -1660,11 +1839,33 @@ footer .login .toggle-admin form .login-submit input:hover {
   transition: .3s ease;
 }
 
+@media (max-width: 991.98px) {
+  .accueil .section_03 .renvoi-actu {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1365.98px) {
+  .accueil .section_03 .renvoi-actu {
+    background: transparent;
+    color: #202F86;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
 .accueil .section_03 .renvoi-actu:hover {
-  background: white;
+  background: transparent;
   color: #202F86;
   -webkit-transition: .3s ease;
   transition: .3s ease;
+}
+
+@media (max-width: 1365.98px) {
+  .accueil .section_03 .renvoi-actu:hover {
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 
 .accueil .section_04 {
