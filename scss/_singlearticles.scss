@@ -1,0 +1,49 @@
+/* CSS de la page 'single-articles'*/
+
+.articles{
+    padding: 2% 10%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    .articles-structure{
+        display: flex;
+        justify-content: space-between;
+        #articles-image{
+            width: 50%;
+            img{
+                width: 50%;
+                margin: auto;
+                display: flex;
+            }
+        }
+        #articles-contenu{
+            width: 50%;
+            .articles-descriptif{
+                padding: 5% 10% 0;
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    .articles-slider{
+        display: flex;
+        justify-content: center;
+        .articles-elements{
+            .articles-structure{
+                display: flex;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                width: 80%;
+                margin: auto;
+                .article-list{
+                    display: flex;
+                    flex: 0 1 50%;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
