@@ -14,18 +14,12 @@
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <title>Juliot Électricité</title>
+        <title><?php the_title(); ?> - Juliot Électricité</title>
         <?php wp_head(); ?>
     </head>
 
     <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>
-
-        <!-- Trigger du cookie -->
-
-        <?php if(isset($_COOKIE['user_id'])){
-            echo 'Votre Nom de session est : ' .$_COOKIE['user_id'];
-        } ?>
 
         <!-- Structure du <header> -->
 
@@ -55,3 +49,14 @@
                 </div>
             </div>
         </header>
+
+        <!-- Trigger du cookie -->
+
+        <?php if(isset($_COOKIE['user_id'])){
+            echo 'Votre Nom de session est : ' .$_COOKIE['user_id'];
+            }
+            /* else{
+                $user = get_current_user_id();
+                do_action( 'wp_logout', $user );
+            } */
+        ?>

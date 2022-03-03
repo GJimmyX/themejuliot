@@ -64,6 +64,9 @@ function enqueue_style() {
     wp_enqueue_script('sliderjs', get_template_directory_uri() . '/js/slider.js', false, '', true);
     wp_enqueue_script('bannersliderjs', get_template_directory_uri() . '/js/banner-slider.js', false, '', true);
   endif;
+  if (is_singular('articles') ) :
+    wp_enqueue_script('articlessliderjs', get_template_directory_uri() . '/js/articles-slider.js', false, '', true);
+  endif;
   wp_enqueue_script('navjs', get_template_directory_uri() . '/js/navigation.js', false, '', true);
   if (!is_user_logged_in() ) :
     wp_enqueue_script('adminjs', get_template_directory_uri() . '/js/admin-log.js', false, '', true);
@@ -88,9 +91,11 @@ add_action( 'admin_bar_menu', 'remove_default_post_type_menu_bar', 999 );
 
 /* Suppression du style in-wordpress */
 
-add_action('after_setup_theme', function () {
+function remove_duotone() {
   remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
-}, 10, 0);
+}
+
+add_action( 'init', 'remove_duotone' );
 
 /* Ajouter la personnalisation du login form */
 
