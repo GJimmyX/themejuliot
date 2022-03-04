@@ -100,8 +100,14 @@
         ?>
 
             <div class="latestPost-card">
-                <?php the_post_thumbnail(); ?>
-                <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+                <?php if ( has_post_thumbnail() ) {
+                    the_post_thumbnail();
+                    } else { ?>
+                        <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="<?php the_title(); ?>" />
+                <?php 
+                    } 
+                ?>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </div>
 
         <?php endwhile; ?>

@@ -386,6 +386,10 @@ body header .nav-container .admin-in a button:hover {
   transition: 1s ease;
 }
 
+.actualites .actualites-pagination nav .nav-links .current {
+  cursor: context-menu;
+}
+
 /* Importation du CSS 'Inscription' */
 /* CSS de la page 'Inscription' */
 .inscription {
@@ -914,6 +918,12 @@ footer .login .toggle-admin form .login-submit input:hover {
           flex-direction: column;
 }
 
+.articles .returnBtn .return {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
 .articles .articles-structure {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -921,10 +931,29 @@ footer .login .toggle-admin form .login-submit input:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .articles .articles-structure {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 5%;
+  }
 }
 
 .articles .articles-structure #articles-image {
   width: 50%;
+}
+
+@media (max-width: 767.98px) {
+  .articles .articles-structure #articles-image {
+    width: 100%;
+  }
 }
 
 .articles .articles-structure #articles-image img {
@@ -939,12 +968,24 @@ footer .login .toggle-admin form .login-submit input:hover {
   width: 50%;
 }
 
+@media (max-width: 767.98px) {
+  .articles .articles-structure #articles-contenu {
+    width: 100%;
+  }
+}
+
 .articles .articles-structure #articles-contenu .articles-descriptif {
   padding: 5% 10% 0;
 }
 
+.articles .articles-structure #articles-contenu .articles-descriptif h2 {
+  font-size: 2em;
+}
+
 .articles .articles-structure #articles-contenu .articles-descriptif p {
+  font-size: 1em;
   text-align: justify;
+  line-height: 1.5;
 }
 
 .articles .articles-slider {
@@ -954,9 +995,13 @@ footer .login .toggle-admin form .login-submit input:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
 }
 
-.articles .articles-slider .articles-elements .articles-structure {
+.articles .articles-slider .articles-elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -964,17 +1009,45 @@ footer .login .toggle-admin form .login-submit input:hover {
       flex-wrap: wrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 80%;
-  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 350px;
+  margin: 0;
 }
 
-.articles .articles-slider .articles-elements .articles-structure .article-list {
+@media (max-width: 991.98px) {
+  .articles .articles-slider .articles-elements {
+    width: 80%;
+    height: auto;
+  }
+}
+
+.articles .articles-slider .articles-elements .article-structure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+  .articles .articles-slider .articles-elements .article-structure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
+.articles .articles-slider .articles-elements .article-structure .article-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -985,6 +1058,79 @@ footer .login .toggle-admin form .login-submit input:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.articles .articles-slider .articles-elements .article-structure .article-list li {
+  list-style: none;
+  width: 50%;
+  margin: 0;
+}
+
+.articles .articles-slider .articles-elements .article-structure .article-list li img {
+  width: 100%;
+  height: auto;
+}
+
+.articles .articles-slider .articles-elements .article-structure .article-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 991.98px) {
+  .articles .articles-slider .articles-elements .article-structure .article-list li a {
+    color: #202F86;
+  }
+}
+
+.articles .articles-slider .articles-elements .article-structure .article-list li a:hover {
+  color: #202F86;
+}
+
+.articles .articles-slider .articles-elements .article-structure .article-list li a h2 {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.articles .articles-slider .articles-button .articles-slider-button {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  border-radius: 100%;
+  color: #202F86;
+  cursor: pointer;
+}
+
+.articles .articles-slider .articles-button .articles-slider-button i {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  border-radius: 100%;
+  font-size: 2em;
+}
+
+@media (max-width: 991.98px) {
+  .articles .articles-slider .articles-button .articles-slider-button i {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.articles .articles-slider .articles-button .articles-slider-button i:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 5px 5px;
+          box-shadow: 0px 0px 5px 5px;
+}
+
+@media (max-width: 991.98px) {
+  .articles .articles-slider .articles-button .articles-slider-button i:hover {
+    -webkit-transition: none;
+    transition: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 /* Importation du CSS des diffférentes pages du site */
@@ -1798,6 +1944,20 @@ footer .login .toggle-admin form .login-submit input:hover {
   width: 90%;
   margin: auto;
   font-family: 'Open Sans', sans-serif;
+  padding: 2% 0;
+}
+
+.accueil .section_03 .latestPost-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .accueil .section_03 .latestPost-card img {
@@ -1810,10 +1970,9 @@ footer .login .toggle-admin form .login-submit input:hover {
 }
 
 .accueil .section_03 .latestPost-card a {
+  margin: 2% 0;
   text-decoration: none;
-}
-
-.accueil .section_03 .latestPost-card a h2 {
+  font-weight: 600;
   font-size: 2em;
   text-align: center;
   color: #202F86;
@@ -1871,8 +2030,7 @@ footer .login .toggle-admin form .login-submit input:hover {
 .accueil .section_04 {
   width: 55%;
   margin: auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 2% 0;
 }
 
 .accueil .section_04 .contactAccueil {
