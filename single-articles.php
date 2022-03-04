@@ -6,6 +6,9 @@ get_header();
 <!-- Contenu de la page 'Single Articles' -->
 
 <main class="articles">
+    <div class="returnBtn">
+        <a href="<?php echo site_url('actualites'); ?>" class="return">< Retour</a>
+    </div>
     <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
         <div class="articles-structure">
@@ -27,6 +30,9 @@ get_header();
     <?php endwhile; endif; ?>
 
     <div class="articles-slider">
+        <div class="articles-button">
+            <p class="articles-slider-button" onclick="plusArticlesslide(-1)"><i class="fas fa-chevron-circle-left"></i></p>
+        </div>
         <div class="articles-elements">
             <?php
 
@@ -42,14 +48,18 @@ get_header();
 
             <div class="article-structure">
                 <ul class="article-list">
-                    <?php if ( has_post_thumbnail() ) {
-                        the_post_thumbnail();
-                        } else { ?>
-                            <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="<?php the_title(); ?>" />
-                    <?php 
-                        } 
-                    ?>
-                    <h2><?php the_title(); ?></h2>
+                    <li>
+                        <?php if ( has_post_thumbnail() ) {
+                            the_post_thumbnail();
+                            } else { ?>
+                                <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="<?php the_title(); ?>" />
+                        <?php 
+                            } 
+                        ?>
+                    </li>
+                    <li>
+                        <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+                    </li>
                 </ul>
             </div>
 
@@ -71,18 +81,25 @@ get_header();
 
             <div class="article-structure">
                 <ul class="article-list">
-                <?php if ( has_post_thumbnail() ) {
-                        the_post_thumbnail();
-                        } else { ?>
-                            <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="<?php the_title(); ?>" />
-                    <?php 
-                        } 
-                    ?>
-                    <h2><?php the_title(); ?></h2>
+                    <li>
+                        <?php if ( has_post_thumbnail() ) {
+                            the_post_thumbnail();
+                            } else { ?>
+                                <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="<?php the_title(); ?>" />
+                        <?php 
+                            } 
+                        ?>
+                    </li>
+                    <li>
+                        <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+                    </li>
                 </ul>
             </div>
 
             <?php endwhile; ?>
+        </div>
+        <div class="articles-button">
+            <p class="articles-slider-button" onclick="plusArticlesslide(1)"><i class="fas fa-chevron-circle-right"></i></p>
         </div>
     </div>
 </main>

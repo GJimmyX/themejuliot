@@ -8,15 +8,17 @@
                 <?php dynamic_sidebar('footer-sidebar'); ?>
             </ul>
 
+            <!-- Section login et inscription wordpress -->
+
             <div class="login">
                 <button id="adminBtn"><p class="fas"></p></button>
                 <?php if (!is_user_logged_in()) : ?>
                     <div id="admin-log" class="admin">
-                        <form action="/wp-login.php" method="post">
+                        <form action="<?php bloginfo('url'); ?>/wp-login" method="post">
                             <?php wp_login_form( array(
                                 'redirect_to' => 'get_permalink( get_the_ID())',
                             )); ?>
-                            <a href="inscription">Pas de compte ?</a>
+                            <a href="/inscription">Pas de compte ?</a>
                         </form>
                     </div>
                 <?php endif; ?>

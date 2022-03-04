@@ -302,7 +302,11 @@
         width: 90%;
         margin: auto;
         font-family: 'Open Sans', sans-serif;
+        padding: 2% 0;
         .latestPost-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             img{
                 display: flex;
                 margin: auto;
@@ -310,12 +314,12 @@
                 height: auto;
             }
             a{
+                margin: 2% 0;
                 text-decoration: none;
-                h2{
-                    font-size: 2em;
-                    text-align: center;
-                    color: #202F86;
-                }
+                font-weight: 600;
+                font-size: 2em;
+                text-align: center;
+                color: #202F86;
             }
         }
         .renvoi-actu{
@@ -352,8 +356,7 @@
     .section_04{
         width: 55%;
         margin: auto;
-        padding-top: 2%;
-        padding-bottom: 2%;
+        padding: 2% 0;
         .contactAccueil{
             width: 75%;
             margin: auto;
