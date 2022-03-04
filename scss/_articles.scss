@@ -51,6 +51,9 @@
                         transition: 1s ease;
                     }
                 }
+                .current{
+                    cursor: context-menu;
+                }
             }
         }
     }
