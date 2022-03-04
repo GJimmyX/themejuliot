@@ -5,6 +5,16 @@ showArticlesslide(articlesSlideIndex);
 
 var articlesInterval;
 
+function plusArticlesslide(n) {
+    showArticlesslide(articlesSlideIndex += n);
+    clearInterval(
+        articlesInterval
+    );
+    articlesInterval = setInterval(function() {
+        showArticlesslide(articlesSlideIndex += 1);
+    }, 5000);
+}
+
 function showArticlesslide(n) {
     var articlesSlide = document.getElementsByClassName("articles-elements");
     if (n > articlesSlide.length-1) {articlesSlideIndex = 0}
