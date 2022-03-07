@@ -11,6 +11,8 @@
 
 <main class="automatisme">
 
+    <!-- Boucle pour récupérer le bloc correspondant à: 'automatisme' -->
+
     <?php
         $sectionautomatisme = new WP_Query();
         $sectionautomatisme->query(array(
@@ -19,14 +21,19 @@
                     array(
                         'taxonomy' => 'bloc',
                         'field'    => 'name',
-                        'terms'    => 'automatisme',
+                        'terms'    => 'domaine-automatisme',
                     ),
                 ),
                 'order' => 'ASC'
             )
         );
 
-    ?>  <div class="contenu-automatisme">
+    ?>  
+    
+    <div class="contenu-automatisme">
+
+    <!-- Affichage du contenu correspondant à: 'informatique industrielle' -->
+
     <?php
 
         if( $sectionautomatisme->have_posts() ) : while( $sectionautomatisme->have_posts() ) : $sectionautomatisme->the_post();

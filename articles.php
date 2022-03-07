@@ -7,7 +7,12 @@
 get_header();
 ?>
 
+<!-- Contenu de la page 'Articles' -->
+
 <main class="actualites">
+
+    <!-- Boucle permettant l'affichage de posts d'article -->
+
     <?php
         $args = array(
             'post_type' => 'articles',
@@ -17,6 +22,8 @@ get_header();
         $t = query_posts($args);
 
     ?>
+
+    <!-- Affichage des posts  -->
 
     <div class="actualites-disposition">
     <?php
@@ -37,6 +44,8 @@ get_header();
         <?php endwhile; ?>
     </div>
     
+    <!-- Pagination faite en fonction du nombre de posts par page -->
+
     <div class="actualites-pagination">
         <?php the_posts_pagination(); ?>
     </div>

@@ -27,7 +27,7 @@
         <title><?php the_title(); ?> - Juliot Électricité</title>
         <?php wp_head(); ?>
         
-        <script type="text/javascript"> window.cookieconsent_options = {"message":"Message qui apparaitra","dismiss":"J'accepte","learnMore":"+ d'info","link":"url-vers-mentions-legales.fr","theme":"light-bottom"}; </script><script type="text/javascript" src="https://unpkg.com/cookieconsent@3.1.1/build/cookieconsent.min.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri() . "/js/cookie.js" ?>"></script>
     </head>
 
     <body <?php body_class(); ?>>
@@ -74,10 +74,6 @@
         <!-- Trigger du cookie -->
 
         <?php if(isset($_COOKIE['user_id'])){
-            echo 'Votre Nom de session est : ' .$_COOKIE['user_id'];
+            echo '<p class="user-cookie">Votre Nom de session est : ' .$_COOKIE['user_id'] . '</p>';
             }
-            /* else{
-                $user = get_current_user_id();
-                do_action( 'wp_logout', $user );
-            } */
         ?>

@@ -1,5 +1,7 @@
 <?php
 
+    /* Détail du système de cookie */
+
     $servname = 'localhost';
     $dbname = 'juliot_db';
     $username = 'root';
@@ -20,6 +22,8 @@
             die('Erreur : '.$e->getMessage('Connexion Impossible !'));
     }
 
+    /* Création du cookie */
+
     if (is_user_logged_in() ) :
         $id = get_current_user_id();
         $sqlQuery = "SELECT user_login from wp_users where id = $id";
@@ -29,6 +33,6 @@
     $cookieStatement->execute();
     $donnee = $cookieStatement->fetch(PDO::FETCH_COLUMN);
 
-    setcookie( 'user_id', $donnee, /* time()+3600*24 */ );
+    setcookie( 'user_id', $donnee, time()+3600*24 );
 
 ?>

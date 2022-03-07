@@ -7,8 +7,12 @@
     get_header();
 ?>
 
+<!-- Contenu de la page 'Mentions légales' -->
+
 <main class="mentions-legales">
     
+    <!-- Intro aux Mentions légales -->
+
     <div class="head-mentions-legales">
         <p>La société Juliot Électricité, soucieuse des droits des individus, notamment au regard des traitements automatisés, et dans une volonté de transparence avec ses clients, a mis en place une politique reprenant l’ensemble de ces traitements, des finalités poursuivies par ces derniers ainsi que des moyens d’actions à la disposition des individus afin qu’ils puissent au mieux exercer leurs droits.</p>
         <p>Pour toute information complémentaire sur la protection des données personnelles, nous vous invitons à consulter le site : 
@@ -20,6 +24,10 @@
         <p>La version actuellement en ligne de ces conditions d’utilisation est la seule opposable pendant toute la durée d’utilisation du site et jusqu’à ce qu’une nouvelle version la remplace.</p>
     </div>
     
+    <!-- Contenu des articles 1 à 16 -->
+
+    <!-- Contenu Article 1 -->
+
     <div class="article01">
         <div class="article-title">
             <h2>Article 1 – Mentions légales</h2>
@@ -50,6 +58,8 @@
         </div>
     </div>
     
+    <!-- Contenu Article 2 -->
+
     <div class="article02">
         <div class="article-title">
             <h2>Article 2 – Accès au site</h2>
@@ -60,6 +70,8 @@
         </div>
     </div>
     
+    <!-- Contenu Article 3 -->
+
     <div class="article03">
         <div class="article-title">
             <h2>Article 3 – Contenu du site</h2>
@@ -70,7 +82,9 @@
             <p>Ils sont la propriété pleine et entière de l’éditeur ou de ses partenaires. Toute reproduction, représentation, utilisation ou adaptation, sous quelque forme que ce soit, de tout ou partie de ces éléments, y compris les applications informatiques, sans l’accord préalable et écrit de l’éditeur, sont strictement interdites. Le fait pour l’éditeur de ne pas engager de procédure dès la prise de connaissance de ces utilisations non autorisées ne vaut pas acceptation desdites utilisations et renonciation aux poursuites.</p>
         </div>
     </div>
-    
+
+    <!-- Contenu Article 4 -->
+
     <div class="article04">
         <div class="article-title">
             <h2>Article 4 – Gestion du site</h2>
@@ -85,6 +99,8 @@
             </ul>
         </div>
     </div>
+
+    <!-- Contenu Article 5 -->
 
     <div class="article05">
         <div class="article-title">
@@ -104,6 +120,8 @@
         </div>
     </div>
     
+    <!-- Contenu Article 6 -->
+
     <div class="article06">
         <div class="article-title">
             <h2>Article 6 – Liens hypertextes</h2>
@@ -115,6 +133,8 @@
         </div>
     </div>
     
+    <!-- Contenu Article 7 -->
+
     <div class="article07">
         <div class="article-title">
             <h2>Article 7 – Collecte et protection des données</h2>
@@ -134,6 +154,8 @@
         </div>
     </div>
     
+    <!-- Contenu Article 8 -->
+
     <div class="article08">
         <div class="article-title">
             <h2>Article 8 – Droit d’accès, de rectification et de déréférencement de vos données</h2>
@@ -166,6 +188,8 @@
         </div>
     </div>
     
+    <!-- Contenu Article 9 -->
+
     <div class="article09">
         <div class="article-title">
             <h2>Article 9 – Utilisation des données</h2>
@@ -186,7 +210,9 @@
             </ul>
         </div>
     </div>
-    
+
+    <!-- Contenu Article 10 -->
+
     <div class="article10">
         <div class="article-title">
             <h2>Article 10 – Politique de conservation des données</h2>
@@ -197,6 +223,8 @@
             <p>Dans la mesure raisonnablement nécessaire ou requise pour satisfaire aux obligations légales ou réglementaires, régler des litiges, empêcher les fraudes et abus ou appliquer nos modalités et conditions, nous pouvons également conserver certaines de vos informations si nécessaire, même après que vous ayez fermé votre compte ou que nous n’avons plus besoin pour vous fournir des services.</p>
         </div>
     </div>
+    
+    <!-- Contenu Article 11 -->
     
     <div class="article11">
         <div class="article-title">
@@ -214,6 +242,8 @@
         </div>
     </div>
     
+    <!-- Contenu Article 12 -->
+
     <div class="article12">
         <div class="article-title">
             <h2>Article 12 – Offres commerciales</h2>
@@ -231,6 +261,8 @@
         </div>
     </div>
     
+    <!-- Contenu Article 13 -->
+
     <div class="article13">
         <div class="article-title">
             <h2>Article 13 – Cookies</h2>
@@ -242,14 +274,14 @@
                 <a href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser" target="_blank">https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser</a>).
             </p>
             <p>En naviguant sur ce site, des « cookies » émanant de la société responsable du site concerné et/ou des sociétés tierces pourront être déposés sur votre terminal.</p>
-            <p>Lors de la première navigation sur ce site, une bannière explicative sur l’utilisation des « cookies » apparaîtra. Dès lors, en poursuivant la navigation, le client et/ou prospect sera réputé informé et avoir accepté l’utilisation desdits « cookies ». Le consentement donné sera valable pour une période de treize (13) mois. L’utilisateur a la possibilité de désactiver les cookies à partir des paramètres de son navigateur.</p>
+            <p>Lors de la première navigation sur ce site, une bannière explicative sur l’utilisation des « cookies » apparaîtra. Dès lors, en poursuivant la navigation, le client et/ou prospect sera réputé informé et avoir accepté l’utilisation desdits « cookies ». Le consentement donné sera valable pour une période de douze (12) mois. L’utilisateur a la possibilité de désactiver les cookies à partir des paramètres de son navigateur.</p>
             <p>Toutes les informations collectées ne seront utilisées que pour suivre le volume, le type et la configuration du trafic utilisant ce site, pour en développer la conception et l’agencement et à d’autres fins administratives et de planification et plus généralement pour améliorer le service que nous vous offrons.</p>
             <p>Les cookies suivants sont présents sur ce site :</p>
             <p>Cookies Google :</p>
             <ul>
                 <li><i class="fa-solid fa-angles-right"></i>&nbsp;Google Analytics : permet de mesurer l’audience du site.</li>
                 <li><i class="fa-solid fa-angles-right"></i>&nbsp;Google Tag Manager : facilite l’implémentation des tags sur les pages et permet de gérer les balises Google.</li>
-                <li><i class="fa-solid fa-angles-right"></i>&nbsp;La durée de vie de ces cookies est de treize mois.</li>
+                <li><i class="fa-solid fa-angles-right"></i>&nbsp;La durée de vie de ces cookies est de douze mois.</li>
             </ul>
             <p>Pour plus d’informations sur l’utilisation, la gestion et la suppression des « cookies », pour tout type de navigateur, nous vous invitons à consulter le lien suivant : 
                 <a href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser" target="_blank">https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser</a>.
@@ -257,6 +289,8 @@
        </div>
     </div>
     
+    <!-- Contenu Article 14 -->
+
     <div class="article14">
         <div class="article-title">
             <h2>Article 14 – Photographies et représentation des produits</h2>
@@ -267,6 +301,8 @@
         </div>
     </div>
     
+    <!-- Contenu Article 15 -->
+
     <div class="article15">
         <div class="article-title">
             <h2>Article 15 – Loi applicable</h2>
@@ -277,6 +313,8 @@
         </div>
     </div>
     
+    <!-- Contenu Article 16 -->
+
     <div class="article16">
         <div class="article-title">
             <h2>Article 16 – Contactez-nous</h2>

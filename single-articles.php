@@ -6,9 +6,15 @@ get_header();
 <!-- Contenu de la page 'Single Articles' -->
 
 <main class="articles">
+
+    <!-- Retour sur la page centrale d'articles -->
+
     <div class="returnBtn">
-        <a href="<?php echo site_url('actualites'); ?>" class="return">< Retour</a>
+        <a href="<?php echo site_url('actualites'); ?>" class="return"><i class="fas fa-chevron-left"></i> Retour</a>
     </div>
+
+    <!-- Affichage d'un seul article -->
+
     <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
         <div class="articles-structure">
@@ -28,12 +34,20 @@ get_header();
         </div>
 
     <?php endwhile; endif; ?>
+    
+    <!-- Slider des articles les plus récents (les 4 derniers) -->
 
     <div class="articles-slider">
+
+        <!-- Bouton de commande du slider en manuel -->
+
         <div class="articles-button">
             <p class="articles-slider-button" onclick="plusArticlesslide(-1)"><i class="fas fa-chevron-circle-left"></i></p>
         </div>
         <div class="articles-elements">
+
+            <!-- Boucle pour l'affichage de deux artciles par slide -->
+
             <?php
 
                 $articlesSlider = new WP_Query();
@@ -66,6 +80,9 @@ get_header();
             <?php endwhile; ?>
         </div>
         <div class="articles-elements">
+
+            <!-- Boucle pour l'affichage de deux artciles par slide -->
+
             <?php
 
                 $articlesSlider = new WP_Query();
@@ -98,6 +115,9 @@ get_header();
 
             <?php endwhile; ?>
         </div>
+
+        <!-- Bouton de commande du slider en manuel -->
+
         <div class="articles-button">
             <p class="articles-slider-button" onclick="plusArticlesslide(1)"><i class="fas fa-chevron-circle-right"></i></p>
         </div>

@@ -75,6 +75,12 @@ function enqueue_style() {
 
 add_action('wp_enqueue_scripts', 'enqueue_style');
 
+/* Enlever l'affichage de la bar d'administration pour tout le monde sauf l'admin */
+
+if (!current_user_can('administrator') ) :
+  show_admin_bar(false);
+endif;
+
 /* Supprimer le Post Type par défaut de WordPress */
 
 function remove_default_post_type() {
