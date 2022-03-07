@@ -29,8 +29,10 @@
             form{
                 padding-top: 1%;
                 padding-bottom: 1%;
+                margin-bottom: 5%;
                 font-family: 'Open Sans', sans-serif;
                 text-align: center;
+                background-color: rgba($color: #212021, $alpha: 0.6);
                 .infos-contact{
                     display: flex;
                     align-items: center;
@@ -50,7 +52,6 @@
                                 display: flex;
                                 justify-content: center;
                                 margin-bottom: 1%;
-                                background-color: #202F86;
                             }
                             span{
                                 display: flex;
@@ -63,11 +64,14 @@
                                     border-radius: 20px;
                                     width: 90%;
                                 }
+                                input:focus{
+                                    outline: none;
+                                }
                                 .wpcf7-not-valid-tip{
                                     font-size: 1em;
                                     font-weight: 700;
+                                    color: #FF3B3B;
                                     margin-top: 1%;
-                                    background-color: #e9e8e9;
                                 }
                             }
                         }
@@ -82,7 +86,6 @@
                             display: flex;
                             justify-content: center;
                             margin-bottom: 1%;
-                            background-color: #202F86;
                         }
                         span{
                             display: flex;
@@ -103,6 +106,7 @@
                     align-items: center;
                     padding: 5% 0;
                     input{
+                        background-color: rgba($color: #e9e8e9, $alpha: 0.6);;
                         padding: 2% 5%;
                         border: 1px solid;
                         border-radius: 20px;
@@ -112,6 +116,10 @@
                         &:hover{
                             box-shadow: 0px 2px 3px 2px #202F86;
                             transition: .5s ease;
+                            @media (max-width: 1365.98px){
+                                box-shadow: none;
+                                transition: none;
+                            }
                         }
                     }
                     .wpcf7-spinner{
@@ -122,6 +130,7 @@
                     border-color: #202F86;
                     font-size: 1em;
                     font-weight: 700;
+                    color: white;
                 }
             }
         }

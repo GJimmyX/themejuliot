@@ -174,4 +174,47 @@ body{
             }
         }
     }
+    #cookie_law_notification.cookielaw1{
+        font-size: 1em;
+        background-color: rgba($color: #e9e8e9, $alpha: 0.6);
+        @media (max-width: 575.98px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .cookielaw1{
+        #cookie_message{
+            font-size: 1.25em;
+            @media (max-width: 575.98px){
+                width: 100%;
+                text-align: center;
+                margin-bottom: 2%;
+            }
+            p{
+                color: black;
+                margin: 0;
+            }
+            a{
+                color: black;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+        #cookie_accept_button{
+            background-color: #202F86;
+            border-color: #202F86;
+            font-size: 1.25em;
+            color: white;
+            @media (max-width: 575.98px){
+                position: relative;
+                right: 0;
+                margin-top: 0;
+            }
+        }
+    }
+    .user-cookie{
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
 }
