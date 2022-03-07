@@ -11,6 +11,8 @@
 
 <main class="electricite">
 
+    <!-- Boucle pour récupérer le bloc correspondant à: 'électricité' -->
+
     <?php
         $sectionelec = new WP_Query();
         $sectionelec->query(array(
@@ -19,14 +21,19 @@
                     array(
                         'taxonomy' => 'bloc',
                         'field'    => 'name',
-                        'terms'    => 'electricite',
+                        'terms'    => 'domaine-electricite',
                     ),
                 ),
                 'order' => 'ASC'
             )
         );
 
-    ?>  <div class="nav-elec">
+    ?>  
+    
+    <div class="nav-elec">
+
+    <!-- Affichage du contenu correspondant à: 'informatique industrielle' -->
+
     <?php
 
         while ($sectionelec->have_posts()) : $sectionelec->the_post();

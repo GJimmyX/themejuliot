@@ -11,6 +11,8 @@
 
 <main class="informatique-industrielle">
 
+    <!-- Boucle pour récupérer le bloc correspondant à: 'informatique industrielle' -->
+
     <?php
         $sectioninfoindus = new WP_Query();
         $sectioninfoindus->query(array(
@@ -19,14 +21,19 @@
                     array(
                         'taxonomy' => 'bloc',
                         'field'    => 'name',
-                        'terms'    => 'informatique-industrielle',
+                        'terms'    => 'domaine-informatique-industrielle',
                     ),
                 ),
                 'order' => 'ASC'
             )
         );
 
-    ?>  <div class="contenu-informatique-industrielle">
+    ?>  
+    
+    <div class="contenu-informatique-industrielle">
+
+    <!-- Affichage du contenu correspondant à: 'informatique industrielle' -->
+
     <?php
 
         if( $sectioninfoindus->have_posts() ) : while( $sectioninfoindus->have_posts() ) : $sectioninfoindus->the_post();
