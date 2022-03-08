@@ -14,12 +14,14 @@
                 <?php if (!is_user_logged_in()) : ?>
                     <button id="adminBtn"><p class="fas"></p></button>
                     <div id="admin-log" class="admin">
-                        <form action="<?php bloginfo('url'); ?>/wp-login" method="post">
+                        <div class="login-form">
                             <?php wp_login_form( array(
                                 'redirect_to' => 'get_permalink( get_the_ID())',
+                                'id_submit' => 'submit',
+                                'value_remember' => true,
                             )); ?>
                             <a href="/inscription">Pas de compte ?</a>
-                        </form>
+                        </div>
                     </div>
                 <?php endif; ?>
                 <?php if (is_user_logged_in()) : ?>
