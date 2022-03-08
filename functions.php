@@ -105,7 +105,7 @@ add_action( 'init', 'remove_duotone' );
 
 /* Ajouter la personnalisation du login form */
 
-function my_login() { ?>
+function my_login_style() { ?>
   <style>
     body #login{
       width: 375px;
@@ -143,13 +143,36 @@ function my_login() { ?>
     #login #nav a:focus, #login #backtoblog a:focus{
       transition-property: none;
     }
-      .language-switcher{
+    .language-switcher{
       display: none;
+    }
+    body #login #login_error{
+      border-left-color: #202F86;
     }
   </style>
 <?php }
 
-add_action( 'login_enqueue_scripts', 'my_login' );
+add_action( 'login_enqueue_scripts', 'my_login_style' );
+
+/* Personnalisation message d'erreur d'identification à la connexion */
+
+function my_login_error() {
+  return 'Informations de connexion incorrectes !';
+}
+
+add_filter( 'login_errors', 'my_login_error' );
+
+/* Précochage par défaut de la case 'Se souvenir de moi' */
+
+function my_login_remember_coche() {
+  echo "<script>document.getElementById('rememberme').checked = true;</script>";
+}
+
+function my_login_remember() {
+  add_filter( 'login_footer', 'my_login_remember_coche' );
+}
+
+add_action( 'init', 'my_login_remember' );
 
 /* Ajouter le support Widget pour le footer */
 

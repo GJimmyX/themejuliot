@@ -21,7 +21,7 @@ get_header();
             <div id="articles-image">
                 <?php $image = get_field( 'image' ); ?>
                 <?php if ( $image ) : ?>
-                    <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
+                    <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php the_title(); ?>" />
                 <?php endif; ?>
             </div>
 
@@ -64,9 +64,9 @@ get_header();
                 <ul class="article-list">
                     <li>
                         <?php if ( has_post_thumbnail() ) {
-                            the_post_thumbnail();
+                            the_post_thumbnail( '', array( 'alt' => 'Image Article' ) );
                             } else { ?>
-                                <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="<?php the_title(); ?>" />
+                                <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="Image Article" />
                         <?php 
                             } 
                         ?>
@@ -100,9 +100,9 @@ get_header();
                 <ul class="article-list">
                     <li>
                         <?php if ( has_post_thumbnail() ) {
-                            the_post_thumbnail();
+                            the_post_thumbnail( '', array( 'alt' => 'Image Article' ) );
                             } else { ?>
-                                <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="<?php the_title(); ?>" />
+                                <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="Image Article" />
                         <?php 
                             } 
                         ?>

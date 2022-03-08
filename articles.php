@@ -32,9 +32,9 @@ get_header();
 
             <div class="actualites-card">
                 <?php if ( has_post_thumbnail() ) {
-                    the_post_thumbnail();
+                    the_post_thumbnail( '', array( 'alt' => 'Image Article' ) );
                     } else { ?>
-                        <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="<?php the_title(); ?>" />
+                        <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="Image Article" />
                 <?php 
                     } 
                 ?>
