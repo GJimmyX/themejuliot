@@ -88,45 +88,54 @@ footer{
             display: flex;
             flex-direction: column;
             align-items: center;
-            form{
-                p{
-                    font-family: 'Open Sans', sans-serif;
-                    color: black;
-                    font-size: 0.8em;
-                }
-                .login-username, .login-password{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 80%;
-                    margin: auto;
-                    label{
-                        padding: 2% 0;
+            .login-form{
+                form{
+                    p{
+                        font-family: 'Open Sans', sans-serif;
+                        color: black;
+                        font-size: 0.8em;
+                    }
+                    .login-username, .login-password{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 80%;
+                        margin: auto;
+                        label{
+                            padding: 2% 0;
+                            text-align: center;
+                        }
+                        input{
+                            width: 100%;
+                        }
+                    }
+                    .login-remember{
                         text-align: center;
-                    }
-                    input{
                         width: 100%;
                     }
-                }
-                .login-remember{
-                    text-align: center;
-                    width: 100%;
-                }
-                .login-submit{
-                    text-align: center;
-                    width: 80%;
-                    margin: auto;
-                    padding: 5% 0;
-                    input{
-                        background-color: #e9e8e9;
-                        border: 1px solid;
-                        border-radius: 20px;
-                        cursor: pointer;
-                        transition: 0.5s ease;
-                        width: 100%;
-                        &:hover{
+                    .login-remember{
+                        label{
+                            input:checked{
+                                color: #000;
+                            }
+                        }
+                    }
+                    .login-submit{
+                        text-align: center;
+                        width: 80%;
+                        margin: auto;
+                        padding: 5% 0;
+                        input{
+                            background-color: #e9e8e9;
+                            border: 1px solid;
+                            border-radius: 20px;
+                            cursor: pointer;
                             transition: 0.5s ease;
-                            box-shadow: 1px 5px 7px #000;
+                            width: 100%;
+                            &:hover{
+                                transition: 0.5s ease;
+                                box-shadow: 1px 5px 7px #000;
+                            }
                         }
                     }
                 }

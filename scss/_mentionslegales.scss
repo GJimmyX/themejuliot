@@ -17,6 +17,13 @@
             }
         }
     }
+    .article01, .article02, .article03, .article04, .article05, .article06, .article07, .article08, .article09, .article10, .article11, .article12, .article13, .article14, .article15, .article16{
+        .article-title{
+            @media (max-width: 1365.98px){
+                text-align: center;
+            }
+        }
+    }
     .article02, .article03, .article04, .article05, .article06, .article07, .article08, .article09, .article10, .article11, .article12, .article13, .article14, .article15, .article16{
         .article-content{
             text-align: justify;

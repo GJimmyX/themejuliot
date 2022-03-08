@@ -59,7 +59,7 @@
                                 align-items: center;
                                 input{
                                     background-color: rgba($color: #e9e8e9, $alpha: 0.6);
-                                    border: 1px solid black;
+                                    border: 1px solid #020722;
                                     font-size: 1.5em;
                                     border-radius: 20px;
                                     width: 90%;
@@ -70,7 +70,7 @@
                                 .wpcf7-not-valid-tip{
                                     font-size: 1em;
                                     font-weight: 700;
-                                    color: #FF3B3B;
+                                    color: #FF9F3B;
                                     margin-top: 1%;
                                 }
                             }
@@ -93,9 +93,12 @@
                             align-items: center;
                             textarea{
                                 background-color: rgba($color: #e9e8e9, $alpha: 0.6);
-                                border: 1px solid black;
+                                border: 1px solid #020722;
                                 font-size: 1.5em;
                                 width: 90%;
+                            }
+                            textarea:focus{
+                                outline: none;
                             }
                         }
                     }
@@ -107,6 +110,8 @@
                     padding: 5% 0;
                     input{
                         background-color: rgba($color: #e9e8e9, $alpha: 0.6);;
+                        color: black;
+                        border: 1px solid #020722;
                         padding: 2% 5%;
                         border: 1px solid;
                         border-radius: 20px;
@@ -114,7 +119,7 @@
                         font-size: 1em;
                         font-weight: 700;
                         &:hover{
-                            box-shadow: 0px 2px 3px 2px #202F86;
+                            box-shadow: 0px 2px 3px 2px #020722;
                             transition: .5s ease;
                             @media (max-width: 1365.98px){
                                 box-shadow: none;
