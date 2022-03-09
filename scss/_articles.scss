@@ -3,12 +3,18 @@
 .actualites{
     padding: 2% 5%;
     font-family: 'Open Sans', sans-serif;
+
+    /* CSS sur les articles présents sur la page */
+
     .actualites-disposition{
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
         width: 80%;
         margin: auto;
+
+        /* CSS de chaque article */
+
         .actualites-card{
             display: flex;
             flex: 0 1 50%;
@@ -42,6 +48,9 @@
             }
         }
     }
+
+    /* CSS de la pagination faite en fonction du nombre de posts par page */
+
     .actualites-pagination{
         padding: 2% 0;
         nav{
@@ -70,6 +79,9 @@
                         }
                     }
                 }
+
+                /* CSS pour l'état du curseur */
+
                 .current{
                     cursor: context-menu;
                 }
