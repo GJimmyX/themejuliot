@@ -36,6 +36,9 @@
                         <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
                     <?php
                 ?>
+
+                <!-- Effet sur chaque sous-menu -->
+
                 <div class="hover">
                     <a href="<?php the_permalink(); ?>"><p><?php the_title(); ?></p></a>
                 </div>
@@ -70,6 +73,9 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
             </div>
         </div>
+
+        <!-- Texte annexe au carousel/slider -->
+
         <div class="texte">
             <h2><b>JULIOT ÉLECTRICITÉ, C'EST:</b></h2>
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">L'expérience et la souplesse s'une équipe de 12 personnes pour répondre à vos besoins.</p>
@@ -78,6 +84,9 @@
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">L'accent sur la qualité et la sécurité de nos installations.</p>
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">Une réponse rapide en cas de problème sur votre équipement.</p>
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">Qualifications QUALIFELEC mention chauffage, mention automatisme et IRVE.</p>
+            
+            <!-- Liens des qualifications de Juliot Électricité -->
+
             <div class="links">
                 <a href="https://pros.qualifelec.fr/qualification/chauffage-electrique" target="_blank" title="Qualifelec mention chauffage"><img src="<?php echo get_template_directory_uri() . '/img/qualifelec_mention_chauffage.png'; ?>" alt="Qualification mention chauffage"></a>
                 <a href="https://pros.qualifelec.fr/page/irve" target="_blank" title="Qualifelec mention électricité"><img src="<?php echo get_template_directory_uri() . '/img/qualifelec_mention_electricite.png'; ?>" alt="Qualification mention électricité"></a>
@@ -111,16 +120,25 @@
             </div>
 
         <?php endwhile; ?>
+
+        <!-- Lien vers la page d'articles du site -->
+
         <a href="actualites" class="renvoi-actu">Plus d'articles...</a>
     </div>
 
     <!-- Section de contact de la page d'accueil -->
 
     <div class="section_04">
+
+        <!-- Bouton de contact Juliot Électricité -->
+
         <div class="contactAccueil">
             <?php echo "<div class='accroche_contact'><h2>Vous souhaitez en savoir plus ?</h2><p><b>N'hésitez pas à nous contacter via notre formulaire !</b></p></div>"; ?>
             <a href="contact" class="contactBtn">Contactez-nous</a>
         </div>
+
+        <!-- Bannière slider d'entreprises -->
+
         <div class="company-banner">
             <p id="text-banner">Ils nous font confiance :</p>
             <div id="banner-slider">

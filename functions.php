@@ -119,6 +119,8 @@ function my_login_style() { ?>
     }
     #login form p #user_login:focus, #login form .user-pass-wrap .wp-pwd #user_pass:focus, #login form p #rememberme:focus, #login form .user-pass-wrap .wp-pwd button span:focus{
       border: 1px solid #202F86;
+      border-color: none;
+      box-shadow: none;
     }
     #login form .user-pass-wrap .wp-pwd button span{
       color: #202F86;
@@ -126,6 +128,14 @@ function my_login_style() { ?>
     #login form .user-pass-wrap .wp-pwd button.wp-hide-pw:focus{
       border-color: #202F86;
       box-shadow: none;
+    }
+    #login form .forgetmenot input:focus{
+      outline: none;
+    }
+    #login form .forgetmenot input:checked::before{
+      content: url(<?php echo get_template_directory_uri(); ?>/img/test.png);
+      margin: 0;
+      width: 1rem;
     }
     #login form .submit #wp-submit{
       background-color: #202F86;

@@ -25,7 +25,7 @@
                     </div>
                 <?php endif; ?>
                 <?php if (is_user_logged_in()) : ?>
-                    <a href="<?php bloginfo('url'); ?>/wp-admin" id="admin-panel"><p class="fas"></p></a>
+                    <a href="<?php bloginfo('url'); ?>/wp-admin" id="admin-panel" title="Panneau utilisateur"><p class="fas"></p></a>
                 <?php endif; ?>
             </div>
 
