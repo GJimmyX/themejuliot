@@ -24,6 +24,10 @@
 
     /* Création du cookie */
 
+    if (!is_user_logged_in() ) :
+        unset($_COOKIE['user_id']);
+    endif;
+
     if (is_user_logged_in() ) :
         $id = get_current_user_id();
         $sqlQuery = "SELECT user_login from wp_users where id = $id";
@@ -33,6 +37,7 @@
     $cookieStatement->execute();
     $donnee = $cookieStatement->fetch(PDO::FETCH_COLUMN);
 
-    setcookie( 'user_id', $donnee, time()+3600*24 );
-
+    if (is_page( 'accueil' ) && (!isset($_COOKIE['user_id'])) ) :
+        setcookie( 'user_id', $donnee, time()+(3600*24) );
+    endif;
 ?>

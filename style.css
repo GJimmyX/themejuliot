@@ -11,6 +11,8 @@
 body {
   background-color: rgba(233, 232, 233, 0.6);
   margin: 0;
+  /* CSS additionnel sur le bandeau cookie */
+  /* CSS pour le cookie personnalisé */
 }
 
 body #wpadminbar .ab-top-menu #wp-admin-bar-customize, body #wpadminbar .ab-top-menu #wp-admin-bar-updates, body #wpadminbar .ab-top-menu #wp-admin-bar-comments, body #wpadminbar .ab-top-menu #wp-admin-bar-new-content, body #wpadminbar .ab-top-menu #wp-admin-bar-edit, body #wpadminbar .ab-top-menu #wp-admin-bar-litespeed-menu, body #wpadminbar .ab-top-menu #wp-admin-bar-wpseo-menu {
@@ -23,6 +25,7 @@ body header {
   -webkit-box-shadow: 0px 3px 10px 0px #111;
           box-shadow: 0px 3px 10px 0px #111;
   background-color: #e9e8e9;
+  /* Structure du header */
 }
 
 body header .nav-container {
@@ -36,6 +39,9 @@ body header .nav-container {
           align-items: center;
   width: 80%;
   margin: auto;
+  /* CSS pour le logo de l'entreprise */
+  /* CSS du menu de navigation */
+  /* CSS pour le logout de l'admin/éditeur */
 }
 
 @media (max-width: 767.98px) {
@@ -86,6 +92,9 @@ body header .nav-container .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Menu responsive à partir de 1365.98px */
+  /* CSS pour le menu responsive */
+  /* CSS pour l'apparition du menu responsive */
 }
 
 @media (max-width: 767.98px) {
@@ -143,6 +152,7 @@ body header .nav-container .navbar .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* CSS sur l'onglet actif */
 }
 
 @media (min-width: 992px) and (max-width: 1365.98px) {
@@ -372,6 +382,8 @@ body .user-cookie {
 .actualites {
   padding: 2% 5%;
   font-family: 'Open Sans', sans-serif;
+  /* CSS sur les articles présents sur la page */
+  /* CSS de la pagination faite en fonction du nombre de posts par page */
 }
 
 .actualites .actualites-disposition {
@@ -384,6 +396,7 @@ body .user-cookie {
           box-sizing: border-box;
   width: 80%;
   margin: auto;
+  /* CSS de chaque article */
 }
 
 .actualites .actualites-disposition .actualites-card {
@@ -453,6 +466,7 @@ body .user-cookie {
 
 .actualites .actualites-pagination nav .nav-links {
   text-align: center;
+  /* CSS pour l'état du curseur */
 }
 
 .actualites .actualites-pagination nav .nav-links .page-numbers {
@@ -675,6 +689,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  /* CCS des éléments du pied de page */
+  /* CSS du formulaire de login responsive */
 }
 
 @media (max-width: 1199.98px) {
@@ -695,6 +711,7 @@ footer ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  /* CSS pour le bordereau du pied de page */
 }
 
 @media (max-width: 1199.98px) {
@@ -744,6 +761,7 @@ footer .login {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 10%;
+  /* Affichage du login responsive */
 }
 
 @media (max-width: 767.98px) {
@@ -780,6 +798,7 @@ footer .login .admin {
   display: none;
   position: relative;
   width: 100%;
+  /* CSS pour le lien d'inscription au site */
 }
 
 footer .login .admin form {
@@ -804,6 +823,12 @@ footer .login .admin a {
   font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .login .toggle-admin {
@@ -819,7 +844,11 @@ footer .login .toggle-admin {
           align-items: center;
 }
 
-footer .login .toggle-admin .login-form form p {
+footer .login .toggle-admin .login-form form {
+  /* CSS pour le bouton de connexion */
+}
+
+footer .login .toggle-admin .login-form form .login-username, footer .login .toggle-admin .login-form form .login-password, footer .login .toggle-admin .login-form form .login-remember {
   font-family: 'Open Sans', sans-serif;
   color: black;
   font-size: 0.8em;
@@ -845,17 +874,76 @@ footer .login .toggle-admin .login-form form .login-username label, footer .logi
   text-align: center;
 }
 
-footer .login .toggle-admin .login-form form .login-username input, footer .login .toggle-admin .login-form form .login-password input {
-  width: 100%;
-}
-
 footer .login .toggle-admin .login-form form .login-remember {
   text-align: center;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% 0;
 }
 
-footer .login .toggle-admin .login-form form .login-remember label input:checked {
-  color: #000;
+footer .login .toggle-admin .login-form form .login-remember input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  height: 15px;
+  width: 15px;
+  background: #ffffff;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+footer .login .toggle-admin .login-form form .login-remember input:hover {
+  background: #202f86;
+  position: relative;
+}
+
+footer .login .toggle-admin .login-form form .login-remember input:hover:before {
+  font-family: 'FontAwesome';
+  content: '\f0a6';
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
+}
+
+footer .login .toggle-admin .login-form form .login-remember input:checked {
+  background: #202f86;
+  position: relative;
+}
+
+footer .login .toggle-admin .login-form form .login-remember input:checked:before {
+  font-family: 'FontAwesome';
+  content: '\f00c';
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  position: absolute;
+}
+
+footer .login .toggle-admin .login-form form .login-remember input:checked:hover {
+  background: #202f86;
+  position: relative;
+}
+
+footer .login .toggle-admin .login-form form .login-remember input:checked:hover:before {
+  font-family: 'FontAwesome';
+  content: '\f00d';
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  left: 0px;
+  bottom: -4px;
 }
 
 footer .login .toggle-admin .login-form form .login-submit {
@@ -866,9 +954,12 @@ footer .login .toggle-admin .login-form form .login-submit {
 }
 
 footer .login .toggle-admin .login-form form .login-submit input {
+  font-family: 'Open Sans', sans-serif;
   background-color: #e9e8e9;
-  border: 1px solid;
+  color: black;
+  border: 1px solid black;
   border-radius: 20px;
+  padding: 5% 0;
   cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -878,8 +969,9 @@ footer .login .toggle-admin .login-form form .login-submit input {
 footer .login .toggle-admin .login-form form .login-submit input:hover {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  -webkit-box-shadow: 1px 5px 7px #000;
-          box-shadow: 1px 5px 7px #000;
+  background-color: #202f86;
+  color: white;
+  border: 1px solid black;
 }
 
 footer .login #admin-panel {
@@ -1034,6 +1126,9 @@ footer .login #admin-panel {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* CSS sur le bouton de retour sur la page articles */
+  /* CSS pour la mise en page de l'article seul */
+  /* CSS pour le slider présentant les 4 derniers articles du site */
 }
 
 .articles .returnBtn .return {
@@ -1066,6 +1161,8 @@ footer .login #admin-panel {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Image (optionnelle) de l'article */
+  /* Contenu texte de l'article */
 }
 
 @media (max-width: 767.98px) {
@@ -1131,6 +1228,8 @@ footer .login #admin-panel {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5%;
+  /* Affichage de 2 articles par slide */
+  /* CSS sur les boutons du slider */
 }
 
 .articles .articles-slider .articles-elements {
@@ -1478,6 +1577,7 @@ footer .login #admin-panel {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  /* CSS pour le formulaire de contact */
 }
 
 @media (max-width: 1365.98px) {
@@ -1485,6 +1585,11 @@ footer .login #admin-panel {
     width: 80%;
     background-image: none;
   }
+}
+
+.contact .formulaire {
+  /* CSS sur la phrase d'intro du formulaire */
+  /* CSS pour le formulaire uniquement */
 }
 
 .contact .formulaire h1 {
@@ -1509,6 +1614,8 @@ footer .login #admin-panel {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   background-color: rgba(33, 32, 33, 0.6);
+  /* Des balises sont intégrés sur le formulaire */
+  /* Des balises sont intégrés sur le formulaire */
 }
 
 .contact .formulaire .wpcf7 form .infos-contact {
@@ -1520,6 +1627,8 @@ footer .login #admin-panel {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  /* Des balises sont intégrés sur le formulaire */
+  /* Des balises sont intégrés sur le formulaire */
 }
 
 @media (max-width: 1365.98px) {
@@ -1668,7 +1777,7 @@ footer .login #admin-panel {
 }
 
 .contact .formulaire .wpcf7 form .wpcf7-response-output {
-  border-color: #202F86;
+  border-color: transparent;
   font-size: 1em;
   font-weight: 700;
   color: white;
@@ -1681,6 +1790,10 @@ footer .login #admin-panel {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /* CSS de la section navigation */
+  /* CSS pour le carousel */
+  /* CSS de la section articles */
+  /* CSS de la section contact */
 }
 
 .accueil h1 {
@@ -1713,6 +1826,7 @@ footer .login #admin-panel {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 2.5%;
+  /* CSS de chaque sous-menu */
 }
 
 .accueil .section_01 .menuPosts-card {
@@ -1729,6 +1843,7 @@ footer .login #admin-panel {
           flex: 0 1 270px;
   height: 360px;
   position: relative;
+  /* Effet sur chaque sous-menu */
 }
 
 @media (max-width: 1365.98px) {
@@ -1841,6 +1956,7 @@ footer .login #admin-panel {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  /* CSS pour le texte annexe au carousel */
 }
 
 @media (max-width: 1199.98px) {
@@ -1977,7 +2093,7 @@ footer .login #admin-panel {
   padding: 2.5% 0;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .accueil .section_02 .carousel-slider .indicators {
     display: none;
   }
@@ -2011,6 +2127,7 @@ footer .login #admin-panel {
       -ms-flex-align: center;
           align-items: center;
   cursor: context-menu;
+  /* CSS pour les qualifications */
 }
 
 @media (max-width: 1199.98px) {
@@ -2098,6 +2215,7 @@ footer .login #admin-panel {
   margin: auto;
   font-family: 'Open Sans', sans-serif;
   padding: 2% 0;
+  /* CSS du lien vers la page d'articles */
 }
 
 .accueil .section_03 .latestPost-card {
@@ -2184,6 +2302,7 @@ footer .login #admin-panel {
   width: 55%;
   margin: auto;
   padding: 2% 0;
+  /* CSS de la bannière slider */
 }
 
 .accueil .section_04 .contactAccueil {
