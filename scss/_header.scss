@@ -15,6 +15,9 @@ body{
         padding: 1% 0;
         box-shadow: 0px 3px 10px 0px #111;
         background-color: #e9e8e9;
+
+        /* Structure du header */
+
         .nav-container{
             display: flex;
             justify-content: space-around;
@@ -27,6 +30,9 @@ body{
             @media (min-width: 768px) AND (max-width: 1365.98px){
                 align-items: start;
             }
+
+            /* CSS pour le logo de l'entreprise */
+
             h1{
                 width: 20%;
                 @media (max-width: 767.98px){
@@ -44,6 +50,9 @@ body{
                     }
                 }
             }
+
+            /* CSS du menu de navigation */
+
             .navbar{
                 width: 70%;
                 display: flex;
@@ -62,6 +71,9 @@ body{
                     width: 25%;
                     padding-top: 4%;
                 }
+
+                /* Menu responsive à partir de 1365.98px */
+
                 .menu-toggle{
                     display: none;
                     @media (max-width: 1365.98px){
@@ -72,6 +84,9 @@ body{
                         height: 30px;
                     }
                 }
+
+                /* CSS pour le menu responsive */
+
                 .nav-menu{
                     padding: 0;
                     width: 100%;
@@ -119,6 +134,9 @@ body{
                             }
                         }
                     }
+
+                    /* CSS sur l'onglet actif */
+
                     .current_page_item{
                         a{
                             color: white !important;
@@ -133,6 +151,9 @@ body{
                         }
                     }
                 }
+
+                /* CSS pour l'apparition du menu responsive */
+
                 .toggled-on{
                     @media (min-width: 992px) AND (max-width: 1365.98px){
                         display: flex;
@@ -145,6 +166,9 @@ body{
                     }
                 }
             }
+
+            /* CSS pour le logout de l'admin/éditeur */
+
             .admin-in{
                 width: 10%;
                 @media (max-width: 767.98px){
@@ -175,6 +199,9 @@ body{
             }
         }
     }
+
+    /* CSS additionnel sur le bandeau cookie */
+
     #cookie_law_notification.cookielaw1{
         font-size: 1em;
         background-color: rgba($color: #e9e8e9, $alpha: 0.6);
@@ -214,6 +241,9 @@ body{
             }
         }
     }
+
+    /* CSS pour le cookie personnalisé */
+
     .user-cookie{
         margin: 0;
         font-family: 'Open Sans', sans-serif;

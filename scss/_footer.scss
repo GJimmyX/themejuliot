@@ -8,6 +8,9 @@ footer{
     @media (max-width: 1199.98px){
         flex-direction: column;
     }
+
+    /* CCS des éléments du pied de page */
+
     ul{
         padding: 0;
         width: 90%;
@@ -17,6 +20,9 @@ footer{
         @media (max-width: 1199.98px){
             flex-direction: column;
         }
+
+        /* CSS pour le bordereau du pied de page */
+
         li{
             list-style: none;
             padding: 2% 0%;
@@ -38,6 +44,9 @@ footer{
             }
         }
     }
+    
+    /* CSS du formulaire de login responsive */
+
     .login{
         display: flex;
         flex-direction: column;
@@ -78,19 +87,27 @@ footer{
                     position: relative;
                 }
             }
+
+            /* CSS pour le lien d'inscription au site */
+
             a{
                 font-family: 'Open Sans', sans-serif;
                 color: white;
                 text-decoration: none;
+                display: flex;
+                justify-content: center;
             }
         }
+
+        /* Affichage du login responsive */
+
         .toggle-admin{
             display: flex;
             flex-direction: column;
             align-items: center;
             .login-form{
                 form{
-                    p{
+                    .login-username, .login-password, .login-remember{
                         font-family: 'Open Sans', sans-serif;
                         color: black;
                         font-size: 0.8em;
@@ -105,36 +122,90 @@ footer{
                             padding: 2% 0;
                             text-align: center;
                         }
-                        input{
-                            width: 100%;
-                        }
                     }
                     .login-remember{
                         text-align: center;
                         width: 100%;
-                    }
-                    .login-remember{
-                        label{
-                            input:checked{
-                                color: #000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 5% 0;
+                        input{
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            -ms-appearance: none;
+                            height: 15px;
+                            width: 15px;
+                            background: #ffffff;
+                            border: 1px solid black;
+                            cursor: pointer;
+                            &:hover{
+                                background: #202f86;
+                                position: relative;
+                                &:before{
+                                    font-family: 'FontAwesome';
+                                    content: '\f0a6';
+                                    display: block;
+                                    color: #ffffff;
+                                    font-size: 15px;
+                                    position: absolute;
+                                    left: -1px;
+                                    bottom: -1px;
+                                }
+                            }
+                            &:checked{
+                                background: #202f86;
+                                position: relative;
+                                &:before {
+                                    font-family: 'FontAwesome';
+                                    content: '\f00c';
+                                    display: block;
+                                    color: #ffffff;
+                                    font-size: 15px;
+                                    position: absolute;
+                                }
+                            }
+                            &:checked{
+                                &:hover{
+                                    background: #202f86;
+                                    position: relative;
+                                    &:before{
+                                        font-family: 'FontAwesome';
+                                        content: '\f00d';
+                                        display: block;
+                                        color: #ffffff;
+                                        font-size: 20px;
+                                        position: absolute;
+                                        left: 0px;
+                                        bottom: -4px;
+                                    }
+                                }
                             }
                         }
                     }
+
+                    /* CSS pour le bouton de connexion */
+
                     .login-submit{
                         text-align: center;
                         width: 80%;
                         margin: auto;
                         padding: 5% 0;
                         input{
+                            font-family: 'Open Sans', sans-serif;
                             background-color: #e9e8e9;
-                            border: 1px solid;
+                            color: black;
+                            border: 1px solid black;
                             border-radius: 20px;
+                            padding: 5% 0;
                             cursor: pointer;
                             transition: 0.5s ease;
                             width: 100%;
                             &:hover{
                                 transition: 0.5s ease;
-                                box-shadow: 1px 5px 7px #000;
+                                background-color: #202f86;
+                                color: white;
+                                border: 1px solid black;
                             }
                         }
                     }

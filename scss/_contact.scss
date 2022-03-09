@@ -13,7 +13,13 @@
         width: 80%;
         background-image: none;
     }
+
+    /* CSS pour le formulaire de contact */
+
     .formulaire{
+
+        /* CSS sur la phrase d'intro du formulaire */
+
         h1{
             padding-top: 1%;
             padding-bottom: 1%;
@@ -25,6 +31,9 @@
                 font-size: 1.4em;
             }
         }
+
+        /* CSS pour le formulaire uniquement */
+
         .wpcf7{
             form{
                 padding-top: 1%;
@@ -33,6 +42,9 @@
                 font-family: 'Open Sans', sans-serif;
                 text-align: center;
                 background-color: rgba($color: #212021, $alpha: 0.6);
+
+                /* Des balises sont intégrés sur le formulaire */
+
                 .infos-contact{
                     display: flex;
                     align-items: center;
@@ -40,6 +52,9 @@
                     @media (max-width: 1365.98px){
                         flex-direction: column;
                     }
+
+                    /* Des balises sont intégrés sur le formulaire */
+
                     .coordonnees{
                         .champ-nom, .champ-prenom, .champ-email, .champ-tel, .champ-societe, .champ-objet{
                             padding: 2% 0;
@@ -76,6 +91,9 @@
                             }
                         }
                     }
+
+                    /* Des balises sont intégrés sur le formulaire */
+
                     .champ-message{
                         label{
                             color: white;
@@ -103,6 +121,9 @@
                         }
                     }
                 }
+
+                /* Des balises sont intégrés sur le formulaire */
+
                 .bouton{
                     display: flex;
                     justify-content: center;
@@ -132,7 +153,7 @@
                     }
                 }
                 .wpcf7-response-output{
-                    border-color: #202F86;
+                    border-color: transparent;
                     font-size: 1em;
                     font-weight: 700;
                     color: white;
