@@ -3,9 +3,13 @@
 .mentions-legales{
     padding: 2% 5%;
     font-family: 'Open Sans', sans-serif;
+
+    /* CSS pour l'entête de la page */
+
     .head-mentions-legales{
         text-align: justify;
         p{
+            padding: 0 2.5%;
             a{
                 color: black;
                 font-weight: bold;
@@ -17,6 +21,9 @@
             }
         }
     }
+
+    /* CSS sur les articles (16 au total) */
+
     .article01, .article02, .article03, .article04, .article05, .article06, .article07, .article08, .article09, .article10, .article11, .article12, .article13, .article14, .article15, .article16{
         .article-title{
             @media (max-width: 1365.98px){
@@ -26,6 +33,7 @@
     }
     .article02, .article03, .article04, .article05, .article06, .article07, .article08, .article09, .article10, .article11, .article12, .article13, .article14, .article15, .article16{
         .article-content{
+            padding: 0 2.5%;
             text-align: justify;
         }
     }
@@ -40,6 +48,7 @@
     }
     .article01{
         .article-content{
+            padding: 0 2.5%;
             .content-site, .content-editeur, .content-hebergeur, .content-concepteur{
                 p{
                     text-align: justify;
@@ -62,6 +71,7 @@
     }
     .article08, .article13{
         .article-content{
+            padding: 0 2.5%;
             ul{
                 li{
                     a{
