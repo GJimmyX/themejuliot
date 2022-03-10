@@ -2,11 +2,17 @@
 
 .inscription{
     font-family: 'Open Sans', sans-serif;
+
+    /* Titre de la page */
+
     h2{
         font-size: 2em;
         text-align: center;
         padding: 1% 0;
     }
+
+    /* Formulaire d'inscription au site */
+
     form{
         display: flex;
         flex-direction: column;
@@ -27,6 +33,9 @@
                 border: 1px solid;
             }
         }
+
+        /* CSS sur le bouton d'envoi du formulaire */
+
         .submitting{
             padding: 1% 0;
             display: flex;
