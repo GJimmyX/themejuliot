@@ -74,7 +74,115 @@
         justify-content: space-around;
         gap: 2.5%;
 
-        /* CSS de chaque sous-menu */
+        /* CSS de chaque sous-menu pour le type 1*/
+
+        #menu-menu-secondaire{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            justify-content: space-around;
+            padding: 0;
+            gap: 2.5%;
+            #menu-item-472{
+                background-image: url(img/img_elecindus.jpg);
+                background-position: center;
+                background-size: contain;
+            }
+            #menu-item-471{
+                background-image: url(img/img_electert_resized.jpg);
+                background-position: center;
+                background-size: contain;
+            }
+            #menu-item-470{
+                background-image: url(img/img_auto_resized.jpg);
+                background-position: center;
+                background-size: contain;
+            }
+            #menu-item-469{
+                background-image: url(img/img_info_resized.jpg);
+                background-position: center;
+                background-size: contain;
+            }
+            li{
+                margin: 2%;
+                display: flex;
+                flex-direction: column;
+                flex: 0 1 270px;
+                height: 360px;
+                position: relative;
+                list-style: none;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                border-radius: 30px;
+                .hover{
+                    transition: .8s ease;
+                    background-color: rgba(0,0,0,0.5);
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 360px;
+                    opacity: 0;
+                    border-radius: 30px;
+                    display: flex;
+                    align-items: center;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                        background-color: transparent;
+                        opacity: 1;
+                    }
+                    a{
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.5em;
+                        text-decoration: none;
+                        color: white;
+                        background-color: #e95b23;
+                        margin: auto;
+                        width: 80%;
+                        border-radius: 20px;
+                        transition: .8s ease;
+                        p{
+                            position: relative;
+                            top: -20px;
+                            transition: .8s ease;
+                            @media (max-width: 1365.98px){
+                                top: 0;
+                                transition: none;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    .hover{
+                        transition: .8s ease;
+                        opacity: 1;
+                        @media (max-width: 1365.98px){
+                            transition: none;
+                        }
+                        a{
+                            opacity: 1;
+                            transition: .8s ease;
+                            @media (max-width: 1365.98px){
+                                transition: none;
+                            }
+                            p{
+                                transform: translateY(20px);
+                                opacity: 1;
+                                transition: .8s ease;
+                                @media (max-width: 1365.98px){
+                                    transition: none;
+                                    transform: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* CSS de chaque sous-menu pour le type 2*/
 
         .menuPosts-card{
             margin: 2%;

@@ -71,11 +71,14 @@ function enqueue_style() {
   if (!is_user_logged_in() ) :
     wp_enqueue_script('adminjs', get_template_directory_uri() . '/js/admin-log.js', false, '', true);
   endif;
+  if (is_page('contact') ) :
+    wp_enqueue_script('characterjs', get_template_directory_uri() . '/js/character-contact.js', false, '', true);
+  endif;
 };
 
 add_action('wp_enqueue_scripts', 'enqueue_style');
 
-/* Enlever l'affichage de la bar d'administration pour tout le monde sauf l'admin */
+/* Enlever l'affichage de la barre d'administration pour tout le monde sauf l'admin */
 
 if (!current_user_can('administrator') ) :
   show_admin_bar(false);
@@ -183,6 +186,14 @@ function my_login_remember() {
 }
 
 add_action( 'init', 'my_login_remember' );
+
+/* Modifier expiration cookie */
+
+function wpm_cookie( $expirein ) {
+  return 15552000; // cette valeur correspond à 1 an en secondes
+}
+
+add_filter( 'auth_cookie_expiration', 'wpm_cookie');
 
 /* Ajouter le support Widget pour le footer */
 

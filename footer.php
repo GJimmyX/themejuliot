@@ -15,11 +15,14 @@
                     <button id="adminBtn"><p class="fas"></p></button>
                     <div id="admin-log" class="admin">
                         <div class="login-form">
-                            <?php wp_login_form( array(
-                                'redirect_to' => 'get_permalink( get_the_ID())',
-                                'id_submit' => 'submit',
-                                'value_remember' => true,
-                            )); ?>
+                            <?php
+                                $args = array(
+                                    'redirect_to' => 'get_permalink( get_the_ID())',
+                                    'id_submit' => 'submit',
+                                    'value_remember' => true,
+                                );
+                                wp_login_form( $args );
+                            ?>
                             <a href="/inscription">Pas de compte ?</a>
                         </div>
                     </div>
