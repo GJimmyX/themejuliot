@@ -16,7 +16,25 @@
     <!-- Style nav -->
 
     <div class="section_01">
-    
+
+        <!-- Style 1 -->
+
+        <?php
+            wp_nav_menu(
+                array(
+                    'container' => 'ul',
+                    'theme_location' => 'Secondary',
+                    'menu_class' => 'nav-menu',
+                    'before' => '<div class="hover">',
+                    'after' => '</div>',
+                    'link_before' => '<p>',
+                    'link_after' => '</p>',
+                )
+            );
+        ?>
+
+        <!-- Style 2 -->
+
         <?php
             $menuPosts = new WP_Query();
             $menuPosts->query(array( 
@@ -24,7 +42,7 @@
                 'orderby' => array(
                     'id' => 'ASC',
                 ))
-            );            
+            );
         ?>
             <?php while ($menuPosts->have_posts()) : $menuPosts->the_post();
         ?>
