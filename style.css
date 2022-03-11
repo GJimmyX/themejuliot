@@ -1651,6 +1651,7 @@ footer .login #admin-panel {
   background-color: rgba(33, 32, 33, 0.6);
   /* Des balises sont intégrés sur le formulaire */
   /* Des balises sont intégrés sur le formulaire */
+  /* Bouton d'envoi du formulaire */
 }
 
 .contact .formulaire .wpcf7 form .infos-contact {
@@ -1663,7 +1664,9 @@ footer .login #admin-panel {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   /* Des balises sont intégrés sur le formulaire */
+  /* Champs coordonnees */
   /* Des balises sont intégrés sur le formulaire */
+  /* Champ message */
 }
 
 @media (max-width: 1365.98px) {
@@ -1760,13 +1763,62 @@ footer .login #admin-panel {
   font-size: 1.5em;
   border-radius: 20px;
   width: 90%;
+  cursor: default;
+  resize: none;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message textarea::-webkit-scrollbar {
+  background-color: #212021;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: 1px solid #020722;
+  border-bottom: 1px solid #020722;
+}
+
+@media (max-width: 1365.98px) {
+  .contact .formulaire .wpcf7 form .infos-contact .champ-message textarea::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message textarea::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 1px solid #020722;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:increment {
+  width: 7.5px;
+  height: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid #020722;
+  background-color: white;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:decrement {
+  width: 7.5px;
+  height: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid #020722;
+  background-color: white;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message textarea::-webkit-resizer {
+  display: none;
 }
 
 .contact .formulaire .wpcf7 form .infos-contact .champ-message textarea:focus {
   outline: none;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .champ-message .compteur-caracteres {
+.contact .formulaire .wpcf7 form .infos-contact .champ-message .nombre-caracteres {
+  margin: 2% 0;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message .nombre-caracteres .caracteres-label {
+  width: 100%;
+}
+
+.contact .formulaire .wpcf7 form .infos-contact .champ-message .nombre-caracteres .compteur-caracteres {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1776,12 +1828,12 @@ footer .login #admin-panel {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20%;
+  width: 100%;
   margin: 2% 0;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .champ-message .compteur-caracteres input {
-  width: 50%;
+.contact .formulaire .wpcf7 form .infos-contact .champ-message .nombre-caracteres .compteur-caracteres input {
+  width: 15%;
   text-align: center;
   border: 0;
   padding: 0;
@@ -1794,8 +1846,8 @@ footer .login #admin-panel {
   padding-top: 2.5px;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .champ-message .compteur-caracteres p {
-  width: 50%;
+.contact .formulaire .wpcf7 form .infos-contact .champ-message .nombre-caracteres .compteur-caracteres p {
+  width: 20%;
   color: white;
   font-weight: 700;
   font-size: 1em;

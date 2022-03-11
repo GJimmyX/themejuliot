@@ -274,14 +274,14 @@
                 <a href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser" target="_blank">https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser</a>).
             </p>
             <p>En naviguant sur ce site, des « cookies » émanant de la société responsable du site concerné et/ou des sociétés tierces pourront être déposés sur votre terminal.</p>
-            <p>Lors de la première navigation sur ce site, une bannière explicative sur l’utilisation des « cookies » apparaîtra. Dès lors, en poursuivant la navigation, le client et/ou prospect sera réputé informé et avoir accepté l’utilisation desdits « cookies ». Le consentement donné sera valable pour une période de douze (12) mois. L’utilisateur a la possibilité de désactiver les cookies à partir des paramètres de son navigateur.</p>
+            <p>Lors de la première navigation sur ce site, une bannière explicative sur l’utilisation des « cookies » apparaîtra. Dès lors, en poursuivant la navigation, le client et/ou prospect sera réputé informé et avoir accepté l’utilisation desdits « cookies ». Le consentement donné sera valable pour une période de six (6) mois. L’utilisateur a la possibilité de désactiver les cookies à partir des paramètres de son navigateur.</p>
             <p>Toutes les informations collectées ne seront utilisées que pour suivre le volume, le type et la configuration du trafic utilisant ce site, pour en développer la conception et l’agencement et à d’autres fins administratives et de planification et plus généralement pour améliorer le service que nous vous offrons.</p>
             <p>Les cookies suivants sont présents sur ce site :</p>
             <p>Cookies Google :</p>
             <ul>
                 <li><i class="fa-solid fa-angles-right"></i>&nbsp;Google Analytics : permet de mesurer l’audience du site.</li>
                 <li><i class="fa-solid fa-angles-right"></i>&nbsp;Google Tag Manager : facilite l’implémentation des tags sur les pages et permet de gérer les balises Google.</li>
-                <li><i class="fa-solid fa-angles-right"></i>&nbsp;La durée de vie de ces cookies est de douze mois.</li>
+                <li><i class="fa-solid fa-angles-right"></i>&nbsp;La durée de vie de ces cookies est de six mois.</li>
             </ul>
             <p>Pour plus d’informations sur l’utilisation, la gestion et la suppression des « cookies », pour tout type de navigateur, nous vous invitons à consulter le lien suivant : 
                 <a href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser" target="_blank">https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser</a>.
