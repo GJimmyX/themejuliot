@@ -20,7 +20,7 @@
         <!-- Style 1 -->
 
         <?php
-            wp_nav_menu(
+            /* wp_nav_menu(
                 array(
                     'container' => 'ul',
                     'theme_location' => 'Secondary',
@@ -30,7 +30,7 @@
                     'link_before' => '<p>',
                     'link_after' => '</p>',
                 )
-            );
+            ); */
         ?>
 
         <!-- Style 2 -->
@@ -96,7 +96,7 @@
 
         <div class="texte">
             <h2><b>JULIOT ÉLECTRICITÉ, C'EST:</b></h2>
-            <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">L'expérience et la souplesse s'une équipe de 12 personnes pour répondre à vos besoins.</p>
+            <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">L'expérience et la souplesse d'une équipe de 12 personnes pour répondre à vos besoins.</p>
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">Des techniciens aguerris dans le domaine de l'automatisme industriel.</p>
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">Un bureau d'études compétent et innovant capable de réaliser vos projets en automatisme, informatique industrielle et électricité tertiaire / industrielle.</p>
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">L'accent sur la qualité et la sécurité de nos installations.</p>

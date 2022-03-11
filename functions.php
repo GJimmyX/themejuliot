@@ -84,6 +84,62 @@ if (!current_user_can('administrator') ) :
   show_admin_bar(false);
 endif;
 
+/* Enlever l'affichage des pages pour le rôle Éditeur dans la barre d'administration*/
+
+function visu_menu() {
+  if (current_user_can('editor') ) :
+    remove_menu_page('edit.php?post_type=page');
+  endif;
+}
+
+add_action( 'admin_menu', 'visu_menu', 999);
+
+/* Enlever l'affichage du plugin SEO, de la création de pages et de Contact Form 7 pour le rôle Éditeur dans la barre d'administration */
+
+function visu_abmenu() {
+  if (current_user_can('editor') ) :
+    ?>
+
+    <style>
+
+      /* Enlever l'affichage du plugin SEO et du plugin Contact Form 7 pour le rôle Éditeur dans la barre d'administration*/
+
+      body #wpwrap #adminmenumain #adminmenuwrap #adminmenu #toplevel_page_wpseo_workouts{
+        display: none;
+      }
+      body #wpwrap #adminmenumain #adminmenuwrap #adminmenu #toplevel_page_wpcf7{
+        display: none;
+      }
+
+      /* Enlever l'affichage du plugin SEO et du plugin Contact Form 7 pour le rôle Éditeur dans l'entête de la barre d'administration*/
+
+      body #wpwrap #wpcontent #wpadminbar .ab-top-menu #wp-admin-bar-new-content .ab-sub-wrapper #wp-admin-bar-new-page{
+        display: none;
+      }
+      body #wpwrap #wpcontent #wpadminbar .ab-top-menu #wp-admin-bar-wpseo-menu{
+        display: none;
+      }
+
+      /* Enlever l'affichage de blocs dans le body de l'administration */
+
+      body #wpwrap #wpcontent #wpbody #wpbody-content #screen-meta #screen-options-wrap #adv-settings .metabox-prefs label{
+        display: none;
+      }
+      body #wpwrap #wpcontent #wpbody #wpbody-content .wrap #dashboard-widgets-wrap .metabox-holder #postbox-container-1 .ui-sortable #dashboard_right_now{
+        display: none;
+      }
+      body #wpwrap #wpcontent #wpbody #wpbody-content .wrap #dashboard-widgets-wrap .metabox-holder #postbox-container-1 .ui-sortable .wpseo-dashboard-overview{
+        display: none;
+      }
+      
+    </style>
+
+    <?php
+  endif;
+}
+
+add_action( 'admin_bar_menu', 'visu_abmenu', 999);
+
 /* Supprimer le Post Type par défaut de WordPress */
 
 function remove_default_post_type() {
@@ -136,7 +192,7 @@ function my_login_style() { ?>
       outline: none;
     }
     #login form .forgetmenot input:checked::before{
-      content: url(<?php echo get_template_directory_uri(); ?>/img/test.png);
+      content: url(<?php echo get_template_directory_uri(); ?>/img/check.png);
       margin: 0;
       width: 1rem;
     }
@@ -190,7 +246,7 @@ add_action( 'init', 'my_login_remember' );
 /* Modifier expiration cookie */
 
 function wpm_cookie( $expirein ) {
-  return 15552000; // cette valeur correspond à 1 an en secondes
+  return 15552000; // cette valeur correspond à 6 mois en secondes
 }
 
 add_filter( 'auth_cookie_expiration', 'wpm_cookie');
