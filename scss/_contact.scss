@@ -54,6 +54,7 @@
                     }
 
                     /* Des balises sont intégrés sur le formulaire */
+                    /* Champs coordonnees */
 
                     .coordonnees{
                         .champ-nom, .champ-prenom, .champ-email, .champ-tel, .champ-societe, .champ-objet{
@@ -93,6 +94,7 @@
                     }
 
                     /* Des balises sont intégrés sur le formulaire */
+                    /* Champ message */
 
                     .champ-message{
                         display: flex;
@@ -114,41 +116,81 @@
                             font-size: 1.5em;
                             border-radius: 20px;
                             width: 90%;
+                            cursor: default;
+                            resize: none;
+                        }
+                        textarea::-webkit-scrollbar{
+                            background-color: #212021;
+                            border-top-right-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                            border-top: 1px solid #020722;
+                            border-bottom: 1px solid #020722;
+                            @media (max-width: 1365.98px){
+                                display: none;
+                            }
+                        }
+                        textarea::-webkit-scrollbar-thumb{
+                            background-color: white;
+                            border: 1px solid #020722;
+                        }
+                        textarea::-webkit-scrollbar-button:single-button:vertical:increment{
+                            width: 7.5px;
+                            height: 20px;
+                            border-bottom-right-radius: 20px;
+                            border: 1px solid #020722;
+                            background-color: white;
+                        }
+                        textarea::-webkit-scrollbar-button:single-button:vertical:decrement{
+                            width: 7.5px;
+                            height: 20px;
+                            border-top-right-radius: 20px;
+                            border: 1px solid #020722;
+                            background-color: white;
+                        }
+                        textarea::-webkit-resizer{
+                            display: none;
                         }
                         textarea:focus{
                             outline: none;
                         }
-                        .compteur-caracteres{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 20%;
+                        .nombre-caracteres{
                             margin: 2% 0;
-                            input{
-                                width: 50%;
-                                text-align: center;
-                                border: 0;
-                                padding: 0;
-                                margin: 0;
-                                background: transparent;
-                                color: white;
-                                font-weight: 700;
-                                font-size: 1em;
-                                outline: none;
-                                padding-top: 2.5px;
+                            .caracteres-label{
+                                width: 100%;
                             }
-                            p{
-                                width: 50%;
-                                color: white;
-                                font-weight: 700;
-                                font-size: 1em;
-                                margin: 0;
+                            .compteur-caracteres{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                margin: 2% 0;
+                                input{
+                                    width: 15%;
+                                    text-align: center;
+                                    border: 0;
+                                    padding: 0;
+                                    margin: 0;
+                                    background: transparent;
+                                    color: white;
+                                    font-weight: 700;
+                                    font-size: 1em;
+                                    outline: none;
+                                    padding-top: 2.5px;
+                                }
+                                p{
+                                    width: 20%;
+                                    color: white;
+                                    font-weight: 700;
+                                    font-size: 1em;
+                                    margin: 0;
+                                }
                             }
                         }
                     }
                 }
 
                 /* Des balises sont intégrés sur le formulaire */
+                /* Bouton d'envoi du formulaire */
 
                 .bouton{
                     display: flex;
