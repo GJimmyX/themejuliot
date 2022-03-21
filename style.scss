@@ -37,7 +37,7 @@
 
 /* Importation du CSS des diffférentes pages du site */
 
-@import 'scss/electricite';
+@import 'scss/maintenanceinstallation';
 @import 'scss/automatisme';
 @import 'scss/infoindustrielle';
 @import 'scss/contact';
@@ -576,6 +576,11 @@
                             display: flex;
                             justify-content: center;
                             flex: 1 1 140px;
+                            a{
+                                img{
+                                    max-width: 100%;
+                                }
+                            }
                         }
                     }
                 }
@@ -587,6 +592,27 @@
                     from {opacity: .4} 
                     to {opacity: 1}
                 }
+            }
+        }
+    }
+    #btn{
+        display: flex;
+        justify-content: end;
+        padding: 0 3%;
+        #topBtn{
+            width: 70px;
+            height: 70px;
+            padding: 0%;
+            border-radius: 35px;
+            color: #ffffff;
+            background-color: #202f86;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(0px);
+            transition: .5s ease;
+            &:hover{
+                transform: translateY(20px);
+                transition: .5s ease;
             }
         }
     }
