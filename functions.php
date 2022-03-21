@@ -63,6 +63,11 @@ function enqueue_style() {
   if (is_page('accueil') ) :
     wp_enqueue_script('sliderjs', get_template_directory_uri() . '/js/slider.js', false, '', true);
     wp_enqueue_script('bannersliderjs', get_template_directory_uri() . '/js/banner-slider.js', false, '', true);
+    wp_enqueue_script('topbtnjs', get_template_directory_uri() . '/js/top-btn.js', false, '', true);
+  endif;
+  if (is_page('contact') ) :
+    wp_enqueue_script('mapjs', get_template_directory_uri() . '/js/api-google.js', false, '', true);
+    wp_enqueue_script('mapcommonjs', get_template_directory_uri() . '/js/common.js', false, '', true);
   endif;
   if (is_singular('articles') ) :
     wp_enqueue_script('articlessliderjs', get_template_directory_uri() . '/js/articles-slider.js', false, '', true);
@@ -70,9 +75,6 @@ function enqueue_style() {
   wp_enqueue_script('navjs', get_template_directory_uri() . '/js/navigation.js', false, '', true);
   if (!is_user_logged_in() ) :
     wp_enqueue_script('adminjs', get_template_directory_uri() . '/js/admin-log.js', false, '', true);
-  endif;
-  if (is_page('contact') ) :
-    wp_enqueue_script('characterjs', get_template_directory_uri() . '/js/character-contact.js', false, '', true);
   endif;
 };
 

@@ -163,43 +163,46 @@
                 <div class="banner-elements banner-fade">
                     <ul class="banner">
                         <li>
-                            <a href="https://www.piveteaubois.com/fr/" target="_blank" title="Piveteau Bois"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/piveteau_bois_logo.png' ?>" alt="Piveteau Bois" style="width: 140px; height: 39px;"></a>
+                            <a href="https://www.piveteaubois.com/fr/" target="_blank" title="Piveteau Bois"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/piveteau_bois_logo.png' ?>" alt="Piveteau Bois"></a>
                         </li>
                         <li>
-                            <a href="https://www.stef.com/" target="_blank" title="Transports STEF"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/stef_logo.png' ?>" alt="Transports STEF" style="width: 80px; height: 40px;"></a>
+                            <a href="https://www.stef.com/" target="_blank" title="Transports STEF"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/stef_logo.png' ?>" alt="Transports STEF"></a>
                         </li>
                         <li>
-                            <a href="https://www.edycem.fr/" target="_blank" title="Édycem Béton"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/edycem_logo.png' ?>" alt="Édycem Béton" style="width: 94px; height: 40px;"></a>
+                            <a href="https://www.edycem.fr/" target="_blank" title="Édycem Béton"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/edycem_logo.png' ?>" alt="Édycem Béton"></a>
                         </li>
                         <li>
-                            <a href="https://www.materiaux.eiffageroute.com/carrieres-mousset" target="_blank" title="Carrières Mousset"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_mousset_carrieres.png' ?>" alt="Carrières Mousset" style="width: 140px; height: 31px;"></a>
+                            <a href="https://www.materiaux.eiffageroute.com/carrieres-mousset" target="_blank" title="Carrières Mousset"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_mousset_carrieres.png' ?>" alt="Carrières Mousset"></a>
                         </li>
                         <li>
-                            <a href="https://www.kmoreau.fr/" target="_blank" title="Carrières Kleber Moreau"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/kleber_moreau_logo.png' ?>" alt="Carrières Kleber Moreau" style="width: 68px; height: 40px;"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.essartsenbocage.fr/" target="_blank" title="Commune d'Essarts en Bocage"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/essarts_en_bocage_logo01.png' ?>" alt="Commune d'Essarts en Bocage" style="width: 40px; height: 40px;"></a>
-                        </li>
-                        <li>
-                            <a href="http://agersystemes.fr/" target="_blank" title="AGER Systèmes"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_agersystemes.png' ?>" alt="AGER Systèmes" style="width: 85px; height: 40px;"></a>
+                            <a href="https://www.kmoreau.fr/" target="_blank" title="Carrières Kleber Moreau"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/kleber_moreau_logo.png' ?>" alt="Carrières Kleber Moreau"></a>
                         </li>
                     </ul>
                 </div>
                 <div class="banner-elements banner-fade">
                     <ul class="banner">
                         <li>
-                            <a href="https://www.alphacan.com/fr/" target="_blank" title="Alphacan"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/alphacan_logo.png' ?>" alt="Alphacan" style="width: 40px; height: 40px;"></a>
+                            <a href="https://www.essartsenbocage.fr/" target="_blank" title="Commune d'Essarts en Bocage"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/essarts_en_bocage_logo01.png' ?>" alt="Commune d'Essarts en Bocage"></a>
                         </li>
                         <li>
-                            <a href="https://www.soulaines-sur-aubance.fr/" target="_blank" title="Soulaines Sur Aubance"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/Soulaines_sur_Aubance_logo.png' ?>" alt="Soulaines Sur Aubance" style="width: 34px; height: 40px;"></a>
+                            <a href="http://agersystemes.fr/" target="_blank" title="AGER Systèmes"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/logo_agersystemes.png' ?>" alt="AGER Systèmes"></a>
                         </li>
                         <li>
-                            <a href="https://www.remouille.fr/" target="_blank" title="Remouillé"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/remouille_logo.png' ?>" alt="Remouillé" style="width: 36px; height: 40px;"></a>
+                            <a href="https://www.alphacan.com/fr/" target="_blank" title="Alphacan"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/alphacan_logo.png' ?>" alt="Alphacan"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.soulaines-sur-aubance.fr/" target="_blank" title="Soulaines Sur Aubance"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/Soulaines_sur_Aubance_logo.png' ?>" alt="Soulaines Sur Aubance"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.remouille.fr/" target="_blank" title="Remouillé"><img src="<?php echo get_template_directory_uri() . '/img/img_banniere_accueil/remouille_logo.png' ?>" alt="Remouillé"></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="btn">
+        <button onclick="topFunction()" id="topBtn" title="Remonter en haut"><i class="fas fa-chevron-up"></i></button>
     </div>
 </main>
 
