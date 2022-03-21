@@ -39,6 +39,9 @@ footer{
                     text-decoration: none;
                     &:hover{
                         font-weight: bold;
+                        @media (max-width: 1365.98px){
+                            font-weight: normal;
+                        }
                     }
                 }
             }
@@ -86,16 +89,6 @@ footer{
                     right: 0;
                     position: relative;
                 }
-            }
-
-            /* CSS pour le lien d'inscription au site */
-
-            a{
-                font-family: 'Open Sans', sans-serif;
-                color: white;
-                text-decoration: none;
-                display: flex;
-                justify-content: center;
             }
         }
 
