@@ -55,19 +55,17 @@
                             )
                         );
                     ?>
+                    
+                    <!-- Barre de recherche du site Juliot Électricité -->
+
+                    <div class="nav-search">
+                        <button type="submit" id="search-btn"><p class="fas fa-search"></p></button>
+                        <form action="#" method="post" id="search-bar" class="search">
+                            <label for="search-bar"></label>
+                            <input type="text" id="search-bar">
+                        </form>
+                    </div>
                 </nav>
-
-                <!-- Bouton de déconnexion wordpress -->
-
-                <div class="admin-in">
-                    <?php if (is_user_logged_in()) : ?>
-                        <a href="<?php echo wp_logout_url( get_permalink( get_the_ID()) ); ?>">
-                            <button>
-                                Déconnexion
-                            </button>
-                        </a>
-                    <?php endif; ?>
-                </div>
             </div>
         </header>
 
