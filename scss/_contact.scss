@@ -1,0 +1,522 @@
+/* CSS de la page 'Contact' */
+
+.contact{
+    padding: 0 5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1365.98px){
+        flex-direction: column;
+    }
+
+    /* CSS pour les deux adresses de la société */
+
+    .adresses{
+        width: 20%;
+        font-family: 'Open Sans', sans-serif;
+        @media (max-width: 1365.98px){
+            width: 80%;
+            margin-top: 5%;
+        }
+        .agence85, .agence44{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                width: 100%;
+                height: 300px;
+            }
+            .carte-agence85{
+                background-image: url(img/agence85.png);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .carte-agence44{
+                background-image: url(img/agence44.png);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            p{
+                font-size: 1em;
+                text-align: center;
+                color: #202F86;
+            }
+        }
+        .agence85{
+            padding: 10% 0;
+            @media (max-width: 1365.98px){
+                padding: 5% 0;
+            }
+        }
+        .agence44{
+            padding-top: 10%;
+            @media (max-width: 1365.98px){
+                padding-top: 5%;
+            }
+        }
+    }
+
+    /* CSS pour le formulaire de contact */
+
+    .formulaire{
+        width: 50%;
+        background-image: url(img/img_accueil.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        @media (max-width: 1365.98px){
+            width: 80%;
+            background-image: none;
+        }
+
+        /* CSS sur la phrase d'intro du formulaire */
+
+        h1{
+            padding-top: 1%;
+            padding-bottom: 1%;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 800;
+            font-size: 2.5em;
+            @media (max-width: 575.98px){
+                font-size: 1.4em;
+            }
+        }
+
+        /* CSS pour le formulaire uniquement */
+
+        .wpcf7{
+            form{
+                padding-top: 1%;
+                padding-bottom: 1%;
+                margin-bottom: 5%;
+                font-family: 'Open Sans', sans-serif;
+                text-align: center;
+                background-color: rgba($color: #212021, $alpha: 0.6);
+
+                /* Des balises sont intégrés sur le formulaire */
+
+                .infos-contact{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    @media (max-width: 1365.98px){
+                        flex-direction: column;
+                    }
+
+                    /* Des balises sont intégrés sur le formulaire */
+                    /* Champs coordonnees */
+
+                    .coordonnees{
+                        .champ-nom, .champ-prenom, .champ-email, .champ-tel{
+                            padding: 2% 0;
+                            label{
+                                color: white;
+                                font-weight: 700;
+                                font-size: 1em;
+                                width: 75%;
+                                margin: auto;
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 1%;
+                                i{
+                                    font-style: normal;
+                                    margin: 0 1%;
+                                    color: #FF9F3B;
+                                    font-size: 1em;
+                                }
+                            }
+                            span{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                input{
+                                    background-color: rgba($color: #e9e8e9, $alpha: 0.6);
+                                    border: 1px solid #020722;
+                                    font-size: 1.5em;
+                                    border-radius: 20px;
+                                    width: 90%;
+                                    cursor: default;
+                                }
+                                input:focus{
+                                    outline: none;
+                                }
+                                .wpcf7-not-valid-tip{
+                                    font-size: 1em;
+                                    font-weight: 700;
+                                    color: #FF9F3B;
+                                    margin-top: 1%;
+                                }
+                            }
+                        }
+                        .champ-societe, .champ-objet{
+                            padding: 2% 0;
+                            label{
+                                color: white;
+                                font-weight: 700;
+                                font-size: 1em;
+                                width: 75%;
+                                margin: auto;
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 1%;
+                                i{
+                                    font-style: normal;
+                                    margin: 0 1%;
+                                    color: #FF9F3B;
+                                    font-size: 1em;
+                                }
+                            }
+                            span{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                select{
+                                    background-color: rgba($color: #e9e8e9, $alpha: 0.6);
+                                    border: 1px solid #020722;
+                                    font-size: 1.5em;
+                                    border-radius: 20px;
+                                    width: 90%;
+                                }
+                                select:focus{
+                                    outline: none;
+                                }
+                                .wpcf7-not-valid-tip{
+                                    font-size: 1em;
+                                    font-weight: 700;
+                                    color: #FF9F3B;
+                                    margin-top: 1%;
+                                }
+                            }
+                        }
+                    }
+
+                    /* Des balises sont intégrés sur le formulaire */
+                    /* Champ message */
+
+                    .message-document{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .champ-message{
+                            label{
+                                color: white;
+                                font-weight: 700;
+                                font-size: 1em;
+                                width: 75%;
+                                margin: auto;
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 1%;
+                                i{
+                                    font-style: normal;
+                                    margin: 0 1%;
+                                    color: #FF9F3B;
+                                    font-size: 1em;
+                                }
+                            }
+                            textarea{
+                                background-color: rgba($color: #e9e8e9, $alpha: 0.6);
+                                border: 1px solid #020722;
+                                font-size: 1.5em;
+                                border-radius: 20px;
+                                width: 90%;
+                                cursor: default;
+                                resize: none;
+                            }
+                            textarea::-webkit-scrollbar{
+                                background-color: #212021;
+                                border-top-right-radius: 20px;
+                                border-bottom-right-radius: 20px;
+                                border-top: 1px solid #020722;
+                                border-bottom: 1px solid #020722;
+                                @media (max-width: 1365.98px){
+                                    display: none;
+                                }
+                            }
+                            textarea::-webkit-scrollbar-thumb{
+                                background-color: white;
+                                border: 1px solid #020722;
+                            }
+                            textarea::-webkit-scrollbar-button:single-button:vertical:increment{
+                                width: 7.5px;
+                                height: 20px;
+                                border-bottom-right-radius: 20px;
+                                border: 1px solid #020722;
+                                background-color: white;
+                            }
+                            textarea::-webkit-scrollbar-button:single-button:vertical:decrement{
+                                width: 7.5px;
+                                height: 20px;
+                                border-top-right-radius: 20px;
+                                border: 1px solid #020722;
+                                background-color: white;
+                            }
+                            textarea::-webkit-resizer{
+                                display: none;
+                            }
+                            textarea:focus{
+                                outline: none;
+                            }
+                            span{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                .wpcf7-not-valid-tip{
+                                    font-size: 1em;
+                                    font-weight: 700;
+                                    color: #FF9F3B;
+                                    margin-top: 1%;
+                                }
+                            }
+                        }
+
+                        /* Champ envoi pièce jointe facultative */
+
+                        .champ-document{
+                            margin-top: 5%;
+                            label{
+                                color: white;
+                                font-weight: 700;
+                                font-size: 1em;
+                                width: 100%;
+                                margin: auto;
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 1%;
+                                i{
+                                    font-style: normal;
+                                    margin: 0 1%;
+                                    color: #FF9F3B;
+                                    font-size: 1em;
+                                }
+                            }
+                            span{
+                                input{
+                                    background-color: rgba($color: #e9e8e9, $alpha: 0.6);
+                                    border: 1px solid #020722;
+                                    font-size: 1.25em;
+                                    width: 90%;
+                                    cursor: default;
+                                }
+                                .wpcf7-not-valid-tip{
+                                    font-size: 1em;
+                                    font-weight: 700;
+                                    color: #FF9F3B;
+                                    margin-top: 1%;
+                                }
+                            }
+                            p{
+                                margin-top: 0;
+                                font-weight: 700;
+                                font-size: 1em;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                /* Des balises sont intégrés sur le formulaire */
+                /* Bouton d'envoi du formulaire */
+
+                .bouton{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5% 0;
+                    input{
+                        background-color: rgba($color: #e9e8e9, $alpha: 0.6);
+                        color: white;
+                        border: 1px solid #020722;
+                        padding: 2% 5%;
+                        border-radius: 20px;
+                        transition: .5s ease;
+                        font-size: 1em;
+                        font-weight: 700;
+                        &:hover{
+                            box-shadow: 0px 2px 3px 2px #020722;
+                            transition: .5s ease;
+                            @media (max-width: 1365.98px){
+                                box-shadow: none;
+                                transition: none;
+                            }
+                        }
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    .wpcf7-spinner{
+                        display: none;
+                    }
+                }
+                .wpcf7-response-output{
+                    border-color: transparent;
+                    font-size: 1em;
+                    font-weight: 700;
+                    color: white;
+                }
+
+                /* Des balises sont intégrés sur le formulaire */
+                /* Texte relatif aux champs obligatoire et à la RGPD */
+
+                .obligatoire{
+                    label{
+                        width: 90%;
+                        margin: auto;
+                        color: white;
+                        display: flex;
+                        span{
+                            span{
+                                span{
+                                    margin: 0;
+                                    input{
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+                                        -ms-appearance: none;
+                                        height: 15px;
+                                        width: 15px;
+                                        background: rgba($color: #e9e8e9, $alpha: 0.6);
+                                        border: 1px solid black;
+                                        cursor: default;
+                                        &:hover{
+                                            background: rgba($color: #e9e8e9, $alpha: 0.6);
+                                            position: relative;
+                                            &:before{
+                                                font-family: 'FontAwesome';
+                                                content: '\f0a6';
+                                                display: block;
+                                                color: #000000;
+                                                font-size: 15px;
+                                                position: absolute;
+                                                left: -1px;
+                                                bottom: -1px;
+                                                @media (max-width: 1365.98px){
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                        &:checked{
+                                            background: rgba($color: #e9e8e9, $alpha: 0.6);
+                                            position: relative;
+                                            &:before {
+                                                font-family: 'FontAwesome';
+                                                content: '\f00c';
+                                                display: block;
+                                                color: #000000;
+                                                font-size: 15px;
+                                                position: absolute;
+                                            }
+                                        }
+                                        &:checked{
+                                            &:hover{
+                                                background: rgba($color: #e9e8e9, $alpha: 0.6);
+                                                position: relative;
+                                                &:before{
+                                                    font-family: 'FontAwesome';
+                                                    content: '\f00d';
+                                                    display: block;
+                                                    color: #000000;
+                                                    font-size: 20px;
+                                                    position: absolute;
+                                                    left: 0px;
+                                                    bottom: -4px;
+                                                    @media (max-width: 1365.98px){
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .wpcf7-not-valid-tip{
+                                font-size: 1em;
+                                font-weight: 700;
+                                color: #FF9F3B;
+                                margin-top: 1%;
+                            }
+                        }
+                        i{
+                            font-style: normal;
+                            color: #FF9F3B;
+                            font-size: 1em;
+                        }
+                        p{
+                            margin: 0;
+                            text-align: justify;
+                            a{
+                                font-size: 1em;
+                                font-weight: 700;
+                                color: #FF9F3B;
+                                margin-top: 1%;
+                            }
+                        }
+                    }
+                    .champ-obligatoire{
+                        font-size: 1em;
+                        color: white;
+                        i{
+                            font-style: normal;
+                            color: #FF9F3B;
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* CSS pour les horaires et le téléphone de la société */
+
+    .horaires{
+        width: 20%;
+        font-family: 'Open Sans', sans-serif;
+        @media (max-width: 1365.98px){
+            width: 80%;
+            margin-bottom: 5%;
+        }
+        #horaires-title-section{
+            text-align: center;
+            font-size: 2em;
+        }
+        .horaires-text{
+            text-align: center;
+            font-size: 1.5em;
+            color: black;
+            .horaires-title{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.5em;
+            }
+            sup{
+                font-size: 0.5em;
+            }
+        }
+        .horaires-tel{
+            text-align: center;
+            font-size: 1.5em;
+            @media (max-width: 991.98px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .fa-phone-alt{
+                display: none;
+                @media (max-width: 991.98px){
+                    display: block;
+                    margin-bottom: 0;
+                }
+            }
+            .horaires-title{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.5em;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
