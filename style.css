@@ -94,6 +94,7 @@ body header .nav-container .navbar {
   /* Menu responsive à partir de 1365.98px */
   /* CSS pour le menu responsive */
   /* CSS pour l'apparition du menu responsive */
+  /* CSS de la barre de recherche du site Juliot Électricité */
 }
 
 @media (max-width: 767.98px) {
@@ -266,6 +267,38 @@ body header .nav-container .navbar .nav-menu .current_page_item a {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+body header .nav-container .navbar .nav-search {
+  position: relative;
+}
+
+body header .nav-container .navbar .nav-search #search-btn {
+  background: transparent;
+  border: 0;
+}
+
+body header .nav-container .navbar .nav-search .search {
+  display: none;
+}
+
+body header .nav-container .navbar .nav-search .toggle-search {
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+body header .nav-container .navbar .nav-search .toggle-search input {
+  position: relative;
+  right: 80%;
+  top: 45px;
+  padding: 5% 10%;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+body header .nav-container .navbar .nav-search .toggle-search input:focus {
+  outline: none;
 }
 
 body #cookie_law_notification.cookielaw1 {
@@ -460,80 +493,6 @@ body .user-cookie {
 
 .actualites .actualites-pagination nav .nav-links .current {
   cursor: context-menu;
-}
-
-/* Importation du CSS 'Inscription' */
-/* CSS de la page 'Inscription' */
-.inscription {
-  font-family: 'Open Sans', sans-serif;
-  /* Titre de la page */
-  /* Formulaire d'inscription au site */
-}
-
-.inscription h2 {
-  font-size: 2em;
-  text-align: center;
-  padding: 1% 0;
-}
-
-.inscription form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5% 0 8%;
-  /* CSS sur le bouton d'envoi du formulaire */
-}
-
-.inscription form .name, .inscription form .email {
-  padding: 1% 0;
-}
-
-.inscription form .name label, .inscription form .email label {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 2.5%;
-  font-size: 1.5em;
-}
-
-.inscription form .name input, .inscription form .email input {
-  width: 97%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid;
-}
-
-.inscription form .submitting {
-  padding: 1% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-}
-
-.inscription form .submitting input {
-  padding: 0.5% 2%;
-  border: 1px solid #202F86;
-  border-radius: 10px;
-  background-color: #202F86;
-  color: white;
-  font-size: 1.5em;
-  cursor: pointer;
 }
 
 /* Importation du CSS 'Mentions légales' */
@@ -1079,7 +1038,7 @@ footer .login #admin-panel {
 }
 
 .navigation-card #navigation-contenu #courants-faibles i {
-  margin: 0 2% 0 0;
+  margin: 0 2%;
 }
 
 .navigation-card #navigation-contenu h3 {
@@ -1601,8 +1560,21 @@ footer .login #admin-panel {
           align-items: center;
 }
 
-.contact .adresses .agence85 iframe, .contact .adresses .agence44 iframe {
+.contact .adresses .agence85 a, .contact .adresses .agence44 a {
   width: 100%;
+  height: 300px;
+}
+
+.contact .adresses .agence85 .carte-agence85, .contact .adresses .agence44 .carte-agence85 {
+  background-image: url(img/agence85.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact .adresses .agence85 .carte-agence44, .contact .adresses .agence44 .carte-agence44 {
+  background-image: url(img/agence44.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contact .adresses .agence85 p, .contact .adresses .agence44 p {
@@ -1612,12 +1584,12 @@ footer .login #admin-panel {
 }
 
 .contact .adresses .agence85 {
-  padding-bottom: 10%;
+  padding: 10% 0;
 }
 
 @media (max-width: 1365.98px) {
   .contact .adresses .agence85 {
-    padding-bottom: 5%;
+    padding: 5% 0;
   }
 }
 
@@ -1829,6 +1801,7 @@ footer .login #admin-panel {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Champ envoi pièce jointe facultative */
 }
 
 .contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message label {
@@ -1967,6 +1940,13 @@ footer .login #admin-panel {
   margin-top: 1%;
 }
 
+.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-document p {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1em;
+  color: white;
+}
+
 .contact .formulaire .wpcf7 form .bouton {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2048,7 +2028,7 @@ footer .login #admin-panel {
 }
 
 .contact .formulaire .wpcf7 form .obligatoire label span span span input:hover {
-  background: #202f86;
+  background: rgba(233, 232, 233, 0.6);
   position: relative;
 }
 
@@ -2056,7 +2036,7 @@ footer .login #admin-panel {
   font-family: 'FontAwesome';
   content: '\f0a6';
   display: block;
-  color: #ffffff;
+  color: #000000;
   font-size: 15px;
   position: absolute;
   left: -1px;
@@ -2070,7 +2050,7 @@ footer .login #admin-panel {
 }
 
 .contact .formulaire .wpcf7 form .obligatoire label span span span input:checked {
-  background: #202f86;
+  background: rgba(233, 232, 233, 0.6);
   position: relative;
 }
 
@@ -2078,13 +2058,13 @@ footer .login #admin-panel {
   font-family: 'FontAwesome';
   content: '\f00c';
   display: block;
-  color: #ffffff;
+  color: #000000;
   font-size: 15px;
   position: absolute;
 }
 
 .contact .formulaire .wpcf7 form .obligatoire label span span span input:checked:hover {
-  background: #202f86;
+  background: rgba(233, 232, 233, 0.6);
   position: relative;
 }
 
@@ -2092,7 +2072,7 @@ footer .login #admin-panel {
   font-family: 'FontAwesome';
   content: '\f00d';
   display: block;
-  color: #ffffff;
+  color: #000000;
   font-size: 20px;
   position: absolute;
   left: 0px;
@@ -2170,20 +2150,20 @@ footer .login #admin-panel {
   font-size: 1.5em;
 }
 
+.contact .horaires .horaires-text sup {
+  font-size: 0.5em;
+}
+
 .contact .horaires .horaires-tel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 @media (max-width: 991.98px) {
   .contact .horaires .horaires-tel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2201,6 +2181,7 @@ footer .login #admin-panel {
 @media (max-width: 991.98px) {
   .contact .horaires .horaires-tel .fa-phone-alt {
     display: block;
+    margin-bottom: 0;
   }
 }
 
@@ -2211,8 +2192,6 @@ footer .login #admin-panel {
 }
 
 .contact .horaires .horaires-tel a {
-  font-size: 1.5em;
-  margin: 0 2.5%;
   color: black;
   text-decoration: none;
 }
