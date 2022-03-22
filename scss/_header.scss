@@ -165,6 +165,35 @@ body{
                         align-items: center;
                     }
                 }
+
+                /* CSS de la barre de recherche du site Juliot Électricité */
+
+                .nav-search{
+                    position: relative;
+                    #search-btn{
+                        background: transparent;
+                        border: 0;
+                    }
+                    .search{
+                        display: none;
+                    }
+                    .toggle-search{
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        input{
+                            position: relative;
+                            right: 80%;
+                            top: 45px;
+                            padding: 5% 10%;
+                            border: 1px solid black;
+                            border-radius: 20px;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
