@@ -94,7 +94,7 @@ body header .nav-container .navbar {
   /* Menu responsive à partir de 1365.98px */
   /* CSS pour le menu responsive */
   /* CSS pour l'apparition du menu responsive */
-  /* CSS de la barre de recherche du site Juliot Électricité */
+  /* CSS pour la barre de recherche et réseaux sociaux du site Juliot Électricité */
 }
 
 @media (max-width: 767.98px) {
@@ -148,7 +148,7 @@ body header .nav-container .navbar .menu-toggle img {
 
 body header .nav-container .navbar .nav-menu {
   padding: 0;
-  width: 100%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,6 +164,7 @@ body header .nav-container .navbar .nav-menu {
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu {
     display: none;
+    margin-bottom: 0;
   }
 }
 
@@ -269,35 +270,135 @@ body header .nav-container .navbar .nav-menu .current_page_item a {
   }
 }
 
-body header .nav-container .navbar .nav-search {
-  position: relative;
+body header .nav-container .navbar .nav-rs-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 10%;
+  /* CSS des réseaux sociaux du site Juliot Électricité */
+  /* CSS de la barre de recherche du site Juliot Électricité */
 }
 
-body header .nav-container .navbar .nav-search #search-btn {
+@media (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-rs-search {
+    width: 95%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body header .nav-container .navbar .nav-rs-search .nav-rs {
+  width: 67%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header .nav-container .navbar .nav-rs-search .nav-rs a {
+  width: 50%;
+  text-align: center;
+  color: #202F86;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-rs a {
+    color: black;
+  }
+}
+
+body header .nav-container .navbar .nav-rs-search .nav-rs a:hover {
+  color: #e95b23;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-rs a:hover {
+    color: black;
+  }
+}
+
+body header .nav-container .navbar .nav-rs-search .nav-rs a p {
+  font-size: 1.5em;
+}
+
+body header .nav-container .navbar .nav-rs-search .nav-search {
+  width: 33%;
+}
+
+body header .nav-container .navbar .nav-rs-search .nav-search #search-btn {
+  width: 100%;
   background: transparent;
+  color: #202F86;
   border: 0;
+  font-size: 1.5em;
 }
 
-body header .nav-container .navbar .nav-search .search {
+@media (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search #search-btn {
+    color: black;
+  }
+}
+
+body header .nav-container .navbar .nav-rs-search .nav-search #search-btn:hover {
+  color: #e95b23;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search #search-btn:hover {
+    color: black;
+  }
+}
+
+body header .nav-container .navbar .nav-rs-search .nav-search .search {
   display: none;
 }
 
-body header .nav-container .navbar .nav-search .toggle-search {
+body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search {
   display: block;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 
-body header .nav-container .navbar .nav-search .toggle-search input {
-  position: relative;
-  right: 80%;
-  top: 45px;
-  padding: 5% 10%;
+body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+  position: absolute;
+  right: -20px;
+  top: 35px;
+  padding: 5px 10px;
   border: 1px solid black;
   border-radius: 20px;
+  color: #212021;
 }
 
-body header .nav-container .navbar .nav-search .toggle-search input:focus {
+@media (max-width: 767.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    right: 15px;
+    top: -5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1103.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@media (min-width: 1104px) and (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    right: 15px;
+    top: 0px;
+  }
+}
+
+body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input:focus {
   outline: none;
 }
 
@@ -698,7 +799,6 @@ footer .login {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 10%;
-  /* Affichage du login responsive */
 }
 
 @media (max-width: 767.98px) {
@@ -753,162 +853,6 @@ footer .login .admin form {
     right: 0;
     position: relative;
   }
-}
-
-footer .login .toggle-admin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .login .toggle-admin .login-form form {
-  /* CSS pour le bouton de connexion */
-}
-
-footer .login .toggle-admin .login-form form .login-username, footer .login .toggle-admin .login-form form .login-password, footer .login .toggle-admin .login-form form .login-remember {
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-  font-size: 0.8em;
-}
-
-footer .login .toggle-admin .login-form form .login-username, footer .login .toggle-admin .login-form form .login-password {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin: auto;
-}
-
-footer .login .toggle-admin .login-form form .login-username label, footer .login .toggle-admin .login-form form .login-password label {
-  padding: 2% 0;
-  text-align: center;
-}
-
-footer .login .toggle-admin .login-form form .login-username input:focus, footer .login .toggle-admin .login-form form .login-password input:focus {
-  outline: none;
-}
-
-footer .login .toggle-admin .login-form form .login-remember {
-  text-align: center;
-  width: 100%;
-  margin: 5% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .login .toggle-admin .login-form form .login-remember label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .login .toggle-admin .login-form form .login-remember label input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  height: 15px;
-  width: 15px;
-  background: #ffffff;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
-footer .login .toggle-admin .login-form form .login-remember label input:hover {
-  background: #202f86;
-  position: relative;
-}
-
-footer .login .toggle-admin .login-form form .login-remember label input:hover:before {
-  font-family: 'FontAwesome';
-  content: '\f0a6';
-  display: block;
-  color: #ffffff;
-  font-size: 15px;
-  position: absolute;
-  left: -1px;
-  bottom: -1px;
-}
-
-footer .login .toggle-admin .login-form form .login-remember label input:checked {
-  background: #202f86;
-  position: relative;
-}
-
-footer .login .toggle-admin .login-form form .login-remember label input:checked:before {
-  font-family: 'FontAwesome';
-  content: '\f00c';
-  display: block;
-  color: #ffffff;
-  font-size: 15px;
-  position: absolute;
-}
-
-footer .login .toggle-admin .login-form form .login-remember label input:checked:hover {
-  background: #202f86;
-  position: relative;
-}
-
-footer .login .toggle-admin .login-form form .login-remember label input:checked:hover:before {
-  font-family: 'FontAwesome';
-  content: '\f00d';
-  display: block;
-  color: #ffffff;
-  font-size: 20px;
-  position: absolute;
-  left: 0px;
-  bottom: -4px;
-}
-
-footer .login .toggle-admin .login-form form .login-submit {
-  text-align: center;
-  width: 80%;
-  margin: auto;
-  padding: 5% 0;
-}
-
-footer .login .toggle-admin .login-form form .login-submit input {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #e9e8e9;
-  color: black;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 5% 0;
-  cursor: pointer;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  width: 100%;
-}
-
-footer .login .toggle-admin .login-form form .login-submit input:hover {
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  background-color: #202f86;
-  color: white;
-  border: 1px solid black;
 }
 
 footer .login #admin-panel {
@@ -1363,6 +1307,8 @@ footer .login #admin-panel {
 }
 
 .maintenance_installation .nav-maintenance_installation .maintenance_installation-card .maintenance_installation-hover a {
+  margin: auto;
+  width: 80%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1381,6 +1327,7 @@ footer .login #admin-panel {
   background-color: #202F86;
   padding: 5%;
   border-radius: 10px;
+  text-align: center;
 }
 
 .maintenance_installation .nav-maintenance_installation .maintenance_installation-card .maintenance_installation-hover:hover {
@@ -1392,6 +1339,7 @@ footer .login #admin-panel {
 @media (max-width: 1365.98px) {
   .maintenance_installation .nav-maintenance_installation .maintenance_installation-card .maintenance_installation-hover {
     opacity: 1;
+    background-color: transparent;
     -webkit-transition: none;
     transition: none;
   }
@@ -1411,6 +1359,13 @@ footer .login #admin-panel {
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image {
   width: 20%;
   margin: auto;
+}
+
+@media (max-width: 991.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-image {
+    width: 60%;
+    padding: 5% 0;
+  }
 }
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image img {
@@ -1466,6 +1421,13 @@ footer .login #admin-panel {
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
   width: 20%;
   margin: auto;
+}
+
+@media (max-width: 991.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
+    width: 60%;
+    padding: 5% 0;
+  }
 }
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image img {
@@ -2207,6 +2169,7 @@ footer .login #admin-panel {
   /* CSS pour le carousel */
   /* CSS de la section articles */
   /* CSS de la section contact */
+  /* CSS sur le bouton de remontée sur la page d'accueil */
 }
 
 .accueil h1 {
@@ -2883,7 +2846,7 @@ footer .login #admin-panel {
 }
 
 .accueil .section_04 .contactAccueil {
-  width: 75%;
+  width: 80%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2909,7 +2872,7 @@ footer .login #admin-panel {
   cursor: context-menu;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1365.98px) {
   .accueil .section_04 .contactAccueil .accroche_contact {
     text-align: center;
   }
@@ -2917,11 +2880,11 @@ footer .login #admin-panel {
 
 .accueil .section_04 .contactAccueil .accroche_contact h2 {
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .accueil .section_04 .contactAccueil .accroche_contact p {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1em;
 }
 
@@ -2929,7 +2892,6 @@ footer .login #admin-panel {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 272px;
           flex: 1 1 272px;
-  padding: 0;
   width: 100%;
   padding: 2.5% 0;
   border-radius: 30px;
@@ -3058,6 +3020,7 @@ footer .login #admin-panel {
   border-radius: 35px;
   color: #ffffff;
   background-color: #202f86;
+  border: 3px solid black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

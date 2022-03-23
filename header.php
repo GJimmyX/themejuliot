@@ -56,14 +56,32 @@
                         );
                     ?>
                     
-                    <!-- Barre de recherche du site Juliot Électricité -->
+                    <!-- Barre de recherche et réseaux sociaux du site Juliot Électricité -->
+                    
+                    <div class="nav-rs-search">
 
-                    <div class="nav-search">
-                        <button type="submit" id="search-btn"><p class="fas fa-search"></p></button>
-                        <form action="#" method="post" id="search-bar" class="search">
-                            <label for="search-bar"></label>
-                            <input type="text" id="search-bar">
-                        </form>
+                        <!-- Réseaux sociaux du site Juliot Électricité -->
+
+                        <div class="nav-rs">
+                            <a href="https://fr-fr.facebook.com/" target="_blank" title="Page Facebook"><p class="fab"></p></a>
+                            <a href="https://fr.linkedin.com/" target="_blank" title="Page Linkedin"><p class="fab"></p></a>
+                        </div>
+
+                        <?php
+                            if (!is_page('recherche') ) :
+                        ?>
+
+                            <!-- Barre de recherche du site Juliot Électricité -->
+
+                            <div class="nav-search">
+                                <button type="submit" id="search-btn" title="Rechercher"><p class="fas"></p></button>
+                                <form action="recherche" method="post" id="search-bar" class="search">
+                                    <label for="search-bar-input"></label>
+                                    <input type="text" id="search-bar-input" name="Recherche" placeholder="Recherche...">
+                                </form>
+                            </div>
+
+                        <?php endif; ?>
                     </div>
                 </nav>
             </div>
