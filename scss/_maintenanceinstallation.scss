@@ -38,6 +38,8 @@
                 opacity: 0;
                 transition: .8s ease;
                 a{
+                    margin: auto;
+                    width: 80%;
                     height: 100%;
                     display: flex;
                     justify-content: center;
@@ -48,6 +50,7 @@
                         background-color: #202F86;
                         padding: 5%;
                         border-radius: 10px;
+                        text-align: center;
                     }
                 }
                 &:hover{
@@ -56,6 +59,7 @@
                 }
                 @media (max-width: 1365.98px){
                     opacity: 1;
+                    background-color: transparent;
                     transition: none;
                 }
             }

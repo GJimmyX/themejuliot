@@ -11,6 +11,10 @@
             #informatique-industrielle-image{
                 width: 20%;
                 margin: auto;
+                @media (max-width: 991.98px){
+                    width: 60%;
+                    padding: 5% 0;
+                }
                 img{
                     width: 100%;
                     height: auto;
