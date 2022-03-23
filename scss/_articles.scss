@@ -1,0 +1,91 @@
+/* CSS de la page 'articles' */
+
+.actualites{
+    padding: 2% 5%;
+    font-family: 'Open Sans', sans-serif;
+
+    /* CSS sur les articles présents sur la page */
+
+    .actualites-disposition{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 80%;
+        margin: auto;
+
+        /* CSS de chaque article */
+
+        .actualites-card{
+            display: flex;
+            flex: 0 1 50%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width: 991.98px){
+                flex: 1 1 100%;
+            }
+            img{
+                display: flex;
+                margin: auto;
+                width: 300px;
+                height: auto;
+                @media (max-width: 1365.98px){
+                    width: 150px;
+                }
+            }
+            a{
+                text-decoration: none;
+                .actualites-title{
+                    font-size: 2em;
+                    color: black;
+                    @media (max-width: 1365.98px){
+                        color: #202F86;
+                    }
+                    &:hover{
+                        color: #202F86;
+                    }
+                }
+            }
+        }
+    }
+
+    /* CSS de la pagination faite en fonction du nombre de posts par page */
+
+    .actualites-pagination{
+        padding: 2% 0;
+        nav{
+            .nav-links{
+                text-align: center;
+                .page-numbers{
+                    color: white;
+                    background-color: #202F86;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    margin: 0 1%;
+                    padding: 0.25% 0.5%;
+                    border-radius: 5px;
+                    transition: 1s ease;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                    }
+                    &:hover{
+                        color: #202F86;
+                        background-color: transparent;
+                        transition: 1s ease;
+                        @media (max-width: 1365.98px){
+                            color: white;
+                            background-color: #202F86;
+                            transition: none;
+                        }
+                    }
+                }
+
+                /* CSS pour l'état du curseur */
+
+                .current{
+                    cursor: context-menu;
+                }
+            }
+        }
+    }
+}
