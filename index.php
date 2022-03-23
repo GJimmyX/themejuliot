@@ -151,7 +151,7 @@
         <!-- Bouton de contact Juliot Électricité -->
 
         <div class="contactAccueil">
-            <?php echo "<div class='accroche_contact'><h2>Vous souhaitez en savoir plus ?</h2><p><b>N'hésitez pas à nous contacter via notre formulaire !</b></p></div>"; ?>
+            <?php echo "<div class='accroche_contact'><h2>N'hésitez pas à nous contacter via notre formulaire !</h2><p>Nous vous apporterons une réponse dans les plus brefs délais.</p></div>"; ?>
             <a href="contact" class="contactBtn">Contactez-nous</a>
         </div>
 
@@ -201,6 +201,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Bouton de remontée de la page d'accueil -->
+
     <div id="btn">
         <button onclick="topFunction()" id="topBtn" title="Remonter en haut"><i class="fas fa-chevron-up"></i></button>
     </div>
