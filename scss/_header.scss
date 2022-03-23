@@ -89,13 +89,14 @@ body{
 
                 .nav-menu{
                     padding: 0;
-                    width: 100%;
+                    width: 95%;
                     display: flex;
                     @media (min-width: 992px) AND (max-width: 1365.98px){
                         padding-top: 35%;
                     }
                     @media (max-width: 1365.98px){
                         display: none;
+                        margin-bottom: 0;
                     }
                     li{
                         width: 14%;
@@ -166,30 +167,93 @@ body{
                     }
                 }
 
-                /* CSS de la barre de recherche du site Juliot Électricité */
+                /* CSS pour la barre de recherche et réseaux sociaux du site Juliot Électricité */
 
-                .nav-search{
-                    position: relative;
-                    #search-btn{
-                        background: transparent;
-                        border: 0;
+                .nav-rs-search{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 10%;
+                    @media (max-width: 1365.98px){
+                        width: 95%;
+                        justify-content: center;
                     }
-                    .search{
-                        display: none;
+
+                    /* CSS des réseaux sociaux du site Juliot Électricité */
+
+                    .nav-rs{
+                        width: 67%;
+                        display: flex;
+                        justify-content: space-around;
+                        a{
+                            width: 50%;
+                            text-align: center;
+                            color: #202F86;
+                            @media (max-width: 1365.98px){
+                                color: black;
+                            }
+                            &:hover{
+                                color: #e95b23;
+                                @media (max-width: 1365.98px){
+                                    color: black;
+                                }
+                            }
+                            p{
+                                font-size: 1.5em;
+                            }
+                        }
                     }
-                    .toggle-search{
-                        display: block;
-                        position: absolute;
-                        width: 100%;
-                        input{
+
+                    /* CSS de la barre de recherche du site Juliot Électricité */
+
+                    .nav-search{
+                        width: 33%;
+                        #search-btn{
+                            width: 100%;
+                            background: transparent;
+                            color: #202F86;
+                            border: 0;
+                            font-size: 1.5em;
+                            @media (max-width: 1365.98px){
+                                color: black;
+                            }
+                            &:hover{
+                                color: #e95b23;
+                                @media (max-width: 1365.98px){
+                                    color: black;
+                                }
+                            }
+                        }
+                        .search{
+                            display: none;
+                        }
+                        .toggle-search{
+                            display: block;
                             position: relative;
-                            right: 80%;
-                            top: 45px;
-                            padding: 5% 10%;
-                            border: 1px solid black;
-                            border-radius: 20px;
-                            &:focus{
-                                outline: none;
+                            width: 100%;
+                            input{
+                                position: absolute;
+                                right: -20px;
+                                top: 35px;
+                                padding: 5px 10px;
+                                border: 1px solid black;
+                                border-radius: 20px;
+                                color: #212021;
+                                @media (max-width: 767.98px){
+                                    right: 15px;
+                                    top: -5px;
+                                }
+                                @media (min-width: 768px) AND (max-width: 1103.98px){
+                                    right: 0px;
+                                    top: 0px;
+                                }
+                                @media (min-width: 1104px) AND (max-width: 1365.98px){
+                                    right: 15px;
+                                    top: 0px;
+                                }
+                                &:focus{
+                                    outline: none;
+                                }
                             }
                         }
                     }
