@@ -16,19 +16,6 @@ add_theme_support( 'custom-background' );
 
 add_theme_support( 'post-thumbnails' );
 
-/* Ajouter différentes tailles d'image */
-
-function taille_media() {
-  add_image_size( '32x32', 32, 32, false );
-  add_image_size( '192x192', 192, 192, false );
-  add_image_size( 'taille_00', 60, 60, false );
-  add_image_size( 'taille_01', 250, 200, false );
-  add_image_size( 'taille_02', 500, 400, false );
-  add_image_size( 'taille_03', 750, 600, false );
-};
-
-add_action('after_setup_theme', 'taille_media');
-
 /* Supprimer différentes tailles d'image */
 
 function remove_default_img_sizes( $sizes ) {
@@ -53,13 +40,17 @@ register_nav_menu( 'Secondary', __('Menu Annexe' ));
 
 /* Ajouter le support du CSS, des polices d'écriture, de Font Awesome et du JS/JQuery */
 
-function enqueue_style() {
+function enqueue_style_themejuliot() {
   wp_enqueue_style( 'style', get_stylesheet_uri());
   wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
   wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
   wp_deregister_script('jquery');
   wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', false, '', true);
   wp_enqueue_script('jquery');
+  wp_enqueue_script('navjs', get_template_directory_uri() . '/js/navigation.js', false, '', true);
+  if (!is_page('recherche') ) :
+    wp_enqueue_script('searchjs', get_template_directory_uri() . '/js/search-bar.js', false, '', true);
+  endif;
   if (is_page('accueil') ) :
     wp_enqueue_script('sliderjs', get_template_directory_uri() . '/js/slider.js', false, '', true);
     wp_enqueue_script('bannersliderjs', get_template_directory_uri() . '/js/banner-slider.js', false, '', true);
@@ -68,13 +59,9 @@ function enqueue_style() {
   if (is_singular('articles') ) :
     wp_enqueue_script('articlessliderjs', get_template_directory_uri() . '/js/articles-slider.js', false, '', true);
   endif;
-  wp_enqueue_script('navjs', get_template_directory_uri() . '/js/navigation.js', false, '', true);
-  if (!is_page('recherche') ) :
-    wp_enqueue_script('searchjs', get_template_directory_uri() . '/js/search-bar.js', false, '', true);
-  endif;
 };
 
-add_action('wp_enqueue_scripts', 'enqueue_style');
+add_action('wp_enqueue_scripts', 'enqueue_style_themejuliot');
 
 /* Enlever l'affichage de la barre d'administration pour tout le monde sauf l'admin */
 

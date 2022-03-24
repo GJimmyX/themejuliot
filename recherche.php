@@ -32,16 +32,17 @@
     }
 
     $search = $_POST['Recherche'];
-    $sqlQuery = "SELECT * from wp_posts";
+    $sqlQuery = "SELECT post_title from wp_posts where post_title IN('$search')";
 
     $data = $mysqlQuery->prepare($sqlQuery);
     $data->execute();
-    $result = $data->fetchAll();
+    $result = $data->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
-<h1>Résultats:</h1>
-<?php echo $search; ?>
+<h1>Résultats pour "<?php echo $search; ?>":</h1>
+
+<?php print_r($result); ?>
 
 <?php 
     /* Appel du footer */

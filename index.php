@@ -17,10 +17,10 @@
 
     <div class="section_01">
 
-        <!-- Style 1 -->
+        <!-- Style -->
 
         <?php
-            /* wp_nav_menu(
+            wp_nav_menu(
                 array(
                     'container' => 'ul',
                     'theme_location' => 'Secondary',
@@ -30,39 +30,8 @@
                     'link_before' => '<p>',
                     'link_after' => '</p>',
                 )
-            ); */
-        ?>
-
-        <!-- Style 2 -->
-
-        <?php
-            $menuPosts = new WP_Query();
-            $menuPosts->query(array( 
-                'post_type' => 'navigation',
-                'orderby' => array(
-                    'id' => 'ASC',
-                ))
             );
         ?>
-            <?php while ($menuPosts->have_posts()) : $menuPosts->the_post();
-        ?>
-
-            <div class="menuPosts-card">
-                <?php 
-                    $image = get_field( 'image' );
-                    if ( $image ) ?>
-                        <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
-                    <?php
-                ?>
-
-                <!-- Effet sur chaque sous-menu -->
-
-                <div class="hover">
-                    <a href="<?php the_permalink(); ?>"><p><?php the_title(); ?></p></a>
-                </div>
-            </div>
-        
-        <?php endwhile; ?>
 
     </div>
 

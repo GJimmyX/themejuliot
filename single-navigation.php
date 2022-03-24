@@ -22,6 +22,42 @@ get_header();
         </div>
 
     <?php endwhile; endif; ?>
+    
+    <!-- Ajout de CSS additionel et élements html -->
+    
+    <!-- Ajout de flèches retour pour le sous-menu 'Installation Industrielle' et 'Maintenance Industrielle' -->
+    
+    <?php if(is_single('installation-industrielle') || is_single('maintenance-industrielle') ) :?>
+        <a href="/maintenance-installation" title="Retour vers Maintenance / Installation" id="retour">< Retour</a>
+    <?php endif; ?>
+
+    <!-- Ajout visu page active pour le sous-menu 'Automatisme' et 'Informatique Industrielle' de la page d'accueil -->
+
+    <?php if(is_single('automatisme') || is_single('informatique-industrielle') ) :?>
+        <script>
+            <?php if(is_single('automatisme') ) : ?>
+                var ajoutClass = document.getElementsByClassName('menu-automatisme');
+            <?php endif; ?>
+            <?php if(is_single('informatique-industrielle') ) : ?>
+                var ajoutClass = document.getElementsByClassName('menu-informatique-industrielle');
+            <?php endif; ?>
+            var i;
+            for (i = 0; i < ajoutClass.length; i++) 
+            {
+                ajoutClass[i].className += ' active';
+            }
+        </script>
+        <style>
+            @media (min-width: 1366px){
+                body header .nav-container .navbar .nav-menu .active a{
+                    background-color: #202f86;
+                    color: white;
+                    border-radius: 30px;
+                    box-shadow: 0px 10px 7px #808080;
+                }
+            }
+        </style>
+    <?php endif; ?>
 </main>
 
 <?php

@@ -44,7 +44,7 @@ get_header();
         <div class="articles-button">
             <p class="articles-slider-button" onclick="plusArticlesslide(-1)"><i class="fas fa-chevron-circle-left"></i></p>
         </div>
-        <div class="articles-elements">
+        <div class="articles-elements articles-fade">
 
             <!-- Boucle pour l'affichage de deux artciles par slide -->
 
@@ -79,7 +79,7 @@ get_header();
 
             <?php endwhile; ?>
         </div>
-        <div class="articles-elements">
+        <div class="articles-elements articles-fade">
 
             <!-- Boucle pour l'affichage de deux artciles par slide -->
 
