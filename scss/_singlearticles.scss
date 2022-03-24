@@ -132,6 +132,16 @@
                 }
             }
         }
+        .articles-fade{
+            animation: articles-fade ease 1.5s;
+        }
+        @keyframes articles-fade {
+            from{
+                opacity: .4;
+            } to{
+                opacity: 1;
+            }
+        }
 
         /* CSS sur les boutons du slider */
 
