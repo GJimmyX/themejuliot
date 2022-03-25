@@ -32,17 +32,36 @@
     }
 
     $search = $_POST['Recherche'];
-    $sqlQuery = "SELECT post_title from wp_posts where post_title IN('$search')";
+
+    if (!$search) :
+        header('Location: accueil');
+        exit();
+    endif;
+
+    /* echo $search; */
+    
+    $sqlQuery = "SELECT guid, post_title, post_name FROM wp_posts WHERE post_name LIKE ('%$search%') AND post_type != 'wpcf7_contact_form' AND post_type != 'attachment' AND post_type != 'acf-field' AND post_type != 'acf-field-group' AND post_type != 'customize_changeset' AND post_type != 'ml-slide' AND post_type != 'ml-slider' AND post_type != 'revision' AND post_type != 'wp_global_styles' AND post_type != 'wp_navigation'";
 
     $data = $mysqlQuery->prepare($sqlQuery);
     $data->execute();
-    $result = $data->fetch(PDO::FETCH_ASSOC);
+    $result = $data->fetchAll(PDO::FETCH_ASSOC);
+
+    /* var_dump($result); */
 
 ?>
 
-<h1>Résultats pour "<?php echo $search; ?>":</h1>
-
-<?php print_r($result); ?>
+<main class="recherche">
+    <h1>Résultats pour "<?php echo $search; ?>":</h1>
+    <div class="resultats-recherche">
+        <?php 
+            foreach ($result as $res) {
+            ?>
+                <a href="<?php print_r($res['guid']); ?>" title="<?php print_r($res['post_title']); ?>" id="<?php print_r($res['post_name']) ?>"><?php print_r($res['post_title']); ?></a>
+            <?php
+            }
+        ?>
+    </div>
+</main>
 
 <?php 
     /* Appel du footer */
