@@ -13,7 +13,7 @@
 
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no"/>
         
         <!-- Requête cible pour les articles -->
         
@@ -75,9 +75,9 @@
 
                             <div class="nav-search">
                                 <button type="submit" id="search-btn" title="Rechercher"><p class="fas"></p></button>
-                                <form action="recherche" method="post" id="search-bar" class="search">
+                                <form action="/recherche" method="post" id="search-bar" class="search">
                                     <label for="search-bar-input"></label>
-                                    <input type="text" id="search-bar-input" name="Recherche" placeholder="Recherche...">
+                                    <input type="text" id="search-bar-input" name="Recherche" placeholder="Recherche..." required="true">
                                 </form>
                             </div>
 
