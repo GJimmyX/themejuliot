@@ -72,7 +72,7 @@ body{
                     padding-top: 4%;
                 }
 
-                /* Menu responsive à partir de 1365.98px */
+                /* Menu responsive en dessous de 1366px */
 
                 .menu-toggle{
                     display: none;
@@ -111,7 +111,7 @@ body{
                         }
                         a{
                             width: 100%;
-                            height: 100px;
+                            height: 75px;
                             text-decoration: none;
                             font-family: 'Open Sans', sans-serif;
                             font-size: 1em;
@@ -214,6 +214,7 @@ body{
                             color: #202F86;
                             border: 0;
                             font-size: 1.5em;
+                            cursor: pointer;
                             @media (max-width: 1365.98px){
                                 color: black;
                             }
@@ -234,7 +235,7 @@ body{
                             input{
                                 position: absolute;
                                 right: -20px;
-                                top: 35px;
+                                top: 25px;
                                 padding: 5px 10px;
                                 border: 1px solid black;
                                 border-radius: 20px;
