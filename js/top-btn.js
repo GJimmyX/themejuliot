@@ -1,7 +1,7 @@
 // Script pour le bouton de remontée
 
 // On prend le bouton
-var mybutton = document.getElementById("topBtn");
+var mybutton = document.getElementById('topBtn');
 
 // Quand on descend vers le bas de la page, on affiche le bouton
 window.onscroll = function() {scrollFunction()};
