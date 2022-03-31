@@ -13,7 +13,7 @@
 
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         
         <!-- Requête cible pour les articles -->
         
