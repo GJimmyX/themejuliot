@@ -312,6 +312,7 @@
                 &:hover{
                     color: #202f86;
                     font-weight: bold;
+                    gap: 5px;
                     img{
                         display: block;
                     }
@@ -532,9 +533,17 @@
             align-items: center;
             transform: translateY(0px);
             transition: .5s ease;
+            @media (max-width: 1365.98px){
+                transform: none;
+                transition: none;
+            }
             &:hover{
                 transform: translateY(20px);
                 transition: .5s ease;
+                @media (max-width: 1365.98px){
+                    transform: none;
+                    transition: none;
+                }
             }
         }
     }

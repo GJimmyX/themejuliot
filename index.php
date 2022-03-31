@@ -70,7 +70,7 @@
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">Un bureau d'études compétent et innovant capable de réaliser vos projets en automatisme, informatique industrielle et électricité tertiaire / industrielle.</p>
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">L'accent sur la qualité et la sécurité de nos installations.</p>
             <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">Une réponse rapide en cas de problème sur votre équipement.</p>
-            <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">Qualifications QUALIFELEC mention chauffage, mention automatisme et IRVE.</p>
+            <p><img src="<?php echo get_template_directory_uri() . '/img/listBtn.png'; ?>" alt="Bouton de liste">Qualifications QUALIFELEC mentions chauffage, automatisme et IRVE.</p>
             
             <!-- Liens des qualifications de Juliot Électricité -->
 

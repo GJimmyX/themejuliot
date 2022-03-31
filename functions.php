@@ -38,6 +38,28 @@ register_nav_menu( 'Primary', __( 'Menu de Navigation' ));
 
 register_nav_menu( 'Secondary', __('Menu Annexe' ));
 
+/* Différer éxécution scripts JS */
+
+function add_defer_attribute($tag, $handle) {
+  $scripts_to_defer = array(
+    get_template_directory_uri() . '/js/navigation.js',
+    get_template_directory_uri() . '/js/search-bar.js',
+    get_template_directory_uri() . '/js/slider.js',
+    get_template_directory_uri() . '/js/banner-slider.js',
+    get_template_directory_uri() . '/js/top-btn.js',
+    get_template_directory_uri() . '/js/articles-slider.js',
+    get_template_directory_uri() . '/js/horaires-table.js',
+  );
+  foreach ($scripts_to_defer as $defer_scripts) {
+    if ( $defer_scripts === $handle ) {
+      return str_replace( ' src', ' defer="defer" src', $tag );
+    }
+  }
+  return $tag;
+}
+
+add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
+
 /* Ajouter le support du CSS, des polices d'écriture, de Font Awesome et du JS/JQuery */
 
 function enqueue_style_themejuliot() {
@@ -48,16 +70,26 @@ function enqueue_style_themejuliot() {
   wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', false, '', true);
   wp_enqueue_script('jquery');
   wp_enqueue_script('navjs', get_template_directory_uri() . '/js/navigation.js', false, '', true);
+  wp_enqueue_script( get_template_directory_uri() . '/js/navigation.js', $src, $deps, $ver, $in_footer);
   if (!is_page('recherche') ) :
     wp_enqueue_script('searchjs', get_template_directory_uri() . '/js/search-bar.js', false, '', true);
+    wp_enqueue_script( get_template_directory_uri() . '/js/search-bar.js', $src, $deps, $ver, $in_footer);
   endif;
   if (is_page('accueil') ) :
     wp_enqueue_script('sliderjs', get_template_directory_uri() . '/js/slider.js', false, '', true);
     wp_enqueue_script('bannersliderjs', get_template_directory_uri() . '/js/banner-slider.js', false, '', true);
     wp_enqueue_script('topbtnjs', get_template_directory_uri() . '/js/top-btn.js', false, '', true);
+    wp_enqueue_script( get_template_directory_uri() . '/js/slider.js', $src, $deps, $ver, $in_footer);
+    wp_enqueue_script( get_template_directory_uri() . '/js/banner-slider.js', $src, $deps, $ver, $in_footer);
+    wp_enqueue_script( get_template_directory_uri() . '/js/top-btn.js', $src, $deps, $ver, $in_footer);
   endif;
   if (is_singular('articles') ) :
     wp_enqueue_script('articlessliderjs', get_template_directory_uri() . '/js/articles-slider.js', false, '', true);
+    wp_enqueue_script( get_template_directory_uri() . '/js/articles-slider.js', $src, $deps, $ver, $in_footer);
+  endif;
+  if (is_page('contact') ) :
+    wp_enqueue_script('horairesjs', get_template_directory_uri() . '/js/horaires-table.js', false, '', true);
+    wp_enqueue_script( get_template_directory_uri() . '/js/horaires-table.js', $src, $deps, $ver, $in_footer);
   endif;
 };
 
@@ -207,6 +239,14 @@ function my_login_style() { ?>
 <?php }
 
 add_action( 'login_enqueue_scripts', 'my_login_style' );
+
+/* Modification URL de redirection sur l'image */
+
+function my_login_logo_url() {
+  return home_url();
+}
+
+add_filter( 'login_headerurl', 'my_login_logo_url' );
 
 /* Personnalisation message d'erreur d'identification à la connexion */
 

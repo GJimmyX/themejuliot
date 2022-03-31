@@ -91,7 +91,7 @@ body header .nav-container .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Menu responsive à partir de 1365.98px */
+  /* Menu responsive en dessous de 1366px */
   /* CSS pour le menu responsive */
   /* CSS pour l'apparition du menu responsive */
   /* CSS pour la barre de recherche et réseaux sociaux du site Juliot Électricité */
@@ -189,7 +189,7 @@ body header .nav-container .navbar .nav-menu li {
 
 body header .nav-container .navbar .nav-menu li a {
   width: 100%;
-  height: 100px;
+  height: 75px;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -339,6 +339,7 @@ body header .nav-container .navbar .nav-rs-search .nav-search #search-btn {
   color: #202F86;
   border: 0;
   font-size: 1.5em;
+  cursor: pointer;
 }
 
 @media (max-width: 1365.98px) {
@@ -370,7 +371,7 @@ body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search {
 body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
   position: absolute;
   right: -20px;
-  top: 35px;
+  top: 25px;
   padding: 5px 10px;
   border: 1px solid black;
   border-radius: 20px;
@@ -470,45 +471,54 @@ body .user-cookie {
 .recherche {
   font-family: 'Open Sans', sans-serif;
   padding: 2% 10%;
-  /* Titre annonçant les résultats pour la recherche */
   /* Section des résultats de la recherche */
 }
 
-.recherche h1 {
+@media (max-width: 575.98px) {
+  .recherche {
+    padding: 2% 5%;
+  }
+}
+
+.recherche .resultats-recherche {
+  /* border: 2px dotted #202F86; */
+  /* Titre annonçant les résultats pour la recherche */
+}
+
+.recherche .resultats-recherche h1 {
   text-align: center;
   font-size: 3em;
 }
 
 @media (max-width: 767.98px) {
-  .recherche h1 {
+  .recherche .resultats-recherche h1 {
     font-size: 1.5em;
   }
 }
 
-.recherche .resultats-recherche {
+.recherche .resultats-recherche .resultat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  /* border: 2px dotted #202F86; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2% 0;
+  gap: 10px;
 }
 
-@media (max-width: 1365.98px) {
-  .recherche .resultats-recherche {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+.recherche .resultats-recherche .resultat p {
+  color: black;
+  font-size: 1.5em;
+}
+
+@media (max-width: 767.98px) {
+  .recherche .resultats-recherche .resultat p {
+    font-size: 1em;
   }
 }
 
-.recherche .resultats-recherche a {
-  margin: 2% 0;
+.recherche .resultats-recherche .resultat a {
   color: black;
   font-size: 1.5em;
   font-weight: 700;
@@ -517,25 +527,31 @@ body .user-cookie {
 }
 
 @media (max-width: 767.98px) {
-  .recherche .resultats-recherche a {
+  .recherche .resultats-recherche .resultat a {
     font-size: 1em;
     -webkit-transition: none;
     transition: none;
   }
 }
 
-.recherche .resultats-recherche a:hover {
+.recherche .resultats-recherche .resultat a:hover {
   color: #202F86;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
 @media (max-width: 1365.98px) {
-  .recherche .resultats-recherche a:hover {
+  .recherche .resultats-recherche .resultat a:hover {
     color: black;
     -webkit-transition: none;
     transition: none;
   }
+}
+
+.recherche .resultats-recherche .resultatequalzero {
+  text-align: center;
+  color: black;
+  font-size: 2em;
 }
 
 /* Importation du CSS 'Articles' */
@@ -795,7 +811,6 @@ footer {
           align-items: center;
   width: 100%;
   /* CCS des éléments du pied de page */
-  /* CSS du formulaire de login responsive */
 }
 
 @media (max-width: 1199.98px) {
@@ -819,7 +834,7 @@ footer ul {
   /* CSS pour le bordereau du pied de page */
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1365.98px) {
   footer ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -846,90 +861,6 @@ footer ul li p {
 footer ul li p a {
   color: white;
   text-decoration: none;
-}
-
-footer ul li p a:hover {
-  font-weight: bold;
-}
-
-@media (max-width: 1365.98px) {
-  footer ul li p a:hover {
-    font-weight: normal;
-  }
-}
-
-footer .login {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 10%;
-}
-
-@media (max-width: 767.98px) {
-  footer .login {
-    width: 80%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1365.98px) {
-  footer .login {
-    width: 20%;
-  }
-}
-
-footer .login #adminBtn {
-  background: transparent;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 0;
-  cursor: pointer;
-  font-size: 1em;
-}
-
-footer .login .admin {
-  display: none;
-  position: relative;
-  width: 100%;
-}
-
-footer .login .admin form {
-  position: absolute;
-  bottom: 70px;
-  right: 5px;
-  background-color: #e9e8e9;
-  width: 100%;
-  border: 1px solid #000;
-  border-radius: 0 0 10px 10px;
-}
-
-@media (max-width: 1199.98px) {
-  footer .login .admin form {
-    bottom: 0;
-    right: 0;
-    position: relative;
-  }
-}
-
-footer .login #admin-panel {
-  color: white;
 }
 
 /* Importation du CSS '404' */
@@ -1579,9 +1510,25 @@ footer .login #admin-panel {
 
 /* CSS de la page 'Contact' */
 .contact {
-  padding: 0 5%;
+  padding: 1% 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* CSS pour les deux adresses de la société et le formulaire de contact */
+  /* CSS pour les horaires et le téléphone de la société */
+}
+
+.contact .adresses-formulaire {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1593,11 +1540,10 @@ footer .login #admin-panel {
           align-items: center;
   /* CSS pour les deux adresses de la société */
   /* CSS pour le formulaire de contact */
-  /* CSS pour les horaires et le téléphone de la société */
 }
 
 @media (max-width: 1365.98px) {
-  .contact {
+  .contact .adresses-formulaire {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1605,19 +1551,19 @@ footer .login #admin-panel {
   }
 }
 
-.contact .adresses {
-  width: 20%;
+.contact .adresses-formulaire .adresses {
+  width: 35%;
   font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 1365.98px) {
-  .contact .adresses {
+  .contact .adresses-formulaire .adresses {
     width: 80%;
     margin-top: 5%;
   }
 }
 
-.contact .adresses .agence85, .contact .adresses .agence44 {
+.contact .adresses-formulaire .adresses .agence85, .contact .adresses-formulaire .adresses .agence44 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1630,52 +1576,53 @@ footer .login #admin-panel {
           align-items: center;
 }
 
-.contact .adresses .agence85 a, .contact .adresses .agence44 a {
+.contact .adresses-formulaire .adresses .agence85 a, .contact .adresses-formulaire .adresses .agence44 a {
   width: 100%;
-  height: 300px;
+  height: 320px;
 }
 
-.contact .adresses .agence85 .carte-agence85, .contact .adresses .agence44 .carte-agence85 {
+.contact .adresses-formulaire .adresses .agence85 .carte-agence85, .contact .adresses-formulaire .adresses .agence44 .carte-agence85 {
   background-image: url(img/agence85.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.contact .adresses .agence85 .carte-agence44, .contact .adresses .agence44 .carte-agence44 {
+.contact .adresses-formulaire .adresses .agence85 .carte-agence44, .contact .adresses-formulaire .adresses .agence44 .carte-agence44 {
   background-image: url(img/agence44.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.contact .adresses .agence85 p, .contact .adresses .agence44 p {
+.contact .adresses-formulaire .adresses .agence85 p, .contact .adresses-formulaire .adresses .agence44 p {
   font-size: 1em;
   text-align: center;
   color: #202F86;
 }
 
-.contact .adresses .agence85 {
+.contact .adresses-formulaire .adresses .agence85 {
   padding: 10% 0;
 }
 
 @media (max-width: 1365.98px) {
-  .contact .adresses .agence85 {
+  .contact .adresses-formulaire .adresses .agence85 {
     padding: 5% 0;
   }
 }
 
-.contact .adresses .agence44 {
+.contact .adresses-formulaire .adresses .agence44 {
   padding-top: 10%;
 }
 
 @media (max-width: 1365.98px) {
-  .contact .adresses .agence44 {
+  .contact .adresses-formulaire .adresses .agence44 {
     padding-top: 5%;
   }
 }
 
-.contact .formulaire {
+.contact .adresses-formulaire .formulaire {
   width: 50%;
-  background-image: url(img/img_accueil.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6))), url(img/img_contact.jpg);
+  background-image: linear-gradient(rgba(240, 240, 240, 0.6)), url(img/img_contact.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1684,13 +1631,13 @@ footer .login #admin-panel {
 }
 
 @media (max-width: 1365.98px) {
-  .contact .formulaire {
+  .contact .adresses-formulaire .formulaire {
     width: 80%;
     background-image: none;
   }
 }
 
-.contact .formulaire h1 {
+.contact .adresses-formulaire .formulaire h1 {
   padding-top: 1%;
   padding-bottom: 1%;
   text-align: center;
@@ -1700,18 +1647,17 @@ footer .login #admin-panel {
 }
 
 @media (max-width: 575.98px) {
-  .contact .formulaire h1 {
+  .contact .adresses-formulaire .formulaire h1 {
     font-size: 1.4em;
   }
 }
 
-.contact .formulaire .wpcf7 form {
+.contact .adresses-formulaire .formulaire .wpcf7 form {
   padding-top: 1%;
   padding-bottom: 1%;
   margin-bottom: 5%;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  background-color: rgba(33, 32, 33, 0.6);
   /* Des balises sont intégrés sur le formulaire */
   /* Des balises sont intégrés sur le formulaire */
   /* Bouton d'envoi du formulaire */
@@ -1719,7 +1665,7 @@ footer .login #admin-panel {
   /* Texte relatif aux champs obligatoire et à la RGPD */
 }
 
-.contact .formulaire .wpcf7 form .infos-contact {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1731,11 +1677,10 @@ footer .login #admin-panel {
   /* Des balises sont intégrés sur le formulaire */
   /* Champs coordonnees */
   /* Des balises sont intégrés sur le formulaire */
-  /* Champ message */
 }
 
 @media (max-width: 1365.98px) {
-  .contact .formulaire .wpcf7 form .infos-contact {
+  .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1743,12 +1688,12 @@ footer .login #admin-panel {
   }
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet {
   padding: 2% 0;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel label {
-  color: white;
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom label, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom label, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email label, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel label, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet label {
+  color: black;
   font-weight: 700;
   font-size: 1em;
   width: 75%;
@@ -1762,14 +1707,14 @@ footer .login #admin-panel {
   margin-bottom: 1%;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom label i, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom label i, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email label i, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel label i {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet label i {
   font-style: normal;
   margin: 0 1%;
-  color: #FF9F3B;
+  color: #202F86;
   font-size: 1em;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1782,7 +1727,7 @@ footer .login #admin-panel {
           align-items: center;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span input, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span input {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span input, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span input, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span input, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span input, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span input {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.5em;
@@ -1791,57 +1736,11 @@ footer .login #admin-panel {
   cursor: default;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span input:focus, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span input:focus, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span input:focus, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span input:focus {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span input:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span input:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span input:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span input:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span input:focus {
   outline: none;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span .wpcf7-not-valid-tip {
-  font-size: 1em;
-  font-weight: 700;
-  color: #FF9F3B;
-  margin-top: 1%;
-}
-
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet {
-  padding: 2% 0;
-}
-
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe label, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet label {
-  color: white;
-  font-weight: 700;
-  font-size: 1em;
-  width: 75%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 1%;
-}
-
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe label i, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet label i {
-  font-style: normal;
-  margin: 0 1%;
-  color: #FF9F3B;
-  font-size: 1em;
-}
-
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe span, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe span select, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span select {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span select, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span select, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span select, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span select, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span select {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.5em;
@@ -1849,18 +1748,18 @@ footer .login #admin-panel {
   width: 90%;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe span select:focus, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span select:focus {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span select:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span select:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span select:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span select:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span select:focus {
   outline: none;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-societe span .wpcf7-not-valid-tip, .contact .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span .wpcf7-not-valid-tip {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
-  color: #FF9F3B;
+  color: #202F86;
   margin-top: 1%;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1871,11 +1770,17 @@ footer .login #admin-panel {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Champ société */
+  /* Champ message */
   /* Champ envoi pièce jointe facultative */
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message label {
-  color: white;
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe {
+  padding: 2% 0;
+}
+
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe label {
+  color: black;
   font-weight: 700;
   font-size: 1em;
   width: 75%;
@@ -1889,14 +1794,61 @@ footer .login #admin-panel {
   margin-bottom: 1%;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message label i {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe span select {
+  background-color: rgba(233, 232, 233, 0.6);
+  border: 1px solid #020722;
+  font-size: 1.5em;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe span select:focus {
+  outline: none;
+}
+
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe span .wpcf7-not-valid-tip {
+  font-size: 1em;
+  font-weight: 700;
+  color: #202F86;
+  margin-top: 1%;
+}
+
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message label {
+  color: black;
+  font-weight: 700;
+  font-size: 1em;
+  width: 75%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1%;
+}
+
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message label i {
   font-style: normal;
   margin: 0 1%;
-  color: #FF9F3B;
+  color: #202F86;
   font-size: 1em;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.5em;
@@ -1906,7 +1858,7 @@ footer .login #admin-panel {
   resize: none;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
   background-color: #212021;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -1915,17 +1867,17 @@ footer .login #admin-panel {
 }
 
 @media (max-width: 1365.98px) {
-  .contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
+  .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
     display: none;
   }
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-thumb {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-thumb {
   background-color: white;
   border: 1px solid #020722;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:increment {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:increment {
   width: 7.5px;
   height: 20px;
   border-bottom-right-radius: 20px;
@@ -1933,7 +1885,7 @@ footer .login #admin-panel {
   background-color: white;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:decrement {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:decrement {
   width: 7.5px;
   height: 20px;
   border-top-right-radius: 20px;
@@ -1941,15 +1893,15 @@ footer .login #admin-panel {
   background-color: white;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-resizer {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-resizer {
   display: none;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea:focus {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea:focus {
   outline: none;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message span {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1962,19 +1914,19 @@ footer .login #admin-panel {
           align-items: center;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-message span .wpcf7-not-valid-tip {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
-  color: #FF9F3B;
+  color: #202F86;
   margin-top: 1%;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-document {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document {
   margin-top: 5%;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-document label {
-  color: white;
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document label {
+  color: black;
   font-weight: 700;
   font-size: 1em;
   width: 100%;
@@ -1988,14 +1940,14 @@ footer .login #admin-panel {
   margin-bottom: 1%;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-document label i {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document label i {
   font-style: normal;
   margin: 0 1%;
-  color: #FF9F3B;
+  color: #202F86;
   font-size: 1em;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-document span input {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document span input {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.25em;
@@ -2003,21 +1955,21 @@ footer .login #admin-panel {
   cursor: default;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-document span .wpcf7-not-valid-tip {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
-  color: #FF9F3B;
+  color: #202F86;
   margin-top: 1%;
 }
 
-.contact .formulaire .wpcf7 form .infos-contact .message-document .champ-document p {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document p {
   margin-top: 0;
   font-weight: 700;
   font-size: 1em;
-  color: white;
+  color: black;
 }
 
-.contact .formulaire .wpcf7 form .bouton {
+.contact .adresses-formulaire .formulaire .wpcf7 form .bouton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2030,9 +1982,9 @@ footer .login #admin-panel {
   padding: 5% 0;
 }
 
-.contact .formulaire .wpcf7 form .bouton input {
+.contact .adresses-formulaire .formulaire .wpcf7 form .bouton input {
   background-color: rgba(233, 232, 233, 0.6);
-  color: white;
+  color: black;
   border: 1px solid #020722;
   padding: 2% 5%;
   border-radius: 20px;
@@ -2042,7 +1994,7 @@ footer .login #admin-panel {
   font-weight: 700;
 }
 
-.contact .formulaire .wpcf7 form .bouton input:hover {
+.contact .adresses-formulaire .formulaire .wpcf7 form .bouton input:hover {
   -webkit-box-shadow: 0px 2px 3px 2px #020722;
           box-shadow: 0px 2px 3px 2px #020722;
   -webkit-transition: .5s ease;
@@ -2050,7 +2002,7 @@ footer .login #admin-panel {
 }
 
 @media (max-width: 1365.98px) {
-  .contact .formulaire .wpcf7 form .bouton input:hover {
+  .contact .adresses-formulaire .formulaire .wpcf7 form .bouton input:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
     -webkit-transition: none;
@@ -2058,35 +2010,35 @@ footer .login #admin-panel {
   }
 }
 
-.contact .formulaire .wpcf7 form .bouton input:focus {
+.contact .adresses-formulaire .formulaire .wpcf7 form .bouton input:focus {
   outline: none;
 }
 
-.contact .formulaire .wpcf7 form .bouton .wpcf7-spinner {
+.contact .adresses-formulaire .formulaire .wpcf7 form .bouton .wpcf7-spinner {
   display: none;
 }
 
-.contact .formulaire .wpcf7 form .wpcf7-response-output {
+.contact .adresses-formulaire .formulaire .wpcf7 form .wpcf7-response-output {
   border-color: transparent;
   font-size: 1em;
   font-weight: 700;
-  color: white;
+  color: black;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label {
   width: 90%;
   margin: auto;
-  color: white;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label span span span {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label span span span {
   margin: 0;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label span span span input {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label span span span input {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -2097,12 +2049,12 @@ footer .login #admin-panel {
   cursor: default;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label span span span input:hover {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label span span span input:hover {
   background: rgba(233, 232, 233, 0.6);
   position: relative;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label span span span input:hover:before {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label span span span input:hover:before {
   font-family: 'FontAwesome';
   content: '\f0a6';
   display: block;
@@ -2114,17 +2066,17 @@ footer .login #admin-panel {
 }
 
 @media (max-width: 1365.98px) {
-  .contact .formulaire .wpcf7 form .obligatoire label span span span input:hover:before {
+  .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label span span span input:hover:before {
     display: none;
   }
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label span span span input:checked {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label span span span input:checked {
   background: rgba(233, 232, 233, 0.6);
   position: relative;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label span span span input:checked:before {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label span span span input:checked:before {
   font-family: 'FontAwesome';
   content: '\f00c';
   display: block;
@@ -2133,12 +2085,12 @@ footer .login #admin-panel {
   position: absolute;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label span span span input:checked:hover {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label span span span input:checked:hover {
   background: rgba(233, 232, 233, 0.6);
   position: relative;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label span span span input:checked:hover:before {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label span span span input:checked:hover:before {
   font-family: 'FontAwesome';
   content: '\f00d';
   display: block;
@@ -2150,55 +2102,55 @@ footer .login #admin-panel {
 }
 
 @media (max-width: 1365.98px) {
-  .contact .formulaire .wpcf7 form .obligatoire label span span span input:checked:hover:before {
+  .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label span span span input:checked:hover:before {
     display: none;
   }
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label span .wpcf7-not-valid-tip {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
-  color: #FF9F3B;
+  color: #202F86;
   margin-top: 1%;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label i {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label i {
   font-style: normal;
-  color: #FF9F3B;
+  color: #202F86;
   font-size: 1em;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label p {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label p {
   margin: 0;
   text-align: justify;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire label p a {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label p a {
   font-size: 1em;
   font-weight: 700;
-  color: #FF9F3B;
+  color: #202F86;
   margin-top: 1%;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire .champ-obligatoire {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire .champ-obligatoire {
   font-size: 1em;
-  color: white;
+  color: black;
 }
 
-.contact .formulaire .wpcf7 form .obligatoire .champ-obligatoire i {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire .champ-obligatoire i {
   font-style: normal;
-  color: #FF9F3B;
+  color: #202F86;
   font-size: 1em;
 }
 
 .contact .horaires {
-  width: 20%;
+  width: 80%;
   font-family: 'Open Sans', sans-serif;
+  /* Titre section */
 }
 
 @media (max-width: 1365.98px) {
   .contact .horaires {
-    width: 80%;
     margin-bottom: 5%;
   }
 }
@@ -2208,29 +2160,67 @@ footer .login #admin-panel {
   font-size: 2em;
 }
 
-.contact .horaires .horaires-text {
+.contact .horaires .toggle-horaires {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Horaires du Jour */
+  /* Bouton affichage horaires de la semaine */
+  /* Horaires de la semaine */
+}
+
+.contact .horaires .toggle-horaires .horaires-jour {
+  width: 40%;
+  /* Téléphone de la société */
+}
+
+.contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+}
+
+.contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour .horaires-text {
+  font-weight: 500;
   font-size: 1.5em;
   color: black;
 }
 
-.contact .horaires .horaires-text .horaires-title {
+.contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour .horaires-title {
   font-style: normal;
   font-weight: 700;
   font-size: 1.5em;
+  margin-right: 1%;
 }
 
-.contact .horaires .horaires-text sup {
+.contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour sup {
   font-size: 0.5em;
 }
 
-.contact .horaires .horaires-tel {
+.contact .horaires .toggle-horaires .horaires-jour .horaires-tel {
   text-align: center;
   font-size: 1.5em;
 }
 
 @media (max-width: 991.98px) {
-  .contact .horaires .horaires-tel {
+  .contact .horaires .toggle-horaires .horaires-jour .horaires-tel {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2244,26 +2234,84 @@ footer .login #admin-panel {
   }
 }
 
-.contact .horaires .horaires-tel .fa-phone-alt {
+.contact .horaires .toggle-horaires .horaires-jour .horaires-tel .fa-phone-alt {
   display: none;
 }
 
 @media (max-width: 991.98px) {
-  .contact .horaires .horaires-tel .fa-phone-alt {
+  .contact .horaires .toggle-horaires .horaires-jour .horaires-tel .fa-phone-alt {
     display: block;
     margin-bottom: 0;
   }
 }
 
-.contact .horaires .horaires-tel .horaires-title {
+.contact .horaires .toggle-horaires .horaires-jour .horaires-tel .horaires-title {
   font-style: normal;
   font-weight: 700;
   font-size: 1.5em;
 }
 
-.contact .horaires .horaires-tel a {
+.contact .horaires .toggle-horaires .horaires-jour .horaires-tel a {
   color: black;
   text-decoration: none;
+}
+
+.contact .horaires .toggle-horaires #horaires-btn {
+  margin: 2% 0;
+}
+
+.contact .horaires .toggle-horaires #horaires-btn #textBtn {
+  font-size: 1.5em;
+}
+
+.contact .horaires .toggle-horaires .horaires-semaine {
+  width: 40%;
+  display: none;
+}
+
+.contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+.contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content .horaires-text {
+  font-weight: 500;
+  font-size: 1.5em;
+  color: black;
+}
+
+.contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content .horaires-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-right: 1%;
+}
+
+.contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content sup {
+  font-size: 0.5em;
+}
+
+.contact .horaires .toggle-horaires .toggle-table {
+  display: block;
 }
 
 /* CSS du fichier 'Index' */
@@ -2699,6 +2747,7 @@ footer .login #admin-panel {
 .accueil .section_02 .texte p:hover {
   color: #202f86;
   font-weight: bold;
+  gap: 5px;
 }
 
 .accueil .section_02 .texte p:hover img {
@@ -3025,10 +3074,28 @@ footer .login #admin-panel {
   transition: .5s ease;
 }
 
+@media (max-width: 1365.98px) {
+  .accueil #btn #topBtn {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
 .accueil #btn #topBtn:hover {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: .5s ease;
   transition: .5s ease;
+}
+
+@media (max-width: 1365.98px) {
+  .accueil #btn #topBtn:hover {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
