@@ -17,6 +17,7 @@ footer{
         margin: auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         @media (max-width: 1365.98px){
             flex-direction: column;
         }

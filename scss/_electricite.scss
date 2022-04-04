@@ -1,4 +1,4 @@
-/* CSS de la page 'Électricité' */
+/* CSS de la page 'Maintenance/Installation' */
 
 .electricite{
     width: 90%;
@@ -7,13 +7,13 @@
 
     /* CSS pour les deux onglets de la page */
 
-    .nav-elec{
+    .nav-electricite{
         padding: 10% 20%;
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
         justify-content: space-around;
-        .elec-card{
+        .electricite-card{
             margin: 2% 0;
             position: relative;
             display: flex;
@@ -28,7 +28,7 @@
 
             /* CSS pour l'effet sur chaque onglet au survol */
 
-            .elec-hover{
+            .electricite-hover{
                 position: absolute;
                 top: 0;
                 background-color: rgba(0, 0, 0, 0.5);
@@ -38,6 +38,8 @@
                 opacity: 0;
                 transition: .8s ease;
                 a{
+                    margin: auto;
+                    width: 80%;
                     height: 100%;
                     display: flex;
                     justify-content: center;
@@ -48,6 +50,7 @@
                         background-color: #202F86;
                         padding: 5%;
                         border-radius: 10px;
+                        text-align: center;
                     }
                 }
                 &:hover{
@@ -56,6 +59,7 @@
                 }
                 @media (max-width: 1365.98px){
                     opacity: 1;
+                    background-color: transparent;
                     transition: none;
                 }
             }

@@ -174,33 +174,58 @@ body{
                     align-items: center;
                     justify-content: space-between;
                     width: 10%;
+                    @media (min-width: 1366px){
+                        gap: 5px;
+                    }
                     @media (max-width: 1365.98px){
-                        width: 95%;
+                        width: 67%;
+                        justify-content: center;
+                    }
+                    @media (min-width: 376px) AND (max-width: 767.98px){
+                        width: 45%;
                         justify-content: center;
                     }
 
                     /* CSS des réseaux sociaux du site Juliot Électricité */
 
-                    .nav-rs{
+
+                    .rs{
+                        padding: 0;
                         width: 67%;
-                        display: flex;
-                        justify-content: space-around;
-                        a{
+                        @media (max-width: 1365.98px){
                             width: 50%;
-                            text-align: center;
-                            color: #202F86;
+                        }
+                        li{
+                            list-style: none;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-around;
                             @media (max-width: 1365.98px){
-                                color: black;
+                                justify-content: end;
                             }
-                            &:hover{
-                                color: #e95b23;
-                                @media (max-width: 1365.98px){
-                                    color: black;
+                            .nav-rs{
+                                width: 100%;
+                                display: flex;
+                                @media (min-width: 1366px){
+                                    gap: 5px;
                                 }
-                            }
-                            p{
-                                font-size: 1.5em;
-                            }
+                                a{
+                                    width: 50%;
+                                    text-align: center;
+                                    color: #202F86;
+                                    text-decoration: none;
+                                    font-size: 1.5em;
+                                    @media (max-width: 1365.98px){
+                                        color: black;
+                                    }
+                                    &:hover{
+                                        color: #e95b23;
+                                        @media (max-width: 1365.98px){
+                                            color: black;
+                                        }
+                                    }
+                                }
+                            }   
                         }
                     }
 
@@ -208,6 +233,10 @@ body{
 
                     .nav-search{
                         width: 33%;
+                        height: 72px;
+                        @media (max-width: 1365.98px){
+                            width: 25%;
+                        }
                         #search-btn{
                             width: 100%;
                             background: transparent;
@@ -240,17 +269,31 @@ body{
                                 border: 1px solid black;
                                 border-radius: 20px;
                                 color: #212021;
-                                @media (max-width: 767.98px){
-                                    right: 15px;
+                                @media (max-width: 375.98px){
+                                    right: -35px;
                                     top: -5px;
                                 }
-                                @media (min-width: 768px) AND (max-width: 1103.98px){
-                                    right: 0px;
+                                @media (min-width: 376px) AND (max-width: 575.98px){
+                                    right: -35px;
                                     top: 0px;
                                 }
+                                @media (min-width: 576px) AND (max-width: 767.98px){
+                                    right: -35px;
+                                    top: 5px;
+                                }
+                                @media (min-width: 768px) AND (max-width: 1103.98px){
+                                    right: -10px;
+                                    top: -5px;
+                                }
                                 @media (min-width: 1104px) AND (max-width: 1365.98px){
-                                    right: 15px;
-                                    top: 0px;
+                                    right: -5px;
+                                    top: -5px;
+                                }
+                                @media (min-width: 1366px) AND (max-width: 1677.98px){
+                                    top: 15px;
+                                }
+                                @media (min-width: 1678px) AND (max-width: 1879.98px){
+                                    top: 20px;
                                 }
                                 &:focus{
                                     outline: none;
