@@ -40,7 +40,7 @@
     <div class="section_02">
         <div class="carousel-slider">
             <div class="control-slider">
-                <button class="prev" name="precedent" onclick="plusSlides(-1)"><i class="fas"><</i></button>
+                <button class="prev" name="precedent" onclick="plusSlides(-1)"><i class="fas"></i></button>
                 <div id="slider">
                     <div class="slider-elements fade">
                         <img src="<?php echo get_template_directory_uri() . '/img/img_accueil.jpg'; ?>" alt="Image Slider">
@@ -52,7 +52,7 @@
                         <img src="<?php echo get_template_directory_uri() . '/img/img_accueil_02.png'; ?>" alt="Image Slider">
                     </div>
                 </div>
-                <button class="next" name="suivant" onclick="plusSlides(1)"><i class="fas">></i></button>
+                <button class="next" name="suivant" onclick="plusSlides(1)"><i class="fas"></i></button>
             </div>
             <div class="indicators">
                 <span class="dot" onclick="currentSlide(3)"></span>

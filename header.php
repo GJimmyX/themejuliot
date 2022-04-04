@@ -62,10 +62,9 @@
 
                         <!-- Réseaux sociaux du site Juliot Électricité -->
 
-                        <div class="nav-rs">
-                            <a href="https://fr-fr.facebook.com/" target="_blank" title="Page Facebook"><p class="fab"></p></a>
-                            <a href="https://fr.linkedin.com/" target="_blank" title="Page Linkedin"><p class="fab"></p></a>
-                        </div>
+                        <ul class="rs">
+                            <?php dynamic_sidebar('header-sidebar'); ?>
+                        </ul>
 
                         <?php
                             if (!is_page('recherche') ) :
