@@ -11,11 +11,11 @@
 
 <main class="electricite">
 
-    <!-- Boucle pour récupérer le bloc correspondant à: 'électricité' -->
+    <!-- Boucle pour récupérer le bloc correspondant en catégorie à: 'domaine-electricite' -->
 
     <?php
-        $sectionelec = new WP_Query();
-        $sectionelec->query(array(
+        $sectionelectricite = new WP_Query();
+        $sectionelectricite->query(array(
                 'post_type' => 'Navigation',
                 'tax_query' => array(
                     array(
@@ -30,16 +30,16 @@
 
     ?>  
     
-    <div class="nav-elec">
+    <div class="nav-electricite">
 
-    <!-- Affichage du contenu correspondant à: 'informatique industrielle' -->
+    <!-- Affichage du contenu correspondant à: 'electricite' -->
 
     <?php
 
-        while ($sectionelec->have_posts()) : $sectionelec->the_post();
+        while ($sectionelectricite->have_posts()) : $sectionelectricite->the_post();
     ?>
 
-            <div class="elec-card">
+            <div class="electricite-card">
                 <?php 
                     $image = get_field( 'image' );
                     if ( $image ) ?>
@@ -47,7 +47,7 @@
                     <?php
                 ?>
                 
-                <div class="elec-hover">
+                <div class="electricite-hover">
                     <a href="<?php the_permalink(); ?>"><p><?php the_field( 'title' ) ?></p></a>
                 </div>
             </div>

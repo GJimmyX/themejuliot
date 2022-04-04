@@ -27,8 +27,8 @@ get_header();
     
     <!-- Ajout de flèches retour pour le sous-menu 'Installation Industrielle' et 'Maintenance Industrielle' -->
     
-    <?php if(is_single('installation-industrielle') || is_single('maintenance-industrielle') ) :?>
-        <a href="/maintenance-installation" title="Retour vers Maintenance / Installation" id="retour">< Retour</a>
+    <?php if(is_single('electricite-industrielle') || is_single('maintenance-electrique') ) :?>
+        <a href="/electricite" title="Retour vers Electricite" id="retour">< Retour</a>
     <?php endif; ?>
 
     <!-- Ajout visu page active pour le sous-menu 'Automatisme' et 'Informatique Industrielle' de la page d'accueil -->
