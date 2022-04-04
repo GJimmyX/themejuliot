@@ -6,6 +6,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 575.98px){
+        padding: 1% 0;
+    }
 
     /* CSS pour les deux adresses de la société et le formulaire de contact */
 
@@ -14,6 +17,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 991.98px){
+            width: 100%;
+        }
         @media (max-width: 1365.98px){
             flex-direction: column;
         }
@@ -23,7 +29,11 @@
         .adresses{
             width: 35%;
             font-family: 'Open Sans', sans-serif;
-            @media (max-width: 1365.98px){
+            @media (max-width: 767.98px){
+                width: 100%;
+                margin-top: 5%;
+            }
+            @media (min-width: 768px) AND (max-width: 1365.98px){
                 width: 80%;
                 margin-top: 5%;
             }
@@ -34,16 +44,25 @@
                 a{
                     width: 100%;
                     height: 320px;
+                    @media (max-width: 575.98px){
+                        height: 240px;
+                    }
                 }
                 .carte-agence85{
                     background-image: url(img/agence85.png);
                     background-position: center;
                     background-repeat: no-repeat;
+                    @media (max-width: 575.98px){
+                        background-image: url(img/agence85-mini.png);
+                    }
                 }
                 .carte-agence44{
                     background-image: url(img/agence44.png);
                     background-position: center;
                     background-repeat: no-repeat;
+                    @media (max-width: 575.98px){
+                        background-image: url(img/agence44-mini.png);
+                    }
                 }
                 p{
                     font-size: 1em;
@@ -85,8 +104,7 @@
                 padding-bottom: 1%;
                 text-align: center;
                 font-family: 'Open Sans', sans-serif;
-                font-weight: 800;
-                font-size: 2.5em;
+                font-weight: 700;
                 @media (max-width: 575.98px){
                     font-size: 1.4em;
                 }
@@ -324,7 +342,8 @@
                                     }
                                 }
                                 p{
-                                    margin-top: 0;
+                                    margin: 0;
+                                    padding-top: 1%;
                                     font-weight: 700;
                                     font-size: 1em;
                                     color: black;
@@ -382,81 +401,89 @@
                             margin: auto;
                             color: black;
                             display: flex;
-                            span{
+                            @media (max-width: 767.98px){
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                            #rgpd-checkbox{
+                                display: flex;
+                                align-items: start;
                                 span{
                                     span{
-                                        margin: 0;
-                                        input{
-                                            -webkit-appearance: none;
-                                            -moz-appearance: none;
-                                            -ms-appearance: none;
-                                            height: 15px;
-                                            width: 15px;
-                                            background: rgba($color: #e9e8e9, $alpha: 0.6);
-                                            border: 1px solid black;
-                                            cursor: default;
-                                            &:hover{
+                                        span{
+                                            margin: 0;
+                                            input{
+                                                -webkit-appearance: none;
+                                                -moz-appearance: none;
+                                                -ms-appearance: none;
+                                                height: 15px;
+                                                width: 15px;
                                                 background: rgba($color: #e9e8e9, $alpha: 0.6);
-                                                position: relative;
-                                                &:before{
-                                                    font-family: 'FontAwesome';
-                                                    content: '\f0a6';
-                                                    display: block;
-                                                    color: #000000;
-                                                    font-size: 15px;
-                                                    position: absolute;
-                                                    left: -1px;
-                                                    bottom: -1px;
-                                                    @media (max-width: 1365.98px){
-                                                        display: none;
-                                                    }
-                                                }
-                                            }
-                                            &:checked{
-                                                background: rgba($color: #e9e8e9, $alpha: 0.6);
-                                                position: relative;
-                                                &:before {
-                                                    font-family: 'FontAwesome';
-                                                    content: '\f00c';
-                                                    display: block;
-                                                    color: #000000;
-                                                    font-size: 15px;
-                                                    position: absolute;
-                                                }
-                                            }
-                                            &:checked{
+                                                border: 1px solid black;
+                                                cursor: default;
                                                 &:hover{
                                                     background: rgba($color: #e9e8e9, $alpha: 0.6);
                                                     position: relative;
+                                                    @media (max-width: 1365.98px){
+                                                        display: none;
+                                                    }
                                                     &:before{
                                                         font-family: 'FontAwesome';
-                                                        content: '\f00d';
+                                                        content: '\f0a6';
                                                         display: block;
                                                         color: #000000;
-                                                        font-size: 20px;
+                                                        font-size: 15px;
                                                         position: absolute;
-                                                        left: 0px;
-                                                        bottom: -4px;
+                                                        left: -1px;
+                                                        bottom: -1px;
+                                                    }
+                                                }
+                                                &:checked{
+                                                    background: rgba($color: #e9e8e9, $alpha: 0.6);
+                                                    position: relative;
+                                                    &:before {
+                                                        font-family: 'FontAwesome';
+                                                        content: '\f00c';
+                                                        display: block;
+                                                        color: #000000;
+                                                        font-size: 15px;
+                                                        position: absolute;
+                                                    }
+                                                }
+                                                &:checked{
+                                                    &:hover{
+                                                        background: rgba($color: #e9e8e9, $alpha: 0.6);
+                                                        position: relative;
                                                         @media (max-width: 1365.98px){
                                                             display: none;
+                                                        }
+                                                        &:before{
+                                                            font-family: 'FontAwesome';
+                                                            content: '\f00d';
+                                                            display: block;
+                                                            color: #000000;
+                                                            font-size: 20px;
+                                                            position: absolute;
+                                                            left: 0px;
+                                                            bottom: -4px;
                                                         }
                                                     }
                                                 }
                                             }
                                         }
                                     }
+                                    .wpcf7-not-valid-tip{
+                                        font-size: 1em;
+                                        font-weight: 700;
+                                        color: #202F86;
+                                        margin-top: 1%;
+                                    }
                                 }
-                                .wpcf7-not-valid-tip{
-                                    font-size: 1em;
-                                    font-weight: 700;
+                                i{
+                                    font-style: normal;
                                     color: #202F86;
-                                    margin-top: 1%;
+                                    font-size: 1em;
                                 }
-                            }
-                            i{
-                                font-style: normal;
-                                color: #202F86;
-                                font-size: 1em;
                             }
                             p{
                                 margin: 0;
@@ -496,7 +523,6 @@
 
         #horaires-title-section{
             text-align: center;
-            font-size: 2em;
         }
 
         .toggle-horaires{
@@ -508,22 +534,35 @@
             /* Horaires du Jour */
 
             .horaires-jour{
-                width: 40%;
+                width: 90%;
+                @media (max-width: 767.98px){
+                    width: 100%;
+                }
                 #toggle-horaires-jour{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     text-align: center;
+                    @media (max-width: 1365.98px){
+                        flex-direction: column;
+                    }
                     .horaires-text{
                         font-weight: 500;
                         font-size: 1.5em;
                         color: black;
+                        @media (max-width: 1365.98px){
+                            font-size: 1.25em;
+                            margin-top: 0;
+                        }
                     }
                     .horaires-title{
                         font-style: normal;
                         font-weight: 700;
                         font-size: 1.5em;
                         margin-right: 1%;
+                        @media (max-width: 1365.98px){
+                            margin-right: 0%;
+                        }
                     }
                     sup{
                         font-size: 0.5em;
@@ -549,7 +588,6 @@
                     .horaires-title{
                         font-style: normal;
                         font-weight: 700;
-                        font-size: 1.5em;
                     }
                     a{
                         color: black;
@@ -560,17 +598,42 @@
             
             /* Bouton affichage horaires de la semaine */
 
+            .horaires-btn-text{
+                display: block;
+                font-size: 1.5em;
+            }
+            .toggle-hide{
+                display: none;
+            }
             #horaires-btn{
                 margin: 2% 0;
-                #textBtn{
+                padding: 0.5%;
+                border: 1px solid black;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &:hover{
+                    animation: rotate ease 2s;
+                }
+                @keyframes rotate {
+                    from{
+                        transform: rotateZ(0deg);
+                    } to{
+                        transform: rotateZ(360deg);
+                    }
+                }
+                p{
+                    margin: 0;
                     font-size: 1.5em;
+                    color: #202f86;
                 }
             }
 
             /* Horaires de la semaine */
 
             .horaires-semaine{
-                width: 40%;
+                width: 90%;
                 display: none;
                 .toggle-horaires-semaine{
                     display: flex;
@@ -579,17 +642,28 @@
                     text-align: left;
                     .horaires-content{
                         display: flex;
-                        justify-content: center;
-                        width: 100%;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 35%;
+                        margin: 0.1% 0;
+                        padding: 0 5%;
+                        border: 1px solid black;
+                        @media (max-width: 991.98px){
+                            width: 70%;
+                        }
+                        @media (max-width: 575.98px){
+                            width: 87%;
+                        }
+                        @media (max-width: 1365.98px){
+                            flex-direction: column;
+                        }
                         .horaires-text{
                             font-weight: 500;
-                            font-size: 1.5em;
                             color: black;
                         }
                         .horaires-title{
                             font-style: normal;
                             font-weight: 700;
-                            font-size: 1.5em;
                             margin-right: 1%;
                         }
                         sup{
