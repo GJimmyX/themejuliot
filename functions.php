@@ -276,6 +276,15 @@ function wpm_cookie( $expirein ) {
 
 add_filter( 'auth_cookie_expiration', 'wpm_cookie');
 
+/* Ajouter le support Widget pour le header */
+
+register_sidebar( array(
+  'id' => 'header-sidebar',
+  'name' => 'Header',
+  'before-widget' => '',
+  'after-widget' => '',
+) );
+
 /* Ajouter le support Widget pour le footer */
 
 register_sidebar( array(

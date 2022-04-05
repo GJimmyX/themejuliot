@@ -52,6 +52,8 @@
                     <h2><?php the_field( 'title' ); ?></h2>
 
                     <?php the_field( 'description' ) ?>
+
+                    <a href="/contact" class="contactBtn">Contactez-nous</a>
                 </div>
             </div>
 
