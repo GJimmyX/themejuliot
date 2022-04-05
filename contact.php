@@ -86,20 +86,21 @@
 
                                 <div class="horaires-tel"><i class="horaires-title">Téléphone:</i><p class="fas fa-phone-alt"></p><a href="tel:+0251094000" title="Téléphone Juliot Électricité"><p>02 51 09 40 00</p></a></div>
                             </div>
-                            
-                            <button type="submit" id="horaires-btn"><i id="textBtn">Plus d'horaires ?</i><p class="fas"></p></button>
+
+                            <i class="horaires-btn-text" id="textBtn">Plus d'horaires ?</i>
+                            <button type="submit" id="horaires-btn"><p class="fas"></p></button>
 
                             <div class="horaires-semaine" id="horaires-table">
                                 <div class="toggle-horaires-semaine">
                         <?php
-                        foreach ($horaires as $horaire) {
-                            ?>
-                            
-                                <div class="horaires-content"><?php echo $horaire; ?></div>
-                            
-                            <?php
-                        }
-                        ?>
+                                foreach ($horaires as $horaire) {
+                                    ?>
+                                    
+                                        <div class="horaires-content"><?php echo $horaire; ?></div>
+                                    
+                                    <?php
+                                }
+                                ?>
                                 </div>
                             </div>
                         <?php

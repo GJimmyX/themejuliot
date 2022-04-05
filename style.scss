@@ -65,14 +65,14 @@
     /* CSS de la section navigation */
 
     .section_01{
-        width: 75%;
-        margin: auto;
-        padding-top: 2%;
+        padding: 0 12.5%;
+        margin-top: 2%;
         display: flex;
         flex-wrap: wrap;
         box-sizing: border-box;
         justify-content: space-around;
         gap: 2.5%;
+        background: #E9E8E9;
 
         /* CSS de chaque sous-menu */
 

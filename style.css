@@ -927,7 +927,7 @@ footer ul {
 
 footer ul li {
   list-style: none;
-  padding: 2% 0%;
+  padding: 1% 0%;
 }
 
 footer ul li p {
@@ -1003,38 +1003,55 @@ footer ul li p a {
 /* Importation du CSS 'Single' */
 /* CSS de la page 'single-navigation'*/
 .navigation-card {
-  padding: 2% 10%;
+  width: 100%;
   font-family: 'Open Sans', sans-serif;
   /* Image de la page 'single-navigation' */
   /* Contenu texte de la page 'single-navigation' */
 }
 
 .navigation-card #navigation-image {
-  width: 20%;
-  margin: auto;
+  padding: 0% 10%;
+  background: #E9E8E9;
 }
 
 @media (max-width: 991.98px) {
   .navigation-card #navigation-image {
-    width: 60%;
     padding: 5% 0;
   }
 }
 
 .navigation-card #navigation-image img {
-  width: 100%;
+  width: 20%;
   height: auto;
 }
 
-.navigation-card #navigation-contenu {
-  width: 80%;
-  margin: auto;
+@media (max-width: 767.98px) {
+  .navigation-card #navigation-image img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
 }
 
-@media (max-width: 767.98px) {
-  .navigation-card #navigation-contenu {
-    width: 100%;
+@media (max-width: 991.98px) {
+  .navigation-card #navigation-image img {
+    width: 60%;
   }
+}
+
+.navigation-card #navigation-contenu {
+  padding: 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navigation-card #navigation-contenu h2 {
@@ -1107,6 +1124,25 @@ footer ul li p a {
   .navigation-card #navigation-contenu h3 {
     font-size: 1em;
   }
+}
+
+.navigation-card #navigation-contenu .contactBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+  width: 100%;
+  /* padding: 2.5% 0; */
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-decoration: none;
+  background: #202F86;
+  border: 1px solid #202F86;
+  border-radius: 20px;
+  color: white;
 }
 
 .navigation-card #retour {
@@ -1493,7 +1529,7 @@ footer ul li p a {
 
 /* CSS de la page 'Automatisme' */
 .automatisme .contenu-automatisme {
-  padding: 2% 10%;
+  width: 100%;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -1503,31 +1539,38 @@ footer ul li p a {
 }
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image {
-  width: 20%;
-  margin: auto;
+  padding: 0% 10%;
+  background: #E9E8E9;
 }
 
 @media (max-width: 991.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-image {
-    width: 60%;
     padding: 5% 0;
   }
 }
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image img {
-  width: 100%;
+  width: 20%;
   height: auto;
 }
 
-.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu {
-  width: 80%;
-  margin: auto;
+@media (max-width: 767.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-image img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
 }
 
-@media (max-width: 767.98px) {
-  .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu {
-    width: 100%;
+@media (max-width: 991.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-image img {
+    width: 60%;
   }
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu {
+  padding: 0 20%;
 }
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu h2 {
@@ -1555,7 +1598,7 @@ footer ul li p a {
 
 /* CSS de la page 'Informatique Industrielle' */
 .informatique-industrielle .contenu-informatique-industrielle {
-  padding: 2% 10%;
+  width: 100%;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -1565,31 +1608,38 @@ footer ul li p a {
 }
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
-  width: 20%;
-  margin: auto;
+  padding: 0% 10%;
+  background: #E9E8E9;
 }
 
 @media (max-width: 991.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
-    width: 60%;
     padding: 5% 0;
   }
 }
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image img {
-  width: 100%;
+  width: 20%;
   height: auto;
 }
 
-.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu {
-  width: 80%;
-  margin: auto;
+@media (max-width: 767.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
 }
 
-@media (max-width: 767.98px) {
-  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu {
-    width: 100%;
+@media (max-width: 991.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image img {
+    width: 60%;
   }
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu {
+  padding: 0 20%;
 }
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h2 {
@@ -2612,9 +2662,8 @@ footer ul li p a {
 }
 
 .accueil .section_01 {
-  width: 75%;
-  margin: auto;
-  padding-top: 2%;
+  padding: 0 12.5%;
+  margin-top: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2625,6 +2674,7 @@ footer ul li p a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 2.5%;
+  background: #E9E8E9;
   /* CSS de chaque sous-menu */
 }
 

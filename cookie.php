@@ -19,7 +19,7 @@
     catch(Exception $e)
     {
         // En cas d'erreur, on affiche un message d'erreur et on arrête tout
-            die('Erreur : '.$e->getMessage('Connexion Impossible !'));
+            die('Erreur : '.$e->getMessage());
     }
 
     /* Création du cookie */
