@@ -40,6 +40,9 @@
     ?>
 
             <div class="automatisme-card">
+
+                <!-- Image principale de la page -->
+
                 <div id="automatisme-image">
                     <?php 
                         $image = get_field( 'image' );
@@ -47,12 +50,23 @@
                             <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
                         <?php
                     ?>
+                    <div class="titre-intro">
+                        <h2><?php the_field( 'title' ); ?></h2>
+                        <p><i><?php the_field( 'intro' ); ?></i></p>
+                    </div>
                 </div>
+
+                <!-- Texte avec images incorporées -->
+
                 <div id="automatisme-contenu">
-                    <h2><?php the_field( 'title' ); ?></h2>
 
                     <?php the_field( 'description' ); ?>
 
+                </div>
+
+                <!-- Bouton de renvoi vers la section Contact -->
+
+                <div id="automatisme-contact">
                     <a href="/contact" class="contactBtn">Contactez-nous</a>
                 </div>
             </div>
