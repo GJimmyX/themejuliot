@@ -99,12 +99,12 @@ body{
                         margin-bottom: 0;
                     }
                     li{
-                        width: 14%;
+                        width: 13%;
                         text-align: center;
-                        margin: 0 3%;
+                        margin: 0 2%;
                         list-style: none;
                         @media (min-width: 992px) AND (max-width: 1365.98px){
-                            padding: 0 14%;
+                            padding: 0 13%;
                         }
                         @media (max-width: 1365.98px){
                             width: 100%;
@@ -135,7 +135,49 @@ body{
                             }
                         }
                         .sub-menu{
-                            display: none;
+                            display: block;
+                            padding: 0;
+                            @media (min-width: 1366px){
+                                display: none;
+                                position: absolute;
+                            }
+                            .sous-menu{
+                                width: 100%;
+                                margin: 0;
+                                padding-top: 2%;
+                                position: relative;
+                                z-index: 1;
+                                @media (max-width: 1365.98px){
+                                    padding: 0;
+                                }
+                                a{
+                                    border-radius: 0;
+                                    padding: 0 2%;
+                                    color: black !important;
+                                    background-color: #e9e8e9;
+                                    border: 1px solid black;
+                                    @media (max-width: 1365.98px){
+                                        padding: 0;
+                                        border: none;
+                                    }
+                                    &:hover{
+                                        color: white !important;
+                                        background-color: #e95b23;
+                                        @media (max-width: 1365.98px){
+                                            background-color: transparent;
+                                            color: black !important;
+                                            box-shadow: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &:hover{
+                            .sub-menu{
+                                @media (min-width: 1366px){
+                                    display: block;
+                                }
+                            }
                         }
                     }
 
@@ -191,18 +233,18 @@ body{
 
                     /* CSS des réseaux sociaux du site Juliot Électricité */
 
-
-                    .rs{
+                    li{
+                        list-style: none;
                         padding: 0;
                         width: 67%;
                         @media (max-width: 1365.98px){
                             width: 50%;
                         }
-                        li{
-                            list-style: none;
+                        .rs{
                             width: 100%;
                             display: flex;
                             justify-content: space-around;
+                            padding: 0;
                             @media (max-width: 1365.98px){
                                 justify-content: end;
                             }
@@ -228,9 +270,9 @@ body{
                                         }
                                     }
                                 }
-                            }   
+                            }
                         }
-                    }
+                    }                    
 
                     /* CSS de la barre de recherche du site Juliot Électricité */
 
@@ -349,12 +391,5 @@ body{
                 margin-top: 0;
             }
         }
-    }
-
-    /* CSS pour le cookie personnalisé */
-
-    .user-cookie{
-        margin: 0;
-        font-family: 'Open Sans', sans-serif;
     }
 }
