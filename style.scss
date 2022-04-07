@@ -88,21 +88,25 @@
                 background-image: url(img/img_elecindus.jpg);
                 background-position: center;
                 background-size: contain;
+                background-repeat: no-repeat;
             }
             #menu-item-471{
                 background-image: url(img/img_maintenance-elec.jpg);
                 background-position: center;
                 background-size: contain;
+                background-repeat: no-repeat;
             }
             #menu-item-470{
                 background-image: url(img/img_auto.jpg);
                 background-position: center;
                 background-size: contain;
+                background-repeat: no-repeat;
             }
             #menu-item-469{
                 background-image: url(img/img_info.jpg);
                 background-position: center;
                 background-size: contain;
+                background-repeat: no-repeat;
             }
             li{
                 margin: 2%;
@@ -359,7 +363,6 @@
             img{
                 display: flex;
                 margin: auto;
-                width: 300px;
                 height: auto;
             }
             a{
