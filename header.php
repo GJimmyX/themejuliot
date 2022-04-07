@@ -62,9 +62,7 @@
 
                         <!-- Réseaux sociaux du site Juliot Électricité -->
 
-                        <ul class="rs">
-                            <?php dynamic_sidebar('header-sidebar'); ?>
-                        </ul>
+                        <?php dynamic_sidebar('header-sidebar'); ?>
 
                         <?php
                             if (!is_page('recherche') ) :
@@ -85,10 +83,3 @@
                 </nav>
             </div>
         </header>
-
-        <!-- Trigger du cookie -->
-
-        <?php if(isset($_COOKIE['user_id'])){
-            echo '<p class="user-cookie">Votre Nom de session est : ' .$_COOKIE['user_id'] . '</p>';
-            }
-        ?>

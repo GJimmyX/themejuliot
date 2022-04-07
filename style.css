@@ -12,7 +12,6 @@ body {
   background-color: rgba(233, 232, 233, 0.6);
   margin: 0;
   /* CSS additionnel sur le bandeau cookie */
-  /* CSS pour le cookie personnalisé */
 }
 
 body #wpadminbar .ab-top-menu #wp-admin-bar-customize, body #wpadminbar .ab-top-menu #wp-admin-bar-updates, body #wpadminbar .ab-top-menu #wp-admin-bar-comments, body #wpadminbar .ab-top-menu #wp-admin-bar-new-content, body #wpadminbar .ab-top-menu #wp-admin-bar-edit, body #wpadminbar .ab-top-menu #wp-admin-bar-litespeed-menu, body #wpadminbar .ab-top-menu #wp-admin-bar-wpseo-menu {
@@ -169,15 +168,15 @@ body header .nav-container .navbar .nav-menu {
 }
 
 body header .nav-container .navbar .nav-menu li {
-  width: 14%;
+  width: 13%;
   text-align: center;
-  margin: 0 3%;
+  margin: 0 2%;
   list-style: none;
 }
 
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu li {
-    padding: 0 14%;
+    padding: 0 13%;
   }
 }
 
@@ -228,7 +227,64 @@ body header .nav-container .navbar .nav-menu li a:hover {
 }
 
 body header .nav-container .navbar .nav-menu li .sub-menu {
-  display: none;
+  display: block;
+  padding: 0;
+}
+
+@media (min-width: 1366px) {
+  body header .nav-container .navbar .nav-menu li .sub-menu {
+    display: none;
+    position: absolute;
+  }
+}
+
+body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu {
+  width: 100%;
+  margin: 0;
+  padding-top: 2%;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu {
+    padding: 0;
+  }
+}
+
+body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
+  border-radius: 0;
+  padding: 0 2%;
+  color: black !important;
+  background-color: #e9e8e9;
+  border: 1px solid black;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
+    padding: 0;
+    border: none;
+  }
+}
+
+body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a:hover {
+  color: white !important;
+  background-color: #e95b23;
+}
+
+@media (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a:hover {
+    background-color: transparent;
+    color: black !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media (min-width: 1366px) {
+  body header .nav-container .navbar .nav-menu li:hover .sub-menu {
+    display: block;
+  }
 }
 
 body header .nav-container .navbar .nav-menu .current_page_item a {
@@ -313,36 +369,37 @@ body header .nav-container .navbar .nav-rs-search {
   }
 }
 
-body header .nav-container .navbar .nav-rs-search .rs {
+body header .nav-container .navbar .nav-rs-search li {
+  list-style: none;
   padding: 0;
   width: 67%;
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .navbar .nav-rs-search .rs {
+  body header .nav-container .navbar .nav-rs-search li {
     width: 50%;
   }
 }
 
-body header .nav-container .navbar .nav-rs-search .rs li {
-  list-style: none;
+body header .nav-container .navbar .nav-rs-search li .rs {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0;
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .navbar .nav-rs-search .rs li {
+  body header .nav-container .navbar .nav-rs-search li .rs {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
   }
 }
 
-body header .nav-container .navbar .nav-rs-search .rs li .nav-rs {
+body header .nav-container .navbar .nav-rs-search li .rs .nav-rs {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,12 +407,12 @@ body header .nav-container .navbar .nav-rs-search .rs li .nav-rs {
 }
 
 @media (min-width: 1366px) {
-  body header .nav-container .navbar .nav-rs-search .rs li .nav-rs {
+  body header .nav-container .navbar .nav-rs-search li .rs .nav-rs {
     gap: 5px;
   }
 }
 
-body header .nav-container .navbar .nav-rs-search .rs li .nav-rs a {
+body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a {
   width: 50%;
   text-align: center;
   color: #202F86;
@@ -364,17 +421,17 @@ body header .nav-container .navbar .nav-rs-search .rs li .nav-rs a {
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .navbar .nav-rs-search .rs li .nav-rs a {
+  body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a {
     color: black;
   }
 }
 
-body header .nav-container .navbar .nav-rs-search .rs li .nav-rs a:hover {
+body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a:hover {
   color: #e95b23;
 }
 
 @media (max-width: 1365.98px) {
-  body header .nav-container .navbar .nav-rs-search .rs li .nav-rs a:hover {
+  body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a:hover {
     color: black;
   }
 }
@@ -542,11 +599,6 @@ body .cookielaw1 #cookie_accept_button {
     right: 0;
     margin-top: 0;
   }
-}
-
-body .user-cookie {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
 }
 
 /* Importation du CSS 'Recherche' */
@@ -889,20 +941,16 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   /* CCS des éléments du pied de page */
-}
-
-@media (max-width: 1199.98px) {
-  footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+  /* CSS pour le cookie personnalisé */
 }
 
 footer ul {
@@ -947,6 +995,14 @@ footer ul li p {
 footer ul li p a {
   color: white;
   text-decoration: none;
+}
+
+footer .user-cookie {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  color: white;
+  margin: 0;
 }
 
 /* Importation du CSS '404' */
@@ -1025,6 +1081,19 @@ footer ul li p a {
 @media (max-width: 991.98px) {
   .navigation-card #navigation-image {
     padding: 5% 0;
+    margin: 0.5% 0;
+  }
+}
+
+@media (max-width: 1365.98px) {
+  .navigation-card #navigation-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1061,6 +1130,7 @@ footer ul li p a {
   width: 90%;
   margin: auto;
   font-size: 1em;
+  text-align: justify;
 }
 
 .navigation-card #navigation-contenu {
@@ -1079,6 +1149,15 @@ footer ul li p a {
           align-items: center;
 }
 
+@media (max-width: 991.98px) {
+  .navigation-card #navigation-contenu .bloc01, .navigation-card #navigation-contenu .bloc02, .navigation-card #navigation-contenu .bloc03 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .navigation-card #navigation-contenu .bloc01 .navigation-texte, .navigation-card #navigation-contenu .bloc02 .navigation-texte, .navigation-card #navigation-contenu .bloc03 .navigation-texte {
   width: 80%;
   font-size: 1.25em;
@@ -1094,8 +1173,21 @@ footer ul li p a {
   }
 }
 
+@media (max-width: 991.98px) {
+  .navigation-card #navigation-contenu .bloc01 .navigation-texte, .navigation-card #navigation-contenu .bloc02 .navigation-texte, .navigation-card #navigation-contenu .bloc03 .navigation-texte {
+    width: 100%;
+  }
+}
+
 .navigation-card #navigation-contenu .bloc01 img, .navigation-card #navigation-contenu .bloc02 img, .navigation-card #navigation-contenu .bloc03 img {
   width: 17.5%;
+}
+
+@media (max-width: 991.98px) {
+  .navigation-card #navigation-contenu .bloc01 img, .navigation-card #navigation-contenu .bloc02 img, .navigation-card #navigation-contenu .bloc03 img {
+    width: 58%;
+    padding: 1% 0;
+  }
 }
 
 .navigation-card #navigation-contenu .bloc04, .navigation-card #navigation-contenu .bloc05 {
@@ -1112,8 +1204,24 @@ footer ul li p a {
           align-items: center;
 }
 
+@media (max-width: 991.98px) {
+  .navigation-card #navigation-contenu .bloc04, .navigation-card #navigation-contenu .bloc05 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .navigation-card #navigation-contenu .bloc04 img, .navigation-card #navigation-contenu .bloc05 img {
   width: 17.5%;
+}
+
+@media (max-width: 991.98px) {
+  .navigation-card #navigation-contenu .bloc04 img, .navigation-card #navigation-contenu .bloc05 img {
+    width: 58%;
+    padding: 1% 0;
+  }
 }
 
 .navigation-card #navigation-contenu .bloc04 #courants-forts, .navigation-card #navigation-contenu .bloc05 #courants-forts {
@@ -1129,6 +1237,13 @@ footer ul li p a {
           align-items: flex-start;
   width: 45%;
   padding-right: 25%;
+}
+
+@media (max-width: 991.98px) {
+  .navigation-card #navigation-contenu .bloc04 #courants-forts, .navigation-card #navigation-contenu .bloc05 #courants-forts {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .navigation-card #navigation-contenu .bloc04 #courants-forts h5, .navigation-card #navigation-contenu .bloc05 #courants-forts h5 {
@@ -1165,6 +1280,13 @@ footer ul li p a {
   }
 }
 
+@media (max-width: 991.98px) {
+  .navigation-card #navigation-contenu .bloc04 #courants-forts #forts i, .navigation-card #navigation-contenu .bloc05 #courants-forts #forts i {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+  }
+}
+
 .navigation-card #navigation-contenu .bloc04 #courants-forts #forts .courants-texte, .navigation-card #navigation-contenu .bloc05 #courants-forts #forts .courants-texte {
   margin-top: 0;
 }
@@ -1188,6 +1310,13 @@ footer ul li p a {
   }
 }
 
+@media (max-width: 991.98px) {
+  .navigation-card #navigation-contenu .bloc04 #courants-faibles, .navigation-card #navigation-contenu .bloc05 #courants-faibles {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 .navigation-card #navigation-contenu .bloc04 #courants-faibles i, .navigation-card #navigation-contenu .bloc05 #courants-faibles i {
   font-size: 1.25em;
   color: #202F86;
@@ -1197,6 +1326,13 @@ footer ul li p a {
 @media (max-width: 575.98px) {
   .navigation-card #navigation-contenu .bloc04 #courants-faibles i, .navigation-card #navigation-contenu .bloc05 #courants-faibles i {
     font-size: 1em;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navigation-card #navigation-contenu .bloc04 #courants-faibles i, .navigation-card #navigation-contenu .bloc05 #courants-faibles i {
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
   }
 }
 
@@ -1230,6 +1366,14 @@ footer ul li p a {
       flex-wrap: wrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 991.98px) {
+  .navigation-card #navigation-contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .navigation-card #navigation-contact .contactBtn {
@@ -1656,6 +1800,19 @@ footer ul li p a {
 @media (max-width: 991.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-image {
     padding: 5% 0;
+    margin: 0.5% 0;
+  }
+}
+
+@media (max-width: 1365.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1692,10 +1849,11 @@ footer ul li p a {
   width: 90%;
   margin: auto;
   font-size: 1em;
+  text-align: justify;
 }
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu {
-  padding: 0 20%;
+  padding: 1% 10%;
 }
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu h2 {
@@ -1703,9 +1861,48 @@ footer ul li p a {
   font-size: 2em;
 }
 
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01 .automatisme-texte, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 .automatisme-texte {
+  width: 80%;
   font-size: 1.25em;
   text-align: justify;
+}
+
+@media (max-width: 991.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01 .automatisme-texte, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 .automatisme-texte {
+    width: 100%;
+  }
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01 img, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 img {
+  width: 17.5%;
+}
+
+@media (max-width: 991.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01 img, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 img {
+    width: 58%;
+    padding: 1% 0;
+  }
 }
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .texte-centre h3 {
@@ -1719,6 +1916,47 @@ footer ul li p a {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .texte-centre h3 {
     font-size: 1em;
   }
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contact {
+  padding: 1% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 991.98px) {
+  .automatisme .contenu-automatisme .automatisme-card #automatisme-contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contact .contactBtn {
+  padding: 1.5%;
+  font-size: 1.5em;
+  text-decoration: none;
+  background-color: #202F86;
+  border: 1px solid #202F86;
+  border-radius: 25px;
+  color: white;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.automatisme .contenu-automatisme .automatisme-card #automatisme-contact .contactBtn:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-box-shadow: 0px 1px 4px 4px black;
+          box-shadow: 0px 1px 4px 4px black;
 }
 
 /* CSS de la page 'Informatique Industrielle' */
@@ -1736,16 +1974,32 @@ footer ul li p a {
   padding: 1% 10%;
   margin: 0.1% 0;
   background: #E9E8E9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 991.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
     padding: 5% 0;
+    margin: 0.5% 0;
+  }
+}
+
+@media (max-width: 1365.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image img {
-  width: 20%;
+  width: 15%;
   height: auto;
 }
 
@@ -1760,12 +2014,28 @@ footer ul li p a {
 
 @media (max-width: 991.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image img {
-    width: 60%;
+    width: 50%;
   }
 }
 
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image .titre-intro {
+  width: 85%;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image .titre-intro h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image .titre-intro p {
+  width: 90%;
+  margin: auto;
+  font-size: 1em;
+  text-align: justify;
+}
+
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu {
-  padding: 0 20%;
+  padding: 1% 10%;
 }
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h2 {
@@ -1773,12 +2043,51 @@ footer ul li p a {
   font-size: 2em;
 }
 
-.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .informatique-industrielle-texte {
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01 .informatique-industrielle-texte, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02 .informatique-industrielle-texte, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 .informatique-industrielle-texte {
+  width: 80%;
   font-size: 1.25em;
   text-align: justify;
 }
 
-.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h3 {
+@media (max-width: 991.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01 .informatique-industrielle-texte, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02 .informatique-industrielle-texte, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 .informatique-industrielle-texte {
+    width: 100%;
+  }
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01 img, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02 img, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 img {
+  width: 17.5%;
+}
+
+@media (max-width: 991.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01 img, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02 img, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 img {
+    width: 58%;
+    padding: 1% 0;
+  }
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .texte-centre h3 {
   padding: 2% 0;
   font-size: 1.25em;
   text-align: center;
@@ -1786,9 +2095,50 @@ footer ul li p a {
 }
 
 @media (max-width: 575.98px) {
-  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h3 {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .texte-centre h3 {
     font-size: 1em;
   }
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contact {
+  padding: 1% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 991.98px) {
+  .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contact .contactBtn {
+  padding: 1.5%;
+  font-size: 1.5em;
+  text-decoration: none;
+  background-color: #202F86;
+  border: 1px solid #202F86;
+  border-radius: 25px;
+  color: white;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contact .contactBtn:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-box-shadow: 0px 1px 4px 4px black;
+          box-shadow: 0px 1px 4px 4px black;
 }
 
 /* CSS de la page 'Contact' */
@@ -2823,24 +3173,28 @@ footer ul li p a {
   background-image: url(img/img_elecindus.jpg);
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .accueil .section_01 #menu-menu-secondaire #menu-item-471 {
   background-image: url(img/img_maintenance-elec.jpg);
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .accueil .section_01 #menu-menu-secondaire #menu-item-470 {
   background-image: url(img/img_auto.jpg);
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .accueil .section_01 #menu-menu-secondaire #menu-item-469 {
   background-image: url(img/img_info.jpg);
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .accueil .section_01 #menu-menu-secondaire li {
@@ -3260,7 +3614,6 @@ footer ul li p a {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  width: 300px;
   height: auto;
 }
 
