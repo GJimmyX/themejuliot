@@ -13,6 +13,11 @@
         display: flex;
         @media (max-width: 991.98px){
             padding: 5% 0;
+            margin: 0.5% 0;
+        }
+        @media (max-width: 1365.98px){
+            flex-direction: column;
+            align-items: center;
         }
         img{
             width: 15%;
@@ -35,6 +40,7 @@
                 width: 90%;
                 margin: auto;
                 font-size: 1em;
+                text-align: justify;
             }
         }
     }
@@ -47,6 +53,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media (max-width: 991.98px){
+                flex-direction: column;
+            }
             .navigation-texte{
                 width: 80%;
                 font-size: 1.25em;
@@ -57,9 +66,16 @@
                     font-size: 1em;
                     text-align: center;
                 }
+                @media (max-width: 991.98px){
+                    width: 100%;
+                }
             }
             img{
                 width: 17.5%;
+                @media (max-width: 991.98px){
+                    width: 58%;
+                    padding: 1% 0;
+                }
             }
         }
         .bloc04, .bloc05{
@@ -68,8 +84,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media (max-width: 991.98px){
+                flex-direction: column;
+            }
             img{
                 width: 17.5%;
+                @media (max-width: 991.98px){
+                    width: 58%;
+                    padding: 1% 0;
+                }
             }
             #courants-forts{
                 display: flex;
@@ -77,6 +100,10 @@
                 align-items: flex-start;
                 width: 45%;
                 padding-right: 25%;
+                @media (max-width: 991.98px){
+                    width: 100%;
+                    padding: 0;
+                }
                 h5{
                     font-size: 1.25em;
                     margin-top: 0;
@@ -96,6 +123,9 @@
                         @media (max-width: 575.98px){
                             font-size: 1em;
                         }
+                        @media (max-width: 991.98px){
+                            transform: rotateZ(90deg);
+                        }
                     }
                     .courants-texte{
                         margin-top: 0;
@@ -112,12 +142,19 @@
                 @media (max-width: 575.98px){
                     font-size: 1em;
                 }
+                @media (max-width: 991.98px){
+                    width: 100%;
+                    padding: 0;
+                }
                 i{
                     font-size: 1.25em;
                     color: #202F86;
                     margin: 0 2%;
                     @media (max-width: 575.98px){
                         font-size: 1em;
+                    }
+                    @media (max-width: 991.98px){
+                        transform: rotateZ(90deg);
                     }
                 }
                 .courants-texte{
@@ -144,6 +181,9 @@
         justify-content: end;
         flex-wrap: wrap;
         box-sizing: border-box;
+        @media (max-width: 991.98px){
+            justify-content: center;
+        }
         .contactBtn{
             padding: 1.5%;
             font-size: 1.5em;
