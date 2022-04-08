@@ -33,6 +33,9 @@ footer{
                 font-weight: 400;
                 text-align: center;
                 cursor: context-menu;
+                @media (max-width: 1365.98px){
+                    font-size: 0.8em;
+                }
                 a{
                     color: white;
                     text-decoration: none;

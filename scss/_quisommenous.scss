@@ -1,0 +1,28 @@
+/* CSS de la page 'Qui sommes-nous ?' */
+
+.qui-sommes-nous{
+    font-family: 'Open Sans', sans-serif;
+    padding: 1% 10%;
+    .sommes-nous-container{
+        img{
+            width: 60%;
+            margin: auto;
+            height: auto;
+            border-radius: 75px;
+            display: flex;
+            justify-content: center;
+        }
+        .sommes-nous-texte{
+            h4{
+                font-size: 1.25em;
+                text-align: center;
+            }
+            p{
+                width: 80%;
+                margin: auto;
+                font-size: 1.25em;
+                text-align: justify;
+            }
+        }
+    }
+}

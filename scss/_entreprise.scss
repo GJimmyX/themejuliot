@@ -1,0 +1,80 @@
+/* CSS de la page 'Entreprise' */
+
+.entreprise{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 10%;
+    @media (max-width: 767.98px){
+        padding: 5% 10%;
+    }
+    .section-accueil-entreprise{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1% 0;
+        p{
+            font-size: 1.5em;
+            font-weight: 500;
+            text-align: center;
+        }
+        img{
+            width: 80%;
+            height: auto;
+            border-radius: 20px;
+            @media (max-width: 767.98px){
+                width: 100%;
+            }
+        }
+    }
+    .section-rea-actu-rejoindre{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 0;
+        @media (max-width: 1365.98px){
+            flex-direction: column;
+        }
+        .section-realisations, .section-actualites, .section-rejoindre{
+            width: 33%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (max-width: 767.98px){
+                width: 100%;
+            }
+            @media (min-width: 768px) AND (max-width: 1365.98px){
+                width: 50%;
+            }
+            a{
+                font-size: 1.5em;
+                font-weight: 700;
+                text-align: center;
+                color: black;
+                text-decoration: none;
+                transition: .5s ease;
+                margin: 1% 0;
+                @media (max-width: 1365.98px){
+                    transition: none;
+                }
+                &:hover{
+                    transition: .5s ease;
+                    color: #202F86;
+                    border-bottom: 3px solid #202F86;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                        color: black;
+                        border-bottom: 0px;
+                    }
+                }
+            }
+            img{
+                width: 65%;
+                height: auto;
+                border-radius: 20px;
+                @media (max-width: 991.98px){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
