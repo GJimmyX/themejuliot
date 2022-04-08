@@ -235,14 +235,16 @@ body header .nav-container .navbar .nav-menu li .sub-menu {
   body header .nav-container .navbar .nav-menu li .sub-menu {
     display: none;
     position: absolute;
+    width: 6.165%;
   }
 }
 
 body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu {
   width: 100%;
   margin: 0;
-  padding-top: 2%;
+  /* padding-top: 2%; */
   position: relative;
+  top: 0;
   z-index: 1;
 }
 
@@ -284,6 +286,34 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a:hover {
 @media (min-width: 1366px) {
   body header .nav-container .navbar .nav-menu li:hover .sub-menu {
     display: block;
+    -webkit-animation: transition .3s ease;
+            animation: transition .3s ease;
+  }
+}
+
+@-webkit-keyframes transition {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    z-index: 999;
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    z-index: 999;
+  }
+}
+
+@keyframes transition {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    z-index: 999;
+  }
+  to {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    z-index: 999;
   }
 }
 
@@ -992,6 +1022,12 @@ footer ul li p {
   cursor: context-menu;
 }
 
+@media (max-width: 1365.98px) {
+  footer ul li p {
+    font-size: 0.8em;
+  }
+}
+
 footer ul li p a {
   color: white;
   text-decoration: none;
@@ -1085,7 +1121,7 @@ footer .user-cookie {
   }
 }
 
-@media (max-width: 1365.98px) {
+@media (max-width: 991.98px) {
   .navigation-card #navigation-image {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1407,7 +1443,7 @@ footer .user-cookie {
   color: #202F86;
 }
 
-/* CSS de la page 'single-articles'*/
+/* CSS de la page 'single-articles' */
 .articles {
   padding: 2% 10%;
   font-family: 'Open Sans', sans-serif;
@@ -1804,7 +1840,7 @@ footer .user-cookie {
   }
 }
 
-@media (max-width: 1365.98px) {
+@media (max-width: 991.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-image {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1986,7 +2022,7 @@ footer .user-cookie {
   }
 }
 
-@media (max-width: 1365.98px) {
+@media (max-width: 991.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2139,6 +2175,177 @@ footer .user-cookie {
   transition: .5s ease;
   -webkit-box-shadow: 0px 1px 4px 4px black;
           box-shadow: 0px 1px 4px 4px black;
+}
+
+/* CSS de la page 'Entreprise' */
+.entreprise {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 10%;
+}
+
+@media (max-width: 767.98px) {
+  .entreprise {
+    padding: 5% 10%;
+  }
+}
+
+.entreprise .section-accueil-entreprise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1% 0;
+}
+
+.entreprise .section-accueil-entreprise p {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.entreprise .section-accueil-entreprise img {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .entreprise .section-accueil-entreprise img {
+    width: 100%;
+  }
+}
+
+.entreprise .section-rea-actu-rejoindre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1% 0;
+}
+
+@media (max-width: 1365.98px) {
+  .entreprise .section-rea-actu-rejoindre {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.entreprise .section-rea-actu-rejoindre .section-realisations, .entreprise .section-rea-actu-rejoindre .section-actualites, .entreprise .section-rea-actu-rejoindre .section-rejoindre {
+  width: 33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .entreprise .section-rea-actu-rejoindre .section-realisations, .entreprise .section-rea-actu-rejoindre .section-actualites, .entreprise .section-rea-actu-rejoindre .section-rejoindre {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  .entreprise .section-rea-actu-rejoindre .section-realisations, .entreprise .section-rea-actu-rejoindre .section-actualites, .entreprise .section-rea-actu-rejoindre .section-rejoindre {
+    width: 50%;
+  }
+}
+
+.entreprise .section-rea-actu-rejoindre .section-realisations a, .entreprise .section-rea-actu-rejoindre .section-actualites a, .entreprise .section-rea-actu-rejoindre .section-rejoindre a {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  margin: 1% 0;
+}
+
+@media (max-width: 1365.98px) {
+  .entreprise .section-rea-actu-rejoindre .section-realisations a, .entreprise .section-rea-actu-rejoindre .section-actualites a, .entreprise .section-rea-actu-rejoindre .section-rejoindre a {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.entreprise .section-rea-actu-rejoindre .section-realisations a:hover, .entreprise .section-rea-actu-rejoindre .section-actualites a:hover, .entreprise .section-rea-actu-rejoindre .section-rejoindre a:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  color: #202F86;
+  border-bottom: 3px solid #202F86;
+}
+
+@media (max-width: 1365.98px) {
+  .entreprise .section-rea-actu-rejoindre .section-realisations a:hover, .entreprise .section-rea-actu-rejoindre .section-actualites a:hover, .entreprise .section-rea-actu-rejoindre .section-rejoindre a:hover {
+    -webkit-transition: none;
+    transition: none;
+    color: black;
+    border-bottom: 0px;
+  }
+}
+
+.entreprise .section-rea-actu-rejoindre .section-realisations img, .entreprise .section-rea-actu-rejoindre .section-actualites img, .entreprise .section-rea-actu-rejoindre .section-rejoindre img {
+  width: 65%;
+  height: auto;
+  border-radius: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .entreprise .section-rea-actu-rejoindre .section-realisations img, .entreprise .section-rea-actu-rejoindre .section-actualites img, .entreprise .section-rea-actu-rejoindre .section-rejoindre img {
+    width: 100%;
+  }
+}
+
+/* CSS de la page 'Qui sommes-nous ?' */
+.qui-sommes-nous {
+  font-family: 'Open Sans', sans-serif;
+  padding: 1% 10%;
+}
+
+.qui-sommes-nous .sommes-nous-container img {
+  width: 60%;
+  margin: auto;
+  height: auto;
+  border-radius: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.qui-sommes-nous .sommes-nous-container .sommes-nous-texte h4 {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.qui-sommes-nous .sommes-nous-container .sommes-nous-texte p {
+  width: 80%;
+  margin: auto;
+  font-size: 1.25em;
+  text-align: justify;
 }
 
 /* CSS de la page 'Contact' */
@@ -2999,9 +3206,11 @@ footer .user-cookie {
           align-items: center;
 }
 
-.contact .horaires .toggle-horaires #horaires-btn:hover {
-  -webkit-animation: rotate ease 2s;
-          animation: rotate ease 2s;
+@media (min-width: 1366px) {
+  .contact .horaires .toggle-horaires #horaires-btn:hover {
+    -webkit-animation: rotate ease 2s;
+            animation: rotate ease 2s;
+  }
 }
 
 @-webkit-keyframes rotate {
@@ -3172,28 +3381,28 @@ footer .user-cookie {
 .accueil .section_01 #menu-menu-secondaire #menu-item-472 {
   background-image: url(img/img_elecindus.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .accueil .section_01 #menu-menu-secondaire #menu-item-471 {
   background-image: url(img/img_maintenance-elec.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .accueil .section_01 #menu-menu-secondaire #menu-item-470 {
   background-image: url(img/img_auto.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .accueil .section_01 #menu-menu-secondaire #menu-item-469 {
   background-image: url(img/img_info.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -3438,6 +3647,13 @@ footer .user-cookie {
   margin: auto;
   border: 1px solid black;
   border-radius: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .accueil .section_02 .carousel-slider .control-slider #slider .slider-elements img {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .accueil .section_02 .carousel-slider .control-slider #slider .fade {
