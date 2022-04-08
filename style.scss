@@ -40,6 +40,8 @@
 @import 'scss/electricite';
 @import 'scss/automatisme';
 @import 'scss/infoindustrielle';
+@import 'scss/entreprise';
+@import 'scss/quisommenous';
 @import 'scss/contact';
 
 /* CSS du fichier 'Index' */
@@ -87,25 +89,25 @@
             #menu-item-472{
                 background-image: url(img/img_elecindus.jpg);
                 background-position: center;
-                background-size: contain;
+                background-size: cover;
                 background-repeat: no-repeat;
             }
             #menu-item-471{
                 background-image: url(img/img_maintenance-elec.jpg);
                 background-position: center;
-                background-size: contain;
+                background-size: cover;
                 background-repeat: no-repeat;
             }
             #menu-item-470{
                 background-image: url(img/img_auto.jpg);
                 background-position: center;
-                background-size: contain;
+                background-size: cover;
                 background-repeat: no-repeat;
             }
             #menu-item-469{
                 background-image: url(img/img_info.jpg);
                 background-position: center;
-                background-size: contain;
+                background-size: cover;
                 background-repeat: no-repeat;
             }
             li{
@@ -251,6 +253,10 @@
                             margin: auto;
                             border: 1px solid black;
                             border-radius: 30px;
+                            @media (max-width: 575.98px){
+                                width: 100%;
+                                margin: 0;
+                            }
                         }
                     }
                     .fade {
