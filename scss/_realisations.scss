@@ -1,0 +1,78 @@
+/* CSS de la page 'Nos Realisations' */
+
+.realisations{
+    font-family: 'Open Sans', sans-serif;
+    padding: 2 10%;
+    .realisations-disposition{
+        width: 100%;
+        margin: auto;
+        padding-top: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: space-around;
+        align-items: center;
+        .realisations-card{
+            width: 45%;
+            @media (max-width: 767.98px){
+                width: 100%;
+            }
+            @media (min-width: 768px) AND (max-width: 1066.98px){
+                width: 80%;
+            }
+            @media (min-width: 1067px) AND (max-width: 1365.98px){
+                width: 50%;
+            }
+            #realisations-image{
+                width: 35%;
+                height: auto;
+                margin: auto;
+                img{
+                    width: 100%;
+                    border: 1px solid olive;
+                    border-radius: 50px;
+                }
+            }
+            #realisations-titre{
+                text-align: center;
+            }
+        }
+    }
+    .realisations-pagination{
+        margin: 2% 0;
+        nav{
+            .nav-links{
+                text-align: center;
+                .page-numbers{
+                    color: white;
+                    background-color: #202F86;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    margin: 0 1%;
+                    padding: 0.25% 0.5%;
+                    border-radius: 5px;
+                    transition: 1s ease;
+                    @media (max-width: 1365.98px){
+                        transition: none;
+                    }
+                    &:hover{
+                        color: #202F86;
+                        background-color: transparent;
+                        transition: 1s ease;
+                        @media (max-width: 1365.98px){
+                            color: white;
+                            background-color: #202F86;
+                            transition: none;
+                        }
+                    }
+                }
+
+                /* CSS pour l'état du curseur */
+
+                .current{
+                    cursor: context-menu;
+                }
+            }
+        }
+    }
+}

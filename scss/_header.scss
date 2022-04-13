@@ -140,12 +140,11 @@ body{
                             @media (min-width: 1366px){
                                 display: none;
                                 position: absolute;
-                                width: 6.165%;
+                                width: 6.075%;
                             }
                             .sous-menu{
                                 width: 100%;
                                 margin: 0;
-                                /* padding-top: 2%; */
                                 position: relative;
                                 top: 0;
                                 z-index: 1;
@@ -158,6 +157,7 @@ body{
                                     color: black !important;
                                     background-color: #e9e8e9;
                                     border: 1px solid black;
+                                    border-radius: 30px;
                                     @media (max-width: 1365.98px){
                                         padding: 0;
                                         border: none;
@@ -178,14 +178,14 @@ body{
                             .sub-menu{
                                 @media (min-width: 1366px){
                                     display: block;
-                                    animation: transition .3s ease;
+                                    animation: transition .5s ease;
                                 }
                                 @keyframes transition{
                                     from{
-                                        transform: translateY(0px);
+                                        opacity: 0.4;
                                         z-index: 999;
                                     } to{
-                                        transform: translateY(-10px);
+                                        opacity: 1;
                                         z-index: 999;
                                     }
                                 }
