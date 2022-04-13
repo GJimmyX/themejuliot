@@ -1,0 +1,85 @@
+/* CSS de la page 'Nos bureaux d'études' */
+
+.bureaux-d-etudes{
+    font-family: 'Open Sans', sans-serif;    
+    @media (min-width: 992px){
+        padding: 0 5%;
+    }
+    .texte-bureaux-d-etudes{
+        text-align: center;
+        padding: 1% 0;
+        p{
+            margin: 0%;
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+    }
+    .section-adresses-logos-bureaux-d-etudes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 1365.98px){
+            flex-direction: column;
+        }
+        .adresses-bureaux-d-etudes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            @media (max-width: 991.98px){
+                width: 95%;
+            }
+            .bureau-d-etudes-85, .bureau-d-etudes-44{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 5% 0;
+                img{
+                    width: 100%;
+                }
+                a{
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                    margin-top: 5%;
+                    font-size: 1em;
+                    font-weight: 400;
+                    transition: none;
+                    @media (max-width: 575.98px){
+                        font-size: 0.75em;
+                        font-weight: 500;
+                    }
+                    @media (min-width: 1366px){
+                        transition: .5s ease;
+                    }
+                    &:hover{
+                        color: black;
+                        transition: none;
+                        @media (min-width: 1366px){
+                            color: #202F86;
+                            font-weight: 700;
+                            transition: .5s ease;
+                        }
+                    }
+                }
+            }
+        }
+        .logos-bureaux-d-etudes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            @media (max-width: 991.98px){
+                width: 95%;
+            }
+            a{
+                padding: 5% 0;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
