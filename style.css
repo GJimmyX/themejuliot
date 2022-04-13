@@ -235,14 +235,13 @@ body header .nav-container .navbar .nav-menu li .sub-menu {
   body header .nav-container .navbar .nav-menu li .sub-menu {
     display: none;
     position: absolute;
-    width: 6.165%;
+    width: 6.075%;
   }
 }
 
 body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu {
   width: 100%;
   margin: 0;
-  /* padding-top: 2%; */
   position: relative;
   top: 0;
   z-index: 1;
@@ -260,6 +259,7 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
   color: black !important;
   background-color: #e9e8e9;
   border: 1px solid black;
+  border-radius: 30px;
 }
 
 @media (max-width: 1365.98px) {
@@ -286,33 +286,29 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a:hover {
 @media (min-width: 1366px) {
   body header .nav-container .navbar .nav-menu li:hover .sub-menu {
     display: block;
-    -webkit-animation: transition .3s ease;
-            animation: transition .3s ease;
+    -webkit-animation: transition .5s ease;
+            animation: transition .5s ease;
   }
 }
 
 @-webkit-keyframes transition {
   from {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    opacity: 0.4;
     z-index: 999;
   }
   to {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    opacity: 1;
     z-index: 999;
   }
 }
 
 @keyframes transition {
   from {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    opacity: 0.4;
     z-index: 999;
   }
   to {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    opacity: 1;
     z-index: 999;
   }
 }
@@ -878,6 +874,10 @@ body .cookielaw1 #cookie_accept_button {
   color: #202F86;
   -webkit-transition: .3s ease;
   transition: .3s ease;
+}
+
+.mentions-legales .article01 .article-title, .mentions-legales .article02 .article-title, .mentions-legales .article03 .article-title, .mentions-legales .article04 .article-title, .mentions-legales .article05 .article-title, .mentions-legales .article06 .article-title, .mentions-legales .article07 .article-title, .mentions-legales .article08 .article-title, .mentions-legales .article09 .article-title, .mentions-legales .article10 .article-title, .mentions-legales .article11 .article-title, .mentions-legales .article12 .article-title, .mentions-legales .article13 .article-title, .mentions-legales .article14 .article-title, .mentions-legales .article15 .article-title, .mentions-legales .article16 .article-title {
+  font-size: 1.5em;
 }
 
 @media (max-width: 1365.98px) {
@@ -2346,6 +2346,269 @@ footer .user-cookie {
   margin: auto;
   font-size: 1.25em;
   text-align: justify;
+}
+
+/* CSS de la page 'Nos Realisations' */
+.realisations {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2 10%;
+}
+
+.realisations .realisations-disposition {
+  width: 100%;
+  margin: auto;
+  padding-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.realisations .realisations-disposition .realisations-card {
+  width: 45%;
+}
+
+@media (max-width: 767.98px) {
+  .realisations .realisations-disposition .realisations-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1066.98px) {
+  .realisations .realisations-disposition .realisations-card {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1067px) and (max-width: 1365.98px) {
+  .realisations .realisations-disposition .realisations-card {
+    width: 50%;
+  }
+}
+
+.realisations .realisations-disposition .realisations-card #realisations-image {
+  width: 35%;
+  height: auto;
+  margin: auto;
+}
+
+.realisations .realisations-disposition .realisations-card #realisations-image img {
+  width: 100%;
+  border: 1px solid olive;
+  border-radius: 50px;
+}
+
+.realisations .realisations-disposition .realisations-card #realisations-titre {
+  text-align: center;
+}
+
+.realisations .realisations-pagination {
+  margin: 2% 0;
+}
+
+.realisations .realisations-pagination nav .nav-links {
+  text-align: center;
+  /* CSS pour l'état du curseur */
+}
+
+.realisations .realisations-pagination nav .nav-links .page-numbers {
+  color: white;
+  background-color: #202F86;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 0 1%;
+  padding: 0.25% 0.5%;
+  border-radius: 5px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+@media (max-width: 1365.98px) {
+  .realisations .realisations-pagination nav .nav-links .page-numbers {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.realisations .realisations-pagination nav .nav-links .page-numbers:hover {
+  color: #202F86;
+  background-color: transparent;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+@media (max-width: 1365.98px) {
+  .realisations .realisations-pagination nav .nav-links .page-numbers:hover {
+    color: white;
+    background-color: #202F86;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.realisations .realisations-pagination nav .nav-links .current {
+  cursor: context-menu;
+}
+
+/* CSS de la page 'Nos bureaux d'études' */
+.bureaux-d-etudes {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 992px) {
+  .bureaux-d-etudes {
+    padding: 0 5%;
+  }
+}
+
+.bureaux-d-etudes .texte-bureaux-d-etudes {
+  text-align: center;
+  padding: 1% 0;
+}
+
+.bureaux-d-etudes .texte-bureaux-d-etudes p {
+  margin: 0%;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1365.98px) {
+  .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+@media (max-width: 991.98px) {
+  .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes {
+    width: 95%;
+  }
+}
+
+.bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5% 0;
+}
+
+.bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 img, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 img {
+  width: 100%;
+}
+
+.bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-top: 5%;
+  font-size: 1em;
+  font-weight: 400;
+  -webkit-transition: none;
+  transition: none;
+}
+
+@media (max-width: 575.98px) {
+  .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a {
+    font-size: 0.75em;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 1366px) {
+  .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a {
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+}
+
+.bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a:hover, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a:hover {
+  color: black;
+  -webkit-transition: none;
+  transition: none;
+}
+
+@media (min-width: 1366px) {
+  .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a:hover, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a:hover {
+    color: #202F86;
+    font-weight: 700;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+}
+
+.bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .logos-bureaux-d-etudes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+@media (max-width: 991.98px) {
+  .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .logos-bureaux-d-etudes {
+    width: 95%;
+  }
+}
+
+.bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .logos-bureaux-d-etudes a {
+  padding: 5% 0;
+}
+
+.bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .logos-bureaux-d-etudes a img {
+  width: 100%;
 }
 
 /* CSS de la page 'Contact' */
