@@ -1012,6 +1012,12 @@ footer ul li {
   padding: 1% 0%;
 }
 
+@media (min-width: 1366px) {
+  footer ul li {
+    width: 33.3%;
+  }
+}
+
 footer ul li p {
   margin: 0;
   color: white;
@@ -1715,6 +1721,117 @@ footer .user-cookie {
   }
 }
 
+/* CSS de la page 'Single-rejoindre' */
+.rejoindre {
+  padding: 2% 10%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.rejoindre .returnBtn {
+  margin-bottom: 2%;
+}
+
+@media (max-width: 767.98px) {
+  .rejoindre .returnBtn {
+    margin-bottom: 5%;
+  }
+}
+
+.rejoindre .returnBtn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  color: black;
+  font-weight: 700;
+}
+
+.rejoindre .rejoindre-structure {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+@media (max-width: 1365.98px) {
+  .rejoindre .rejoindre-structure {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.rejoindre .rejoindre-structure #rejoindre-titre, .rejoindre .rejoindre-structure #rejoindre-contenu {
+  width: 50%;
+}
+
+@media (max-width: 1365.98px) {
+  .rejoindre .rejoindre-structure #rejoindre-titre, .rejoindre .rejoindre-structure #rejoindre-contenu {
+    width: 100%;
+  }
+}
+
+.rejoindre .rejoindre-structure #rejoindre-titre h2, .rejoindre .rejoindre-structure #rejoindre-contenu h2 {
+  width: 90%;
+  margin: auto;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .rejoindre .rejoindre-structure #rejoindre-titre h2, .rejoindre .rejoindre-structure #rejoindre-contenu h2 {
+    font-size: 1em;
+  }
+}
+
+.rejoindre .rejoindre-structure #rejoindre-titre p, .rejoindre .rejoindre-structure #rejoindre-contenu p {
+  width: 90%;
+  margin: auto;
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+  .rejoindre .rejoindre-structure #rejoindre-titre p, .rejoindre .rejoindre-structure #rejoindre-contenu p {
+    font-size: 1em;
+  }
+}
+
+.rejoindre .rejoindre-structure #rejoindre-titre p i, .rejoindre .rejoindre-structure #rejoindre-contenu p i {
+  font-style: normal;
+}
+
+.rejoindre .rejoindre-structure #rejoindre-titre #titre-offre, .rejoindre .rejoindre-structure #rejoindre-contenu #titre-offre {
+  margin-bottom: 2%;
+}
+
+@media (max-width: 767.98px) {
+  .rejoindre .rejoindre-structure #rejoindre-titre #titre-offre, .rejoindre .rejoindre-structure #rejoindre-contenu #titre-offre {
+    margin-bottom: 5%;
+  }
+}
+
+.rejoindre .rejoindre-structure #rejoindre-titre #localisation-et-type, .rejoindre .rejoindre-structure #rejoindre-titre #contrat, .rejoindre .rejoindre-structure #rejoindre-contenu #localisation-et-type, .rejoindre .rejoindre-structure #rejoindre-contenu #contrat {
+  margin-bottom: 2%;
+}
+
+@media (max-width: 767.98px) {
+  .rejoindre .rejoindre-structure #rejoindre-titre #localisation-et-type, .rejoindre .rejoindre-structure #rejoindre-titre #contrat, .rejoindre .rejoindre-structure #rejoindre-contenu #localisation-et-type, .rejoindre .rejoindre-structure #rejoindre-contenu #contrat {
+    margin: 5% 0;
+  }
+}
+
 /* Importation du CSS des diffférentes pages du site */
 /* CSS de la page 'Maintenance/Installation' */
 .electricite {
@@ -2181,6 +2298,7 @@ footer .user-cookie {
 .entreprise {
   font-family: 'Open Sans', sans-serif;
   padding: 0 10%;
+  /* Intro et image de la section */
 }
 
 @media (max-width: 767.98px) {
@@ -2232,6 +2350,7 @@ footer .user-cookie {
       -ms-flex-align: center;
           align-items: center;
   padding: 1% 0;
+  /* Menus pour 3 pages du site */
 }
 
 @media (max-width: 1365.98px) {
@@ -2323,6 +2442,11 @@ footer .user-cookie {
   padding: 1% 10%;
 }
 
+.qui-sommes-nous .sommes-nous-container {
+  /* Illustration */
+  /* Texte */
+}
+
 .qui-sommes-nous .sommes-nous-container img {
   width: 60%;
   margin: auto;
@@ -2352,6 +2476,7 @@ footer .user-cookie {
 .realisations {
   font-family: 'Open Sans', sans-serif;
   padding: 2 10%;
+  /* Pagination de la page */
 }
 
 .realisations .realisations-disposition {
@@ -2370,6 +2495,7 @@ footer .user-cookie {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Carte d'un projet réalisé */
 }
 
 .realisations .realisations-disposition .realisations-card {
@@ -2490,6 +2616,8 @@ footer .user-cookie {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Adresses des 2 bureaux d'études */
+  /* Logos de la société */
 }
 
 @media (max-width: 1365.98px) {
@@ -2609,6 +2737,188 @@ footer .user-cookie {
 
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .logos-bureaux-d-etudes a img {
   width: 100%;
+}
+
+/* CSS de la page 'Nous Rejoindre' */
+.nous-rejoindre {
+  padding: 1% 10%;
+  font-family: 'Open Sans', sans-serif;
+  /* CSS de la pagination */
+}
+
+.nous-rejoindre .nous-rejoindre-disposition {
+  /* Carte d'une offre d'emploi */
+}
+
+.nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card {
+  padding: 2% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  /* Infos supplémentaires en plus du lien de l'annonce */
+}
+
+@media (max-width: 767.98px) {
+  .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card {
+    padding: 5% 0;
+  }
+}
+
+.nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a {
+  color: black;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  font-size: 1em;
+}
+
+@media (max-width: 1365.98px) {
+  .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a:hover {
+  color: #202F86;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+@media (max-width: 1365.98px) {
+  .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a:hover {
+    color: black;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 767.98px) {
+  .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a h2 {
+    font-size: 1em;
+  }
+}
+
+.nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 20px;
+  }
+}
+
+.nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .localisation, .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .domaine {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  gap: 10px;
+}
+
+.nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .localisation a, .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .domaine a {
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .localisation a:hover, .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .domaine a:hover {
+  color: #E95B23;
+}
+
+@media (max-width: 1365.98px) {
+  .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .localisation a:hover, .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .domaine a:hover {
+    color: black;
+  }
+}
+
+.nous-rejoindre .nous-rejoindre-pagination {
+  margin: 2% 0;
+}
+
+@media (max-width: 767.98px) {
+  .nous-rejoindre .nous-rejoindre-pagination {
+    margin: 5% 0;
+  }
+}
+
+.nous-rejoindre .nous-rejoindre-pagination nav .nav-links {
+  text-align: start;
+  /* CSS pour l'état du curseur */
+}
+
+@media (max-width: 575.98px) {
+  .nous-rejoindre .nous-rejoindre-pagination nav .nav-links {
+    text-align: center;
+  }
+}
+
+.nous-rejoindre .nous-rejoindre-pagination nav .nav-links .page-numbers {
+  padding: 0 1%;
+  color: #005f00;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+@media (max-width: 1365.98px) {
+  .nous-rejoindre .nous-rejoindre-pagination nav .nav-links .page-numbers {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.nous-rejoindre .nous-rejoindre-pagination nav .nav-links .page-numbers:hover {
+  background-color: #005f00;
+  color: #F1F1F1;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  border-radius: 15px;
+}
+
+@media (max-width: 1365.98px) {
+  .nous-rejoindre .nous-rejoindre-pagination nav .nav-links .page-numbers:hover {
+    color: #005f00;
+    background-color: #F1F1F1;
+    -webkit-transition: none;
+    transition: none;
+    border-radius: 0px;
+  }
+}
+
+.nous-rejoindre .nous-rejoindre-pagination nav .nav-links .current {
+  cursor: context-menu;
 }
 
 /* CSS de la page 'Contact' */
@@ -4089,10 +4399,6 @@ footer .user-cookie {
 }
 
 .accueil .section_03 .latestPost-card img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
   height: auto;
 }
 

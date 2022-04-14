@@ -8,7 +8,7 @@
                 <?php dynamic_sidebar('footer-sidebar'); ?>
             </ul>
 
-            <?php if (is_page('accueil') ){
+            <?php if (is_page('accueil') && (is_user_logged_in() ) ){
                 ?><!-- Trigger du cookie (Personne connectée seulement) --><?php
                 echo '<p class="user-cookie">Session pour l\'utilisateur : ' .$_COOKIE['user_id'] . '</p>';
                 }
