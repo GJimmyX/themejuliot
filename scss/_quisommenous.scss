@@ -4,6 +4,9 @@
     font-family: 'Open Sans', sans-serif;
     padding: 1% 10%;
     .sommes-nous-container{
+
+        /* Illustration */
+
         img{
             width: 60%;
             margin: auto;
@@ -12,6 +15,9 @@
             display: flex;
             justify-content: center;
         }
+
+        /* Texte */
+
         .sommes-nous-texte{
             h4{
                 font-size: 1.25em;

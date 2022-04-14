@@ -1,0 +1,68 @@
+/* CSS de la page 'Single-rejoindre' */
+
+.rejoindre{
+    padding: 2% 10%;
+    font-family: 'Open Sans', sans-serif;
+    .returnBtn{
+        margin-bottom: 2%;
+        @media (max-width: 767.98px){
+            margin-bottom: 5%;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: black;
+            font-weight: 700;
+        }
+    }
+    .rejoindre-structure{
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        @media (max-width: 1365.98px){
+            flex-direction: column;
+        }
+        #rejoindre-titre, #rejoindre-contenu{
+            width: 50%;
+            @media (max-width: 1365.98px){
+                width: 100%;
+            }
+            h2{
+                width: 90%;
+                margin: auto;
+                font-size: 1.5em;
+                text-align: center;
+                @media (max-width: 767.98px){
+                    font-size: 1em;
+                }
+            }
+            p{
+                width: 90%;
+                margin: auto;
+                font-size: 1.25em;
+                text-align: justify;
+                @media (max-width: 767.98px){
+                    font-size: 1em;
+                }
+                i{
+                    font-style: normal;
+                }
+            }
+            #titre-offre{
+                margin-bottom: 2%;
+                @media (max-width: 767.98px){
+                    margin-bottom: 5%;
+                }
+            }
+            #localisation-et-type, #contrat{
+                margin-bottom: 2%;
+                @media (max-width: 767.98px){
+                    margin: 5% 0;
+                }
+            }
+        }
+    }
+}

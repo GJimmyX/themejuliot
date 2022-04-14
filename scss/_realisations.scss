@@ -12,6 +12,9 @@
         box-sizing: border-box;
         justify-content: space-around;
         align-items: center;
+
+        /* Carte d'un projet réalisé */
+        
         .realisations-card{
             width: 45%;
             @media (max-width: 767.98px){
@@ -38,6 +41,9 @@
             }
         }
     }
+
+    /* Pagination de la page */
+
     .realisations-pagination{
         margin: 2% 0;
         nav{
