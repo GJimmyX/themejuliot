@@ -6,6 +6,9 @@
     @media (max-width: 767.98px){
         padding: 5% 10%;
     }
+
+    /* Intro et image de la section */
+
     .section-accueil-entreprise{
         display: flex;
         flex-direction: column;
@@ -33,6 +36,9 @@
         @media (max-width: 1365.98px){
             flex-direction: column;
         }
+
+        /* Menus pour 3 pages du site */
+
         .section-realisations, .section-actualites, .section-rejoindre{
             width: 33%;
             box-sizing: border-box;

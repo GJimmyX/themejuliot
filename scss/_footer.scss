@@ -25,6 +25,9 @@ footer{
         li{
             list-style: none;
             padding: 1% 0%;
+            @media (min-width: 1366px){
+                width: 33.3%;
+            }
             p{
                 margin: 0;
                 color: white;
