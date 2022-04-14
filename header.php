@@ -22,9 +22,21 @@
                 <meta name="keywords" content="<?php the_title(); ?>">
             <?php 
             endif;
+            if (is_singular('rejoindre') ) : ?>
+                <meta name="keywords" content="<?php the_field( 'nom_de_loffre' ); ?>">
+            <?php 
+            endif;
         ?>
 
-        <title><?php the_title(); ?> - Juliot Électricité</title>
+        <!-- Titre de chaque page -->
+
+        <?php
+            if (is_singular('rejoindre') ) : ?>
+            <title> Offre d'emploi : <?php the_field( 'nom_de_loffre' ); ?> - Juliot Électricité</title>
+        <?php else : ?>
+            <title><?php the_title(); ?> - Juliot Électricité</title>
+        <?php endif; ?>
+
         <?php wp_head(); ?>
         
         <script type="text/javascript" src="<?php echo get_template_directory_uri() . "/js/cookie.js" ?>"></script>

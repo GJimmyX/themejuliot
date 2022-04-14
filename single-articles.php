@@ -10,7 +10,7 @@ get_header();
     <!-- Retour sur la page centrale d'articles -->
 
     <div class="returnBtn">
-        <a href="<?php echo site_url('actualites'); ?>" class="return"><i class="fas fa-chevron-left"></i> Retour</a>
+        <a href="<?php echo site_url('actualites'); ?>" title="Page précédente" class="return"><i class="fas fa-chevron-left"></i> Retour</a>
     </div>
 
     <!-- Affichage d'un seul article -->
