@@ -236,6 +236,7 @@ body header .nav-container .navbar .nav-menu li .sub-menu {
     display: none;
     position: absolute;
     width: 6.075%;
+    z-index: 1;
   }
 }
 
@@ -243,7 +244,6 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu {
   width: 100%;
   margin: 0;
   position: relative;
-  top: 0;
   z-index: 1;
 }
 
@@ -259,7 +259,7 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
   color: black !important;
   background-color: #e9e8e9;
   border: 1px solid black;
-  border-radius: 30px;
+  font-size: 0.95em;
 }
 
 @media (max-width: 1365.98px) {
@@ -293,10 +293,14 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a:hover {
 
 @-webkit-keyframes transition {
   from {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     opacity: 0.4;
     z-index: 999;
   }
   to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
     z-index: 999;
   }
@@ -304,10 +308,14 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a:hover {
 
 @keyframes transition {
   from {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     opacity: 0.4;
     z-index: 999;
   }
   to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
     z-index: 999;
   }
@@ -1161,6 +1169,7 @@ footer .user-cookie {
 
 .navigation-card #navigation-image .titre-intro {
   width: 85%;
+  cursor: context-menu;
 }
 
 .navigation-card #navigation-image .titre-intro h2 {
@@ -1177,6 +1186,7 @@ footer .user-cookie {
 
 .navigation-card #navigation-contenu {
   padding: 1% 10%;
+  cursor: context-menu;
 }
 
 .navigation-card #navigation-contenu .bloc01, .navigation-card #navigation-contenu .bloc02, .navigation-card #navigation-contenu .bloc03 {
@@ -1723,7 +1733,7 @@ footer .user-cookie {
 
 /* CSS de la page 'Single-rejoindre' */
 .rejoindre {
-  padding: 2% 10%;
+  padding: 10%;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -1774,6 +1784,7 @@ footer .user-cookie {
 
 .rejoindre .rejoindre-structure #rejoindre-titre, .rejoindre .rejoindre-structure #rejoindre-contenu {
   width: 50%;
+  cursor: context-menu;
 }
 
 @media (max-width: 1365.98px) {
@@ -1810,6 +1821,7 @@ footer .user-cookie {
 
 .rejoindre .rejoindre-structure #rejoindre-titre p i, .rejoindre .rejoindre-structure #rejoindre-contenu p i {
   font-style: normal;
+  font-weight: 700;
 }
 
 .rejoindre .rejoindre-structure #rejoindre-titre #titre-offre, .rejoindre .rejoindre-structure #rejoindre-contenu #titre-offre {
@@ -1991,6 +2003,7 @@ footer .user-cookie {
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image .titre-intro {
   width: 85%;
+  cursor: context-menu;
 }
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image .titre-intro h2 {
@@ -2007,6 +2020,7 @@ footer .user-cookie {
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu {
   padding: 1% 10%;
+  cursor: context-menu;
 }
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu h2 {
@@ -2173,6 +2187,7 @@ footer .user-cookie {
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image .titre-intro {
   width: 85%;
+  cursor: context-menu;
 }
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image .titre-intro h2 {
@@ -2189,6 +2204,7 @@ footer .user-cookie {
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu {
   padding: 1% 10%;
+  cursor: context-menu;
 }
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h2 {
@@ -2325,6 +2341,7 @@ footer .user-cookie {
   font-size: 1.5em;
   font-weight: 500;
   text-align: center;
+  cursor: context-menu;
 }
 
 .entreprise .section-accueil-entreprise img {
@@ -2412,7 +2429,6 @@ footer .user-cookie {
   -webkit-transition: .5s ease;
   transition: .5s ease;
   color: #202F86;
-  border-bottom: 3px solid #202F86;
 }
 
 @media (max-width: 1365.98px) {
@@ -2458,6 +2474,10 @@ footer .user-cookie {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.qui-sommes-nous .sommes-nous-container .sommes-nous-texte {
+  cursor: context-menu;
 }
 
 .qui-sommes-nous .sommes-nous-container .sommes-nous-texte h4 {
@@ -2534,6 +2554,7 @@ footer .user-cookie {
 
 .realisations .realisations-disposition .realisations-card #realisations-titre {
   text-align: center;
+  cursor: context-menu;
 }
 
 .realisations .realisations-pagination {
@@ -2604,6 +2625,7 @@ footer .user-cookie {
   margin: 0%;
   font-size: 1.5em;
   font-weight: 400;
+  cursor: context-menu;
 }
 
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes {
@@ -3020,7 +3042,7 @@ footer .user-cookie {
 }
 
 .contact .adresses-formulaire .adresses .agence85 .carte-agence85, .contact .adresses-formulaire .adresses .agence44 .carte-agence85 {
-  background-image: url(img/agence85.png);
+  background-image: url(img/agence85_fleches.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -3032,7 +3054,7 @@ footer .user-cookie {
 }
 
 .contact .adresses-formulaire .adresses .agence85 .carte-agence44, .contact .adresses-formulaire .adresses .agence44 .carte-agence44 {
-  background-image: url(img/agence44.png);
+  background-image: url(img/agence44_fleches.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -3047,6 +3069,7 @@ footer .user-cookie {
   font-size: 1em;
   text-align: center;
   color: #202F86;
+  cursor: context-menu;
 }
 
 .contact .adresses-formulaire .adresses .agence85 {
@@ -3093,6 +3116,7 @@ footer .user-cookie {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  cursor: context-menu;
 }
 
 @media (max-width: 575.98px) {
@@ -3417,6 +3441,7 @@ footer .user-cookie {
   font-weight: 700;
   font-size: 1em;
   color: black;
+  cursor: context-menu;
 }
 
 .contact .adresses-formulaire .formulaire .wpcf7 form .bouton {
@@ -3606,6 +3631,7 @@ footer .user-cookie {
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire .champ-obligatoire {
   font-size: 1em;
   color: black;
+  cursor: context-menu;
 }
 
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire .champ-obligatoire i {
@@ -3628,6 +3654,7 @@ footer .user-cookie {
 
 .contact .horaires #horaires-title-section {
   text-align: center;
+  cursor: context-menu;
 }
 
 .contact .horaires .toggle-horaires {
@@ -3671,6 +3698,7 @@ footer .user-cookie {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  cursor: context-menu;
 }
 
 @media (max-width: 1365.98px) {
@@ -3695,6 +3723,10 @@ footer .user-cookie {
   }
 }
 
+.contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour .horaires-text sup {
+  font-size: 0.5em;
+}
+
 .contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour .horaires-title {
   font-style: normal;
   font-weight: 700;
@@ -3708,27 +3740,25 @@ footer .user-cookie {
   }
 }
 
-.contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour sup {
-  font-size: 0.5em;
-}
-
 .contact .horaires .toggle-horaires .horaires-jour .horaires-tel {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.5em;
 }
 
 @media (max-width: 991.98px) {
   .contact .horaires .toggle-horaires .horaires-jour .horaires-tel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -3739,23 +3769,39 @@ footer .user-cookie {
 @media (max-width: 991.98px) {
   .contact .horaires .toggle-horaires .horaires-jour .horaires-tel .fa-phone-alt {
     display: block;
-    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
 .contact .horaires .toggle-horaires .horaires-jour .horaires-tel .horaires-title {
   font-style: normal;
   font-weight: 700;
+  margin: 1rem 1rem 1rem 0;
+  cursor: context-menu;
+}
+
+@media (max-width: 991.98px) {
+  .contact .horaires .toggle-horaires .horaires-jour .horaires-tel .horaires-title {
+    margin-right: 0;
+  }
 }
 
 .contact .horaires .toggle-horaires .horaires-jour .horaires-tel a {
   color: black;
   text-decoration: none;
+  margin: 1rem 0;
+}
+
+@media (max-width: 991.98px) {
+  .contact .horaires .toggle-horaires .horaires-jour .horaires-tel a {
+    margin-top: 0;
+  }
 }
 
 .contact .horaires .toggle-horaires .horaires-btn-text {
   display: block;
   font-size: 1.5em;
+  cursor: context-menu;
 }
 
 .contact .horaires .toggle-horaires .toggle-hide {
@@ -3817,6 +3863,7 @@ footer .user-cookie {
 .contact .horaires .toggle-horaires .horaires-semaine {
   width: 90%;
   display: none;
+  cursor: context-menu;
 }
 
 .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine {
@@ -3875,14 +3922,20 @@ footer .user-cookie {
   color: black;
 }
 
+@media (min-width: 1366px) {
+  .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content .horaires-text:hover {
+    font-weight: 700;
+  }
+}
+
+.contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content .horaires-text sup {
+  font-size: 0.5em;
+}
+
 .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content .horaires-title {
   font-style: normal;
   font-weight: 700;
   margin-right: 1%;
-}
-
-.contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content sup {
-  font-size: 0.5em;
 }
 
 .contact .horaires .toggle-horaires .toggle-table {
