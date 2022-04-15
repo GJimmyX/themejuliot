@@ -1,7 +1,7 @@
 /* CSS de la page 'Single-rejoindre' */
 
 .rejoindre{
-    padding: 2% 10%;
+    padding: 10%;
     font-family: 'Open Sans', sans-serif;
     .returnBtn{
         margin-bottom: 2%;
@@ -27,6 +27,7 @@
         }
         #rejoindre-titre, #rejoindre-contenu{
             width: 50%;
+            cursor: context-menu;
             @media (max-width: 1365.98px){
                 width: 100%;
             }
@@ -49,6 +50,7 @@
                 }
                 i{
                     font-style: normal;
+                    font-weight: 700;
                 }
             }
             #titre-offre{

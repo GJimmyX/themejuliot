@@ -49,7 +49,7 @@
                     }
                 }
                 .carte-agence85{
-                    background-image: url(img/agence85.png);
+                    background-image: url(img/agence85_fleches.png);
                     background-position: center;
                     background-repeat: no-repeat;
                     @media (max-width: 575.98px){
@@ -57,7 +57,7 @@
                     }
                 }
                 .carte-agence44{
-                    background-image: url(img/agence44.png);
+                    background-image: url(img/agence44_fleches.png);
                     background-position: center;
                     background-repeat: no-repeat;
                     @media (max-width: 575.98px){
@@ -68,6 +68,7 @@
                     font-size: 1em;
                     text-align: center;
                     color: #202F86;
+                    cursor: context-menu;
                 }
             }
             .agence85{
@@ -105,6 +106,7 @@
                 text-align: center;
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 700;
+                cursor: context-menu;
                 @media (max-width: 575.98px){
                     font-size: 1.4em;
                 }
@@ -347,6 +349,7 @@
                                     font-weight: 700;
                                     font-size: 1em;
                                     color: black;
+                                    cursor: context-menu;
                                 }
                             }
                         }
@@ -499,6 +502,7 @@
                         .champ-obligatoire{
                             font-size: 1em;
                             color: black;
+                            cursor: context-menu;
                             i{
                                 font-style: normal;
                                 color: #202F86;
@@ -523,6 +527,7 @@
 
         #horaires-title-section{
             text-align: center;
+            cursor: context-menu;
         }
 
         .toggle-horaires{
@@ -543,6 +548,7 @@
                     justify-content: center;
                     align-items: center;
                     text-align: center;
+                    cursor: context-menu;
                     @media (max-width: 1365.98px){
                         flex-direction: column;
                     }
@@ -554,6 +560,9 @@
                             font-size: 1.25em;
                             margin-top: 0;
                         }
+                        sup{
+                            font-size: 0.5em;
+                        }
                     }
                     .horaires-title{
                         font-style: normal;
@@ -564,34 +573,40 @@
                             margin-right: 0%;
                         }
                     }
-                    sup{
-                        font-size: 0.5em;
-                    }
                 }
                 /* Téléphone de la société */
 
                 .horaires-tel{
-                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     font-size: 1.5em;
                     @media (max-width: 991.98px){
-                        display: flex;
                         flex-direction: column;
-                        align-items: center;
                     }
                     .fa-phone-alt{
                         display: none;
                         @media (max-width: 991.98px){
                             display: block;
-                            margin-bottom: 0;
+                            margin-top: 0;
                         }
                     }
                     .horaires-title{
                         font-style: normal;
                         font-weight: 700;
+                        margin: 1rem 1rem 1rem 0;
+                        cursor: context-menu;
+                        @media (max-width: 991.98px){
+                            margin-right: 0;
+                        }
                     }
                     a{
                         color: black;
                         text-decoration: none;
+                        margin: 1rem 0;
+                        @media (max-width: 991.98px){
+                            margin-top: 0;
+                        }
                     }
                 }
             }
@@ -601,6 +616,7 @@
             .horaires-btn-text{
                 display: block;
                 font-size: 1.5em;
+                cursor: context-menu;
             }
             .toggle-hide{
                 display: none;
@@ -637,6 +653,7 @@
             .horaires-semaine{
                 width: 90%;
                 display: none;
+                cursor: context-menu;
                 .toggle-horaires-semaine{
                     display: flex;
                     flex-direction: column;
@@ -662,14 +679,19 @@
                         .horaires-text{
                             font-weight: 500;
                             color: black;
+                            &:hover{
+                                @media (min-width: 1366px){
+                                    font-weight: 700;
+                                }
+                            }
+                            sup{
+                                font-size: 0.5em;
+                            }
                         }
                         .horaires-title{
                             font-style: normal;
                             font-weight: 700;
                             margin-right: 1%;
-                        }
-                        sup{
-                            font-size: 0.5em;
                         }
                     }
                 }
