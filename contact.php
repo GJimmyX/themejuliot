@@ -84,7 +84,7 @@
 
                                 <!-- Téléphone -->
 
-                                <div class="horaires-tel"><i class="horaires-title">Téléphone:</i><p class="fas fa-phone-alt"></p><a href="tel:+0251094000" title="Téléphone Juliot Électricité"><p>02 51 09 40 00</p></a></div>
+                                <div class="horaires-tel"><i class="horaires-title">Téléphone:</i><p class="fas fa-phone-alt"></p><a href="tel:+0251094000" title="Téléphone Juliot Électricité">02 51 09 40 00</a></div>
                             </div>
 
                             <i class="horaires-btn-text" id="textBtn">Plus d'horaires ?</i>

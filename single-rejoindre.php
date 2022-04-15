@@ -32,6 +32,8 @@ get_header();
                         <i><?php the_field( 'localisation' ); ?></i>
                         -
                         <i><?php the_field( 'type_demploi' ); ?></i>
+                        -
+                        <i><?php the_field( 'entreprise' ); ?></i>
                     </p>
                 </div>
                 <div id="contrat">
