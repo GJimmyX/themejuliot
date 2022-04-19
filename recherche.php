@@ -11,10 +11,10 @@
 
     /* Connexion à la base de données */
 
-    $servname = 'localhost';
-    $dbname = 'juliot_db';
-    $username = 'root';
-    $password = '';
+    $servname = 'juliotfrcrroot.mysql.db';
+    $dbname = 'juliotfrcrroot';
+    $username = 'juliotfrcrroot';
+    $password = 'Le741Sikp2';
 
     try
     {
