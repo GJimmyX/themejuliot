@@ -8,7 +8,7 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-
+	
     <!-- Appel de la balise <head>, du content et du responsive -->
 
     <head>
