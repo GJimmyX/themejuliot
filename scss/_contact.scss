@@ -629,15 +629,13 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                @media (min-width: 1366px){
+                    transition: 2s ease;
+                    transform: rotateZ(0deg);
+                }
                 &:hover{
                     @media (min-width: 1366px){
-                        animation: rotate ease 2s;
-                    }
-                }
-                @keyframes rotate {
-                    from{
-                        transform: rotateZ(0deg);
-                    } to{
+                        transition: 2s ease;
                         transform: rotateZ(360deg);
                     }
                 }
