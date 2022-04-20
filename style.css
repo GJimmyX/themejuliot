@@ -3826,29 +3826,18 @@ footer .user-cookie {
 }
 
 @media (min-width: 1366px) {
+  .contact .horaires .toggle-horaires #horaires-btn {
+    -webkit-transition: 2s ease;
+    transition: 2s ease;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@media (min-width: 1366px) {
   .contact .horaires .toggle-horaires #horaires-btn:hover {
-    -webkit-animation: rotate ease 2s;
-            animation: rotate ease 2s;
-  }
-}
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
+    -webkit-transition: 2s ease;
+    transition: 2s ease;
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
   }

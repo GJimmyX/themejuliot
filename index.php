@@ -109,8 +109,10 @@
         <?php endwhile; ?>
 
         <!-- Lien vers la page d'articles du site -->
-
-        <a href="actualites" class="renvoi-actu">Plus d'articles...</a>
+		
+		<?php if( $latestPost->have_posts() ) : ?>
+        	<a href="actualites" class="renvoi-actu">Plus d'articles...</a>
+		<?php endif; ?>
     </div>
 
     <!-- Section de contact de la page d'accueil -->
