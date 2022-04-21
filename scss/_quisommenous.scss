@@ -14,6 +14,11 @@
             border-radius: 75px;
             display: flex;
             justify-content: center;
+            @media (max-width: 1365.98px){
+                width: 100%;
+                border-radius: 25px;
+                margin-top: 2%;
+            }
         }
 
         /* Texte */
@@ -29,6 +34,10 @@
                 margin: auto;
                 font-size: 1.25em;
                 text-align: justify;
+                @media (max-width: 1365.98px){
+                    width: 100%;
+                    margin-bottom: 2%;
+                }
             }
         }
     }
