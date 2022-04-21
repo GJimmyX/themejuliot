@@ -19,7 +19,9 @@
             <?php wp_footer(); ?>
 
             <?php if (!is_active_sidebar('header-sidebar') ) : ?>
+
                 <!-- Changement de style si les réseaux sociaux ne sont pas activés -->
+                
                 <style>
                     body header .nav-container .navbar .nav-rs-search{
                         justify-content: center;
@@ -46,7 +48,30 @@
                         top: 5px;
                     }
                 </style>
+
             <?php endif; ?>
+
+            <?php 
+            
+                include "comparaison.php";
+
+                if( !$args_rejoindre->have_posts() ) :
+
+                ?>
+
+                    <!-- Changement de style s'il n'y a pas d'offres d'emploi -->
+
+                    <style>
+                        body header .nav-container .navbar .nav-menu .menu-entreprise .sub-menu .s04{
+                            display: none;
+                        }
+                    </style>
+
+                <?php
+
+                endif;
+
+            ?>
         </footer>
     </body>
 </html>

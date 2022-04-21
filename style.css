@@ -2338,10 +2338,17 @@ footer .user-cookie {
 }
 
 .entreprise .section-accueil-entreprise p {
+  width: 100%;
   font-size: 1.5em;
   font-weight: 500;
   text-align: center;
   cursor: context-menu;
+}
+
+@media (max-width: 767.98px) {
+  .entreprise .section-accueil-entreprise p {
+    font-size: 1.25em;
+  }
 }
 
 .entreprise .section-accueil-entreprise img {
@@ -2360,9 +2367,8 @@ footer .user-cookie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2398,6 +2404,7 @@ footer .user-cookie {
 @media (max-width: 767.98px) {
   .entreprise .section-rea-actu-rejoindre .section-realisations, .entreprise .section-rea-actu-rejoindre .section-actualites, .entreprise .section-rea-actu-rejoindre .section-rejoindre {
     width: 100%;
+    margin-top: 1%;
   }
 }
 
@@ -2476,6 +2483,14 @@ footer .user-cookie {
           justify-content: center;
 }
 
+@media (max-width: 1365.98px) {
+  .qui-sommes-nous .sommes-nous-container img {
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 2%;
+  }
+}
+
 .qui-sommes-nous .sommes-nous-container .sommes-nous-texte {
   cursor: context-menu;
 }
@@ -2490,6 +2505,13 @@ footer .user-cookie {
   margin: auto;
   font-size: 1.25em;
   text-align: justify;
+}
+
+@media (max-width: 1365.98px) {
+  .qui-sommes-nous .sommes-nous-container .sommes-nous-texte p {
+    width: 100%;
+    margin-bottom: 2%;
+  }
 }
 
 /* CSS de la page 'Nos Realisations' */
@@ -2622,10 +2644,17 @@ footer .user-cookie {
 }
 
 .bureaux-d-etudes .texte-bureaux-d-etudes p {
-  margin: 0%;
+  width: 95%;
+  margin: auto;
   font-size: 1.5em;
   font-weight: 400;
   cursor: context-menu;
+}
+
+@media (max-width: 767.98px) {
+  .bureaux-d-etudes .texte-bureaux-d-etudes p {
+    font-size: 1.25em;
+  }
 }
 
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes {
@@ -2727,7 +2756,6 @@ footer .user-cookie {
 @media (min-width: 1366px) {
   .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a:hover, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a:hover {
     color: #202F86;
-    font-weight: 700;
     -webkit-transition: .5s ease;
     transition: .5s ease;
   }
