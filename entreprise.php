@@ -7,6 +7,11 @@
     get_header();
 ?>
 
+<?php
+/* Inclusion Comparaison */
+	include "comparaison.php";
+?>
+
 <!-- Contenu de la page 'Entreprise' -->
 
 <main class="entreprise">
@@ -22,14 +27,18 @@
             <a href="/nos-realisations">Nos Réalisations</a>
             <img src="<?php echo get_template_directory_uri() . '/img/img_realisations.png' ?>" alt="Image section">
         </div>
-        <div class="section-actualites">
-            <a href="/actualites">Actualites</a>
-            <img src="<?php echo get_template_directory_uri() . '/img/img_actualites.png' ?>" alt="Image section">
-        </div>
-        <div class="section-rejoindre">
-            <a href="/nous-rejoindre">Nous Rejoindre</a>
-            <img src="<?php echo get_template_directory_uri() . '/img/img_nousrejoindre.png' ?>" alt="Image section">
-        </div>
+		<?php if( $args_articles->have_posts() ) : ?>
+			<div class="section-actualites">
+				<a href="/actualites">Actualites</a>
+				<img src="<?php echo get_template_directory_uri() . '/img/img_actualites.png' ?>" alt="Image section">
+			</div>
+		<?php endif; ?>
+		<?php if( $args_rejoindre->have_posts() ) : ?>
+			<div class="section-rejoindre">
+				<a href="/nous-rejoindre">Nous Rejoindre</a>
+				<img src="<?php echo get_template_directory_uri() . '/img/img_nousrejoindre.png' ?>" alt="Image section">
+			</div>
+		<?php endif; ?>
     </div>
 </main>
 

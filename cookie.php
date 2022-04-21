@@ -2,10 +2,10 @@
 
     /* Détail du système de cookie */
 
-    $servname = 'juliotfrcrroot.mysql.db';
-    $dbname = 'juliotfrcrroot';
-    $username = 'juliotfrcrroot';
-    $password = 'Le741Sikp2';
+    $servname = 'localhost';
+    $dbname = 'juliot_db';
+    $username = 'root';
+    $password = '';
 
     try
     {
