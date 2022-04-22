@@ -411,6 +411,9 @@
                             #rgpd-checkbox{
                                 display: flex;
                                 align-items: start;
+                                @media (max-width: 767.98px){
+                                    align-items: center;
+                                }
                                 span{
                                     span{
                                         span{
