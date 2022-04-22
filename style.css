@@ -2474,7 +2474,7 @@ footer .user-cookie {
   width: 60%;
   margin: auto;
   height: auto;
-  border-radius: 75px;
+  border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2571,7 +2571,7 @@ footer .user-cookie {
 .realisations .realisations-disposition .realisations-card #realisations-image img {
   width: 100%;
   border: 1px solid olive;
-  border-radius: 50px;
+  border-radius: 25px;
 }
 
 .realisations .realisations-disposition .realisations-card #realisations-titre {
@@ -3556,6 +3556,14 @@ footer .user-cookie {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+}
+
+@media (max-width: 767.98px) {
+  .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span {
@@ -4668,6 +4676,7 @@ footer .user-cookie {
 
 .accueil .section_04 .company-banner #banner-slider .banner-elements .banner li a img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .accueil .section_04 .company-banner #banner-slider .banner-fade {

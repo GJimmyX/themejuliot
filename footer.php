@@ -54,7 +54,7 @@
             <?php 
             
                 include "comparaison.php";
-
+			
                 if( !$args_rejoindre->have_posts() ) :
 
                 ?>
