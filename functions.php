@@ -294,4 +294,207 @@ register_sidebar( array(
     'after-widget' => '</div>',
 ) );
 
+
+/* Customs Posts pour le site Juliot Électricité */
+
+
+/* Ajouter un Custom Post pour la catégorie de navigation */
+
+function cpt_menu_juliot() {
+
+  $labels = array(
+    'name' => 'Menu Navigation',
+    'all_items' => 'Menus de navigation', // Sous-menu
+    'singular_name' => 'Menu de navigation',
+    'add_new' => 'Ajouter un Menu',
+    'edit_item' => 'Editer un Menu',
+    'menu_name' => 'Menu de Navigation',
+  );
+  
+  $args = array(
+    'labels' => $labels,
+    'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+    'show_in_rest' => false,
+    'hierarchical' => true,
+    'public' => true,
+    'has_archive' => true,
+    'menu_position' => 20,
+    'menu_icon' => 'dashicons-menu',
+  );
+  
+  if (current_user_can('editor') ) :
+    $args = array(
+      'labels' => $labels,
+      'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+      'show_in_rest' => false,
+      'show_in_menu' => false,
+      'hierarchical' => true,
+      'public' => true,
+      'has_archive' => true,
+      'menu_position' => 20,
+      'menu_icon' => 'dashicons-menu',
+    );
+  endif;
+
+  register_post_type( 'navigation', $args );
+
+  $labels = array(
+    'name' => "Categrorie de menu",
+    'new_product_name' => 'Nouveau Menu',
+    'parent_item' => 'Type de Menu',
+  );
+
+  $args = array(
+    'labels' =>$labels,
+    'public' => true,
+    'show_in_rest' => true,
+    'hierarchical' => true,
+  );
+
+  register_taxonomy( 'bloc', 'navigation', $args );
+
+}
+
+add_action('init', 'cpt_menu_juliot', false); // Init de la fonction cpt_juliot
+
+/* Ajouter un Custom Post pour les articles du site */
+
+function cpt_articles_juliot() {
+
+  $labels = array(
+    'name' => 'Articles/RS',
+    'all_items' => 'Articles du site', // Sous-menu
+    'singular_name' => 'Article du site',
+    'add_new' => 'Ajouter un article',
+    'edit_item' => 'Éditer un article',
+    'menu_name' => 'Articles',
+    'not_found' => __( 'Non trouvée'),
+    'not_found_in_trash' => __( 'Non trouvée dans la corbeille'),
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'supports' => array( 'title', 'thumbnail', 'custom-fields' ),
+    'show_in_rest' => true,
+    'query_var' => true,
+    'rest_base' => 'art',
+    'rest_controller_class' => 'WP_REST_Posts_Controller',
+    'hierarchical' => true,
+    'public' => true,
+    'has_archive' => true,
+    'menu_position' => 10,
+    'menu_icon' => 'dashicons-admin-tools',
+  );
+
+  register_post_type( 'articles', $args );
+
+  $labels = array(
+    'name' => "Catégorie d'articles",
+    'new_product_name' => 'Nouvelle catégorie',
+    'parent_item' => 'Type de catégorie',
+  );
+
+  $args = array(
+    'labels' =>$labels,
+    'public' => true,
+    'show_in_rest' => true,
+    'hierarchical' => true,
+  );
+
+  register_taxonomy( 'cat-articles', 'articles', $args );
+
+}
+
+add_action('init', 'cpt_articles_juliot', false); // Init de la fonction cpt_articles_juliot
+
+/* Ajouter un Custom Post pour l'affichage de realisations */
+
+function cpt_realisations_juliot() {
+
+  $labels = array(
+    'name' => 'Realisations Juliot',
+    'all_items' => 'Toutes les realisations', // Sous-menu
+    'singular_name' => 'Realisation Juliot',
+    'add_new' => 'Ajouter une realisation',
+    'edit_item' => 'Editer une realisation',
+    'menu_name' => 'Realisations Juliot',
+  );
+  
+  $args = array(
+    'labels' => $labels,
+    'supports' => array( 'title', 'custom-fields' ),
+    'show_in_rest' => false,
+    'hierarchical' => true,
+    'public' => true,
+    'has_archive' => true,
+    'menu_position' => 20,
+    'menu_icon' => 'dashicons-admin-plugins',
+  );
+
+  register_post_type( 'realisations', $args );
+
+  $labels = array(
+    'name' => "Categrorie de Realisation",
+    'new_product_name' => 'Nouveau Categorie',
+    'parent_item' => 'Type de Categorie',
+  );
+
+  $args = array(
+    'labels' =>$labels,
+    'public' => true,
+    'show_in_rest' => true,
+    'hierarchical' => true,
+  );
+
+  register_taxonomy( 'type', 'realisations', $args );
+
+}
+
+add_action('init', 'cpt_realisations_juliot', false); // Init de la fonction cpt_realisations_juliot
+
+/* Ajouter un Custom Post pour l'affichage des offres d'emploi */
+
+function cpt_rejoindre_juliot() {
+
+  $labels = array(
+    'name' => 'Rejoindre Juliot',
+    'all_items' => 'Toutes les offres', // Sous-menu
+    'singular_name' => 'Offre d\'emploi Juliot',
+    'add_new' => 'Ajouter une offre',
+    'edit_item' => 'Editer une offre',
+    'menu_name' => 'Rejoindre Juliot',
+  );
+  
+  $args = array(
+    'labels' => $labels,
+    'supports' => array( 'title', 'custom-fields' ),
+    'show_in_rest' => true,
+    'hierarchical' => true,
+    'public' => true,
+    'has_archive' => true,
+    'menu_position' => 20,
+    'menu_icon' => 'dashicons-admin-users',
+  );
+
+  register_post_type( 'rejoindre', $args );
+
+  $labels = array(
+    'name' => "Categrorie d'offre",
+    'new_product_name' => 'Nouvelle Categorie',
+    'parent_item' => 'Type d\'offre',
+  );
+
+  $args = array(
+    'labels' =>$labels,
+    'public' => true,
+    'show_in_rest' => true,
+    'hierarchical' => true,
+  );
+
+  register_taxonomy( 'offre', 'rejoindre', $args );
+
+}
+
+add_action('init', 'cpt_rejoindre_juliot', false); // Init de la fonction cpt_rejoindre_juliot
+
 ?>
