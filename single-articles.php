@@ -36,92 +36,110 @@ get_header();
     <?php endwhile; endif; ?>
     
     <!-- Slider des articles les plus récents (les 4 derniers) -->
+    
+    <?php
 
-    <div class="articles-slider">
+    /* $articlesSlider = new WP_Query();
+    $articlesSlider->query(array(
+        'post_type' => 'articles',
+        )
+    ); */
 
-        <!-- Bouton de commande du slider en manuel -->
+    $args = array(
+        'post_type' => 'articles',
+    );
+    $articlesNumber = query_posts($args);
+    
+    /* var_dump($articlesNumber[2]); */
 
-        <div class="articles-button">
-            <p class="articles-slider-button" onclick="plusArticlesslide(-1)"><i class="fas fa-chevron-circle-left"></i></p>
-        </div>
-        <div class="articles-elements articles-fade">
+    if ( array($articlesNumber) >= 3 ) : ?>
 
-            <!-- Boucle pour l'affichage de deux artciles par slide -->
+        <div class="articles-slider">
 
-            <?php
+            <!-- Bouton de commande du slider en manuel -->
 
-                $articlesSlider = new WP_Query();
-                $articlesSlider->query(array(
-                    'post_type' => 'articles',
-                    'posts_per_page' => 2,
-                    )
-                );
+            <div class="articles-button">
+                <p class="articles-slider-button" onclick="plusArticlesslide(-1)"><i class="fas fa-chevron-circle-left"></i></p>
+            </div>
+            <div class="articles-elements articles-fade">
 
-                while ($articlesSlider->have_posts() ) : $articlesSlider->the_post();
-            ?>
+                <!-- Boucle pour l'affichage de deux artciles par slide -->
 
-            <div class="article-structure">
-                <ul class="article-list">
-                    <li>
-                        <?php if ( has_post_thumbnail() ) {
-                            the_post_thumbnail( '', array( 'alt' => 'Image Article' ) );
-                            } else { ?>
-                                <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="Image Article" />
-                        <?php 
-                            } 
-                        ?>
-                    </li>
-                    <li>
-                        <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-                    </li>
-                </ul>
+                <?php
+
+                    $articlesSlider = new WP_Query();
+                    $articlesSlider->query(array(
+                        'post_type' => 'articles',
+                        'posts_per_page' => 2,
+                        )
+                    );
+
+                    if ($articlesSlider->have_posts() ) : while ($articlesSlider->have_posts() ) : $articlesSlider->the_post();
+                ?>
+
+                <div class="article-structure">
+                    <ul class="article-list">
+                        <li>
+                            <?php if ( has_post_thumbnail() ) {
+                                the_post_thumbnail( '', array( 'alt' => 'Image Article' ) );
+                                } else { ?>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="Image Article" />
+                            <?php 
+                                } 
+                            ?>
+                        </li>
+                        <li>
+                            <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <?php endwhile; endif; ?>
+            </div>
+            <div class="articles-elements articles-fade">
+
+                <!-- Boucle pour l'affichage de deux artciles par slide -->
+
+                <?php
+
+                    $articlesSlider = new WP_Query();
+                    $articlesSlider->query(array(
+                        'post_type' => 'articles',
+                        'posts_per_page' => 2,
+                        'offset' => 2,
+                        )
+                    );
+
+                    if ($articlesSlider->have_posts() ) : while ($articlesSlider->have_posts() ) : $articlesSlider->the_post();
+                ?>
+
+                <div class="article-structure">
+                    <ul class="article-list">
+                        <li>
+                            <?php if ( has_post_thumbnail() ) {
+                                the_post_thumbnail( '', array( 'alt' => 'Image Article' ) );
+                                } else { ?>
+                                    <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="Image Article" />
+                            <?php 
+                                } 
+                            ?>
+                        </li>
+                        <li>
+                            <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <?php endwhile; endif; ?>
             </div>
 
-            <?php endwhile; ?>
-        </div>
-        <div class="articles-elements articles-fade">
+            <!-- Bouton de commande du slider en manuel -->
 
-            <!-- Boucle pour l'affichage de deux artciles par slide -->
-
-            <?php
-
-                $articlesSlider = new WP_Query();
-                $articlesSlider->query(array(
-                    'post_type' => 'articles',
-                    'posts_per_page' => 2,
-                    'offset' => 2,
-                    )
-                );
-
-                while ($articlesSlider->have_posts() ) : $articlesSlider->the_post();
-            ?>
-
-            <div class="article-structure">
-                <ul class="article-list">
-                    <li>
-                        <?php if ( has_post_thumbnail() ) {
-                            the_post_thumbnail( '', array( 'alt' => 'Image Article' ) );
-                            } else { ?>
-                                <img src="<?php echo get_template_directory_uri() . '/img/default-image.png'; ?>" alt="Image Article" />
-                        <?php 
-                            } 
-                        ?>
-                    </li>
-                    <li>
-                        <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-                    </li>
-                </ul>
+            <div class="articles-button">
+                <p class="articles-slider-button" onclick="plusArticlesslide(1)"><i class="fas fa-chevron-circle-right"></i></p>
             </div>
-
-            <?php endwhile; ?>
         </div>
-
-        <!-- Bouton de commande du slider en manuel -->
-
-        <div class="articles-button">
-            <p class="articles-slider-button" onclick="plusArticlesslide(1)"><i class="fas fa-chevron-circle-right"></i></p>
-        </div>
-    </div>
+    <?php endif; ?>
 </main>
 
 <?php

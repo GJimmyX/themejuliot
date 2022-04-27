@@ -1233,6 +1233,7 @@ footer .user-cookie {
 
 .navigation-card #navigation-contenu .bloc01 img, .navigation-card #navigation-contenu .bloc02 img, .navigation-card #navigation-contenu .bloc03 img {
   width: 17.5%;
+  height: auto;
 }
 
 @media (max-width: 991.98px) {
@@ -1531,6 +1532,7 @@ footer .user-cookie {
 
 .articles .articles-structure #articles-image img {
   width: 50%;
+  height: auto;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2063,6 +2065,7 @@ footer .user-cookie {
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01 img, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 img {
   width: 17.5%;
+  height: auto;
 }
 
 @media (max-width: 991.98px) {
@@ -2247,6 +2250,7 @@ footer .user-cookie {
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01 img, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02 img, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 img {
   width: 17.5%;
+  height: auto;
 }
 
 @media (max-width: 991.98px) {
@@ -2570,6 +2574,7 @@ footer .user-cookie {
 
 .realisations .realisations-disposition .realisations-card #realisations-image img {
   width: 100%;
+  height: auto;
   border: 1px solid olive;
   border-radius: 25px;
 }
@@ -2720,6 +2725,7 @@ footer .user-cookie {
 
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 img, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 img {
   width: 100%;
+  height: auto;
 }
 
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a {
@@ -2787,6 +2793,7 @@ footer .user-cookie {
 
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .logos-bureaux-d-etudes a img {
   width: 100%;
+  height: auto;
 }
 
 /* CSS de la page 'Nous Rejoindre' */
@@ -4675,8 +4682,8 @@ footer .user-cookie {
 }
 
 .accueil .section_04 .company-banner #banner-slider .banner-elements .banner li a img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .accueil .section_04 .company-banner #banner-slider .banner-fade {
