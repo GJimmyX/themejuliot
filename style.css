@@ -209,7 +209,7 @@ body header .nav-container .navbar .nav-menu li a {
 
 body header .nav-container .navbar .nav-menu li a:hover {
   color: white;
-  background-color: #008000;
+  background-color: #36A02C;
   border-radius: 30px;
   -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
@@ -271,7 +271,7 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
 
 body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a:hover {
   color: white !important;
-  background-color: #008000;
+  background-color: #36A02C;
 }
 
 @media (max-width: 1365.98px) {
@@ -323,7 +323,7 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a:hover {
 
 body header .nav-container .navbar .nav-menu .current_page_item a {
   color: white !important;
-  background-color: #202f86;
+  background-color: #1F4290;
   border-radius: 30px;
   -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
@@ -449,7 +449,7 @@ body header .nav-container .navbar .nav-rs-search li .rs .nav-rs {
 body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a {
   width: 50%;
   text-align: center;
-  color: #202F86;
+  color: #1F4290;
   text-decoration: none;
   font-size: 1.5em;
 }
@@ -461,7 +461,7 @@ body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a {
 }
 
 body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a:hover {
-  color: #008000;
+  color: #36A02C;
 }
 
 @media (max-width: 1365.98px) {
@@ -484,7 +484,7 @@ body header .nav-container .navbar .nav-rs-search .nav-search {
 body header .nav-container .navbar .nav-rs-search .nav-search #search-btn {
   width: 100%;
   background: transparent;
-  color: #202F86;
+  color: #1F4290;
   border: 0;
   font-size: 1.5em;
   cursor: pointer;
@@ -497,7 +497,7 @@ body header .nav-container .navbar .nav-rs-search .nav-search #search-btn {
 }
 
 body header .nav-container .navbar .nav-rs-search .nav-search #search-btn:hover {
-  color: #008000;
+  color: #36A02C;
 }
 
 @media (max-width: 1365.98px) {
@@ -642,8 +642,8 @@ body .cookielaw1 #cookie_message a {
 }
 
 body .cookielaw1 #cookie_accept_button {
-  background-color: #202F86;
-  border-color: #202F86;
+  background-color: #1F4290;
+  border-color: #1F4290;
   font-size: 1.25em;
   color: white;
 }
@@ -725,7 +725,7 @@ body .cookielaw1 #cookie_accept_button {
 }
 
 .recherche .resultats-recherche .resultat a:hover {
-  color: #202F86;
+  color: #1F4290;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
@@ -819,12 +819,12 @@ body .cookielaw1 #cookie_accept_button {
 
 @media (max-width: 1365.98px) {
   .actualites .actualites-disposition .actualites-card a .actualites-title {
-    color: #202F86;
+    color: #1F4290;
   }
 }
 
 .actualites .actualites-disposition .actualites-card a .actualites-title:hover {
-  color: #202F86;
+  color: #1F4290;
 }
 
 .actualites .actualites-pagination {
@@ -838,7 +838,7 @@ body .cookielaw1 #cookie_accept_button {
 
 .actualites .actualites-pagination nav .nav-links .page-numbers {
   color: white;
-  background-color: #202F86;
+  background-color: #1F4290;
   text-decoration: none;
   font-size: 1.5em;
   margin: 0 1%;
@@ -856,7 +856,7 @@ body .cookielaw1 #cookie_accept_button {
 }
 
 .actualites .actualites-pagination nav .nav-links .page-numbers:hover {
-  color: #202F86;
+  color: #1F4290;
   background-color: transparent;
   -webkit-transition: 1s ease;
   transition: 1s ease;
@@ -865,7 +865,7 @@ body .cookielaw1 #cookie_accept_button {
 @media (max-width: 1365.98px) {
   .actualites .actualites-pagination nav .nav-links .page-numbers:hover {
     color: white;
-    background-color: #202F86;
+    background-color: #1F4290;
     -webkit-transition: none;
     transition: none;
   }
@@ -900,7 +900,7 @@ body .cookielaw1 #cookie_accept_button {
 }
 
 .mentions-legales .head-mentions-legales p a:hover {
-  color: #202F86;
+  color: #1F4290;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -945,7 +945,7 @@ body .cookielaw1 #cookie_accept_button {
 }
 
 .mentions-legales .article01 .article-content .content-editeur p a:hover {
-  color: #202F86;
+  color: #1F4290;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -962,7 +962,7 @@ body .cookielaw1 #cookie_accept_button {
 }
 
 .mentions-legales .article08 .article-content ul li a:hover, .mentions-legales .article13 .article-content ul li a:hover {
-  color: #202F86;
+  color: #1F4290;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -975,7 +975,7 @@ body .cookielaw1 #cookie_accept_button {
 }
 
 .mentions-legales .article08 .article-content p a:hover, .mentions-legales .article13 .article-content p a:hover {
-  color: #202F86;
+  color: #1F4290;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -988,7 +988,7 @@ body .cookielaw1 #cookie_accept_button {
 }
 
 .mentions-legales .article12 .article-content p a:hover, .mentions-legales .article16 .article-content p a:hover {
-  color: #202F86;
+  color: #1F4290;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -996,7 +996,7 @@ body .cookielaw1 #cookie_accept_button {
 /* Importation du CSS 'Footer' */
 /* CSS du footer (pied de page) */
 footer {
-  background-color: #202f86;
+  background-color: #1F4290;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1344,7 +1344,7 @@ footer .user-cookie {
 
 .navigation-card #navigation-contenu .bloc04 #courants-forts #forts i, .navigation-card #navigation-contenu .bloc05 #courants-forts #forts i {
   font-size: 1.25em;
-  color: #202F86;
+  color: #1F4290;
   margin: 0 2%;
 }
 
@@ -1393,7 +1393,7 @@ footer .user-cookie {
 
 .navigation-card #navigation-contenu .bloc04 #courants-faibles i, .navigation-card #navigation-contenu .bloc05 #courants-faibles i {
   font-size: 1.25em;
-  color: #202F86;
+  color: #1F4290;
   margin: 0 2%;
 }
 
@@ -1454,8 +1454,8 @@ footer .user-cookie {
   padding: 1.5%;
   font-size: 1.5em;
   text-decoration: none;
-  background-color: #202F86;
-  border: 1px solid #202F86;
+  background-color: #1F4290;
+  border: 1px solid #1F4290;
   border-radius: 25px;
   color: white;
   -webkit-transition: .5s ease;
@@ -1478,7 +1478,7 @@ footer .user-cookie {
 .navigation-card #retour-link #retour {
   text-decoration: none;
   font-size: 1.5em;
-  color: #202F86;
+  color: #1F4290;
 }
 
 /* CSS de la page 'single-articles' */
@@ -1499,7 +1499,7 @@ footer .user-cookie {
 
 .articles .returnBtn .return {
   text-decoration: none;
-  color: #202F86;
+  color: #1F4290;
   font-size: 1.5em;
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -1753,12 +1753,12 @@ footer .user-cookie {
 
 @media (max-width: 1365.98px) {
   .articles .articles-slider .articles-elements .article-structure .article-list li a {
-    color: #202F86;
+    color: #1F4290;
   }
 }
 
 .articles .articles-slider .articles-elements .article-structure .article-list li a:hover {
-  color: #202F86;
+  color: #1F4290;
 }
 
 .articles .articles-slider .articles-elements .article-structure .article-list li a h2 {
@@ -1794,7 +1794,7 @@ footer .user-cookie {
   border: 0;
   margin: 0;
   border-radius: 100%;
-  color: #202F86;
+  color: #1F4290;
   cursor: pointer;
 }
 
@@ -2019,7 +2019,7 @@ footer .user-cookie {
 }
 
 .electricite .nav-electricite .electricite-card .electricite-hover a p {
-  background-color: #202F86;
+  background-color: #1F4290;
   padding: 5%;
   border-radius: 10px;
   text-align: center;
@@ -2210,8 +2210,8 @@ footer .user-cookie {
   padding: 1.5%;
   font-size: 1.5em;
   text-decoration: none;
-  background-color: #202F86;
-  border: 1px solid #202F86;
+  background-color: #1F4290;
+  border: 1px solid #1F4290;
   border-radius: 25px;
   color: white;
   -webkit-transition: .5s ease;
@@ -2395,8 +2395,8 @@ footer .user-cookie {
   padding: 1.5%;
   font-size: 1.5em;
   text-decoration: none;
-  background-color: #202F86;
-  border: 1px solid #202F86;
+  background-color: #1F4290;
+  border: 1px solid #1F4290;
   border-radius: 25px;
   color: white;
   -webkit-transition: .5s ease;
@@ -2535,7 +2535,7 @@ footer .user-cookie {
 .entreprise .section-rea-actu-rejoindre .section-realisations a:hover, .entreprise .section-rea-actu-rejoindre .section-actualites a:hover, .entreprise .section-rea-actu-rejoindre .section-rejoindre a:hover {
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  color: #202F86;
+  color: #1F4290;
 }
 
 @media (max-width: 1365.98px) {
@@ -2691,7 +2691,7 @@ footer .user-cookie {
 
 .realisations .realisations-pagination nav .nav-links .page-numbers {
   color: white;
-  background-color: #202F86;
+  background-color: #1F4290;
   text-decoration: none;
   font-size: 1.5em;
   margin: 0 1%;
@@ -2709,7 +2709,7 @@ footer .user-cookie {
 }
 
 .realisations .realisations-pagination nav .nav-links .page-numbers:hover {
-  color: #202F86;
+  color: #1F4290;
   background-color: transparent;
   -webkit-transition: 1s ease;
   transition: 1s ease;
@@ -2718,7 +2718,7 @@ footer .user-cookie {
 @media (max-width: 1365.98px) {
   .realisations .realisations-pagination nav .nav-links .page-numbers:hover {
     color: white;
-    background-color: #202F86;
+    background-color: #1F4290;
     -webkit-transition: none;
     transition: none;
   }
@@ -2857,7 +2857,7 @@ footer .user-cookie {
 
 @media (min-width: 1366px) {
   .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a:hover, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a:hover {
-    color: #202F86;
+    color: #1F4290;
     -webkit-transition: .5s ease;
     transition: .5s ease;
   }
@@ -2939,7 +2939,7 @@ footer .user-cookie {
 }
 
 .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a:hover {
-  color: #202F86;
+  color: #1F4290;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
@@ -3005,7 +3005,7 @@ footer .user-cookie {
 }
 
 .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .localisation a:hover, .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .domaine a:hover {
-  color: #008000;
+  color: #36A02C;
 }
 
 @media (max-width: 1365.98px) {
@@ -3199,7 +3199,7 @@ footer .user-cookie {
 .contact .adresses-formulaire .adresses .agence85 p, .contact .adresses-formulaire .adresses .agence44 p {
   font-size: 1em;
   text-align: center;
-  color: #202F86;
+  color: #1F4290;
   cursor: context-menu;
 }
 
@@ -3314,7 +3314,7 @@ footer .user-cookie {
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet label i {
   font-style: normal;
   margin: 0 1%;
-  color: #202F86;
+  color: #1F4290;
   font-size: 1em;
 }
 
@@ -3359,7 +3359,7 @@ footer .user-cookie {
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
-  color: #202F86;
+  color: #1F4290;
   margin-top: 1%;
 }
 
@@ -3426,7 +3426,7 @@ footer .user-cookie {
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
-  color: #202F86;
+  color: #1F4290;
   margin-top: 1%;
 }
 
@@ -3448,7 +3448,7 @@ footer .user-cookie {
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message label i {
   font-style: normal;
   margin: 0 1%;
-  color: #202F86;
+  color: #1F4290;
   font-size: 1em;
 }
 
@@ -3521,7 +3521,7 @@ footer .user-cookie {
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
-  color: #202F86;
+  color: #1F4290;
   margin-top: 1%;
 }
 
@@ -3547,7 +3547,7 @@ footer .user-cookie {
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document label i {
   font-style: normal;
   margin: 0 1%;
-  color: #202F86;
+  color: #1F4290;
   font-size: 1em;
 }
 
@@ -3562,7 +3562,7 @@ footer .user-cookie {
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
-  color: #202F86;
+  color: #1F4290;
   margin-top: 1%;
 }
 
@@ -3745,13 +3745,13 @@ footer .user-cookie {
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
-  color: #202F86;
+  color: #1F4290;
   margin-top: 1%;
 }
 
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox i {
   font-style: normal;
-  color: #202F86;
+  color: #1F4290;
   font-size: 1em;
 }
 
@@ -3763,7 +3763,7 @@ footer .user-cookie {
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label p a {
   font-size: 1em;
   font-weight: 700;
-  color: #202F86;
+  color: #1F4290;
   margin-top: 1%;
 }
 
@@ -3775,7 +3775,7 @@ footer .user-cookie {
 
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire .champ-obligatoire i {
   font-style: normal;
-  color: #202F86;
+  color: #1F4290;
   font-size: 1em;
 }
 
@@ -3985,7 +3985,7 @@ footer .user-cookie {
 .contact .horaires .toggle-horaires #horaires-btn p {
   margin: 0;
   font-size: 1.5em;
-  color: #202f86;
+  color: #1F4290;
 }
 
 .contact .horaires .toggle-horaires .horaires-semaine {
@@ -4218,7 +4218,7 @@ footer .user-cookie {
   font-size: 1.5em;
   text-decoration: none;
   color: white;
-  background-color: #359B32;
+  background-color: #36A02C;
   margin: auto;
   width: 80%;
   border-radius: 20px;
@@ -4449,7 +4449,7 @@ footer .user-cookie {
 .accueil .section_02 .carousel-slider .indicators .dot {
   width: 70px;
   height: 10px;
-  background-color: #202f86;
+  background-color: #1F4290;
   display: inline-block;
   -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
@@ -4512,7 +4512,7 @@ footer .user-cookie {
 }
 
 .accueil .section_02 .texte p:hover {
-  color: #202f86;
+  color: #1F4290;
   font-weight: bold;
   gap: 5px;
 }
@@ -4589,11 +4589,11 @@ footer .user-cookie {
   font-weight: 600;
   font-size: 2em;
   text-align: center;
-  color: #202F86;
+  color: #1F4290;
 }
 
 .accueil .section_03 .renvoi-actu {
-  background: #202F86;
+  background: #1F4290;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4621,7 +4621,7 @@ footer .user-cookie {
 @media (max-width: 1365.98px) {
   .accueil .section_03 .renvoi-actu {
     background: transparent;
-    color: #202F86;
+    color: #1F4290;
     -webkit-transition: none;
     transition: none;
   }
@@ -4629,7 +4629,7 @@ footer .user-cookie {
 
 .accueil .section_03 .renvoi-actu:hover {
   background: transparent;
-  color: #202F86;
+  color: #1F4290;
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -4698,12 +4698,12 @@ footer .user-cookie {
   width: 100%;
   padding: 2.5% 0;
   border-radius: 30px;
-  background-color: #202f86;
+  background-color: #1F4290;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 2em;
   color: white;
-  border-color: #202f86;
+  border-color: #1F4290;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -4823,7 +4823,7 @@ footer .user-cookie {
   padding: 0%;
   border-radius: 35px;
   color: #ffffff;
-  background-color: #202f86;
+  background-color: #1F4290;
   border: 3px solid black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

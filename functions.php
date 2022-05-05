@@ -194,15 +194,15 @@ function my_login_style() { ?>
       background-repeat: no-repeat;
     }
     #login form p #user_login:focus, #login form .user-pass-wrap .wp-pwd #user_pass:focus, #login form p #rememberme:focus, #login form .user-pass-wrap .wp-pwd button span:focus{
-      border: 1px solid #202F86;
+      border: 1px solid #1F4290;
       border-color: none;
       box-shadow: none;
     }
     #login form .user-pass-wrap .wp-pwd button span{
-      color: #202F86;
+      color: #1F4290;
     }
     #login form .user-pass-wrap .wp-pwd button.wp-hide-pw:focus{
-      border-color: #202F86;
+      border-color: #1F4290;
       box-shadow: none;
     }
     #login form .forgetmenot input:focus{
@@ -218,8 +218,8 @@ function my_login_style() { ?>
       align-items: center;
     }
     #login form .submit #wp-submit{
-      background-color: #202F86;
-      border: 1px solid #202F86;
+      background-color: #1F4290;
+      border: 1px solid #1F4290;
     }
     #login #nav{
       text-align: center;
@@ -228,7 +228,7 @@ function my_login_style() { ?>
       text-align: center;
     }
     #login #nav a:hover, #login #backtoblog a:hover{
-      color: #202F86;
+      color: #1F4290;
     }
     #login #nav a:focus, #login #backtoblog a:focus{
       transition-property: none;
@@ -237,7 +237,7 @@ function my_login_style() { ?>
       display: none;
     }
     body #login #login_error{
-      border-left-color: #202F86;
+      border-left-color: #1F4290;
     }
   </style>
 <?php }
