@@ -209,7 +209,7 @@ body header .nav-container .navbar .nav-menu li a {
 
 body header .nav-container .navbar .nav-menu li a:hover {
   color: white;
-  background-color: #e95b23;
+  background-color: #008000;
   border-radius: 30px;
   -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
@@ -271,7 +271,7 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
 
 body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a:hover {
   color: white !important;
-  background-color: #e95b23;
+  background-color: #008000;
 }
 
 @media (max-width: 1365.98px) {
@@ -461,7 +461,7 @@ body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a {
 }
 
 body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a:hover {
-  color: #e95b23;
+  color: #008000;
 }
 
 @media (max-width: 1365.98px) {
@@ -497,7 +497,7 @@ body header .nav-container .navbar .nav-rs-search .nav-search #search-btn {
 }
 
 body header .nav-container .navbar .nav-rs-search .nav-search #search-btn:hover {
-  color: #e95b23;
+  color: #008000;
 }
 
 @media (max-width: 1365.98px) {
@@ -519,7 +519,7 @@ body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search {
 body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
   position: absolute;
   right: -20px;
-  top: 25px;
+  top: 40px;
   padding: 5px 10px;
   border: 1px solid black;
   border-radius: 20px;
@@ -547,29 +547,50 @@ body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search inp
   }
 }
 
-@media (min-width: 768px) and (max-width: 1103.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
     right: -10px;
-    top: -5px;
+    top: 10px;
   }
 }
 
-@media (min-width: 1104px) and (max-width: 1365.98px) {
+@media (min-width: 992px) and (max-width: 1103.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    right: -10px;
+    top: 20px;
+  }
+}
+
+@media (min-width: 1104px) and (max-width: 1199.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
     right: -5px;
-    top: -5px;
+    top: 30px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1299.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    right: -5px;
+    top: 40px;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    right: -5px;
+    top: 50px;
   }
 }
 
 @media (min-width: 1366px) and (max-width: 1677.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 15px;
+    top: 20px;
   }
 }
 
 @media (min-width: 1678px) and (max-width: 1879.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 20px;
+    top: 30px;
   }
 }
 
@@ -1561,6 +1582,81 @@ footer .user-cookie {
   font-size: 1em;
   text-align: justify;
   line-height: 1.5;
+}
+
+.articles #articles-commentaires {
+  margin: 2.5% 0;
+}
+
+.articles #articles-commentaires .commentlist li .comment-body {
+  margin: 1% 0;
+}
+
+.articles #articles-commentaires .commentlist li .comment-body .vcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.articles #articles-commentaires .commentlist li .comment-body .vcard .fn a {
+  text-decoration: none;
+  color: black;
+}
+
+.articles #articles-commentaires .commentlist li .comment-body .commentmetadata a {
+  text-decoration: none;
+  color: black;
+}
+
+.articles #articles-commentaires .commentlist li .comment-body .reply a {
+  text-decoration: none;
+  color: black;
+}
+
+.articles #articles-commentaires .commentlist li::marker {
+  color: transparent;
+}
+
+.articles #articles-commentaires .comment-respond form .logged-in-as a {
+  text-decoration: none;
+  color: black;
+}
+
+.articles #articles-commentaires .comment-respond form .comment-form-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.articles #articles-commentaires .comment-respond form .comment-form-comment textarea {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+.articles #articles-commentaires .comment-respond form .comment-form-comment textarea:focus {
+  outline: none;
+}
+
+.articles #articles-commentaires .comment-respond form .form-submit .submit {
+  background: transparent;
+  border: 1px solid black;
+  padding: 1% 2%;
+}
+
+.articles #articles-commentaires .comment-respond form .form-submit .submit:hover {
+  opacity: 0.8;
 }
 
 .articles .articles-slider {
@@ -2909,7 +3005,7 @@ footer .user-cookie {
 }
 
 .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .localisation a:hover, .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .domaine a:hover {
-  color: #E95B23;
+  color: #008000;
 }
 
 @media (max-width: 1365.98px) {
@@ -4122,7 +4218,7 @@ footer .user-cookie {
   font-size: 1.5em;
   text-decoration: none;
   color: white;
-  background-color: #e95b23;
+  background-color: #359B32;
   margin: auto;
   width: 80%;
   border-radius: 20px;
