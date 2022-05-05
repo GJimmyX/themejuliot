@@ -148,7 +148,7 @@
                         font-size: 1.5em;
                         text-decoration: none;
                         color: white;
-                        background-color: #359B32;
+                        background-color: #36A02C;
                         margin: auto;
                         width: 80%;
                         border-radius: 20px;
@@ -282,7 +282,7 @@
                 .dot{
                     width: 70px;
                     height: 10px;
-                    background-color: #202f86;
+                    background-color: #1F4290;
                     display: inline-block;
                     transition: background-color 0.6s ease;
                 }
@@ -324,7 +324,7 @@
                     display: none;
                 }
                 &:hover{
-                    color: #202f86;
+                    color: #1F4290;
                     font-weight: bold;
                     gap: 5px;
                     img{
@@ -379,14 +379,14 @@
                 font-weight: 600;
                 font-size: 2em;
                 text-align: center;
-                color: #202F86;
+                color: #1F4290;
             }
         }
 
         /* CSS du lien vers la page d'articles */
 
         .renvoi-actu{
-            background: #202F86;
+            background: #1F4290;
             color: white;
             display: flex;
             justify-content: center;
@@ -403,12 +403,12 @@
             }
             @media (max-width: 1365.98px){
                 background: transparent;
-                color: #202F86;
+                color: #1F4290;
                 transition: none;
             }
             &:hover{
                 background: transparent;
-                color: #202F86;
+                color: #1F4290;
                 transition: .3s ease;
                 @media (max-width: 1365.98px){
                     transition: none;
@@ -453,12 +453,12 @@
                 width: 100%;
                 padding: 2.5% 0;
                 border-radius: 30px;
-                background-color: #202f86;
+                background-color: #1F4290;
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 400;
                 font-size: 2em;
                 color: white;
-                border-color: #202f86;
+                border-color: #1F4290;
                 text-decoration: none;
                 text-align: center;
                 cursor: pointer;
@@ -539,7 +539,7 @@
             padding: 0%;
             border-radius: 35px;
             color: #ffffff;
-            background-color: #202f86;
+            background-color: #1F4290;
             border: 3px solid black;
             justify-content: center;
             align-items: center;
