@@ -44,6 +44,7 @@
             }
             img{
                 width: 50%;
+                height: auto;
                 margin: auto;
                 display: flex;
             }
@@ -65,6 +66,76 @@
                     font-size: 1em;
                     text-align: justify;
                     line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    #articles-commentaires{
+        margin: 2.5% 0;
+        .commentlist{
+            li{
+                .comment-body{
+                    margin: 1% 0;
+                    .vcard{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        .fn{
+                            a{
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                    }
+                    .commentmetadata{
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                    .reply{
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            li::marker{
+                color: transparent;
+            }
+        }
+        .comment-respond{
+            form{
+                .logged-in-as{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                .comment-form-comment{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    textarea{
+                        width: 100%;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 1em;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+                .form-submit{
+                    .submit{
+                        background: transparent;
+                        border: 1px solid black;
+                        padding: 1% 2%;
+                        &:hover{
+                            opacity: 0.8;
+                        }
+                    }
                 }
             }
         }
