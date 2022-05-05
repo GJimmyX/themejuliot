@@ -83,7 +83,7 @@ function enqueue_style_themejuliot() {
     wp_enqueue_script( get_template_directory_uri() . '/js/banner-slider.js', $src, $deps, $ver, $in_footer);
     wp_enqueue_script( get_template_directory_uri() . '/js/top-btn.js', $src, $deps, $ver, $in_footer);
   endif;
-  if (is_singular('articles') ) :
+  if (is_singular('articles') && ( wp_count_posts('articles')->publish >= 4 ) ) :
     wp_enqueue_script('articlessliderjs', get_template_directory_uri() . '/js/articles-slider.js', false, '', true);
     wp_enqueue_script( get_template_directory_uri() . '/js/articles-slider.js', $src, $deps, $ver, $in_footer);
   endif;
@@ -211,7 +211,11 @@ function my_login_style() { ?>
     #login form .forgetmenot input:checked::before{
       content: url(<?php echo get_template_directory_uri(); ?>/img/check.png);
       margin: 0;
-      width: 1rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     #login form .submit #wp-submit{
       background-color: #202F86;
@@ -374,7 +378,7 @@ function cpt_articles_juliot() {
 
   $args = array(
     'labels' => $labels,
-    'supports' => array( 'title', 'thumbnail', 'custom-fields' ),
+    'supports' => array( 'title', 'thumbnail', 'comments', 'custom-fields' ),
     'show_in_rest' => true,
     'query_var' => true,
     'rest_base' => 'art',
