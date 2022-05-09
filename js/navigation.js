@@ -21,14 +21,17 @@
     button.onclick = function() {
         if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
             menu.className = 'nav-menu';
+            nav.className = 'navbar';
         }
   
         if ( -1 !== button.className.indexOf( 'toggled-on' ) ) {
             button.className = button.className.replace( ' toggled-on', '' );
             menu.className = menu.className.replace( ' toggled-on', '' );
+            nav.className = nav.className.replace( ' toggled-on', '' );
         } else {
             button.className += ' toggled-on';
             menu.className += ' toggled-on';
+            nav.className += ' toggled-on';
         }
     };
 } )(jQuery);
