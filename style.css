@@ -40,6 +40,7 @@ body header .nav-container {
   margin: auto;
   /* CSS pour le logo de l'entreprise */
   /* CSS du menu de navigation */
+  /* CSS pour la barre de recherche quand le menu est ouvert */
 }
 
 @media (max-width: 767.98px) {
@@ -156,7 +157,7 @@ body header .nav-container .navbar .nav-menu {
 
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu {
-    padding-top: 35%;
+    padding-top: 50%;
   }
 }
 
@@ -236,7 +237,7 @@ body header .nav-container .navbar .nav-menu li .sub-menu {
     display: none;
     position: absolute;
     width: 6.075%;
-    z-index: 1;
+    z-index: 999;
   }
 }
 
@@ -244,7 +245,7 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu {
   width: 100%;
   margin: 0;
   position: relative;
-  z-index: 1;
+  z-index: 999;
 }
 
 @media (max-width: 1365.98px) {
@@ -266,6 +267,7 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
   body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
     padding: 0;
     border: none;
+    font-size: 1em;
   }
 }
 
@@ -391,12 +393,13 @@ body header .nav-container .navbar .nav-rs-search {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 2% 0;
   }
 }
 
 @media (min-width: 376px) and (max-width: 767.98px) {
   body header .nav-container .navbar .nav-rs-search {
-    width: 45%;
+    width: 67%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -473,6 +476,7 @@ body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a:hover {
 body header .nav-container .navbar .nav-rs-search .nav-search {
   width: 33%;
   height: 72px;
+  /* Apparition gérée en CSS */
 }
 
 @media (max-width: 1365.98px) {
@@ -493,6 +497,7 @@ body header .nav-container .navbar .nav-rs-search .nav-search #search-btn {
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search #search-btn {
     color: black;
+    padding: 0;
   }
 }
 
@@ -524,61 +529,129 @@ body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search inp
   border: 1px solid black;
   border-radius: 20px;
   color: #212021;
+  z-index: 999;
+  /* CSS pour mobile / petite tablette */
+  /* Positionnement par rapport à la droite du formulaire */
+  /* Positionnement par rapport au haut du formulaire */
+  /* CSS pour petite tablette / notebook */
+  /* Positionnement par rapport à la droite du formulaire */
+  /* Positionnement par rapport au haut du formulaire */
+  /* CSS pour > notebook */
+  /* Positionnement par rapport au haut du formulaire */
+  /* CSS lorsque le champ est selectionné */
+}
+
+@media (min-width: 240px) and (max-width: 475.99px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    right: -35px;
+  }
+}
+
+@media (min-width: 476px) and (max-width: 575.99px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    right: -10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 675.99px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    right: 0px;
+  }
+}
+
+@media (min-width: 676px) and (max-width: 767.99px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    right: 10px;
+  }
 }
 
 @media (max-width: 375.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: -35px;
-    top: -5px;
+    top: 5px;
   }
 }
 
 @media (min-width: 376px) and (max-width: 575.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: -35px;
-    top: 0px;
+    top: 10px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: -35px;
+    top: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    right: -5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 867.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    top: -5px;
+  }
+}
+
+@media (min-width: 868px) and (max-width: 917.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    top: 2.5px;
+  }
+}
+
+@media (min-width: 918px) and (max-width: 967.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
     top: 5px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 968px) and (max-width: 1017.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: -10px;
     top: 10px;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1103.98px) {
+@media (min-width: 1018px) and (max-width: 1067.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: -10px;
-    top: 20px;
+    top: 17.5px;
   }
 }
 
-@media (min-width: 1104px) and (max-width: 1199.98px) {
+@media (min-width: 1068px) and (max-width: 1117.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: -5px;
-    top: 30px;
+    top: 27.5px;
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1299.98px) {
+@media (min-width: 1118px) and (max-width: 1167.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: -5px;
-    top: 40px;
+    top: 35px;
   }
 }
 
-@media (min-width: 1300px) and (max-width: 1365.98px) {
+@media (min-width: 1168px) and (max-width: 1217.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: -5px;
+    top: 42.5px;
+  }
+}
+
+@media (min-width: 1218px) and (max-width: 1267.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
     top: 50px;
+  }
+}
+
+@media (min-width: 1268px) and (max-width: 1317.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    top: 57.5px;
+  }
+}
+
+@media (min-width: 1318px) and (max-width: 1365.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+    top: 65px;
   }
 }
 
@@ -596,6 +669,12 @@ body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search inp
 
 body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input:focus {
   outline: none;
+}
+
+@media (min-width: 768px) and (max-width: 1365.98px) {
+  body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search input {
+    top: 0px;
+  }
 }
 
 body #cookie_law_notification.cookielaw1 {
@@ -670,12 +749,8 @@ body .cookielaw1 #cookie_accept_button {
   }
 }
 
-.recherche .resultats-recherche {
-  /* border: 2px dotted #202F86; */
-  /* Titre annonçant les résultats pour la recherche */
-}
-
 .recherche .resultats-recherche h1 {
+  /* Titre annonçant les résultats pour la recherche */
   text-align: center;
   font-size: 3em;
 }
@@ -2046,12 +2121,8 @@ footer .user-cookie {
   font-family: 'Open Sans', sans-serif;
 }
 
-.automatisme .contenu-automatisme .automatisme-card {
-  /* Image de la page 'Automatisme' */
-  /* Contenu texte de la page 'Automatisme' */
-}
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image {
+  /* Image de la page 'Automatisme' */
   padding: 1% 10%;
   margin: 0.1% 0;
   background: #E9E8E9;
@@ -2117,6 +2188,7 @@ footer .user-cookie {
 }
 
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu {
+  /* Contenu texte de la page 'Automatisme' */
   padding: 1% 10%;
   cursor: context-menu;
 }
@@ -2231,12 +2303,8 @@ footer .user-cookie {
   font-family: 'Open Sans', sans-serif;
 }
 
-.informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card {
-  /* Image de la page 'Informatique Industrielle' */
-  /* Contenu texte de la page 'Informatique Industrielle' */
-}
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
+  /* Image de la page 'Informatique Industrielle' */
   padding: 1% 10%;
   margin: 0.1% 0;
   background: #E9E8E9;
@@ -2302,6 +2370,7 @@ footer .user-cookie {
 }
 
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu {
+  /* Contenu texte de la page 'Informatique Industrielle' */
   padding: 1% 10%;
   cursor: context-menu;
 }
@@ -2565,12 +2634,8 @@ footer .user-cookie {
   padding: 1% 10%;
 }
 
-.qui-sommes-nous .sommes-nous-container {
-  /* Illustration */
-  /* Texte */
-}
-
 .qui-sommes-nous .sommes-nous-container img {
+  /* Illustration */
   width: 60%;
   margin: auto;
   height: auto;
@@ -2592,6 +2657,7 @@ footer .user-cookie {
 }
 
 .qui-sommes-nous .sommes-nous-container .sommes-nous-texte {
+  /* Texte */
   cursor: context-menu;
 }
 
@@ -2896,10 +2962,6 @@ footer .user-cookie {
 .nous-rejoindre {
   padding: 1% 10%;
   font-family: 'Open Sans', sans-serif;
-  /* CSS de la pagination */
-}
-
-.nous-rejoindre .nous-rejoindre-disposition {
   /* Carte d'une offre d'emploi */
 }
 
@@ -3015,6 +3077,7 @@ footer .user-cookie {
 }
 
 .nous-rejoindre .nous-rejoindre-pagination {
+  /* CSS de la pagination */
   margin: 2% 0;
 }
 
@@ -4369,6 +4432,10 @@ footer .user-cookie {
   .accueil .section_02 .carousel-slider .control-slider button {
     -webkit-transform: rotateZ(90deg);
             transform: rotateZ(90deg);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
   }
 }
 
@@ -4383,6 +4450,12 @@ footer .user-cookie {
   .accueil .section_02 .carousel-slider .control-slider button:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .accueil .section_02 .carousel-slider .control-slider button i {
+    width: 30px;
   }
 }
 
