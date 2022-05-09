@@ -3,10 +3,10 @@
 .nous-rejoindre{
     padding: 1% 10%;
     font-family: 'Open Sans', sans-serif;
+
+    /* Carte d'une offre d'emploi */
+
     .nous-rejoindre-disposition{
-
-        /* Carte d'une offre d'emploi */
-
         .nous-rejoindre-card{
             padding: 2% 0;
             display: flex;
@@ -24,7 +24,7 @@
                         transition: none;
                     }
                     &:hover{
-                        color: #202F86;
+                        color: #1F4290;
                         transition: .5s ease;
                         @media (max-width: 1365.98px){
                             color: black;
@@ -63,7 +63,7 @@
                         font-size: 1em;
                         font-weight: 700;
                         &:hover{
-                            color: #008000;
+                            color: #36A02C;
                             @media (max-width: 1365.98px){
                                 color: black;
                             }
@@ -74,9 +74,10 @@
         }
     }
 
-    /* CSS de la pagination */
-
     .nous-rejoindre-pagination{
+
+        /* CSS de la pagination */
+
         margin: 2% 0;
         @media (max-width: 767.98px){
             margin: 5% 0;

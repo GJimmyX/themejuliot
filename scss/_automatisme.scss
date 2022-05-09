@@ -5,10 +5,10 @@
         width: 100%;
         font-family: 'Open Sans', sans-serif;
         .automatisme-card{
-
-            /* Image de la page 'Automatisme' */
-
             #automatisme-image{
+
+                /* Image de la page 'Automatisme' */
+
                 padding: 1% 10%;
                 margin: 0.1% 0;
                 background: #E9E8E9;
@@ -46,11 +46,11 @@
                         text-align: justify;
                     }
                 }
-            }
-
-            /* Contenu texte de la page 'Automatisme' */
-            
+            }            
             #automatisme-contenu{
+
+                /* Contenu texte de la page 'Automatisme' */
+
                 padding: 1% 10%;
                 cursor: context-menu;
                 h2{
@@ -106,8 +106,8 @@
                     padding: 1.5%;
                     font-size: 1.5em;
                     text-decoration: none;
-                    background-color: #202F86;
-                    border: 1px solid #202F86;
+                    background-color: #1F4290;
+                    border: 1px solid #1F4290;
                     border-radius: 25px;
                     color: white;
                     transition: .5s ease;

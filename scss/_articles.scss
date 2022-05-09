@@ -39,10 +39,10 @@
                     font-size: 2em;
                     color: black;
                     @media (max-width: 1365.98px){
-                        color: #202F86;
+                        color: #1F4290;
                     }
                     &:hover{
-                        color: #202F86;
+                        color: #1F4290;
                     }
                 }
             }
@@ -58,7 +58,7 @@
                 text-align: center;
                 .page-numbers{
                     color: white;
-                    background-color: #202F86;
+                    background-color: #1F4290;
                     text-decoration: none;
                     font-size: 1.5em;
                     margin: 0 1%;
@@ -69,12 +69,12 @@
                         transition: none;
                     }
                     &:hover{
-                        color: #202F86;
+                        color: #1F4290;
                         background-color: transparent;
                         transition: 1s ease;
                         @media (max-width: 1365.98px){
                             color: white;
-                            background-color: #202F86;
+                            background-color: #1F4290;
                             transition: none;
                         }
                     }

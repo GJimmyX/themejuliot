@@ -10,11 +10,10 @@
     /* Section des résultats de la recherche */
 
     .resultats-recherche{
-        /* border: 2px dotted #202F86; */
-
-        /* Titre annonçant les résultats pour la recherche */
-
         h1{
+            
+            /* Titre annonçant les résultats pour la recherche */
+
             text-align: center;
             font-size: 3em;
             @media (max-width: 767.98px){
@@ -44,7 +43,7 @@
                     transition: none;
                 }
                 &:hover{
-                    color: #202F86;
+                    color: #1F4290;
                     transition: .5s ease;
                     @media (max-width: 1365.98px){
                         color: black;
