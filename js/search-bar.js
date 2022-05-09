@@ -4,9 +4,8 @@
     var button = document.getElementById( 'search-btn' );
     var search = document.getElementById( 'search-bar' );
 
-    button.onclick = toggle;
-
-    function toggle() {
+    button.onclick = function()
+    {
         button.toggleAttribute( 'toggle-search' );
         search.classList.toggle( 'toggle-search' );
     }
