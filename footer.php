@@ -31,21 +31,21 @@
                 <style media="(max-width: 375.98px)">
                     body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input{
                         right: -75px;
-                        top: -5px;
+                        top: 5px;
                     }
                 </style>
                 
                 <style media="(min-width: 376px) AND (max-width: 575.98px)">
                     body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input{
                         right: -75px;
-                        top: 0px;
+                        top: 10px;
                     }
                 </style>
                 
                 <style media="(min-width: 576px) AND (max-width: 767.98px)">
                     body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input{
                         right: -75px;
-                        top: 5px;
+                        top: 15px;
                     }
                 </style>
 
