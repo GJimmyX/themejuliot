@@ -11,7 +11,7 @@
     .returnBtn{
         .return{
             text-decoration: none;
-            color: #202F86;
+            color: #1F4290;
             font-size: 1.5em;
             transition: .5s ease;
             @media (max-width: 1365.98px){
@@ -189,10 +189,10 @@
                             text-decoration: none;
                             color: black;
                             @media (max-width: 1365.98px){
-                                color: #202F86;
+                                color: #1F4290;
                             }
                             &:hover{
-                                color: #202F86;
+                                color: #1F4290;
                             }
                             h2{
                                 font-size: 1.25em;
@@ -222,7 +222,7 @@
                 border: 0;
                 margin: 0;
                 border-radius: 100%;
-                color: #202F86;
+                color: #1F4290;
                 cursor: pointer;
                 i{
                     transition: .5s ease;

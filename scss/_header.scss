@@ -92,7 +92,7 @@ body{
                     width: 95%;
                     display: flex;
                     @media (min-width: 992px) AND (max-width: 1365.98px){
-                        padding-top: 35%;
+                        padding-top: 50%;
                     }
                     @media (max-width: 1365.98px){
                         display: none;
@@ -123,7 +123,7 @@ body{
                             transition: .3s ease;
                             &:hover{
                                 color: white;
-                                background-color: #008000;
+                                background-color: #36A02C;
                                 border-radius: 30px;
                                 box-shadow: 0px 10px 7px rgba($color: #000000, $alpha: 0.5);
                                 transition: .3s ease;
@@ -141,13 +141,13 @@ body{
                                 display: none;
                                 position: absolute;
                                 width: 6.075%;
-                                z-index: 1;
+                                z-index: 999;
                             }
                             .sous-menu{
                                 width: 100%;
                                 margin: 0;
                                 position: relative;
-                                z-index: 1;
+                                z-index: 999;
                                 @media (max-width: 1365.98px){
                                     padding: 0;
                                 }
@@ -161,10 +161,11 @@ body{
                                     @media (max-width: 1365.98px){
                                         padding: 0;
                                         border: none;
+                                        font-size: 1em;
                                     }
                                     &:hover{
                                         color: white !important;
-                                        background-color: #008000;
+                                        background-color: #36A02C;
                                         @media (max-width: 1365.98px){
                                             background-color: transparent;
                                             color: black !important;
@@ -200,7 +201,7 @@ body{
                     .current_page_item{
                         a{
                             color: white !important;
-                            background-color: #202f86;
+                            background-color: #1F4290;
                             border-radius: 30px;
                             box-shadow: 0px 10px 7px rgba($color: #000000, $alpha: 0.5);
                             @media (max-width: 1365.98px){
@@ -239,9 +240,10 @@ body{
                     @media (max-width: 1365.98px){
                         width: 67%;
                         justify-content: center;
+                        padding: 2% 0;
                     }
                     @media (min-width: 376px) AND (max-width: 767.98px){
-                        width: 45%;
+                        width: 67%;
                         justify-content: center;
                     }
 
@@ -271,14 +273,14 @@ body{
                                 a{
                                     width: 50%;
                                     text-align: center;
-                                    color: #202F86;
+                                    color: #1F4290;
                                     text-decoration: none;
                                     font-size: 1.5em;
                                     @media (max-width: 1365.98px){
                                         color: black;
                                     }
                                     &:hover{
-                                        color: #008000;
+                                        color: #36A02C;
                                         @media (max-width: 1365.98px){
                                             color: black;
                                         }
@@ -299,20 +301,24 @@ body{
                         #search-btn{
                             width: 100%;
                             background: transparent;
-                            color: #202F86;
+                            color: #1F4290;
                             border: 0;
                             font-size: 1.5em;
                             cursor: pointer;
                             @media (max-width: 1365.98px){
                                 color: black;
+                                padding: 0;
                             }
                             &:hover{
-                                color: #008000;
+                                color: #36A02C;
                                 @media (max-width: 1365.98px){
                                     color: black;
                                 }
                             }
                         }
+
+                        /* Apparition gérée en CSS */
+
                         .search{
                             display: none;
                         }
@@ -328,46 +334,112 @@ body{
                                 border: 1px solid black;
                                 border-radius: 20px;
                                 color: #212021;
+                                z-index: 999;
+
+                                /* CSS pour mobile / petite tablette */
+
+                                    /* Positionnement par rapport à la droite du formulaire */
+
+                                @media (min-width: 240px) AND (max-width: 475.99px){
+                                    right: -35px;
+                                }
+                                @media (min-width: 476px) AND (max-width: 575.99px){
+                                    right: -10px;
+                                }
+                                @media (min-width: 576px) AND (max-width: 675.99px){
+                                    right: 0px;
+                                }
+                                @media (min-width: 676px) AND (max-width: 767.99px){
+                                    right: 10px;
+                                }
+
+                                    /* Positionnement par rapport au haut du formulaire */
+
                                 @media (max-width: 375.98px){
-                                    right: -35px;
-                                    top: -5px;
-                                }
-                                @media (min-width: 376px) AND (max-width: 575.98px){
-                                    right: -35px;
-                                    top: 0px;
-                                }
-                                @media (min-width: 576px) AND (max-width: 767.98px){
-                                    right: -35px;
                                     top: 5px;
                                 }
-                                @media (min-width: 768px) AND (max-width: 991.98px){
-                                    right: -10px;
+                                @media (min-width: 376px) AND (max-width: 575.98px){
                                     top: 10px;
                                 }
-                                @media (min-width: 992px) AND (max-width: 1103.98px){
-                                    right: -10px;
-                                    top: 20px;
+                                @media (min-width: 576px) AND (max-width: 767.98px){
+                                    top: 15px;
                                 }
-                                @media (min-width: 1104px) AND (max-width: 1199.98px){
+
+                                /* CSS pour petite tablette / notebook */
+
+                                    /* Positionnement par rapport à la droite du formulaire */
+
+                                @media (min-width: 768px) AND (max-width: 1365.98px){
                                     right: -5px;
-                                    top: 30px;
                                 }
-                                @media (min-width: 1200px) AND (max-width: 1299.98px){
-                                    right: -5px;
-                                    top: 40px;
+                                
+                                    /* Positionnement par rapport au haut du formulaire */
+
+                                @media (min-width: 768px) AND (max-width: 867.98px){
+                                    top: -5px;
                                 }
-                                @media (min-width: 1300px) AND (max-width: 1365.98px){
-                                    right: -5px;
+                                @media (min-width: 868px) AND (max-width: 917.98px){
+                                    top: 2.5px;
+                                }
+                                @media (min-width: 918px) AND (max-width: 967.98px){
+                                    top: 5px;
+                                }
+                                @media (min-width: 968px) AND (max-width: 1017.98px){
+                                    top: 10px;
+                                }
+                                @media (min-width: 1018px) AND (max-width: 1067.98px){
+                                    top: 17.5px;
+                                }
+                                @media (min-width: 1068px) AND (max-width: 1117.98px){
+                                    top: 27.5px;
+                                }
+                                @media (min-width: 1118px) AND (max-width: 1167.98px){
+                                    top: 35px;
+                                }
+                                @media (min-width: 1168px) AND (max-width: 1217.98px){
+                                    top: 42.5px;
+                                }
+                                @media (min-width: 1218px) AND (max-width: 1267.98px){
                                     top: 50px;
                                 }
+                                @media (min-width: 1268px) AND (max-width: 1317.98px){
+                                    top: 57.5px;
+                                }
+                                @media (min-width: 1318px) AND (max-width: 1365.98px){
+                                    top: 65px;
+                                }
+
+                                /* CSS pour > notebook */
+
+                                    /* Positionnement par rapport au haut du formulaire */
+
                                 @media (min-width: 1366px) AND (max-width: 1677.98px){
                                     top: 20px;
                                 }
                                 @media (min-width: 1678px) AND (max-width: 1879.98px){
                                     top: 30px;
                                 }
+
+                                /* CSS lorsque le champ est selectionné */
+
                                 &:focus{
                                     outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* CSS pour la barre de recherche quand le menu est ouvert */
+
+            .toggled-on{
+                @media (min-width: 768px) AND (max-width: 1365.98px){
+                    .nav-rs-search{
+                        .nav-search{
+                            .toggle-search{
+                                input{
+                                    top: 0px;
                                 }
                             }
                         }
@@ -407,8 +479,8 @@ body{
             }
         }
         #cookie_accept_button{
-            background-color: #202F86;
-            border-color: #202F86;
+            background-color: #1F4290;
+            border-color: #1F4290;
             font-size: 1.25em;
             color: white;
             @media (max-width: 575.98px){
