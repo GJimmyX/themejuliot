@@ -56,7 +56,7 @@
 
                 <!-- Menu de navigation du site -->
 
-                <nav id="site-navigation" class="navbar" role="navigation">
+                <nav id="site-navigation" class="navbar toggled-off" role="navigation">
                     <button class="menu-toggle"><img src="<?php echo get_template_directory_uri() . '/img/mobileBtn.png' ?>" alt="Bouton du menu"></button>
                     <?php 
                         wp_nav_menu(
@@ -84,9 +84,9 @@
 
                             <div class="nav-search">
                                 <button type="submit" id="search-btn" title="Rechercher"><p class="fas"></p></button>
-                                <form action="/recherche" method="post" id="search-bar" class="search">
+                                <form action="/recherche" method="post" id="search-bar" class="search-form">
                                     <label for="search-bar-input"></label>
-                                    <input type="text" id="search-bar-input" name="Recherche" placeholder="Recherche..." required="true">
+                                    <input type="text" id="search-bar-input" class="search" name="Recherche" placeholder="Recherche..." required="true">
                                 </form>
                             </div>
 

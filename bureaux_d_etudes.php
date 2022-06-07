@@ -26,7 +26,7 @@
         </div>
         <div class="logos-bureaux-d-etudes">
             <a href="/accueil"><img src="<?php echo get_template_directory_uri() . '/img/LogoBureauJuliot.png' ?>" alt="Logos Entreprises"></a>
-            <a href="//siteagerwp" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/LogoBureauAGER.png' ?>" alt="Logos Entreprises"></a>
+            <a href="http://agersystemes.fr/" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/LogoBureauAGER.png' ?>" alt="Logos Entreprises"></a>
         </div>
     </div>
 </main>

@@ -33,26 +33,22 @@ get_header();
             </div>
         </div>
 
+        <div id="articles-commentaires">
+            <?php comments_template();  // Section commentaire ?>
+        </div>
+
     <?php endwhile; endif; ?>
     
     <!-- Slider des articles les plus récents (les 4 derniers) -->
     
     <?php
 
-    /* $articlesSlider = new WP_Query();
-    $articlesSlider->query(array(
-        'post_type' => 'articles',
-        )
-    ); */
-
     $args = array(
         'post_type' => 'articles',
     );
     $articlesNumber = query_posts($args);
-    
-    /* var_dump($articlesNumber[2]); */
 
-    if ( array($articlesNumber) >= 3 ) : ?>
+    if ( count($articlesNumber) >= 4 ) : ?>
 
         <div class="articles-slider">
 
