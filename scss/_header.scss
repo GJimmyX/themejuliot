@@ -41,7 +41,7 @@ body{
                 }
                 @media (min-width: 768px) AND (max-width: 1365.98px){
                     margin: 0;
-                    width: 65%;
+                    width: 50%;
                 }
                 a{
                     img{
@@ -293,6 +293,7 @@ body{
                     /* CSS de la barre de recherche du site Juliot Électricité */
 
                     .nav-search{
+                        position: relative;
                         width: 33%;
                         height: 72px;
                         @media (max-width: 1365.98px){
@@ -322,106 +323,43 @@ body{
                         .search{
                             display: none;
                         }
-                        .toggle-search{
-                            display: block;
-                            position: relative;
+                        .search-form{
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: end;
                             width: 100%;
-                            input{
-                                position: absolute;
-                                right: -20px;
-                                top: 40px;
+                            @media (max-width: 991.98px){
+                                align-items: center;
+                            }
+                            .toggle-search{
+                                position: relative;
+                                display: block;
                                 padding: 5px 10px;
                                 border: 1px solid black;
                                 border-radius: 20px;
                                 color: #212021;
                                 z-index: 999;
-
-                                /* CSS pour mobile / petite tablette */
-
-                                    /* Positionnement par rapport à la droite du formulaire */
-
-                                @media (min-width: 240px) AND (max-width: 475.99px){
-                                    right: -35px;
-                                }
-                                @media (min-width: 476px) AND (max-width: 575.99px){
-                                    right: -10px;
-                                }
-                                @media (min-width: 576px) AND (max-width: 675.99px){
-                                    right: 0px;
-                                }
-                                @media (min-width: 676px) AND (max-width: 767.99px){
-                                    right: 10px;
-                                }
-
-                                    /* Positionnement par rapport au haut du formulaire */
-
-                                @media (max-width: 375.98px){
-                                    top: 5px;
-                                }
-                                @media (min-width: 376px) AND (max-width: 575.98px){
-                                    top: 10px;
-                                }
-                                @media (min-width: 576px) AND (max-width: 767.98px){
-                                    top: 15px;
-                                }
-
-                                /* CSS pour petite tablette / notebook */
-
-                                    /* Positionnement par rapport à la droite du formulaire */
-
-                                @media (min-width: 768px) AND (max-width: 1365.98px){
-                                    right: -5px;
-                                }
                                 
-                                    /* Positionnement par rapport au haut du formulaire */
-
-                                @media (min-width: 768px) AND (max-width: 867.98px){
-                                    top: -5px;
-                                }
-                                @media (min-width: 868px) AND (max-width: 917.98px){
-                                    top: 2.5px;
-                                }
-                                @media (min-width: 918px) AND (max-width: 967.98px){
-                                    top: 5px;
-                                }
-                                @media (min-width: 968px) AND (max-width: 1017.98px){
-                                    top: 10px;
-                                }
-                                @media (min-width: 1018px) AND (max-width: 1067.98px){
-                                    top: 17.5px;
-                                }
-                                @media (min-width: 1068px) AND (max-width: 1117.98px){
-                                    top: 27.5px;
-                                }
-                                @media (min-width: 1118px) AND (max-width: 1167.98px){
-                                    top: 35px;
-                                }
-                                @media (min-width: 1168px) AND (max-width: 1217.98px){
-                                    top: 42.5px;
-                                }
-                                @media (min-width: 1218px) AND (max-width: 1267.98px){
-                                    top: 50px;
-                                }
-                                @media (min-width: 1268px) AND (max-width: 1317.98px){
-                                    top: 57.5px;
-                                }
-                                @media (min-width: 1318px) AND (max-width: 1365.98px){
-                                    top: 65px;
-                                }
-
                                 /* CSS pour > notebook */
-
+    
                                     /* Positionnement par rapport au haut du formulaire */
-
-                                @media (min-width: 1366px) AND (max-width: 1677.98px){
+        
+                                @media (min-width: 1366px) AND (max-width: 1499.98px){
                                     top: 20px;
                                 }
-                                @media (min-width: 1678px) AND (max-width: 1879.98px){
+                                @media (min-width: 1500px) AND (max-width: 1633.98px){
+                                    top: 25px;
+                                }
+                                @media (min-width: 1634px) AND (max-width: 1767.98px){
                                     top: 30px;
+                                }
+                                @media (min-width: 1768px){
+                                    top: 40px;
                                 }
 
                                 /* CSS lorsque le champ est selectionné */
-
+    
                                 &:focus{
                                     outline: none;
                                 }
@@ -431,16 +369,70 @@ body{
                 }
             }
 
-            /* CSS pour la barre de recherche quand le menu est ouvert */
+            /* Positionnement CSS pour la barre de recherche quand le menu est fermé */
+
+            .toggled-off{
+                .nav-rs-search{
+                    .nav-search{
+                        .toggle-search{
+                            /* CSS pour mobile / petite tablette */
+
+                                /* Positionnement par rapport au haut du formulaire */
+                        
+                            @media (max-width: 374.98px){
+                                top: 4px;
+                            }
+                            @media (min-width: 375px) AND (max-width: 575.98px){
+                                top: 5px;
+                            }
+                            @media (min-width: 576px) AND (max-width: 767.98px){
+                                top: 10px;
+                            }
+    
+                            /* CSS pour petite tablette / notebook */
+                             
+                                /* Positionnement par rapport au haut du formulaire */
+    
+                            @media (min-width: 768px) AND (max-width: 991.98px){
+                                top: 5px;
+                            }
+                            @media (min-width: 992px) AND (max-width: 1365.98px){
+                                top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Positionnement CSS pour la barre de recherche quand le menu est ouvert */
 
             .toggled-on{
-                @media (min-width: 768px) AND (max-width: 1365.98px){
-                    .nav-rs-search{
-                        .nav-search{
-                            .toggle-search{
-                                input{
-                                    top: 0px;
-                                }
+                .nav-rs-search{
+                    .nav-search{
+                        .toggle-search{
+                            /* CSS pour mobile / petite tablette */
+
+                                /* Positionnement par rapport au haut du formulaire */
+                        
+                            @media (max-width: 374.98px){
+                                top: 4px;
+                            }
+                            @media (min-width: 375px) AND (max-width: 575.98px){
+                                top: 5px;
+                            }
+                            @media (min-width: 576px) AND (max-width: 767.98px){
+                                top: 10px;
+                            }
+    
+                            /* CSS pour petite tablette / notebook */
+                             
+                                /* Positionnement par rapport au haut du formulaire */
+    
+                            @media (min-width: 768px) AND (max-width: 991.98px){
+                                top: 0px;
+                            }
+                            @media (min-width: 992px) AND (max-width: 1365.98px){
+                                top: 5px;
                             }
                         }
                     }
