@@ -40,7 +40,8 @@ body header .nav-container {
   margin: auto;
   /* CSS pour le logo de l'entreprise */
   /* CSS du menu de navigation */
-  /* CSS pour la barre de recherche quand le menu est ouvert */
+  /* Positionnement CSS pour la barre de recherche quand le menu est fermé */
+  /* Positionnement CSS pour la barre de recherche quand le menu est ouvert */
 }
 
 @media (max-width: 767.98px) {
@@ -74,7 +75,7 @@ body header .nav-container h1 {
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container h1 {
     margin: 0;
-    width: 65%;
+    width: 50%;
   }
 }
 
@@ -474,6 +475,7 @@ body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a:hover {
 }
 
 body header .nav-container .navbar .nav-rs-search .nav-search {
+  position: relative;
   width: 33%;
   height: 72px;
   /* Apparition gérée en CSS */
@@ -515,165 +517,141 @@ body header .nav-container .navbar .nav-rs-search .nav-search .search {
   display: none;
 }
 
-body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search {
-  display: block;
-  position: relative;
+body header .nav-container .navbar .nav-rs-search .nav-search .search-form {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   width: 100%;
 }
 
-body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-  position: absolute;
-  right: -20px;
-  top: 40px;
+@media (max-width: 991.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .search-form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search {
+  position: relative;
+  display: block;
   padding: 5px 10px;
   border: 1px solid black;
   border-radius: 20px;
   color: #212021;
   z-index: 999;
-  /* CSS pour mobile / petite tablette */
-  /* Positionnement par rapport à la droite du formulaire */
-  /* Positionnement par rapport au haut du formulaire */
-  /* CSS pour petite tablette / notebook */
-  /* Positionnement par rapport à la droite du formulaire */
-  /* Positionnement par rapport au haut du formulaire */
   /* CSS pour > notebook */
   /* Positionnement par rapport au haut du formulaire */
   /* CSS lorsque le champ est selectionné */
 }
 
-@media (min-width: 240px) and (max-width: 475.99px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: -35px;
-  }
-}
-
-@media (min-width: 476px) and (max-width: 575.99px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: -10px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 675.99px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: 0px;
-  }
-}
-
-@media (min-width: 676px) and (max-width: 767.99px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: 10px;
-  }
-}
-
-@media (max-width: 375.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 5px;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 575.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 10px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 15px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1365.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    right: -5px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 867.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: -5px;
-  }
-}
-
-@media (min-width: 868px) and (max-width: 917.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 2.5px;
-  }
-}
-
-@media (min-width: 918px) and (max-width: 967.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 5px;
-  }
-}
-
-@media (min-width: 968px) and (max-width: 1017.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 10px;
-  }
-}
-
-@media (min-width: 1018px) and (max-width: 1067.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 17.5px;
-  }
-}
-
-@media (min-width: 1068px) and (max-width: 1117.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 27.5px;
-  }
-}
-
-@media (min-width: 1118px) and (max-width: 1167.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 35px;
-  }
-}
-
-@media (min-width: 1168px) and (max-width: 1217.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 42.5px;
-  }
-}
-
-@media (min-width: 1218px) and (max-width: 1267.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 50px;
-  }
-}
-
-@media (min-width: 1268px) and (max-width: 1317.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 57.5px;
-  }
-}
-
-@media (min-width: 1318px) and (max-width: 1365.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
-    top: 65px;
-  }
-}
-
-@media (min-width: 1366px) and (max-width: 1677.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+@media (min-width: 1366px) and (max-width: 1499.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search {
     top: 20px;
   }
 }
 
-@media (min-width: 1678px) and (max-width: 1879.98px) {
-  body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input {
+@media (min-width: 1500px) and (max-width: 1633.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search {
+    top: 25px;
+  }
+}
+
+@media (min-width: 1634px) and (max-width: 1767.98px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search {
     top: 30px;
   }
 }
 
-body header .nav-container .navbar .nav-rs-search .nav-search .toggle-search input:focus {
+@media (min-width: 1768px) {
+  body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search {
+    top: 40px;
+  }
+}
+
+body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search:focus {
   outline: none;
 }
 
-@media (min-width: 768px) and (max-width: 1365.98px) {
-  body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search input {
+body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
+  /* CSS pour mobile / petite tablette */
+  /* Positionnement par rapport au haut du formulaire */
+  /* CSS pour petite tablette / notebook */
+  /* Positionnement par rapport au haut du formulaire */
+}
+
+@media (max-width: 374.98px) {
+  body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
+    top: 4px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
+    top: 5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
+    top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
+    top: 5px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1365.98px) {
+  body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
+    top: 10px;
+  }
+}
+
+body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
+  /* CSS pour mobile / petite tablette */
+  /* Positionnement par rapport au haut du formulaire */
+  /* CSS pour petite tablette / notebook */
+  /* Positionnement par rapport au haut du formulaire */
+}
+
+@media (max-width: 374.98px) {
+  body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
+    top: 4px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575.98px) {
+  body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
+    top: 5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
+    top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
     top: 0px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1365.98px) {
+  body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
+    top: 5px;
   }
 }
 
@@ -3224,39 +3202,9 @@ footer .user-cookie {
           align-items: center;
 }
 
-.contact .adresses-formulaire .adresses .agence85 a, .contact .adresses-formulaire .adresses .agence44 a {
+.contact .adresses-formulaire .adresses .agence85 .carte-agence85 img, .contact .adresses-formulaire .adresses .agence85 .carte-agence44 img, .contact .adresses-formulaire .adresses .agence44 .carte-agence85 img, .contact .adresses-formulaire .adresses .agence44 .carte-agence44 img {
   width: 100%;
-  height: 320px;
-}
-
-@media (max-width: 575.98px) {
-  .contact .adresses-formulaire .adresses .agence85 a, .contact .adresses-formulaire .adresses .agence44 a {
-    height: 240px;
-  }
-}
-
-.contact .adresses-formulaire .adresses .agence85 .carte-agence85, .contact .adresses-formulaire .adresses .agence44 .carte-agence85 {
-  background-image: url(img/agence85_fleches.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 575.98px) {
-  .contact .adresses-formulaire .adresses .agence85 .carte-agence85, .contact .adresses-formulaire .adresses .agence44 .carte-agence85 {
-    background-image: url(img/agence85-mini.png);
-  }
-}
-
-.contact .adresses-formulaire .adresses .agence85 .carte-agence44, .contact .adresses-formulaire .adresses .agence44 .carte-agence44 {
-  background-image: url(img/agence44_fleches.png);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 575.98px) {
-  .contact .adresses-formulaire .adresses .agence85 .carte-agence44, .contact .adresses-formulaire .adresses .agence44 .carte-agence44 {
-    background-image: url(img/agence44-mini.png);
-  }
+  height: 100%;
 }
 
 .contact .adresses-formulaire .adresses .agence85 p, .contact .adresses-formulaire .adresses .agence44 p {
@@ -3363,14 +3311,8 @@ footer .user-cookie {
   color: black;
   font-weight: 700;
   font-size: 1em;
-  width: 75%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  width: 100%;
   margin-bottom: 1%;
 }
 
@@ -3398,7 +3340,7 @@ footer .user-cookie {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.5em;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 90%;
   cursor: default;
 }
@@ -3411,7 +3353,7 @@ footer .user-cookie {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.5em;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 90%;
 }
 
@@ -3450,14 +3392,8 @@ footer .user-cookie {
   color: black;
   font-weight: 700;
   font-size: 1em;
-  width: 75%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  width: 100%;
   margin-bottom: 1%;
 }
 
@@ -3478,7 +3414,7 @@ footer .user-cookie {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.5em;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 90%;
 }
 
@@ -3497,14 +3433,8 @@ footer .user-cookie {
   color: black;
   font-weight: 700;
   font-size: 1em;
-  width: 75%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+  width: 100%;
   margin-bottom: 1%;
 }
 
@@ -3519,7 +3449,7 @@ footer .user-cookie {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
   font-size: 1.5em;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 90%;
   cursor: default;
   resize: none;
@@ -3596,14 +3526,8 @@ footer .user-cookie {
   color: black;
   font-weight: 700;
   font-size: 1em;
+  text-align: center;
   width: 100%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 1%;
 }
 
@@ -3629,11 +3553,12 @@ footer .user-cookie {
   margin-top: 1%;
 }
 
-.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document p {
+.contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document .document-accepte {
   margin: 0;
   padding-top: 1%;
   font-weight: 700;
   font-size: 1em;
+  text-align: center;
   color: black;
   cursor: context-menu;
 }
@@ -3732,77 +3657,78 @@ footer .user-cookie {
   }
 }
 
-.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span {
-  margin: 0;
+@media (min-width: 1366px) {
+  .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span {
+    margin: 0;
+  }
+  .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    height: 15px;
+    width: 15px;
+    background: rgba(233, 232, 233, 0.6);
+    border: 1px solid black;
+    cursor: default;
+  }
+  .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:hover {
+    background: rgba(233, 232, 233, 0.6);
+    position: relative;
+  }
 }
 
-.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  height: 15px;
-  width: 15px;
-  background: rgba(233, 232, 233, 0.6);
-  border: 1px solid black;
-  cursor: default;
-}
-
-.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:hover {
-  background: rgba(233, 232, 233, 0.6);
-  position: relative;
-}
-
-@media (max-width: 1365.98px) {
+@media (min-width: 1366px) and (max-width: 1365.98px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:hover {
     display: none;
   }
 }
 
-.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:hover:before {
-  font-family: 'FontAwesome';
-  content: '\f0a6';
-  display: block;
-  color: #000000;
-  font-size: 15px;
-  position: absolute;
-  left: -1px;
-  bottom: -1px;
+@media (min-width: 1366px) {
+  .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:hover:before {
+    font-family: 'FontAwesome';
+    content: '\f0a6';
+    display: block;
+    color: #000000;
+    font-size: 15px;
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+  }
+  .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked {
+    background: rgba(233, 232, 233, 0.6);
+    position: relative;
+  }
+  .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    display: block;
+    color: #000000;
+    font-size: 15px;
+    position: absolute;
+  }
+  .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked:hover {
+    background: rgba(233, 232, 233, 0.6);
+    position: relative;
+  }
 }
 
-.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked {
-  background: rgba(233, 232, 233, 0.6);
-  position: relative;
-}
-
-.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked:before {
-  font-family: 'FontAwesome';
-  content: '\f00c';
-  display: block;
-  color: #000000;
-  font-size: 15px;
-  position: absolute;
-}
-
-.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked:hover {
-  background: rgba(233, 232, 233, 0.6);
-  position: relative;
-}
-
-@media (max-width: 1365.98px) {
+@media (min-width: 1366px) and (max-width: 1365.98px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked:hover {
     display: none;
   }
 }
 
-.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked:hover:before {
-  font-family: 'FontAwesome';
-  content: '\f00d';
-  display: block;
-  color: #000000;
-  font-size: 20px;
-  position: absolute;
-  left: 0px;
-  bottom: -4px;
+@media (min-width: 1366px) {
+  .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked:hover:before {
+    font-family: 'FontAwesome';
+    content: '\f00d';
+    display: block;
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+  }
 }
 
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span .wpcf7-not-valid-tip {
@@ -3818,12 +3744,14 @@ footer .user-cookie {
   font-size: 1em;
 }
 
-.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label p {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label .rgpd-accepte {
   margin: 0;
   text-align: justify;
+  color: black;
+  cursor: context-menu;
 }
 
-.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label p a {
+.contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label .rgpd-accepte a {
   font-size: 1em;
   font-weight: 700;
   color: #1F4290;

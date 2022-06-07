@@ -36,7 +36,7 @@
         <div class="article-content">
             <div class="content-site">
                 <h3>1.1 Site (ci-après « le site ») :</h3>
-                <p>Juliot Électricité.</p>
+                <p>Juliot Électricité</p>
             </div>
             <div class="content-editeur">
                 <h3>1.2 Éditeur (ci-après « l’éditeur ») :</h3>

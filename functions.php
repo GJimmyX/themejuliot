@@ -188,9 +188,9 @@ function my_login_style() { ?>
     }
     #login h1 a{
       background-image: url(<?php echo get_template_directory_uri(); ?>/img/siteLogo.png);
-      height: 80px;
+      height: 112px;
       width: 375px;
-      background-size: 375px 80px;
+      background-size: 375px 112px;
       background-repeat: no-repeat;
     }
     #login form p #user_login:focus, #login form .user-pass-wrap .wp-pwd #user_pass:focus, #login form p #rememberme:focus, #login form .user-pass-wrap .wp-pwd button span:focus{
@@ -307,7 +307,7 @@ register_sidebar( array(
 function cpt_menu_juliot() {
 
   $labels = array(
-    'name' => 'Menu Navigation',
+    'name' => 'Menu de Navigation',
     'all_items' => 'Menus de navigation', // Sous-menu
     'singular_name' => 'Menu de navigation',
     'add_new' => 'Ajouter un Menu',

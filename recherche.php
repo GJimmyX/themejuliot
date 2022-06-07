@@ -3,6 +3,14 @@
 ?>
 
 <?php
+
+    $search = $_POST['Recherche'];
+
+    if (!$search) :
+        header('Location: accueil');
+        exit();
+    endif;
+
     /* Appel du header */
     get_header();
 ?>
@@ -11,10 +19,10 @@
 
     /* Connexion à la base de données */
 
-    $servname = 'localhost';
-    $dbname = 'juliot_db';
-    $username = 'root';
-    $password = '';
+    $servname = 'juliotfrcrroot.mysql.db';
+    $dbname = 'juliotfrcrroot';
+    $username = 'juliotfrcrroot';
+    $password = 'Le741Sikp2';
 
     try
     {
@@ -30,13 +38,6 @@
         // En cas d'erreur, on affiche un message d'erreur et on arrête tout
             die('Erreur : '.$e->getMessage());
     }
-
-    $search = $_POST['Recherche'];
-
-    if (!$search) :
-        header('Location: accueil');
-        exit();
-    endif;
 
     /* echo $search; */
     
@@ -56,7 +57,7 @@
     <div class="resultats-recherche">
         <?php 
 
-            // Si on a au minimum 1  résultat
+            // Si on a au minimum 1 résultat
 
             if ($result){
                 ?><h1>Résultats pour "<?php echo $search; ?>":</h1><?php

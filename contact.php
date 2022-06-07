@@ -15,11 +15,15 @@
 
         <div class="adresses">
             <div class="agence85">
-                <a href="https://goo.gl/maps/qRQbKatBLNXW2Q8NA" target="_blank" title="Agence 85" class="carte-agence85"></a>
+                <a href="https://goo.gl/maps/qRQbKatBLNXW2Q8NA" target="_blank" title="Agence 85" class="carte-agence85">
+                    <img src="<?php echo get_template_directory_uri() . '/img/agence85.png' ?>" alt="Carte de l'Agence">
+                </a>
                 <p>8 rue de l'arée - Vendéopôle La Mongie, 85140 Sainte Florence</p>
             </div>
             <div class="agence44">
-                <a href="https://goo.gl/maps/JUjYFJWjoKQufqsbA" target="_blank" title="Agence 44" class="carte-agence44"></a>
+                <a href="https://goo.gl/maps/JUjYFJWjoKQufqsbA" target="_blank" title="Agence 44" class="carte-agence44">
+                    <img src="<?php echo get_template_directory_uri() . '/img/agence44.png' ?>" alt="Carte de l'Agence">
+                </a>
                 <p>2 Rue Georges Leclanché, 44980 Sainte Luce sur Loire</p>
             </div>
         </div>

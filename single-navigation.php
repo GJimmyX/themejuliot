@@ -58,7 +58,7 @@ get_header();
         <style>
             @media (min-width: 1366px){
                 body header .nav-container .navbar .nav-menu .active a{
-                    background-color: #202f86;
+                    background-color: #1f4290;
                     color: white;
                     border-radius: 30px;
                     box-shadow: 0px 10px 7px #808080;
@@ -87,7 +87,7 @@ get_header();
         <style>
             @media (min-width: 1366px){
                 body header .nav-container .navbar .nav-menu .active a{
-                    background-color: #202f86;
+                    background-color: #1F4290;
                     color: white;
                     border-radius: 30px;
                     box-shadow: 0px 10px 7px #808080;
