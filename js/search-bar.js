@@ -2,10 +2,11 @@
 
 ( function() {
     var button = document.getElementById( 'search-btn' );
-    var search = document.getElementById( 'search-bar' );
+    var search = document.getElementById( 'search-bar-input' );
 
-    button.onclick = function()
-    {
+    button.onclick = toggle;
+
+    function toggle() {
         button.toggleAttribute( 'toggle-search' );
         search.classList.toggle( 'toggle-search' );
     }

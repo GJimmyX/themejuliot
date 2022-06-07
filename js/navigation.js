@@ -27,11 +27,13 @@
         if ( -1 !== button.className.indexOf( 'toggled-on' ) ) {
             button.className = button.className.replace( ' toggled-on', '' );
             menu.className = menu.className.replace( ' toggled-on', '' );
+            nav.className += ' toggled-off';
             nav.className = nav.className.replace( ' toggled-on', '' );
         } else {
             button.className += ' toggled-on';
             menu.className += ' toggled-on';
             nav.className += ' toggled-on';
+            nav.className = nav.className.replace( ' toggled-off', '' );
         }
     };
 } )(jQuery);
