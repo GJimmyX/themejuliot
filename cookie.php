@@ -2,10 +2,10 @@
 
     /* Détail du système de cookie */
 
-    $servname = 'juliotfrcrroot.mysql.db';
-    $dbname = 'juliotfrcrroot';
-    $username = 'juliotfrcrroot';
-    $password = 'Le741Sikp2';
+    $servname = 'localhost';
+    $dbname = 'juliot_db';
+    $username = 'root';
+    $password = '';
 
     try
     {
@@ -31,13 +31,13 @@
     if (is_user_logged_in() ) :
         $id = get_current_user_id();
         $sqlQuery = "SELECT user_login from wp_users where id = $id";
-    endif;
 
-    $cookieStatement = $mysqlQuery->prepare($sqlQuery);
-    $cookieStatement->execute();
-    $donnee = $cookieStatement->fetch(PDO::FETCH_COLUMN);
+        $cookieStatement = $mysqlQuery->prepare($sqlQuery);
+        $cookieStatement->execute();
+        $donnee = $cookieStatement->fetch(PDO::FETCH_COLUMN);
 
-    if (is_page( 'accueil' ) && (!isset($_COOKIE['user_id'])) ) :
-        setcookie( 'user_id', $donnee, time()+(3600*24) );
+        if (is_page( 'accueil' ) && (!isset($_COOKIE['user_id'])) ) :
+            setcookie( 'user_id', $donnee, time()+(3600*24) );
+        endif;
     endif;
 ?>

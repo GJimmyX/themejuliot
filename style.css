@@ -1158,30 +1158,7 @@ footer .user-cookie {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  -webkit-animation: img ease .5s infinite alternate;
-          animation: img ease .5s infinite alternate;
-}
-
-@-webkit-keyframes img {
-  from {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  to {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
-  }
-}
-
-@keyframes img {
-  from {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  to {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
-  }
+  padding: 8.25% 0;
 }
 
 /* Importation du CSS 'Single' */

@@ -10,7 +10,7 @@
         </main>
         <div class="page-wrapper">
             <div class="page-content">
-                <img src="<?php echo get_template_directory_uri() . '/img/404-1.gif'; ?>" alt="">
+                <img src="<?php echo get_template_directory_uri() . '/img/404.gif'; ?>" alt="">
                 <p class="text-center"><?php _e( "La page que vous cherchez n'est pas disponible" ); ?></p>
             </div>
         </div>
