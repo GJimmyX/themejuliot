@@ -17,7 +17,6 @@ get_header();
             <?php endif; ?>
             <div class="titre-intro">
                 <h2><?php the_field( 'title' ); ?></h2>
-                <p><i><?php the_field( 'intro' ); ?></i></p>
             </div>
         </div>
         

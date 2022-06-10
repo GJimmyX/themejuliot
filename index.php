@@ -110,7 +110,7 @@
 
         <!-- Lien vers la page d'articles du site -->
 		
-		<?php if( $latestPost->have_posts() ) : ?>
+		<?php if (wp_count_posts('articles')->publish >= 2) : ?>
         	<a href="actualites" class="renvoi-actu">Plus d'articles...</a>
 		<?php endif; ?>
     </div>
