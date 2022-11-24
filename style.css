@@ -1063,6 +1063,7 @@ footer {
   width: 100%;
   /* CCS des éléments du pied de page */
   /* CSS pour le cookie personnalisé */
+  /* CSS pour le bandeau plan du site */
 }
 
 footer ul {
@@ -1129,6 +1130,18 @@ footer .user-cookie {
   margin: 0;
 }
 
+footer .siteMap {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer .siteMap .siteMapLink {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
 /* Importation du CSS '404' */
 /* CSS de la page '404' */
 #primary {
@@ -1158,7 +1171,30 @@ footer .user-cookie {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  padding: 8.25% 0;
+  -webkit-animation: img ease .5s infinite alternate;
+          animation: img ease .5s infinite alternate;
+}
+
+@-webkit-keyframes img {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+}
+
+@keyframes img {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
 }
 
 /* Importation du CSS 'Single' */

@@ -56,4 +56,17 @@ footer{
         color: white;
         margin: 0;
     }
+
+    /* CSS pour le bandeau plan du site */
+
+    .siteMap{
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        .siteMapLink{
+            color: white;
+            text-decoration: none;
+            font-size: 0.8em;
+            font-weight: 400;
+        }
+    }
 }
