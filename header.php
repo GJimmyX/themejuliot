@@ -39,7 +39,7 @@
 
         <?php wp_head(); ?>
         
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() . "/js/cookie.js" ?>"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri() . "/js/cookie/cookie.js" ?>"></script>
     </head>
 
     <body <?php body_class(); ?>>

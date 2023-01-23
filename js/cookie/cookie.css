@@ -1,0 +1,98 @@
+/**
+* Cookie Law Generator
+* @author eurowebpage
+*/
+#cookie_notification {
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s;
+    padding: 15px;
+    -webkit-box-shadow: 0 4px 32px 0 rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 4px 32px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 4px 32px 0 rgba(0, 0, 0, .5);
+    -ms-box-shadow: 0 4px 32px 0 rgba(0, 0, 0, .5);
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+#cookie_notification blockquote {
+    padding: 0;
+    margin: 0 0 15px;
+}
+#cookie_accept_button {
+    cursor: pointer;
+}
+#cookie_close_button {
+    cursor: pointer;
+}
+#cookie_notification a {
+    color: #1F4290;
+}
+
+#cookie_notification.cookie {
+    font-size: 13px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999999;
+
+}
+#cookie_notification a {
+    color: #1F4290;
+}
+.cookie #cookie_message {
+    width: calc(100% - 130px);
+    color: #000000;
+    font-size: 15px;
+    text-align: justify;
+}
+.cookie #cookie_accept_button {
+    background-color: #1F4290;
+    border-color: #FFFFFF;
+    float: right;
+    padding: 0 15px;
+    line-height: 36px;
+    height: 36px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+.cookie #cookie_close_button {
+    background-color: #FFFFFF;
+    border-color: #1F4290;
+    float: right;
+    padding: 0 15px;
+    margin-right: 30px;
+    line-height: 36px;
+    height: 36px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #1F4290;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+@media (max-width: 767.98px) {
+    #cookie_notification {
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+    }
+    #cookie_notification.cookie {
+        left: 15px !important;
+        right: 15px !important;
+        width: auto !important;
+    }
+}
+
+#cookie_notification {
+   visibility: visible !important;
+}

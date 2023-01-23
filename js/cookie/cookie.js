@@ -1,17 +1,16 @@
 /**
- * Cookie Law Generator
+ * Cookie Generator
  * @author eurowebpage
  */
 if (typeof(COOKIE) == 'undefined'){
     COOKIE = {};
 }
 
-/** config_values */
-COOKIE_CSSHOST = null; //script will load a css file called "embed.css" from this folder
+/** Configuration du cookie */
 
-/** Credit to Google Material Design Icon */
+COOKIE_CSSHOST = null; // Le script charge le fichier CSS présent dans le dossier 'cookie'.
 
-/** Icon set use SVG to display icon */
+/** Icône en SVG pour l'apparition de la carte */
 
 COOKIE.Browser = null;
 COOKIE.QueryParams = {};
@@ -20,7 +19,7 @@ COOKIE.Init = function(){
     if(COOKIE.QueryParams.mode != undefined && COOKIE.QueryParams.mode =="demo"){
         COOKIE.getReady();
     } else {
-        if (!COOKIE.Utils.getCookie("cookie_law")) {
+        if (!COOKIE.Utils.getCookie("app_cookie")) {
             COOKIE.getReady();
         }
     }
@@ -37,13 +36,15 @@ COOKIE.getReady = function(){
             }
         }
         COOKIE.CSS.add();
-        COOKIE.Law.build();
+        COOKIE.Noti.build();
     }
 }
 COOKIE.CSS = {
     added : false,
     add : function(){
+
         // import css
+
         if (typeof(COOKIE_HAS_CSS) == "undefined" && COOKIE.CSS.added == false){
             COOKIE.CSS.added = true;
             var css = document.createElement("link");
@@ -55,85 +56,76 @@ COOKIE.CSS = {
         }
     }
 }
-COOKIE.Law = {
+COOKIE.Noti = {
     build : function(){
-        //Build player with pure javascript
-        var embedBottomPlayer = document.getElementById("cookie_law_notification");
+
+        // Carte faite en JavaScript
+
+        var embedBottomPlayer = document.getElementById("cookie_notification");
         if (embedBottomPlayer == null){
-            // create body
+
+            // Corps de la carte
+
             var bottomPlayer = document.createElement("div");
-            bottomPlayer.setAttribute("id", "cookie_law_notification");
+            bottomPlayer.setAttribute("id", "cookie_notification");
             bottomPlayer.style.visibility = "hidden";
-            bottomPlayer.className = COOKIE.QueryParams.skin ? COOKIE.QueryParams.skin : "cookielaw1";
-            if (COOKIE.QueryParams.position != undefined){
-                COOKIE.Utils.addClass(bottomPlayer, "cookie_" + COOKIE.QueryParams.position)
-            }
-            if (COOKIE.QueryParams.bg_color != undefined){
-                bottomPlayer.style.background = "#"+COOKIE.QueryParams.bg_color;
-            }
+            bottomPlayer.className = COOKIE.QueryParams.skin ? COOKIE.QueryParams.skin : "cookie";
+            
+            // message cookie_notification
+
             var messageBox = document.createElement("div");
             messageBox.setAttribute("id", "cookie_message");
-            messageBox.innerHTML = COOKIE.QueryParams.msg ? bbcodeParser.bbcodeToHtml(decodeURIComponent(COOKIE.QueryParams.msg)) : bbcodeParser.bbcodeToHtml("<p>En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de Cookies pour réaliser des statistiques de visites.</p>  [url=https://www.cnil.fr/fr/les-conseils-de-la-cnil-pour-maitriser-votre-navigateur]Politique de Cookies.[/url]");
-            var learnmore_link = COOKIE.QueryParams.learnmore ? bbcodeParser.bbcodeToHtml(decodeURIComponent(COOKIE.QueryParams.learnmore)) : bbcodeParser.bbcodeToHtml("[url=https://www.cnil.fr/]Plus d'infos.[/url]");
-            var rgpd_link = COOKIE.QueryParams.link ? bbcodeParser.bbcodeToHtml(decodeURIComponent(COOKIE.QueryParams.rgpd)) : bbcodeParser.bbcodeToHtml("[url=https://ec.europa.eu/info/law/law-topic/data-protection/reform/rules-business-and-organisations/principles-gdpr_fr]Politique RGPD.[/url]");
-            var morelink = "";
-            COOKIE.QueryParams.morelink != undefined ? morelink = COOKIE.QueryParams.morelink : morelink = "https://google.com"
-            messageBox.innerHTML += " <a id=\"cookie_learnmore_link\" title=\"CNIL\" target=\"_blank\" class=\"cookie_link\" href=\"" + decodeURIComponent(morelink) + "\">" + learnmore_link + "</a>";
-            messageBox.innerHTML += " <a id=\"cookie_learn_rgpd\" title=\"Règlementation RGPD\" target=\"_blank\" class=\"cookie_link\" href=\"" + decodeURIComponent(morelink) + "\">" + rgpd_link + "</a>";
-            if (COOKIE.QueryParams.msg_color != undefined){
-                messageBox.style.color = "#"+COOKIE.QueryParams.msg_color;
-            }
+            messageBox.innerHTML = COOKIE.QueryParams.msg ? bbcodeParser.bbcodeToHtml(decodeURIComponent(COOKIE.QueryParams.msg)) : bbcodeParser.bbcodeToHtml("En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de Cookies pour réaliser des statistiques de visites. Pour plus d'infos, consulter la [url=https://eurowebpage.com/fr/politique-de-cookies/] Politique des Cookies[/url].");
             bottomPlayer.appendChild(messageBox);
+
+            // accept_button
+
             var acceptButton = document.createElement("div");
             acceptButton.setAttribute("id", "cookie_accept_button");
             var accept_text = "";
             COOKIE.QueryParams.accept_text != undefined ? accept_text = COOKIE.QueryParams.accept_text : accept_text = "J'accepte"
-            acceptButton.setAttribute("title", accept_text);
+            acceptButton.setAttribute("title", "Accepte");
             acceptButton.innerHTML = accept_text;
-            acceptButton.onclick = COOKIE.Law.hide;
-            if (COOKIE.QueryParams.accept_background != undefined){
-                acceptButton.style.background = "#" + COOKIE.QueryParams.accept_background;
-            }
-            if (COOKIE.QueryParams.accept_color != undefined){
-                acceptButton.style.color = "#" + COOKIE.QueryParams.accept_color;
-            }
-            if (COOKIE.QueryParams.accept_text != undefined){
-                acceptButton.style.innerHTML = "#" + COOKIE.QueryParams.accept_text;
-            }
-            if (COOKIE.QueryParams.accept_radius != undefined){
-                acceptButton.style.borderRadius = COOKIE.QueryParams.accept_radius;
-            }
+            acceptButton.onclick = COOKIE.Noti.acceptHide;
             bottomPlayer.appendChild(acceptButton);
+
+            // close_button
+
             var closeButton = document.createElement("div");
             closeButton.setAttribute("id", "cookie_close_button");
-            closeButton.setAttribute("title", "Close");
+            var refuse_text = "";
+            COOKIE.QueryParams.refuse_text != undefined ? refuse_text = COOKIE.QueryParams.refuse_text : refuse_text = "Je refuse"
+            closeButton.setAttribute("title", "Fermer");
+            closeButton.innerHTML = refuse_text;
+            closeButton.onclick = COOKIE.Noti.refuseHide;
             bottomPlayer.appendChild(closeButton);
-            document.body.appendChild(bottomPlayer);
-            if (COOKIE.QueryParams.link_color != undefined){
-                var Links = COOKIE.Utils.getByClass('cookie_link');
-                for (var i = 0; i < Links.length; i++){
-                    var link = Links[i];
-                    link.style.color = "#" + COOKIE.QueryParams.link_color;
-                }
-            }
-            if (COOKIE.QueryParams.animation != undefined && COOKIE.QueryParams.delay){
-                setTimeout(function () {
-                    COOKIE.Utils.addClass(bottomPlayer, COOKIE.QueryParams.animation)
-                }, COOKIE.QueryParams.delay * 1000)
-            }
 
+            document.body.appendChild(bottomPlayer);
         }
     },
-    hide : function(){
-        var fadeTarget = document.getElementById("cookie_law_notification");
+
+    // accept_button Hide function (Disparition de la carte)
+
+    acceptHide : function(){
+        var fadeTarget = document.getElementById("cookie_notification");
         fadeTarget.style.opacity = '0';
         setTimeout(function(){fadeTarget.parentNode.removeChild(fadeTarget);}, 1000);
         var d = new Date();
-        //Cookie law will show only one time each 180 days
-        d.setTime(d.getTime() + (6 * 30 * 24 * 60 * 60 * 1000));
+
+        //Cookie will show only one time each 365 days
+
+        d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
         var expires = "expires=" + d.toUTCString();
-        document.cookie = "cookie_law=1; " + expires;
-    }
+        document.cookie = "app_cookie=1; " + expires;
+    },
+
+    // close_button Hide function (Disparition de la carte)
+
+    refuseHide : function(){
+        var fadeTarget = document.getElementById("cookie_notification");
+        fadeTarget.style.opacity = '0';
+        fadeTarget.style.zIndex = '-1';
+    },
 }
 // JS function to convert BBCode and HTML code - http;//coursesweb.net/javascript/
 var BBCodeHTML = function() {
@@ -294,7 +286,7 @@ var BBCodeHTML = function() {
     me.addBBCode('[u]{TEXT}[/u]', '<span style="text-decoration:underline;">{TEXT}</span>');
     me.addBBCode('[s]{TEXT}[/s]', '<span style="text-decoration:line-through;">{TEXT}</span>');
     me.addBBCode('[mail={EMAIL}]{TEXT}[/mail]', '<a href="mailto:{URL}" class="cookie_link" title="Send email to {URL}">{TEXT}</a>');
-    me.addBBCode('[url={URL}]{TEXT}[/url]', '<a href="{URL}" class="cookie_link" title="CNIL et RGPD" target="_blank">{TEXT}</a>');
+    me.addBBCode('[url={URL}]{TEXT}[/url]', '<a href="{URL}" class="cookie_link" title="link" target="_blank">{TEXT}</a>');
     me.addBBCode('[url]{URL}[/url]', '<a href="{URL}" class="cookie_link" title="link" target="_blank">{URL}</a>');
     me.addBBCode('[url={LINK}]{TEXT}[/url]', '<a href="{LINK}" class="cookie_link" title="link" target="_blank">{TEXT}</a>');
     me.addBBCode('[url]{LINK}[/url]', '<a href="{LINK}" class="cookie_link" title="link" target="_blank">{LINK}</a>');

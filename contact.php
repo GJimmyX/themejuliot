@@ -46,11 +46,11 @@
 
             $jours = ['1', '2', '3', '4', '5', '6', '7'];
 
-            $horaires = ['1' => '<p class="horaires-title">Lundi:</p><p class="horaires-text">7<sup>h</sup>30 - 12<sup>h</sup>30 et 13<sup>h</sup>30 - 17<sup>h</sup>30</p>',
-                            '2' => '<p class="horaires-title">Mardi:</p><p class="horaires-text">7<sup>h</sup>30 - 12<sup>h</sup>30 et 13<sup>h</sup>30 - 17<sup>h</sup>30</p>',
-                            '3' => '<p class="horaires-title">Mercredi:</p><p class="horaires-text">7<sup>h</sup>30 - 12<sup>h</sup>30 et 13<sup>h</sup>30 - 17<sup>h</sup>30</p>',
-                            '4' => '<p class="horaires-title">Jeudi:</p><p class="horaires-text">7<sup>h</sup>30 - 12<sup>h</sup>30 et 13<sup>h</sup>30 - 17<sup>h</sup>30</p>',
-                            '5' => '<p class="horaires-title">Vendredi:</p><p class="horaires-text">7<sup>h</sup>30 - 12<sup>h</sup>30 et 13<sup>h</sup>30 - 17<sup>h</sup>30</p>',
+            $horaires = ['1' => '<p class="horaires-title">Lundi:</p><p class="horaires-text">7<sup>h</sup>30 - 12<sup>h</sup>00 et 13<sup>h</sup>30 - 17<sup>h</sup>00</p>',
+                            '2' => '<p class="horaires-title">Mardi:</p><p class="horaires-text">7<sup>h</sup>30 - 12<sup>h</sup>00 et 13<sup>h</sup>30 - 17<sup>h</sup>00</p>',
+                            '3' => '<p class="horaires-title">Mercredi:</p><p class="horaires-text">7<sup>h</sup>30 - 12<sup>h</sup>00 et 13<sup>h</sup>30 - 17<sup>h</sup>00</p>',
+                            '4' => '<p class="horaires-title">Jeudi:</p><p class="horaires-text">7<sup>h</sup>30 - 12<sup>h</sup>00 et 13<sup>h</sup>30 - 17<sup>h</sup>00</p>',
+                            '5' => '<p class="horaires-title">Vendredi:</p><p class="horaires-text">7<sup>h</sup>30 - 12<sup>h</sup>00 et 13<sup>h</sup>30 - 16<sup>h</sup>00</p>',
                             '6' => '<p class="horaires-title">Samedi:</p><p class="horaires-text">Fermé</p>',
                             '7' => '<p class="horaires-title">Dimanche:</p><p class="horaires-text">Fermé</p>',
                         ];
