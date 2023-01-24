@@ -28,6 +28,13 @@
             endif;
         ?>
 
+        <!-- Si page introuvable -->
+
+        <?php
+            if (is_404() ): ?>
+            <title>Page Introuvable - Juliot Électricité</title>
+        <?php endif; ?>
+
         <!-- Titre de chaque page -->
 
         <?php

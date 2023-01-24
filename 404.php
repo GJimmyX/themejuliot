@@ -1,5 +1,5 @@
 <?php
-/* Appel du header */
+    /* Appel du header */
     get_header();
 ?>
 
