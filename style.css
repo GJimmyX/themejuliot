@@ -13,29 +13,20 @@ body {
   margin: 0;
   /* CSS additionnel sur le bandeau cookie */
 }
-
 body #wpadminbar .ab-top-menu #wp-admin-bar-customize, body #wpadminbar .ab-top-menu #wp-admin-bar-updates, body #wpadminbar .ab-top-menu #wp-admin-bar-comments, body #wpadminbar .ab-top-menu #wp-admin-bar-new-content, body #wpadminbar .ab-top-menu #wp-admin-bar-edit, body #wpadminbar .ab-top-menu #wp-admin-bar-litespeed-menu, body #wpadminbar .ab-top-menu #wp-admin-bar-wpseo-menu {
   display: none;
 }
-
 body header {
   width: 100%;
   padding: 1% 0;
-  -webkit-box-shadow: 0px 3px 10px 0px #111;
-          box-shadow: 0px 3px 10px 0px #111;
+  box-shadow: 0px 3px 10px 0px #111;
   background-color: #e9e8e9;
   /* Structure du header */
 }
-
 body header .nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   width: 80%;
   margin: auto;
   /* CSS pour le logo de l'entreprise */
@@ -43,196 +34,138 @@ body header .nav-container {
   /* Positionnement CSS pour la barre de recherche quand le menu est fermé */
   /* Positionnement CSS pour la barre de recherche quand le menu est ouvert */
 }
-
 @media (max-width: 767.98px) {
   body header .nav-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    align-items: start;
   }
 }
-
 body header .nav-container h1 {
   width: 20%;
 }
-
 @media (max-width: 767.98px) {
   body header .nav-container h1 {
     margin: 0;
     width: 80%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container h1 {
     margin: 0;
     width: 50%;
   }
 }
-
 body header .nav-container h1 a img {
   width: 100%;
   height: auto;
 }
-
 body header .nav-container .navbar {
   width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   /* Menu responsive en dessous de 1366px */
   /* CSS pour le menu responsive */
   /* CSS pour l'apparition du menu responsive */
   /* CSS pour la barre de recherche et réseaux sociaux du site Juliot Électricité */
 }
-
 @media (max-width: 767.98px) {
   body header .nav-container .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     width: 80%;
     padding: 2% 0;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   body header .nav-container .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     width: 25%;
     padding-top: 4%;
   }
 }
-
 body header .nav-container .navbar .menu-toggle {
   display: none;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .menu-toggle {
     display: inline-block;
   }
 }
-
 body header .nav-container .navbar .menu-toggle img {
   width: 30px;
   height: 30px;
 }
-
 body header .nav-container .navbar .nav-menu {
   padding: 0;
   width: 95%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   /* CSS sur l'onglet actif */
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu {
     padding-top: 50%;
   }
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu {
     display: none;
     margin-bottom: 0;
   }
 }
-
 body header .nav-container .navbar .nav-menu li {
   width: 13%;
   text-align: center;
   margin: 0 2%;
   list-style: none;
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu li {
     padding: 0 13%;
   }
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu li {
     width: 100%;
   }
 }
-
 body header .nav-container .navbar .nav-menu li a {
   width: 100%;
   height: 75px;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   font-weight: 400;
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
 }
-
 body header .nav-container .navbar .nav-menu li a:hover {
   color: white;
   background-color: #36A02C;
   border-radius: 30px;
-  -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu li a:hover {
     background: transparent;
     color: black;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
 }
-
 body header .nav-container .navbar .nav-menu li .sub-menu {
   display: block;
   padding: 0;
 }
-
 @media (min-width: 1366px) {
   body header .nav-container .navbar .nav-menu li .sub-menu {
     display: none;
@@ -241,20 +174,17 @@ body header .nav-container .navbar .nav-menu li .sub-menu {
     z-index: 999;
   }
 }
-
 body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu {
   width: 100%;
   margin: 0;
   position: relative;
   z-index: 999;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu {
     padding: 0;
   }
 }
-
 body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
   border-radius: 0;
   padding: 0 2%;
@@ -263,7 +193,6 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
   border: 1px solid black;
   font-size: 0.95em;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
     padding: 0;
@@ -271,185 +200,130 @@ body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a {
     font-size: 1em;
   }
 }
-
 body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a:hover {
   color: white !important;
   background-color: #36A02C;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu li .sub-menu .sous-menu a:hover {
     background-color: transparent;
     color: black !important;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
 }
-
 @media (min-width: 1366px) {
   body header .nav-container .navbar .nav-menu li:hover .sub-menu {
     display: block;
-    -webkit-animation: transition .5s ease;
-            animation: transition .5s ease;
+    -webkit-animation: transition 0.5s ease;
+            animation: transition 0.5s ease;
   }
 }
-
 @-webkit-keyframes transition {
   from {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0.4;
     z-index: 999;
   }
   to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
     z-index: 999;
   }
 }
-
 @keyframes transition {
   from {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    transform: translateY(20px);
     opacity: 0.4;
     z-index: 999;
   }
   to {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
     z-index: 999;
   }
 }
-
 body header .nav-container .navbar .nav-menu .current_page_item a {
   color: white !important;
   background-color: #1F4290;
   border-radius: 30px;
-  -webkit-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.5);
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-menu .current_page_item a {
     background: transparent;
     color: black !important;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .navbar .toggled-on {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    justify-content: end;
   }
 }
-
 @media (max-width: 991.98px) {
   body header .nav-container .navbar .toggled-on {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 10%;
   /* CSS des réseaux sociaux du site Juliot Électricité */
   /* CSS de la barre de recherche du site Juliot Électricité */
 }
-
 @media (min-width: 1366px) {
   body header .nav-container .navbar .nav-rs-search {
     gap: 5px;
   }
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-rs-search {
     width: 67%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 2% 0;
   }
 }
-
 @media (min-width: 376px) and (max-width: 767.98px) {
   body header .nav-container .navbar .nav-rs-search {
     width: 67%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search li {
   list-style: none;
   padding: 0;
   width: 67%;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-rs-search li {
     width: 50%;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search li .rs {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 0;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-rs-search li .rs {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    justify-content: end;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search li .rs .nav-rs {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 @media (min-width: 1366px) {
   body header .nav-container .navbar .nav-rs-search li .rs .nav-rs {
     gap: 5px;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a {
   width: 50%;
   text-align: center;
@@ -457,36 +331,30 @@ body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a {
   text-decoration: none;
   font-size: 1.5em;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a {
     color: black;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a:hover {
   color: #36A02C;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-rs-search li .rs .nav-rs a:hover {
     color: black;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search .nav-search {
   position: relative;
   width: 33%;
   height: 72px;
   /* Apparition gérée en CSS */
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search {
     width: 25%;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search .nav-search #search-btn {
   width: 100%;
   background: transparent;
@@ -495,51 +363,35 @@ body header .nav-container .navbar .nav-rs-search .nav-search #search-btn {
   font-size: 1.5em;
   cursor: pointer;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search #search-btn {
     color: black;
     padding: 0;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search .nav-search #search-btn:hover {
   color: #36A02C;
 }
-
 @media (max-width: 1365.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search #search-btn:hover {
     color: black;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search .nav-search .search {
   display: none;
 }
-
 body header .nav-container .navbar .nav-rs-search .nav-search .search-form {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  flex-direction: column;
+  align-items: end;
   width: 100%;
 }
-
 @media (max-width: 991.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .search-form {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search {
   position: relative;
   display: block;
@@ -552,133 +404,105 @@ body header .nav-container .navbar .nav-rs-search .nav-search .search-form .togg
   /* Positionnement par rapport au haut du formulaire */
   /* CSS lorsque le champ est selectionné */
 }
-
 @media (min-width: 1366px) and (max-width: 1499.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search {
     top: 20px;
   }
 }
-
 @media (min-width: 1500px) and (max-width: 1633.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search {
     top: 25px;
   }
 }
-
 @media (min-width: 1634px) and (max-width: 1767.98px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search {
     top: 30px;
   }
 }
-
 @media (min-width: 1768px) {
   body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search {
     top: 40px;
   }
 }
-
 body header .nav-container .navbar .nav-rs-search .nav-search .search-form .toggle-search:focus {
   outline: none;
 }
-
 body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
   /* CSS pour mobile / petite tablette */
   /* Positionnement par rapport au haut du formulaire */
   /* CSS pour petite tablette / notebook */
   /* Positionnement par rapport au haut du formulaire */
 }
-
 @media (max-width: 374.98px) {
   body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
     top: 4px;
   }
 }
-
 @media (min-width: 375px) and (max-width: 575.98px) {
   body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
     top: 5px;
   }
 }
-
 @media (min-width: 576px) and (max-width: 767.98px) {
   body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
     top: 10px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
     top: 5px;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .toggled-off .nav-rs-search .nav-search .toggle-search {
     top: 10px;
   }
 }
-
 body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
   /* CSS pour mobile / petite tablette */
   /* Positionnement par rapport au haut du formulaire */
   /* CSS pour petite tablette / notebook */
   /* Positionnement par rapport au haut du formulaire */
 }
-
 @media (max-width: 374.98px) {
   body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
     top: 4px;
   }
 }
-
 @media (min-width: 375px) and (max-width: 575.98px) {
   body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
     top: 5px;
   }
 }
-
 @media (min-width: 576px) and (max-width: 767.98px) {
   body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
     top: 10px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
     top: 0px;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1365.98px) {
   body header .nav-container .toggled-on .nav-rs-search .nav-search .toggle-search {
     top: 5px;
   }
 }
-
 body #cookie_law_notification.cookielaw1 {
   font-size: 1em;
   background-color: rgba(233, 232, 233, 0.6);
 }
-
 @media (max-width: 575.98px) {
   body #cookie_law_notification.cookielaw1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 body .cookielaw1 #cookie_message {
   font-size: 1.25em;
 }
-
 @media (max-width: 575.98px) {
   body .cookielaw1 #cookie_message {
     width: 100%;
@@ -686,25 +510,21 @@ body .cookielaw1 #cookie_message {
     margin-bottom: 2%;
   }
 }
-
 body .cookielaw1 #cookie_message p {
   color: black;
   margin: 0;
 }
-
 body .cookielaw1 #cookie_message a {
   color: black;
   font-weight: 700;
   text-decoration: none;
 }
-
 body .cookielaw1 #cookie_accept_button {
   background-color: #1F4290;
   border-color: #1F4290;
   font-size: 1.25em;
   color: white;
 }
-
 @media (max-width: 575.98px) {
   body .cookielaw1 #cookie_accept_button {
     position: relative;
@@ -716,81 +536,62 @@ body .cookielaw1 #cookie_accept_button {
 /* Importation du CSS 'Recherche' */
 /* CSS de la page 'Recherche' */
 .recherche {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 2% 10%;
   /* Section des résultats de la recherche */
 }
-
 @media (max-width: 575.98px) {
   .recherche {
     padding: 2% 5%;
   }
 }
-
 .recherche .resultats-recherche h1 {
   /* Titre annonçant les résultats pour la recherche */
   text-align: center;
   font-size: 3em;
 }
-
 @media (max-width: 767.98px) {
   .recherche .resultats-recherche h1 {
     font-size: 1.5em;
   }
 }
-
 .recherche .resultats-recherche .resultat {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 2% 0;
   gap: 10px;
 }
-
 .recherche .resultats-recherche .resultat p {
   color: black;
   font-size: 1.5em;
 }
-
 @media (max-width: 767.98px) {
   .recherche .resultats-recherche .resultat p {
     font-size: 1em;
   }
 }
-
 .recherche .resultats-recherche .resultat a {
   color: black;
   font-size: 1.5em;
   font-weight: 700;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 @media (max-width: 767.98px) {
   .recherche .resultats-recherche .resultat a {
     font-size: 1em;
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .recherche .resultats-recherche .resultat a:hover {
   color: #1F4290;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .recherche .resultats-recherche .resultat a:hover {
     color: black;
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .recherche .resultats-recherche .resultatequalzero {
   text-align: center;
   color: black;
@@ -801,94 +602,63 @@ body .cookielaw1 #cookie_accept_button {
 /* CSS de la page 'articles' */
 .actualites {
   padding: 2% 5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* CSS sur les articles présents sur la page */
   /* CSS de la pagination faite en fonction du nombre de posts par page */
 }
-
 .actualites .actualites-disposition {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   width: 80%;
   margin: auto;
   /* CSS de chaque article */
 }
-
 .actualites .actualites-disposition .actualites-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex: 0 1 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
 @media (max-width: 991.98px) {
   .actualites .actualites-disposition .actualites-card {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    flex: 1 1 100%;
   }
 }
-
 .actualites .actualites-disposition .actualites-card img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: auto;
   width: 300px;
   height: auto;
 }
-
 @media (max-width: 1365.98px) {
   .actualites .actualites-disposition .actualites-card img {
     width: 150px;
   }
 }
-
 .actualites .actualites-disposition .actualites-card a {
   text-decoration: none;
 }
-
 .actualites .actualites-disposition .actualites-card a .actualites-title {
   font-size: 2em;
   color: black;
 }
-
 @media (max-width: 1365.98px) {
   .actualites .actualites-disposition .actualites-card a .actualites-title {
     color: #1F4290;
   }
 }
-
 .actualites .actualites-disposition .actualites-card a .actualites-title:hover {
   color: #1F4290;
 }
-
 .actualites .actualites-pagination {
   padding: 2% 0;
 }
-
 .actualites .actualites-pagination nav .nav-links {
   text-align: center;
   /* CSS pour l'état du curseur */
 }
-
 .actualites .actualites-pagination nav .nav-links .page-numbers {
   color: white;
   background-color: #1F4290;
@@ -897,33 +667,25 @@ body .cookielaw1 #cookie_accept_button {
   margin: 0 1%;
   padding: 0.25% 0.5%;
   border-radius: 5px;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
-
 @media (max-width: 1365.98px) {
   .actualites .actualites-pagination nav .nav-links .page-numbers {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .actualites .actualites-pagination nav .nav-links .page-numbers:hover {
   color: #1F4290;
   background-color: transparent;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
-
 @media (max-width: 1365.98px) {
   .actualites .actualites-pagination nav .nav-links .page-numbers:hover {
     color: white;
     background-color: #1F4290;
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .actualites .actualites-pagination nav .nav-links .current {
   cursor: context-menu;
 }
@@ -932,209 +694,154 @@ body .cookielaw1 #cookie_accept_button {
 /* CSS de la page 'Mentions légales' */
 .mentions-legales {
   padding: 2% 5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* CSS pour l'entête de la page */
   /* CSS sur les articles (16 au total) */
 }
-
 .mentions-legales .head-mentions-legales {
   text-align: justify;
 }
-
 .mentions-legales .head-mentions-legales p {
   padding: 0 2.5%;
 }
-
 .mentions-legales .head-mentions-legales p a {
   color: black;
   font-weight: bold;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 .mentions-legales .head-mentions-legales p a:hover {
   color: #1F4290;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 .mentions-legales .article01 .article-title, .mentions-legales .article02 .article-title, .mentions-legales .article03 .article-title, .mentions-legales .article04 .article-title, .mentions-legales .article05 .article-title, .mentions-legales .article06 .article-title, .mentions-legales .article07 .article-title, .mentions-legales .article08 .article-title, .mentions-legales .article09 .article-title, .mentions-legales .article10 .article-title, .mentions-legales .article11 .article-title, .mentions-legales .article12 .article-title, .mentions-legales .article13 .article-title, .mentions-legales .article14 .article-title, .mentions-legales .article15 .article-title, .mentions-legales .article16 .article-title {
   font-size: 1.5em;
 }
-
 @media (max-width: 1365.98px) {
   .mentions-legales .article01 .article-title, .mentions-legales .article02 .article-title, .mentions-legales .article03 .article-title, .mentions-legales .article04 .article-title, .mentions-legales .article05 .article-title, .mentions-legales .article06 .article-title, .mentions-legales .article07 .article-title, .mentions-legales .article08 .article-title, .mentions-legales .article09 .article-title, .mentions-legales .article10 .article-title, .mentions-legales .article11 .article-title, .mentions-legales .article12 .article-title, .mentions-legales .article13 .article-title, .mentions-legales .article14 .article-title, .mentions-legales .article15 .article-title, .mentions-legales .article16 .article-title {
     text-align: center;
   }
 }
-
 .mentions-legales .article02 .article-content, .mentions-legales .article03 .article-content, .mentions-legales .article04 .article-content, .mentions-legales .article05 .article-content, .mentions-legales .article06 .article-content, .mentions-legales .article07 .article-content, .mentions-legales .article08 .article-content, .mentions-legales .article09 .article-content, .mentions-legales .article10 .article-content, .mentions-legales .article11 .article-content, .mentions-legales .article12 .article-content, .mentions-legales .article13 .article-content, .mentions-legales .article14 .article-content, .mentions-legales .article15 .article-content, .mentions-legales .article16 .article-content {
   padding: 0 2.5%;
   text-align: justify;
 }
-
 .mentions-legales .article04 ul, .mentions-legales .article05 ul, .mentions-legales .article07 ul, .mentions-legales .article08 ul, .mentions-legales .article09 ul, .mentions-legales .article11 ul, .mentions-legales .article13 ul {
   padding: 0;
 }
-
 .mentions-legales .article04 ul li, .mentions-legales .article05 ul li, .mentions-legales .article07 ul li, .mentions-legales .article08 ul li, .mentions-legales .article09 ul li, .mentions-legales .article11 ul li, .mentions-legales .article13 ul li {
   list-style: none;
   padding: 0.5% 0;
 }
-
 .mentions-legales .article01 .article-content {
   padding: 0 2.5%;
 }
-
 .mentions-legales .article01 .article-content .content-site p, .mentions-legales .article01 .article-content .content-editeur p, .mentions-legales .article01 .article-content .content-hebergeur p, .mentions-legales .article01 .article-content .content-concepteur p {
   text-align: justify;
 }
-
 .mentions-legales .article01 .article-content .content-editeur p a {
   color: black;
   font-weight: bold;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 .mentions-legales .article01 .article-content .content-editeur p a:hover {
   color: #1F4290;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 .mentions-legales .article08 .article-content, .mentions-legales .article13 .article-content {
   padding: 0 2.5%;
 }
-
 .mentions-legales .article08 .article-content ul li a, .mentions-legales .article13 .article-content ul li a {
   color: black;
   font-weight: bold;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 .mentions-legales .article08 .article-content ul li a:hover, .mentions-legales .article13 .article-content ul li a:hover {
   color: #1F4290;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 .mentions-legales .article08 .article-content p a, .mentions-legales .article13 .article-content p a {
   color: black;
   font-weight: bold;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 .mentions-legales .article08 .article-content p a:hover, .mentions-legales .article13 .article-content p a:hover {
   color: #1F4290;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 .mentions-legales .article12 .article-content p a, .mentions-legales .article16 .article-content p a {
   color: black;
   font-weight: bold;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 .mentions-legales .article12 .article-content p a:hover, .mentions-legales .article16 .article-content p a:hover {
   color: #1F4290;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 /* Importation du CSS 'Footer' */
 /* CSS du footer (pied de page) */
 footer {
   background-color: #1F4290;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   /* CCS des éléments du pied de page */
   /* CSS pour le cookie personnalisé */
   /* CSS pour le bandeau plan du site */
 }
-
 footer ul {
   padding: 0;
   width: 90%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   /* CSS pour le bordereau du pied de page */
 }
-
 @media (max-width: 1365.98px) {
   footer ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 footer ul li {
   list-style: none;
   padding: 1% 0%;
 }
-
 @media (min-width: 1366px) {
   footer ul li {
     width: 33.3%;
   }
 }
-
 footer ul li p {
   margin: 0;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   font-weight: 400;
   text-align: center;
   cursor: context-menu;
 }
-
 @media (max-width: 1365.98px) {
   footer ul li p {
     font-size: 0.8em;
   }
 }
-
 footer ul li p a {
   color: white;
   text-decoration: none;
 }
-
 footer .user-cookie {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   color: white;
   margin: 0;
 }
-
 footer .siteMap {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 footer .siteMap .siteMapLink {
   color: white;
   text-decoration: none;
@@ -1149,51 +856,40 @@ footer .siteMap .siteMapLink {
   margin-bottom: 2%;
   /* CSS pour le contenu texte et image*/
 }
-
 #primary #content .page-header h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 5em;
   text-align: center;
   margin-bottom: 0;
 }
-
 #primary #content .page-wrapper .page-content p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2em;
   text-align: center;
   margin: 0;
 }
-
 #primary #content .page-wrapper .page-content img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  -webkit-animation: img ease .5s infinite alternate;
-          animation: img ease .5s infinite alternate;
+  margin: 10% auto;
+  -webkit-animation: img ease 0.5s infinite alternate;
+          animation: img ease 0.5s infinite alternate;
 }
-
 @-webkit-keyframes img {
   from {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
   to {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
+    transform: translateX(15px);
   }
 }
-
 @keyframes img {
   from {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
   to {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
+    transform: translateX(15px);
   }
 }
 
@@ -1201,102 +897,71 @@ footer .siteMap .siteMapLink {
 /* CSS de la page 'single-navigation'*/
 .navigation-card {
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* Image de la page 'single-navigation' */
   /* Contenu texte de la page 'single-navigation' */
 }
-
 .navigation-card #navigation-image {
   padding: 1% 10%;
   margin: 0.1% 0;
   background: #E9E8E9;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-image {
     padding: 5% 0;
     margin: 0.5% 0;
   }
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-image {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 .navigation-card #navigation-image img {
   width: 15%;
   height: auto;
 }
-
 @media (max-width: 767.98px) {
   .navigation-card #navigation-image img {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: auto;
   }
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-image img {
     width: 50%;
   }
 }
-
 .navigation-card #navigation-image .titre-intro {
   width: 85%;
   cursor: context-menu;
 }
-
 .navigation-card #navigation-image .titre-intro h2 {
   font-size: 2em;
   text-align: center;
 }
-
 .navigation-card #navigation-image .titre-intro p {
   width: 90%;
   margin: auto;
   font-size: 1em;
   text-align: justify;
 }
-
 .navigation-card #navigation-contenu {
   padding: 1% 10%;
   cursor: context-menu;
 }
-
 .navigation-card #navigation-contenu .bloc01, .navigation-card #navigation-contenu .bloc02, .navigation-card #navigation-contenu .bloc03 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-contenu .bloc01, .navigation-card #navigation-contenu .bloc02, .navigation-card #navigation-contenu .bloc03 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .navigation-card #navigation-contenu .bloc01 .navigation-texte, .navigation-card #navigation-contenu .bloc02 .navigation-texte, .navigation-card #navigation-contenu .bloc03 .navigation-texte {
   width: 80%;
   font-size: 1.25em;
@@ -1304,182 +969,131 @@ footer .siteMap .siteMapLink {
   padding: 2% 0;
   line-height: 1.5;
 }
-
 @media (max-width: 575.98px) {
   .navigation-card #navigation-contenu .bloc01 .navigation-texte, .navigation-card #navigation-contenu .bloc02 .navigation-texte, .navigation-card #navigation-contenu .bloc03 .navigation-texte {
     font-size: 1em;
     text-align: center;
   }
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-contenu .bloc01 .navigation-texte, .navigation-card #navigation-contenu .bloc02 .navigation-texte, .navigation-card #navigation-contenu .bloc03 .navigation-texte {
     width: 100%;
   }
 }
-
 .navigation-card #navigation-contenu .bloc01 img, .navigation-card #navigation-contenu .bloc02 img, .navigation-card #navigation-contenu .bloc03 img {
   width: 17.5%;
   height: auto;
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-contenu .bloc01 img, .navigation-card #navigation-contenu .bloc02 img, .navigation-card #navigation-contenu .bloc03 img {
     width: 58%;
     padding: 1% 0;
   }
 }
-
 .navigation-card #navigation-contenu .bloc04, .navigation-card #navigation-contenu .bloc05 {
   width: 100%;
   padding: 1% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-contenu .bloc04, .navigation-card #navigation-contenu .bloc05 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .navigation-card #navigation-contenu .bloc04 img, .navigation-card #navigation-contenu .bloc05 img {
   width: 17.5%;
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-contenu .bloc04 img, .navigation-card #navigation-contenu .bloc05 img {
     width: 58%;
     padding: 1% 0;
   }
 }
-
 .navigation-card #navigation-contenu .bloc04 #courants-forts, .navigation-card #navigation-contenu .bloc05 #courants-forts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   width: 45%;
   padding-right: 25%;
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-contenu .bloc04 #courants-forts, .navigation-card #navigation-contenu .bloc05 #courants-forts {
     width: 100%;
     padding: 0;
   }
 }
-
 .navigation-card #navigation-contenu .bloc04 #courants-forts h5, .navigation-card #navigation-contenu .bloc05 #courants-forts h5 {
   font-size: 1.25em;
   margin-top: 0;
 }
-
 .navigation-card #navigation-contenu .bloc04 #courants-forts #forts, .navigation-card #navigation-contenu .bloc05 #courants-forts #forts {
   font-size: 1.25em;
   text-align: justify;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  align-items: start;
 }
-
 @media (max-width: 575.98px) {
   .navigation-card #navigation-contenu .bloc04 #courants-forts #forts, .navigation-card #navigation-contenu .bloc05 #courants-forts #forts {
     font-size: 1em;
   }
 }
-
 .navigation-card #navigation-contenu .bloc04 #courants-forts #forts i, .navigation-card #navigation-contenu .bloc05 #courants-forts #forts i {
   font-size: 1.25em;
   color: #1F4290;
   margin: 0 2%;
 }
-
 @media (max-width: 575.98px) {
   .navigation-card #navigation-contenu .bloc04 #courants-forts #forts i, .navigation-card #navigation-contenu .bloc05 #courants-forts #forts i {
     font-size: 1em;
   }
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-contenu .bloc04 #courants-forts #forts i, .navigation-card #navigation-contenu .bloc05 #courants-forts #forts i {
-    -webkit-transform: rotateZ(90deg);
-            transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
   }
 }
-
 .navigation-card #navigation-contenu .bloc04 #courants-forts #forts .courants-texte, .navigation-card #navigation-contenu .bloc05 #courants-forts #forts .courants-texte {
   margin-top: 0;
 }
-
 .navigation-card #navigation-contenu .bloc04 #courants-faibles, .navigation-card #navigation-contenu .bloc05 #courants-faibles {
   font-size: 1.25em;
   text-align: justify;
   width: 45%;
   padding-right: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  align-items: start;
 }
-
 @media (max-width: 575.98px) {
   .navigation-card #navigation-contenu .bloc04 #courants-faibles, .navigation-card #navigation-contenu .bloc05 #courants-faibles {
     font-size: 1em;
   }
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-contenu .bloc04 #courants-faibles, .navigation-card #navigation-contenu .bloc05 #courants-faibles {
     width: 100%;
     padding: 0;
   }
 }
-
 .navigation-card #navigation-contenu .bloc04 #courants-faibles i, .navigation-card #navigation-contenu .bloc05 #courants-faibles i {
   font-size: 1.25em;
   color: #1F4290;
   margin: 0 2%;
 }
-
 @media (max-width: 575.98px) {
   .navigation-card #navigation-contenu .bloc04 #courants-faibles i, .navigation-card #navigation-contenu .bloc05 #courants-faibles i {
     font-size: 1em;
   }
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-contenu .bloc04 #courants-faibles i, .navigation-card #navigation-contenu .bloc05 #courants-faibles i {
-    -webkit-transform: rotateZ(90deg);
-            transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
   }
 }
-
 .navigation-card #navigation-contenu .bloc04 #courants-faibles .courants-texte, .navigation-card #navigation-contenu .bloc05 #courants-faibles .courants-texte {
   margin-top: 0;
 }
-
 .navigation-card #navigation-contenu .texte-centre h3 {
   margin: 0;
   padding: 2% 0;
@@ -1487,35 +1101,23 @@ footer .siteMap .siteMapLink {
   text-align: center;
   font-weight: 500;
 }
-
 @media (max-width: 575.98px) {
   .navigation-card #navigation-contenu .texte-centre h3 {
     font-size: 1em;
   }
 }
-
 .navigation-card #navigation-contact {
   padding: 1% 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  justify-content: end;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
-
 @media (max-width: 991.98px) {
   .navigation-card #navigation-contact {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 .navigation-card #navigation-contact .contactBtn {
   padding: 1.5%;
   font-size: 1.5em;
@@ -1524,23 +1126,17 @@ footer .siteMap .siteMapLink {
   border: 1px solid #1F4290;
   border-radius: 25px;
   color: white;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 .navigation-card #navigation-contact .contactBtn:hover {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  -webkit-box-shadow: 0px 1px 4px 4px black;
-          box-shadow: 0px 1px 4px 4px black;
+  transition: 0.5s ease;
+  box-shadow: 0px 1px 4px 4px black;
 }
-
 .navigation-card #retour-link {
   width: 100%;
   text-align: center;
   margin-bottom: 1%;
 }
-
 .navigation-card #retour-link #retour {
   text-decoration: none;
   font-size: 1.5em;
@@ -1550,311 +1146,211 @@ footer .siteMap .siteMapLink {
 /* CSS de la page 'single-articles' */
 .articles {
   padding: 2% 10%;
-  font-family: 'Open Sans', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Open Sans", sans-serif;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   /* CSS sur le bouton de retour sur la page articles */
   /* CSS pour la mise en page de l'article seul */
   /* CSS pour le slider présentant les 4 derniers articles du site */
 }
-
 .articles .returnBtn .return {
   text-decoration: none;
   color: #1F4290;
   font-size: 1.5em;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .articles .returnBtn .return {
     color: black;
   }
 }
-
 .articles .returnBtn .return:hover {
   color: black;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 .articles .articles-structure {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   /* Image (optionnelle) de l'article */
   /* Contenu texte de l'article */
 }
-
 @media (max-width: 767.98px) {
   .articles .articles-structure {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-top: 5%;
   }
 }
-
 .articles .articles-structure #articles-image {
   width: 50%;
 }
-
 @media (max-width: 767.98px) {
   .articles .articles-structure #articles-image {
     width: 100%;
   }
 }
-
 .articles .articles-structure #articles-image img {
   width: 50%;
   height: auto;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .articles .articles-structure #articles-contenu {
   width: 50%;
 }
-
 @media (max-width: 767.98px) {
   .articles .articles-structure #articles-contenu {
     width: 100%;
   }
 }
-
 .articles .articles-structure #articles-contenu .articles-descriptif {
   padding: 5% 10% 0;
 }
-
 .articles .articles-structure #articles-contenu .articles-descriptif h2 {
   font-size: 2em;
 }
-
 .articles .articles-structure #articles-contenu .articles-descriptif p {
   font-size: 1em;
   text-align: justify;
   line-height: 1.5;
 }
-
 .articles #articles-commentaires {
   margin: 2.5% 0;
 }
-
 .articles #articles-commentaires .commentlist li .comment-body {
   margin: 1% 0;
 }
-
 .articles #articles-commentaires .commentlist li .comment-body .vcard {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 5px;
 }
-
 .articles #articles-commentaires .commentlist li .comment-body .vcard .fn a {
   text-decoration: none;
   color: black;
 }
-
 .articles #articles-commentaires .commentlist li .comment-body .commentmetadata a {
   text-decoration: none;
   color: black;
 }
-
 .articles #articles-commentaires .commentlist li .comment-body .reply a {
   text-decoration: none;
   color: black;
 }
-
 .articles #articles-commentaires .commentlist li::marker {
   color: transparent;
 }
-
 .articles #articles-commentaires .comment-respond form .logged-in-as a {
   text-decoration: none;
   color: black;
 }
-
 .articles #articles-commentaires .comment-respond form .comment-form-comment {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  flex-direction: column;
+  align-items: start;
 }
-
 .articles #articles-commentaires .comment-respond form .comment-form-comment textarea {
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
 }
-
 .articles #articles-commentaires .comment-respond form .comment-form-comment textarea:focus {
   outline: none;
 }
-
 .articles #articles-commentaires .comment-respond form .form-submit .submit {
   background: transparent;
   border: 1px solid black;
   padding: 1% 2%;
 }
-
 .articles #articles-commentaires .comment-respond form .form-submit .submit:hover {
   opacity: 0.8;
 }
-
 .articles .articles-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 5%;
   /* Affichage de 2 articles par slide */
   /* CSS sur les boutons du slider */
 }
-
 .articles .articles-slider .articles-elements {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
   width: 50%;
   height: 350px;
   margin: 0;
 }
-
 @media (max-width: 991.98px) {
   .articles .articles-slider .articles-elements {
     width: 80%;
     height: auto;
   }
 }
-
 .articles .articles-slider .articles-elements .article-structure {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex: 1 1 50%;
+  justify-content: center;
 }
-
 @media (max-width: 991.98px) {
   .articles .articles-slider .articles-elements .article-structure {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    flex: 1 1 100%;
   }
 }
-
 .articles .articles-slider .articles-elements .article-structure .article-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 0;
   margin: 0;
 }
-
 .articles .articles-slider .articles-elements .article-structure .article-list li {
   list-style: none;
   width: 50%;
   margin: 0;
 }
-
 .articles .articles-slider .articles-elements .article-structure .article-list li img {
   width: 100%;
   height: auto;
 }
-
 .articles .articles-slider .articles-elements .article-structure .article-list li a {
   text-decoration: none;
   color: black;
 }
-
 @media (max-width: 1365.98px) {
   .articles .articles-slider .articles-elements .article-structure .article-list li a {
     color: #1F4290;
   }
 }
-
 .articles .articles-slider .articles-elements .article-structure .article-list li a:hover {
   color: #1F4290;
 }
-
 .articles .articles-slider .articles-elements .article-structure .article-list li a h2 {
   font-size: 1.25em;
   text-align: center;
 }
-
 .articles .articles-slider .articles-fade {
   -webkit-animation: articles-fade ease 1.5s;
           animation: articles-fade ease 1.5s;
 }
-
 @-webkit-keyframes articles-fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
   }
 }
-
 @keyframes articles-fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
   }
 }
-
 .articles .articles-slider .articles-button .articles-slider-button {
   background: transparent;
   border: 0;
@@ -1863,145 +1359,106 @@ footer .siteMap .siteMapLink {
   color: #1F4290;
   cursor: pointer;
 }
-
 .articles .articles-slider .articles-button .articles-slider-button i {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
   border-radius: 100%;
   font-size: 2em;
 }
-
 @media (max-width: 1365.98px) {
   .articles .articles-slider .articles-button .articles-slider-button i {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .articles .articles-slider .articles-button .articles-slider-button i:hover {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
   border-radius: 100%;
-  -webkit-box-shadow: 0px 0px 5px 5px;
-          box-shadow: 0px 0px 5px 5px;
+  box-shadow: 0px 0px 5px 5px;
 }
-
 @media (max-width: 1365.98px) {
   .articles .articles-slider .articles-button .articles-slider-button i:hover {
-    -webkit-transition: none;
     transition: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
 }
 
 /* CSS de la page 'Single-rejoindre' */
 .rejoindre {
   padding: 10%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 .rejoindre .returnBtn {
   margin-bottom: 2%;
 }
-
 @media (max-width: 767.98px) {
   .rejoindre .returnBtn {
     margin-bottom: 5%;
   }
 }
-
 .rejoindre .returnBtn a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 5px;
   color: black;
   font-weight: 700;
 }
-
 .rejoindre .rejoindre-structure {
   border-left: 1px solid black;
   border-right: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  justify-content: center;
+  align-items: start;
 }
-
 @media (max-width: 1365.98px) {
   .rejoindre .rejoindre-structure {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .rejoindre .rejoindre-structure #rejoindre-titre, .rejoindre .rejoindre-structure #rejoindre-contenu {
   width: 50%;
   cursor: context-menu;
 }
-
 @media (max-width: 1365.98px) {
   .rejoindre .rejoindre-structure #rejoindre-titre, .rejoindre .rejoindre-structure #rejoindre-contenu {
     width: 100%;
   }
 }
-
 .rejoindre .rejoindre-structure #rejoindre-titre h2, .rejoindre .rejoindre-structure #rejoindre-contenu h2 {
   width: 90%;
   margin: auto;
   font-size: 1.5em;
   text-align: center;
 }
-
 @media (max-width: 767.98px) {
   .rejoindre .rejoindre-structure #rejoindre-titre h2, .rejoindre .rejoindre-structure #rejoindre-contenu h2 {
     font-size: 1em;
   }
 }
-
 .rejoindre .rejoindre-structure #rejoindre-titre p, .rejoindre .rejoindre-structure #rejoindre-contenu p {
   width: 90%;
   margin: auto;
   font-size: 1.25em;
   text-align: justify;
 }
-
 @media (max-width: 767.98px) {
   .rejoindre .rejoindre-structure #rejoindre-titre p, .rejoindre .rejoindre-structure #rejoindre-contenu p {
     font-size: 1em;
   }
 }
-
 .rejoindre .rejoindre-structure #rejoindre-titre p i, .rejoindre .rejoindre-structure #rejoindre-contenu p i {
   font-style: normal;
   font-weight: 700;
 }
-
 .rejoindre .rejoindre-structure #rejoindre-titre #titre-offre, .rejoindre .rejoindre-structure #rejoindre-contenu #titre-offre {
   margin-bottom: 2%;
 }
-
 @media (max-width: 767.98px) {
   .rejoindre .rejoindre-structure #rejoindre-titre #titre-offre, .rejoindre .rejoindre-structure #rejoindre-contenu #titre-offre {
     margin-bottom: 5%;
   }
 }
-
 .rejoindre .rejoindre-structure #rejoindre-titre #localisation-et-type, .rejoindre .rejoindre-structure #rejoindre-titre #contrat, .rejoindre .rejoindre-structure #rejoindre-contenu #localisation-et-type, .rejoindre .rejoindre-structure #rejoindre-contenu #contrat {
   margin-bottom: 2%;
 }
-
 @media (max-width: 767.98px) {
   .rejoindre .rejoindre-structure #rejoindre-titre #localisation-et-type, .rejoindre .rejoindre-structure #rejoindre-titre #contrat, .rejoindre .rejoindre-structure #rejoindre-contenu #localisation-et-type, .rejoindre .rejoindre-structure #rejoindre-contenu #contrat {
     margin: 5% 0;
@@ -2013,48 +1470,30 @@ footer .siteMap .siteMapLink {
 .electricite {
   width: 90%;
   margin: auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* CSS pour les deux onglets de la page */
 }
-
 .electricite .nav-electricite {
   padding: 10% 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-around;
 }
-
 .electricite .nav-electricite .electricite-card {
   margin: 2% 0;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 300px;
-          flex: 0 1 300px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex: 0 1 300px;
+  flex-direction: column;
+  align-items: center;
   /* CSS pour l'effet sur chaque onglet au survol */
 }
-
 .electricite .nav-electricite .electricite-card img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-
 .electricite .nav-electricite .electricite-card .electricite-hover {
   position: absolute;
   top: 0;
@@ -2063,45 +1502,32 @@ footer .siteMap .siteMapLink {
   height: 100%;
   border-radius: 20px;
   opacity: 0;
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
+  transition: 0.8s ease;
 }
-
 .electricite .nav-electricite .electricite-card .electricite-hover a {
   margin: auto;
   width: 80%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: white;
 }
-
 .electricite .nav-electricite .electricite-card .electricite-hover a p {
   background-color: #1F4290;
   padding: 5%;
   border-radius: 10px;
   text-align: center;
 }
-
 .electricite .nav-electricite .electricite-card .electricite-hover:hover {
   opacity: 1;
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
+  transition: 0.8s ease;
 }
-
 @media (max-width: 1365.98px) {
   .electricite .nav-electricite .electricite-card .electricite-hover {
     opacity: 1;
     background-color: transparent;
-    -webkit-transition: none;
     transition: none;
   }
 }
@@ -2109,166 +1535,118 @@ footer .siteMap .siteMapLink {
 /* CSS de la page 'Automatisme' */
 .automatisme .contenu-automatisme {
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image {
   /* Image de la page 'Automatisme' */
   padding: 1% 10%;
   margin: 0.1% 0;
   background: #E9E8E9;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 @media (max-width: 991.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-image {
     padding: 5% 0;
     margin: 0.5% 0;
   }
 }
-
 @media (max-width: 991.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-image {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image img {
   width: 15%;
   height: auto;
 }
-
 @media (max-width: 767.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-image img {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: auto;
   }
 }
-
 @media (max-width: 991.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-image img {
     width: 50%;
   }
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image .titre-intro {
   width: 85%;
   cursor: context-menu;
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image .titre-intro h2 {
   font-size: 2em;
   text-align: center;
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-image .titre-intro p {
   width: 90%;
   margin: auto;
   font-size: 1em;
   text-align: justify;
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu {
   /* Contenu texte de la page 'Automatisme' */
   padding: 1% 10%;
   cursor: context-menu;
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu h2 {
   text-align: center;
   font-size: 2em;
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 @media (max-width: 991.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01 .automatisme-texte, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 .automatisme-texte {
   width: 80%;
   font-size: 1.25em;
   text-align: justify;
 }
-
 @media (max-width: 991.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01 .automatisme-texte, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 .automatisme-texte {
     width: 100%;
   }
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01 img, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 img {
   width: 17.5%;
   height: auto;
 }
-
 @media (max-width: 991.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc01 img, .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .bloc02 img {
     width: 58%;
     padding: 1% 0;
   }
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .texte-centre h3 {
   padding: 2% 0;
   font-size: 1.25em;
   text-align: center;
   font-weight: 500;
 }
-
 @media (max-width: 575.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-contenu .texte-centre h3 {
     font-size: 1em;
   }
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contact {
   padding: 1% 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  justify-content: end;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
-
 @media (max-width: 991.98px) {
   .automatisme .contenu-automatisme .automatisme-card #automatisme-contact {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contact .contactBtn {
   padding: 1.5%;
   font-size: 1.5em;
@@ -2277,180 +1655,128 @@ footer .siteMap .siteMapLink {
   border: 1px solid #1F4290;
   border-radius: 25px;
   color: white;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 .automatisme .contenu-automatisme .automatisme-card #automatisme-contact .contactBtn:hover {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  -webkit-box-shadow: 0px 1px 4px 4px black;
-          box-shadow: 0px 1px 4px 4px black;
+  transition: 0.5s ease;
+  box-shadow: 0px 1px 4px 4px black;
 }
 
 /* CSS de la page 'Informatique Industrielle' */
 .informatique-industrielle .contenu-informatique-industrielle {
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
   /* Image de la page 'Informatique Industrielle' */
   padding: 1% 10%;
   margin: 0.1% 0;
   background: #E9E8E9;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 @media (max-width: 991.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
     padding: 5% 0;
     margin: 0.5% 0;
   }
 }
-
 @media (max-width: 991.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image img {
   width: 15%;
   height: auto;
 }
-
 @media (max-width: 767.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image img {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: auto;
   }
 }
-
 @media (max-width: 991.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image img {
     width: 50%;
   }
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image .titre-intro {
   width: 85%;
   cursor: context-menu;
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image .titre-intro h2 {
   font-size: 2em;
   text-align: center;
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-image .titre-intro p {
   width: 90%;
   margin: auto;
   font-size: 1em;
   text-align: justify;
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu {
   /* Contenu texte de la page 'Informatique Industrielle' */
   padding: 1% 10%;
   cursor: context-menu;
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu h2 {
   text-align: center;
   font-size: 2em;
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 @media (max-width: 991.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01 .informatique-industrielle-texte, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02 .informatique-industrielle-texte, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 .informatique-industrielle-texte {
   width: 80%;
   font-size: 1.25em;
   text-align: justify;
 }
-
 @media (max-width: 991.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01 .informatique-industrielle-texte, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02 .informatique-industrielle-texte, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 .informatique-industrielle-texte {
     width: 100%;
   }
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01 img, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02 img, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 img {
   width: 17.5%;
   height: auto;
 }
-
 @media (max-width: 991.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc01 img, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc02 img, .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .bloc03 img {
     width: 58%;
     padding: 1% 0;
   }
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .texte-centre h3 {
   padding: 2% 0;
   font-size: 1.25em;
   text-align: center;
   font-weight: 500;
 }
-
 @media (max-width: 575.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contenu .texte-centre h3 {
     font-size: 1em;
   }
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contact {
   padding: 1% 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  justify-content: end;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
-
 @media (max-width: 991.98px) {
   .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contact {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contact .contactBtn {
   padding: 1.5%;
   font-size: 1.5em;
@@ -2459,44 +1785,30 @@ footer .siteMap .siteMapLink {
   border: 1px solid #1F4290;
   border-radius: 25px;
   color: white;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 .informatique-industrielle .contenu-informatique-industrielle .informatique-industrielle-card #informatique-industrielle-contact .contactBtn:hover {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  -webkit-box-shadow: 0px 1px 4px 4px black;
-          box-shadow: 0px 1px 4px 4px black;
+  transition: 0.5s ease;
+  box-shadow: 0px 1px 4px 4px black;
 }
 
 /* CSS de la page 'Entreprise' */
 .entreprise {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 0 10%;
   /* Intro et image de la section */
 }
-
 @media (max-width: 767.98px) {
   .entreprise {
     padding: 5% 10%;
   }
 }
-
 .entreprise .section-accueil-entreprise {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 1% 0;
 }
-
 .entreprise .section-accueil-entreprise p {
   width: 100%;
   font-size: 1.5em;
@@ -2504,115 +1816,81 @@ footer .siteMap .siteMapLink {
   text-align: center;
   cursor: context-menu;
 }
-
 @media (max-width: 767.98px) {
   .entreprise .section-accueil-entreprise p {
     font-size: 1.25em;
   }
 }
-
 .entreprise .section-accueil-entreprise img {
   width: 80%;
   height: auto;
   border-radius: 20px;
 }
-
 @media (max-width: 767.98px) {
   .entreprise .section-accueil-entreprise img {
     width: 100%;
   }
 }
-
 .entreprise .section-rea-actu-rejoindre {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   padding: 1% 0;
   /* Menus pour 3 pages du site */
 }
-
 @media (max-width: 1365.98px) {
   .entreprise .section-rea-actu-rejoindre {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .entreprise .section-rea-actu-rejoindre .section-realisations, .entreprise .section-rea-actu-rejoindre .section-actualites, .entreprise .section-rea-actu-rejoindre .section-rejoindre {
   width: 33%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 @media (max-width: 767.98px) {
   .entreprise .section-rea-actu-rejoindre .section-realisations, .entreprise .section-rea-actu-rejoindre .section-actualites, .entreprise .section-rea-actu-rejoindre .section-rejoindre {
     width: 100%;
     margin-top: 1%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   .entreprise .section-rea-actu-rejoindre .section-realisations, .entreprise .section-rea-actu-rejoindre .section-actualites, .entreprise .section-rea-actu-rejoindre .section-rejoindre {
     width: 50%;
   }
 }
-
 .entreprise .section-rea-actu-rejoindre .section-realisations a, .entreprise .section-rea-actu-rejoindre .section-actualites a, .entreprise .section-rea-actu-rejoindre .section-rejoindre a {
   font-size: 1.5em;
   font-weight: 700;
   text-align: center;
   color: black;
   text-decoration: none;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
   margin: 1% 0;
 }
-
 @media (max-width: 1365.98px) {
   .entreprise .section-rea-actu-rejoindre .section-realisations a, .entreprise .section-rea-actu-rejoindre .section-actualites a, .entreprise .section-rea-actu-rejoindre .section-rejoindre a {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .entreprise .section-rea-actu-rejoindre .section-realisations a:hover, .entreprise .section-rea-actu-rejoindre .section-actualites a:hover, .entreprise .section-rea-actu-rejoindre .section-rejoindre a:hover {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
   color: #1F4290;
 }
-
 @media (max-width: 1365.98px) {
   .entreprise .section-rea-actu-rejoindre .section-realisations a:hover, .entreprise .section-rea-actu-rejoindre .section-actualites a:hover, .entreprise .section-rea-actu-rejoindre .section-rejoindre a:hover {
-    -webkit-transition: none;
     transition: none;
     color: black;
     border-bottom: 0px;
   }
 }
-
 .entreprise .section-rea-actu-rejoindre .section-realisations img, .entreprise .section-rea-actu-rejoindre .section-actualites img, .entreprise .section-rea-actu-rejoindre .section-rejoindre img {
   width: 65%;
   height: auto;
   border-radius: 20px;
 }
-
 @media (max-width: 991.98px) {
   .entreprise .section-rea-actu-rejoindre .section-realisations img, .entreprise .section-rea-actu-rejoindre .section-actualites img, .entreprise .section-rea-actu-rejoindre .section-rejoindre img {
     width: 100%;
@@ -2621,24 +1899,18 @@ footer .siteMap .siteMapLink {
 
 /* CSS de la page 'Qui sommes-nous ?' */
 .qui-sommes-nous {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 1% 10%;
 }
-
 .qui-sommes-nous .sommes-nous-container img {
   /* Illustration */
   width: 60%;
   margin: auto;
   height: auto;
   border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 @media (max-width: 1365.98px) {
   .qui-sommes-nous .sommes-nous-container img {
     width: 100%;
@@ -2646,24 +1918,20 @@ footer .siteMap .siteMapLink {
     margin-top: 2%;
   }
 }
-
 .qui-sommes-nous .sommes-nous-container .sommes-nous-texte {
   /* Texte */
   cursor: context-menu;
 }
-
 .qui-sommes-nous .sommes-nous-container .sommes-nous-texte h4 {
   font-size: 1.25em;
   text-align: center;
 }
-
 .qui-sommes-nous .sommes-nous-container .sommes-nous-texte p {
   width: 80%;
   margin: auto;
   font-size: 1.25em;
   text-align: justify;
 }
-
 @media (max-width: 1365.98px) {
   .qui-sommes-nous .sommes-nous-container .sommes-nous-texte p {
     width: 100%;
@@ -2673,79 +1941,61 @@ footer .siteMap .siteMapLink {
 
 /* CSS de la page 'Nos Realisations' */
 .realisations {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 2 10%;
   /* Pagination de la page */
 }
-
 .realisations .realisations-disposition {
   width: 100%;
   margin: auto;
   padding-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
   /* Carte d'un projet réalisé */
 }
-
 .realisations .realisations-disposition .realisations-card {
   width: 45%;
 }
-
 @media (max-width: 767.98px) {
   .realisations .realisations-disposition .realisations-card {
     width: 100%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1066.98px) {
   .realisations .realisations-disposition .realisations-card {
     width: 80%;
   }
 }
-
 @media (min-width: 1067px) and (max-width: 1365.98px) {
   .realisations .realisations-disposition .realisations-card {
     width: 50%;
   }
 }
-
 .realisations .realisations-disposition .realisations-card #realisations-image {
   width: 35%;
   height: auto;
   margin: auto;
 }
-
 .realisations .realisations-disposition .realisations-card #realisations-image img {
   width: 100%;
   height: auto;
   border: 1px solid olive;
   border-radius: 25px;
 }
-
 .realisations .realisations-disposition .realisations-card #realisations-titre {
   text-align: center;
   cursor: context-menu;
 }
-
 .realisations .realisations-pagination {
   margin: 2% 0;
 }
-
 .realisations .realisations-pagination nav .nav-links {
   text-align: center;
   /* CSS pour l'état du curseur */
 }
-
 .realisations .realisations-pagination nav .nav-links .page-numbers {
   color: white;
   background-color: #1F4290;
@@ -2754,53 +2004,42 @@ footer .siteMap .siteMapLink {
   margin: 0 1%;
   padding: 0.25% 0.5%;
   border-radius: 5px;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
-
 @media (max-width: 1365.98px) {
   .realisations .realisations-pagination nav .nav-links .page-numbers {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .realisations .realisations-pagination nav .nav-links .page-numbers:hover {
   color: #1F4290;
   background-color: transparent;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
-
 @media (max-width: 1365.98px) {
   .realisations .realisations-pagination nav .nav-links .page-numbers:hover {
     color: white;
     background-color: #1F4290;
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .realisations .realisations-pagination nav .nav-links .current {
   cursor: context-menu;
 }
 
 /* CSS de la page 'Nos bureaux d'études' */
 .bureaux-d-etudes {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 @media (min-width: 992px) {
   .bureaux-d-etudes {
     padding: 0 5%;
   }
 }
-
 .bureaux-d-etudes .texte-bureaux-d-etudes {
   text-align: center;
   padding: 1% 0;
 }
-
 .bureaux-d-etudes .texte-bureaux-d-etudes p {
   width: 95%;
   margin: auto;
@@ -2808,78 +2047,46 @@ footer .siteMap .siteMapLink {
   font-weight: 400;
   cursor: context-menu;
 }
-
 @media (max-width: 767.98px) {
   .bureaux-d-etudes .texte-bureaux-d-etudes p {
     font-size: 1.25em;
   }
 }
-
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   /* Adresses des 2 bureaux d'études */
   /* Logos de la société */
 }
-
 @media (max-width: 1365.98px) {
   .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 40%;
 }
-
 @media (max-width: 991.98px) {
   .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes {
     width: 95%;
   }
 }
-
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
   padding: 5% 0;
 }
-
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 img, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 img {
   width: 100%;
   height: auto;
 }
-
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a {
   text-align: center;
   text-decoration: none;
@@ -2887,62 +2094,43 @@ footer .siteMap .siteMapLink {
   margin-top: 5%;
   font-size: 1em;
   font-weight: 400;
-  -webkit-transition: none;
   transition: none;
 }
-
 @media (max-width: 575.98px) {
   .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a {
     font-size: 0.75em;
     font-weight: 500;
   }
 }
-
 @media (min-width: 1366px) {
   .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a {
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
+    transition: 0.5s ease;
   }
 }
-
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a:hover, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a:hover {
   color: black;
-  -webkit-transition: none;
   transition: none;
 }
-
 @media (min-width: 1366px) {
   .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-85 a:hover, .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .adresses-bureaux-d-etudes .bureau-d-etudes-44 a:hover {
     color: #1F4290;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
+    transition: 0.5s ease;
   }
 }
-
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .logos-bureaux-d-etudes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
 }
-
 @media (max-width: 991.98px) {
   .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .logos-bureaux-d-etudes {
     width: 95%;
   }
 }
-
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .logos-bureaux-d-etudes a {
   padding: 5% 0;
 }
-
 .bureaux-d-etudes .section-adresses-logos-bureaux-d-etudes .logos-bureaux-d-etudes a img {
   width: 100%;
   height: auto;
@@ -2951,178 +2139,127 @@ footer .siteMap .siteMapLink {
 /* CSS de la page 'Nous Rejoindre' */
 .nous-rejoindre {
   padding: 1% 10%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* Carte d'une offre d'emploi */
 }
-
 .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card {
   padding: 2% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  flex-direction: column;
+  align-items: start;
   /* Infos supplémentaires en plus du lien de l'annonce */
 }
-
 @media (max-width: 767.98px) {
   .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card {
     padding: 5% 0;
   }
 }
-
 .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a {
   color: black;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
   font-size: 1em;
 }
-
 @media (max-width: 1365.98px) {
   .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a:hover {
   color: #1F4290;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a:hover {
     color: black;
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a h2 {
   margin-top: 0;
 }
-
 @media (max-width: 767.98px) {
   .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-titre a h2 {
     font-size: 1em;
   }
 }
-
 .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 30px;
 }
-
 @media (max-width: 767.98px) {
   .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    flex-direction: column;
+    align-items: start;
     gap: 20px;
   }
 }
-
 .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .localisation, .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .domaine {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-style: normal;
   gap: 10px;
 }
-
 .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .localisation a, .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .domaine a {
   color: black;
   text-decoration: none;
   font-size: 1em;
   font-weight: 700;
 }
-
 .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .localisation a:hover, .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .domaine a:hover {
   color: #36A02C;
 }
-
 @media (max-width: 1365.98px) {
   .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .localisation a:hover, .nous-rejoindre .nous-rejoindre-disposition .nous-rejoindre-card .nous-rejoindre-infos .domaine a:hover {
     color: black;
   }
 }
-
 .nous-rejoindre .nous-rejoindre-pagination {
   /* CSS de la pagination */
   margin: 2% 0;
 }
-
 @media (max-width: 767.98px) {
   .nous-rejoindre .nous-rejoindre-pagination {
     margin: 5% 0;
   }
 }
-
 .nous-rejoindre .nous-rejoindre-pagination nav .nav-links {
   text-align: start;
   /* CSS pour l'état du curseur */
 }
-
 @media (max-width: 575.98px) {
   .nous-rejoindre .nous-rejoindre-pagination nav .nav-links {
     text-align: center;
   }
 }
-
 .nous-rejoindre .nous-rejoindre-pagination nav .nav-links .page-numbers {
   padding: 0 1%;
   color: #005f00;
   text-decoration: none;
   font-size: 1em;
   font-weight: 700;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
 }
-
 @media (max-width: 1365.98px) {
   .nous-rejoindre .nous-rejoindre-pagination nav .nav-links .page-numbers {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .nous-rejoindre .nous-rejoindre-pagination nav .nav-links .page-numbers:hover {
   background-color: #005f00;
   color: #F1F1F1;
-  -webkit-transition: 1s ease;
   transition: 1s ease;
   border-radius: 15px;
 }
-
 @media (max-width: 1365.98px) {
   .nous-rejoindre .nous-rejoindre-pagination nav .nav-links .page-numbers:hover {
     color: #005f00;
     background-color: #F1F1F1;
-    -webkit-transition: none;
     transition: none;
     border-radius: 0px;
   }
 }
-
 .nous-rejoindre .nous-rejoindre-pagination nav .nav-links .current {
   cursor: context-menu;
 }
@@ -3130,122 +2267,83 @@ footer .siteMap .siteMapLink {
 /* CSS de la page 'Contact' */
 .contact {
   padding: 1% 5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   /* CSS pour les deux adresses de la société et le formulaire de contact */
   /* CSS pour les horaires et le téléphone de la société */
 }
-
 @media (max-width: 575.98px) {
   .contact {
     padding: 1% 0;
   }
 }
-
 .contact .adresses-formulaire {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   /* CSS pour les deux adresses de la société */
   /* CSS pour le formulaire de contact */
 }
-
 @media (max-width: 991.98px) {
   .contact .adresses-formulaire {
     width: 100%;
   }
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresses-formulaire {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .contact .adresses-formulaire .adresses {
   width: 35%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
 @media (max-width: 767.98px) {
   .contact .adresses-formulaire .adresses {
     width: 100%;
     margin-top: 5%;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1365.98px) {
   .contact .adresses-formulaire .adresses {
     width: 80%;
     margin-top: 5%;
   }
 }
-
 .contact .adresses-formulaire .adresses .agence85, .contact .adresses-formulaire .adresses .agence44 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .contact .adresses-formulaire .adresses .agence85 .carte-agence85 img, .contact .adresses-formulaire .adresses .agence85 .carte-agence44 img, .contact .adresses-formulaire .adresses .agence44 .carte-agence85 img, .contact .adresses-formulaire .adresses .agence44 .carte-agence44 img {
   width: 100%;
   height: 100%;
 }
-
 .contact .adresses-formulaire .adresses .agence85 p, .contact .adresses-formulaire .adresses .agence44 p {
   font-size: 1em;
   text-align: center;
   color: #1F4290;
   cursor: context-menu;
 }
-
 .contact .adresses-formulaire .adresses .agence85 {
   padding: 10% 0;
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresses-formulaire .adresses .agence85 {
     padding: 5% 0;
   }
 }
-
 .contact .adresses-formulaire .adresses .agence44 {
   padding-top: 10%;
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresses-formulaire .adresses .agence44 {
     padding-top: 5%;
   }
 }
-
 .contact .adresses-formulaire .formulaire {
   width: 50%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 240, 240, 0.6))), url(img/img_contact.jpg);
@@ -3256,34 +2354,30 @@ footer .siteMap .siteMapLink {
   /* CSS sur la phrase d'intro du formulaire */
   /* CSS pour le formulaire uniquement */
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresses-formulaire .formulaire {
     width: 80%;
     background-image: none;
   }
 }
-
 .contact .adresses-formulaire .formulaire h1 {
   padding-top: 1%;
   padding-bottom: 1%;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   cursor: context-menu;
 }
-
 @media (max-width: 575.98px) {
   .contact .adresses-formulaire .formulaire h1 {
     font-size: 1.4em;
   }
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form {
   padding-top: 1%;
   padding-bottom: 1%;
   margin-bottom: 5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   /* Des balises sont intégrés sur le formulaire */
   /* Des balises sont intégrés sur le formulaire */
@@ -3291,34 +2385,22 @@ footer .siteMap .siteMapLink {
   /* Des balises sont intégrés sur le formulaire */
   /* Texte relatif aux champs obligatoire et à la RGPD */
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   /* Des balises sont intégrés sur le formulaire */
   /* Champs coordonnees */
   /* Des balises sont intégrés sur le formulaire */
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet {
   padding: 2% 0;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom label, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom label, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email label, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel label, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet label {
   color: black;
   font-weight: 700;
@@ -3327,27 +2409,17 @@ footer .siteMap .siteMapLink {
   width: 100%;
   margin-bottom: 1%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel label i, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet label i {
   font-style: normal;
   margin: 0 1%;
   color: #1F4290;
   font-size: 1em;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span input, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span input, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span input, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span input, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span input {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
@@ -3356,11 +2428,9 @@ footer .siteMap .siteMapLink {
   width: 90%;
   cursor: default;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span input:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span input:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span input:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span input:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span input:focus {
   outline: none;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span select, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span select, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span select, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span select, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span select {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
@@ -3368,38 +2438,26 @@ footer .siteMap .siteMapLink {
   border-radius: 10px;
   width: 90%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span select:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span select:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span select:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span select:focus, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span select:focus {
   outline: none;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-nom span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-prenom span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-email span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-tel span .wpcf7-not-valid-tip, .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .coordonnees .champ-objet span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #1F4290;
   margin-top: 1%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   /* Champ société */
   /* Champ message */
   /* Champ envoi pièce jointe facultative */
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe {
   padding: 2% 0;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe label {
   color: black;
   font-weight: 700;
@@ -3408,20 +2466,11 @@ footer .siteMap .siteMapLink {
   width: 100%;
   margin-bottom: 1%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe span {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe span select {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
@@ -3429,18 +2478,15 @@ footer .siteMap .siteMapLink {
   border-radius: 10px;
   width: 90%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe span select:focus {
   outline: none;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-societe span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #1F4290;
   margin-top: 1%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message label {
   color: black;
   font-weight: 700;
@@ -3449,14 +2495,12 @@ footer .siteMap .siteMapLink {
   width: 100%;
   margin-bottom: 1%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message label i {
   font-style: normal;
   margin: 0 1%;
   color: #1F4290;
   font-size: 1em;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
@@ -3466,7 +2510,6 @@ footer .siteMap .siteMapLink {
   cursor: default;
   resize: none;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
   background-color: #212021;
   border-top-right-radius: 20px;
@@ -3474,18 +2517,15 @@ footer .siteMap .siteMapLink {
   border-top: 1px solid #020722;
   border-bottom: 1px solid #020722;
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar {
     display: none;
   }
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-thumb {
   background-color: white;
   border: 1px solid #020722;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:increment {
   width: 7.5px;
   height: 20px;
@@ -3493,7 +2533,6 @@ footer .siteMap .siteMapLink {
   border: 1px solid #020722;
   background-color: white;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-scrollbar-button:single-button:vertical:decrement {
   width: 7.5px;
   height: 20px;
@@ -3501,39 +2540,26 @@ footer .siteMap .siteMapLink {
   border: 1px solid #020722;
   background-color: white;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea::-webkit-resizer {
   display: none;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message textarea:focus {
   outline: none;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message span {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-message span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #1F4290;
   margin-top: 1%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document {
   margin-top: 5%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document label {
   color: black;
   font-weight: 700;
@@ -3542,14 +2568,12 @@ footer .siteMap .siteMapLink {
   width: 100%;
   margin-bottom: 1%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document label i {
   font-style: normal;
   margin: 0 1%;
   color: #1F4290;
   font-size: 1em;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document span input {
   background-color: rgba(233, 232, 233, 0.6);
   border: 1px solid #020722;
@@ -3557,14 +2581,12 @@ footer .siteMap .siteMapLink {
   width: 90%;
   cursor: default;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #1F4290;
   margin-top: 1%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .infos-contact .message-document .champ-document .document-accepte {
   margin: 0;
   padding-top: 1%;
@@ -3574,101 +2596,65 @@ footer .siteMap .siteMapLink {
   color: black;
   cursor: context-menu;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .bouton {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 5% 0;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .bouton input {
   background-color: rgba(233, 232, 233, 0.6);
   color: black;
   border: 1px solid #020722;
   padding: 2% 5%;
   border-radius: 20px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
   font-size: 1em;
   font-weight: 700;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .bouton input:hover {
-  -webkit-box-shadow: 0px 2px 3px 2px #020722;
-          box-shadow: 0px 2px 3px 2px #020722;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  box-shadow: 0px 2px 3px 2px #020722;
+  transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .bouton input:hover {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-transition: none;
+    box-shadow: none;
     transition: none;
   }
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .bouton input:focus {
   outline: none;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .bouton .wpcf7-spinner {
   display: none;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .wpcf7-response-output {
   border-color: transparent;
   font-size: 1em;
   font-weight: 700;
   color: black;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label {
   width: 90%;
   margin: auto;
   color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 @media (max-width: 767.98px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  align-items: start;
 }
-
 @media (max-width: 767.98px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
-
 @media (min-width: 1366px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span {
     margin: 0;
@@ -3688,17 +2674,15 @@ footer .siteMap .siteMapLink {
     position: relative;
   }
 }
-
 @media (min-width: 1366px) and (max-width: 1365.98px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:hover {
     display: none;
   }
 }
-
 @media (min-width: 1366px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:hover:before {
-    font-family: 'FontAwesome';
-    content: '\f0a6';
+    font-family: "FontAwesome";
+    content: "\f0a6";
     display: block;
     color: #000000;
     font-size: 15px;
@@ -3706,34 +2690,36 @@ footer .siteMap .siteMapLink {
     left: -1px;
     bottom: -1px;
   }
+}
+@media (min-width: 1366px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked {
     background: rgba(233, 232, 233, 0.6);
     position: relative;
   }
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked:before {
-    font-family: 'FontAwesome';
-    content: '\f00c';
+    font-family: "FontAwesome";
+    content: "\f00c";
     display: block;
     color: #000000;
     font-size: 15px;
     position: absolute;
   }
+}
+@media (min-width: 1366px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked:hover {
     background: rgba(233, 232, 233, 0.6);
     position: relative;
   }
 }
-
 @media (min-width: 1366px) and (max-width: 1365.98px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked:hover {
     display: none;
   }
 }
-
 @media (min-width: 1366px) {
   .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span span span input:checked:hover:before {
-    font-family: 'FontAwesome';
-    content: '\f00d';
+    font-family: "FontAwesome";
+    content: "\f00d";
     display: block;
     color: #000000;
     font-size: 20px;
@@ -3742,333 +2728,235 @@ footer .siteMap .siteMapLink {
     bottom: -4px;
   }
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox span .wpcf7-not-valid-tip {
   font-size: 1em;
   font-weight: 700;
   color: #1F4290;
   margin-top: 1%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label #rgpd-checkbox i {
   font-style: normal;
   color: #1F4290;
   font-size: 1em;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label .rgpd-accepte {
   margin: 0;
   text-align: justify;
   color: black;
   cursor: context-menu;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire label .rgpd-accepte a {
   font-size: 1em;
   font-weight: 700;
   color: #1F4290;
   margin-top: 1%;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire .champ-obligatoire {
   font-size: 1em;
   color: black;
   cursor: context-menu;
 }
-
 .contact .adresses-formulaire .formulaire .wpcf7 form .obligatoire .champ-obligatoire i {
   font-style: normal;
   color: #1F4290;
   font-size: 1em;
 }
-
 .contact .horaires {
   width: 80%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   /* Titre section */
 }
-
 @media (max-width: 1365.98px) {
   .contact .horaires {
     margin-bottom: 5%;
   }
 }
-
 .contact .horaires #horaires-title-section {
   text-align: center;
   cursor: context-menu;
 }
-
 .contact .horaires .toggle-horaires {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* Horaires du Jour */
   /* Bouton affichage horaires de la semaine */
   /* Horaires de la semaine */
 }
-
 .contact .horaires .toggle-horaires .horaires-jour {
   width: 90%;
   /* Téléphone de la société */
 }
-
 @media (max-width: 767.98px) {
   .contact .horaires .toggle-horaires .horaires-jour {
     width: 100%;
   }
 }
-
 .contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   cursor: context-menu;
 }
-
 @media (max-width: 1365.98px) {
   .contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour .horaires-text {
   font-weight: 500;
   font-size: 1.5em;
   color: black;
 }
-
 @media (max-width: 1365.98px) {
   .contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour .horaires-text {
     font-size: 1.25em;
     margin-top: 0;
   }
 }
-
 .contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour .horaires-text sup {
   font-size: 0.5em;
 }
-
 .contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour .horaires-title {
   font-style: normal;
   font-weight: 700;
   font-size: 1.5em;
   margin-right: 1%;
 }
-
 @media (max-width: 1365.98px) {
   .contact .horaires .toggle-horaires .horaires-jour #toggle-horaires-jour .horaires-title {
     margin-right: 0%;
   }
 }
-
 .contact .horaires .toggle-horaires .horaires-jour .horaires-tel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5em;
 }
-
 @media (max-width: 991.98px) {
   .contact .horaires .toggle-horaires .horaires-jour .horaires-tel {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .contact .horaires .toggle-horaires .horaires-jour .horaires-tel .fa-phone-alt {
   display: none;
 }
-
 @media (max-width: 991.98px) {
   .contact .horaires .toggle-horaires .horaires-jour .horaires-tel .fa-phone-alt {
     display: block;
     margin-top: 0;
   }
 }
-
 .contact .horaires .toggle-horaires .horaires-jour .horaires-tel .horaires-title {
   font-style: normal;
   font-weight: 700;
   margin: 1rem 1rem 1rem 0;
   cursor: context-menu;
 }
-
 @media (max-width: 991.98px) {
   .contact .horaires .toggle-horaires .horaires-jour .horaires-tel .horaires-title {
     margin-right: 0;
   }
 }
-
 .contact .horaires .toggle-horaires .horaires-jour .horaires-tel a {
   color: black;
   text-decoration: none;
   margin: 1rem 0;
 }
-
 @media (max-width: 991.98px) {
   .contact .horaires .toggle-horaires .horaires-jour .horaires-tel a {
     margin-top: 0;
   }
 }
-
 .contact .horaires .toggle-horaires .horaires-btn-text {
   display: block;
   font-size: 1.5em;
   cursor: context-menu;
 }
-
 .contact .horaires .toggle-horaires .toggle-hide {
   display: none;
 }
-
 .contact .horaires .toggle-horaires #horaires-btn {
   margin: 2% 0;
   padding: 0.5%;
   border: 1px solid black;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 @media (min-width: 1366px) {
   .contact .horaires .toggle-horaires #horaires-btn {
-    -webkit-transition: 2s ease;
     transition: 2s ease;
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
 }
-
 @media (min-width: 1366px) {
   .contact .horaires .toggle-horaires #horaires-btn:hover {
-    -webkit-transition: 2s ease;
     transition: 2s ease;
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
-
 .contact .horaires .toggle-horaires #horaires-btn p {
   margin: 0;
   font-size: 1.5em;
   color: #1F4290;
 }
-
 .contact .horaires .toggle-horaires .horaires-semaine {
   width: 90%;
   display: none;
   cursor: context-menu;
 }
-
 .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: left;
 }
-
 .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 35%;
   margin: 0.1% 0;
   padding: 0 5%;
   border: 1px solid black;
 }
-
 @media (max-width: 991.98px) {
   .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content {
     width: 70%;
   }
 }
-
 @media (max-width: 575.98px) {
   .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content {
     width: 87%;
   }
 }
-
 @media (max-width: 1365.98px) {
   .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content .horaires-text {
   font-weight: 500;
   color: black;
 }
-
 @media (min-width: 1366px) {
   .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content .horaires-text:hover {
     font-weight: 700;
   }
 }
-
 .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content .horaires-text sup {
   font-size: 0.5em;
 }
-
 .contact .horaires .toggle-horaires .horaires-semaine .toggle-horaires-semaine .horaires-content .horaires-title {
   font-style: normal;
   font-weight: 700;
   margin-right: 1%;
 }
-
 .contact .horaires .toggle-horaires .toggle-table {
   display: block;
 }
@@ -4078,119 +2966,86 @@ footer .siteMap .siteMapLink {
   margin-top: 2%;
   margin-bottom: 2%;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* CSS de la section navigation */
   /* CSS pour le carousel */
   /* CSS de la section articles */
   /* CSS de la section contact */
   /* CSS sur le bouton de remontée sur la page d'accueil */
 }
-
 .accueil h1 {
   width: 90%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 3em;
   font-weight: 400;
   text-align: center;
   margin: auto;
   cursor: context-menu;
 }
-
 @media (max-width: 575.98px) {
   .accueil h1 {
     font-size: 2em;
   }
 }
-
 .accueil .section_01 {
   padding: 0 12.5%;
   margin-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-around;
   gap: 2.5%;
   background: #E9E8E9;
   /* CSS de chaque sous-menu */
 }
-
 .accueil .section_01 #menu-menu-secondaire {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-around;
   padding: 0;
   gap: 2.5%;
 }
-
 .accueil .section_01 #menu-menu-secondaire #menu-item-472 {
   background-image: url(img/img_elecindus.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .accueil .section_01 #menu-menu-secondaire #menu-item-471 {
   background-image: url(img/img_maintenance-elec.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .accueil .section_01 #menu-menu-secondaire #menu-item-470 {
   background-image: url(img/img_auto.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .accueil .section_01 #menu-menu-secondaire #menu-item-469 {
   background-image: url(img/img_info.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .accueil .section_01 #menu-menu-secondaire li {
   margin: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 270px;
-          flex: 0 1 270px;
+  flex-direction: column;
+  flex: 0 1 270px;
   height: 360px;
   position: relative;
   list-style: none;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 30px;
 }
-
 .accueil .section_01 #menu-menu-secondaire li .hover {
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
+  transition: 0.8s ease;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
@@ -4198,25 +3053,18 @@ footer .siteMap .siteMapLink {
   height: 360px;
   opacity: 0;
   border-radius: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section_01 #menu-menu-secondaire li .hover {
-    -webkit-transition: none;
     transition: none;
     background-color: transparent;
     opacity: 1;
   }
 }
-
 .accueil .section_01 #menu-menu-secondaire li .hover a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   text-decoration: none;
@@ -4225,136 +3073,87 @@ footer .siteMap .siteMapLink {
   margin: auto;
   width: 80%;
   border-radius: 20px;
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
+  transition: 0.8s ease;
 }
-
 .accueil .section_01 #menu-menu-secondaire li .hover a p {
   position: relative;
   top: -20px;
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
+  transition: 0.8s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section_01 #menu-menu-secondaire li .hover a p {
     top: 0;
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .accueil .section_01 #menu-menu-secondaire li:hover .hover {
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
+  transition: 0.8s ease;
   opacity: 1;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section_01 #menu-menu-secondaire li:hover .hover {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .accueil .section_01 #menu-menu-secondaire li:hover .hover a {
   opacity: 1;
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
+  transition: 0.8s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section_01 #menu-menu-secondaire li:hover .hover a {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .accueil .section_01 #menu-menu-secondaire li:hover .hover a p {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  transform: translateY(20px);
   opacity: 1;
-  -webkit-transition: .8s ease;
-  transition: .8s ease;
+  transition: 0.8s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section_01 #menu-menu-secondaire li:hover .hover a p {
-    -webkit-transition: none;
     transition: none;
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
 }
-
 .accueil .section_02 {
   width: 90%;
   margin: auto;
   padding-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   /* CSS pour le texte annexe au carousel */
 }
-
 @media (max-width: 1199.98px) {
   .accueil .section_02 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     padding: 2% 0;
   }
 }
-
 .accueil .section_02 .carousel-slider {
   width: 45%;
 }
-
 @media (max-width: 1199.98px) {
   .accueil .section_02 .carousel-slider {
     width: 100%;
   }
 }
-
 .accueil .section_02 .carousel-slider .control-slider {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
 @media (max-width: 575.98px) {
   .accueil .section_02 .carousel-slider .control-slider {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .accueil .section_02 .carousel-slider .control-slider button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  align-items: center;
+  box-sizing: border-box;
   background: transparent;
   border-radius: 50%;
   width: 30px;
@@ -4364,50 +3163,35 @@ footer .siteMap .siteMapLink {
   background-color: black;
   font-size: 1.5em;
   cursor: pointer;
-  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-
 @media (max-width: 575.98px) {
   .accueil .section_02 .carousel-slider .control-slider button {
-    -webkit-transform: rotateZ(90deg);
-            transform: rotateZ(90deg);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    transform: rotateZ(90deg);
+    justify-content: center;
     padding: 0;
   }
 }
-
 .accueil .section_02 .carousel-slider .control-slider button:hover {
-  -webkit-box-shadow: 0px 5px 4px 3px black;
-          box-shadow: 0px 5px 4px 3px black;
-  -webkit-transition: 0.5s ease;
+  box-shadow: 0px 5px 4px 3px black;
   transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section_02 .carousel-slider .control-slider button:hover {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
 }
-
 @media (max-width: 575.98px) {
   .accueil .section_02 .carousel-slider .control-slider button i {
     width: 30px;
   }
 }
-
 @media (max-width: 575.98px) {
   .accueil .section_02 .carousel-slider .control-slider #slider {
     padding: 2% 0;
   }
 }
-
 .accueil .section_02 .carousel-slider .control-slider #slider .slider-elements img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 90%;
   height: 100%;
@@ -4415,187 +3199,135 @@ footer .siteMap .siteMapLink {
   border: 1px solid black;
   border-radius: 30px;
 }
-
 @media (max-width: 575.98px) {
   .accueil .section_02 .carousel-slider .control-slider #slider .slider-elements img {
     width: 100%;
     margin: 0;
   }
 }
-
 .accueil .section_02 .carousel-slider .control-slider #slider .fade {
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
   }
 }
-
 @keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
   }
 }
-
 .accueil .section_02 .carousel-slider .indicators {
   text-align: center;
   padding: 2.5% 0;
 }
-
 @media (max-width: 991.98px) {
   .accueil .section_02 .carousel-slider .indicators {
     display: none;
   }
 }
-
 .accueil .section_02 .carousel-slider .indicators .dot {
   width: 70px;
   height: 10px;
   background-color: #1F4290;
   display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
-
 .accueil .section_02 .carousel-slider .indicators .active, .accueil .section_02 .carousel-slider .indicators .dot:hover {
   background-color: #2c2c2c;
 }
-
 .accueil .section_02 .texte {
   padding: 0;
   width: 45%;
-  font-family: 'Open Sans', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Open Sans", sans-serif;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
   cursor: context-menu;
   /* CSS pour les qualifications */
 }
-
 @media (max-width: 1199.98px) {
   .accueil .section_02 .texte {
     width: 80%;
   }
 }
-
 .accueil .section_02 .texte h2 {
   font-weight: 500;
   font-size: 2em;
 }
-
 @media (max-width: 575.98px) {
   .accueil .section_02 .texte h2 {
     font-size: 1.5em;
   }
 }
-
 .accueil .section_02 .texte p {
   font-weight: 400;
   font-size: 1em;
   text-align: justify;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  align-items: start;
   color: black;
 }
-
 .accueil .section_02 .texte p img {
   display: none;
 }
-
 .accueil .section_02 .texte p:hover {
   color: #1F4290;
   font-weight: bold;
   gap: 5px;
 }
-
 .accueil .section_02 .texte p:hover img {
   display: block;
 }
-
 .accueil .section_02 .texte .links {
   padding: 2% 0;
   width: 40%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
-
 @media (max-width: 991.98px) {
   .accueil .section_02 .texte .links {
     width: 80%;
   }
 }
-
 .accueil .section_02 .texte .links a {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 33%;
-          flex: 1 1 33%;
+  flex: 1 1 33%;
   margin: auto;
 }
-
 .accueil .section_02 .texte .links a img {
   width: 100%;
   height: 100%;
 }
-
 .accueil .section_03 {
   width: 90%;
   margin: auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 2% 0;
   /* CSS du lien vers la page d'articles */
 }
-
 .accueil .section_03 .latestPost-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .accueil .section_03 .latestPost-card img {
   height: auto;
 }
-
 .accueil .section_03 .latestPost-card a {
   margin: 2% 0;
   text-decoration: none;
@@ -4604,16 +3336,11 @@ footer .siteMap .siteMapLink {
   text-align: center;
   color: #1F4290;
 }
-
 .accueil .section_03 .renvoi-actu {
   background: #1F4290;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 20%;
   border-radius: 25px;
   margin: auto;
@@ -4621,98 +3348,71 @@ footer .siteMap .siteMapLink {
   text-decoration: none;
   font-weight: 700;
   font-size: 1.25em;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 @media (max-width: 991.98px) {
   .accueil .section_03 .renvoi-actu {
     width: 80%;
   }
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section_03 .renvoi-actu {
     background: transparent;
     color: #1F4290;
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .accueil .section_03 .renvoi-actu:hover {
   background: transparent;
   color: #1F4290;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section_03 .renvoi-actu:hover {
-    -webkit-transition: none;
     transition: none;
   }
 }
-
 .accueil .section_04 {
   width: 55%;
   margin: auto;
   padding: 2% 0;
   /* CSS de la bannière slider */
 }
-
 .accueil .section_04 .contactAccueil {
   width: 80%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
-
 .accueil .section_04 .contactAccueil .accroche_contact {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 472px;
-          flex: 1 1 472px;
+  flex: 1 1 472px;
   margin: auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   cursor: context-menu;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section_04 .contactAccueil .accroche_contact {
     text-align: center;
   }
 }
-
 .accueil .section_04 .contactAccueil .accroche_contact h2 {
   font-weight: 300;
   font-size: 1.2em;
 }
-
 .accueil .section_04 .contactAccueil .accroche_contact p {
   font-weight: 700;
   font-size: 1em;
 }
-
 .accueil .section_04 .contactAccueil .contactBtn {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 272px;
-          flex: 1 1 272px;
+  flex: 1 1 272px;
   width: 100%;
   padding: 2.5% 0;
   border-radius: 30px;
   background-color: #1F4290;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 2em;
   color: white;
@@ -4720,116 +3420,82 @@ footer .siteMap .siteMapLink {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-
 @media (max-width: 991.98px) {
   .accueil .section_04 .contactAccueil .contactBtn {
     padding: 2.5% 10%;
   }
 }
-
 .accueil .section_04 .contactAccueil .contactBtn:hover {
-  -webkit-box-shadow: 0px 5px 3px 1px black;
-          box-shadow: 0px 5px 3px 1px black;
-  -webkit-transition: 0.5s ease;
+  box-shadow: 0px 5px 3px 1px black;
   transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil .section_04 .contactAccueil .contactBtn:hover {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
 }
-
 .accueil .section_04 .company-banner {
   padding-top: 2%;
 }
-
 .accueil .section_04 .company-banner #text-banner {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   text-align: center;
   margin-bottom: 0;
   cursor: context-menu;
 }
-
 .accueil .section_04 .company-banner #banner-slider .banner-elements .banner {
   width: 100%;
   margin: auto;
   padding: 1% 0%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   gap: 1%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   border: 1px solid black;
 }
-
 .accueil .section_04 .company-banner #banner-slider .banner-elements .banner li {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 140px;
-          flex: 1 1 140px;
+  justify-content: center;
+  flex: 1 1 140px;
 }
-
 .accueil .section_04 .company-banner #banner-slider .banner-elements .banner li a img {
   width: 100%;
   height: auto;
 }
-
 .accueil .section_04 .company-banner #banner-slider .banner-fade {
   -webkit-animation-name: banner-fade;
           animation-name: banner-fade;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
 }
-
 @-webkit-keyframes banner-fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
   }
 }
-
 @keyframes banner-fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
   }
 }
-
 .accueil #btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   padding: 0 3%;
 }
-
 .accueil #btn #topBtn {
   width: 70px;
   height: 70px;
@@ -4838,40 +3504,24 @@ footer .siteMap .siteMapLink {
   color: #ffffff;
   background-color: #1F4290;
   border: 3px solid black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0px);
+  transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil #btn #topBtn {
-    -webkit-transform: none;
-            transform: none;
-    -webkit-transition: none;
+    transform: none;
     transition: none;
   }
 }
-
 .accueil #btn #topBtn:hover {
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transform: translateY(20px);
+  transition: 0.5s ease;
 }
-
 @media (max-width: 1365.98px) {
   .accueil #btn #topBtn:hover {
-    -webkit-transform: none;
-            transform: none;
-    -webkit-transition: none;
+    transform: none;
     transition: none;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
